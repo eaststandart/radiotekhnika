@@ -1,38 +1,120 @@
 <!DOCTYPE html>
-<html>
-<head><link rel="icon" type="image/png" href="favicon.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eaststandart - Projects</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Электроники | Портал</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #121212; color: #e0e0e0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        h1 { border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { background: #1e1e1e; border: 1px solid #333; border-radius: 12px; transition: 0.3s; text-decoration: none; color: inherit; display: block; overflow: hidden; }
-        .card:hover { transform: translateY(-5px); border-color: #555; }
-        .card-img { height: 160px; background: #252525; display: flex; align-items: center; justify-content: center; font-size: 40px; }
-        .card-content { padding: 15px; }
-        .card h3 { margin: 0 0 10px 0; color: #58a6ff; }
-        .card p { font-size: 14px; line-height: 1.5; color: #8b949e; }
+        :root {
+            --primary-bg: #f4f7f6;
+            --card-tech: #3498db; /* Синий для творчества */
+            --card-my: #2ecc71;   /* Зеленый для личных проектов */
+            --text-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid;
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-creative { border-top-color: var(--card-tech); }
+        .my-projects { border-top-color: var(--card-my); }
+
+        h2 { margin-top: 0; color: #333; }
+
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .project-list li {
+            margin-bottom: 10px;
+        }
+
+        .project-list a {
+            text-decoration: none;
+            color: #555;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 5px;
+            background: #f9f9f9;
+            transition: 0.2s;
+        }
+
+        .project-list a:hover {
+            background: #eee;
+            color: #000;
+            padding-left: 15px;
+        }
+
+        .project-list a::before {
+            content: "🛠";
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>eaststandart Projects</h1>
-    <div class="grid">
-        <a href="radio.html" class="card">
-            <div class="card-img">📻</div>
-            <div class="card-content">
-                <h3>Cyber-Radio Deck</h3>
-                <p>PicoCalc + RDA5807. Усилитель на 3-х советских транзисторах и трансформаторе.</p>
-            </div>
-        </a>
-        <a href="#" class="card">
-            <div class="card-img">⚙️</div>
-            <div class="card-content">
-                <h3>Z80 ASM Lab</h3>
-                <p>Эксперименты с ассемблером Z80 в эмуляторе Fuse и управление портами.</p>
-            </div>
-        </a>
+
+    <header>
+        <h1>Творческая лаборатория электроники</h1>
+        <p>Выбирай направление и начинай создавать!</p>
+    </header>
+
+    <div class="grid-container">
+        <!-- Блок 1: Техническое творчество -->
+        <section class="category-card tech-creative">
+            <h2>Техническое творчество</h2>
+            <ul class="project-list">
+                <li><a href="https://github.io">Робототехника (10+)</a></li>
+                <li><a href="https://github.io">Основы схемотехники</a></li>
+                <li><a href="https://github.io">Программирование Arduino</a></li>
+            </ul>
+        </section>
+
+        <!-- Блок 2: Мои проекты -->
+        <section class="category-card my-projects">
+            <h2>Мои проекты</h2>
+            <ul class="project-list">
+                <li><a href="https://github.io">Умный дом: Датчики</a></li>
+                <li><a href="https://github.io">Лабораторный БП</a></li>
+                <li><a href="https://github.io">Метеостанция на ESP8266</a></li>
+            </ul>
+        </section>
     </div>
+
 </body>
 </html>

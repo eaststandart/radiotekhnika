@@ -7,8 +7,8 @@
     <style>
         :root {
             --primary-bg: #f4f7f6;
-            --card-tech: #3498db; /* Синий для творчества */
-            --card-my: #2ecc71;   /* Зеленый для личных проектов */
+            --card-tech: #3498db; /* Синий цвет */
+            --card-my: #2ecc71;   /* Зеленый цвет */
             --text-color: #2c3e50;
         }
 
@@ -28,14 +28,16 @@
             margin-bottom: 40px;
         }
 
+        /* Сетка для карточек */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
             width: 100%;
             max-width: 1000px;
         }
 
+        /* Сама карточка-квадрат */
         .category-card {
             background: white;
             border-radius: 15px;
@@ -49,19 +51,39 @@
             transform: translateY(-5px);
         }
 
+        /* Цвета для разных разделов */
         .tech-creative { border-top-color: var(--card-tech); }
         .my-projects { border-top-color: var(--card-my); }
 
-        h2 { margin-top: 0; color: #333; }
+        /* Шапка внутри карточки: иконка + заголовок */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
 
+        /* Круглая картинка-значок */
+        .section-icon {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #eee;
+            background-color: #fff;
+        }
+
+        h2 { margin: 0; font-size: 1.4rem; color: #333; }
+
+        /* Список ссылок внутри */
         .project-list {
             list-style: none;
             padding: 0;
-            margin-top: 15px;
+            margin: 0;
         }
 
         .project-list li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .project-list a {
@@ -69,21 +91,26 @@
             color: #555;
             display: flex;
             align-items: center;
-            padding: 8px;
-            border-radius: 5px;
+            padding: 10px;
+            border-radius: 8px;
             background: #f9f9f9;
             transition: 0.2s;
+            border: 1px solid transparent;
         }
 
         .project-list a:hover {
-            background: #eee;
+            background: #fff;
             color: #000;
-            padding-left: 15px;
+            border-color: #ddd;
+            padding-left: 18px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
+        /* Иконка-инструмент перед ссылкой */
         .project-list a::before {
-            content: "🛠";
-            margin-right: 10px;
+            content: "⚙️";
+            margin-right: 12px;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -91,29 +118,37 @@
 
     <header>
         <h1>Творческая лаборатория электроники</h1>
-        <p>Выбирай направление и начинай создавать!</p>
+        <p>Инженерный портал для юных техников</p>
     </header>
 
     <div class="grid-container">
-        <!-- Блок 1: Техническое творчество -->
+        
+        <!-- БЛОК 1: ТЕХНИЧЕСКОЕ ТВОРЧЕСТВО -->
         <section class="category-card tech-creative">
-            <h2>Техническое творчество</h2>
+            <div class="card-header">
+                <!-- Путь к картинке (замените на свои файлы позже) -->
+                <img src="img/creative-icon.png" alt="🛠" class="section-icon">
+                <h2>Техническое творчество</h2>
+            </div>
             <ul class="project-list">
-                <li><a href="https://github.io">Робототехника (10+)</a></li>
-                <li><a href="https://github.io">Основы схемотехники</a></li>
-                <li><a href="https://github.io">Программирование Arduino</a></li>
+                <li><a href="https://github.io">Робототехника</a></li>
+                <li><a href="https://github.io">Схемотехника</a></li>
+                <li><a href="https://github.io">Программирование МК</a></li>
             </ul>
         </section>
 
-        <!-- Блок 2: Мои проекты -->
+        <!-- БЛОК 2: МОИ ПРОЕКТЫ -->
         <section class="category-card my-projects">
-            <h2>Мои проекты</h2>
+            <div class="card-header">
+                <img src="img/projects-icon.png" alt="🚀" class="section-icon">
+                <h2>Мои проекты</h2>
+            </div>
             <ul class="project-list">
-                <li><a href="https://github.io">Умный дом: Датчики</a></li>
-                <li><a href="https://github.io">Лабораторный БП</a></li>
-                <li><a href="https://github.io">Метеостанция на ESP8266</a></li>
+                <li><a href="https://github.io">Система "Умный дом"</a></li>
+                <li><a href="https://github.io">Блок питания 0-30В</a></li>
             </ul>
         </section>
+
     </div>
 
 </body>

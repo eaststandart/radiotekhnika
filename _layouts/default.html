@@ -17,6 +17,15 @@
             {{ content }}
         </div>
 
+        <!-- Блок тегов -->
+        {% if page.tags %}
+        <div class="tag-container">
+            {% for tag in page.tags %}
+            <span class="tag-item">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
         {% if page.sources %}
         <div class="sources-block">
             <h4>📚 Источники и вдохновение:</h4>

@@ -7,8 +7,8 @@
     <style>
         :root {
             --primary-bg: #f4f7f6;
-            --card-tech: #3498db; /* Синий цвет */
-            --card-my: #2ecc71;   /* Зеленый цвет */
+            --card-tech: #3498db; 
+            --card-my: #2ecc71;   
             --text-color: #2c3e50;
         }
 
@@ -23,12 +23,29 @@
             padding: 20px;
         }
 
+        /* Шапка сайта с главной иконкой */
         header {
             text-align: center;
+            margin-top: 20px;
             margin-bottom: 40px;
         }
 
-        /* Сетка для карточек */
+        /* Главная круглая иконка (как в Telegram) */
+        .main-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .main-avatar:hover {
+            transform: scale(1.05); /* Легкое увеличение при наведении */
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -37,7 +54,6 @@
             max-width: 1000px;
         }
 
-        /* Сама карточка-квадрат */
         .category-card {
             background: white;
             border-radius: 15px;
@@ -51,11 +67,9 @@
             transform: translateY(-5px);
         }
 
-        /* Цвета для разных разделов */
         .tech-creative { border-top-color: var(--card-tech); }
         .my-projects { border-top-color: var(--card-my); }
 
-        /* Шапка внутри карточки: иконка + заголовок */
         .card-header {
             display: flex;
             align-items: center;
@@ -63,19 +77,20 @@
             margin-bottom: 20px;
         }
 
-        /* Круглая картинка-значок */
+        /* Значки разделов внутри карточек */
         .section-icon {
-            width: 65px;
-            height: 65px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid #eee;
-            background-color: #fff;
+            background: #fff;
         }
 
-        h2 { margin: 0; font-size: 1.4rem; color: #333; }
+        h1 { margin: 10px 0; font-size: 2rem; }
+        h2 { margin: 0; font-size: 1.3rem; color: #333; }
+        header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 
-        /* Список ссылок внутри */
         .project-list {
             list-style: none;
             padding: 0;
@@ -103,49 +118,47 @@
             color: #000;
             border-color: #ddd;
             padding-left: 18px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
-        /* Иконка-инструмент перед ссылкой */
         .project-list a::before {
-            content: "⚙️";
+            content: "⚡";
             margin-right: 12px;
-            font-size: 1.1rem;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- ГЛАВНАЯ ИКОНКА ПОРТАЛА -->
+        <img src="img/projects-icon.png" alt="Логотип" class="main-avatar">
+        
         <h1>Творческая лаборатория электроники</h1>
         <p>Инженерный портал для юных техников</p>
     </header>
 
     <div class="grid-container">
         
-        <!-- БЛОК 1: ТЕХНИЧЕСКОЕ ТВОРЧЕСТВО -->
+        <!-- БЛОК 1 -->
         <section class="category-card tech-creative">
             <div class="card-header">
-                <!-- Путь к картинке (замените на свои файлы позже) -->
                 <img src="img/creative-icon.png" alt="🛠" class="section-icon">
                 <h2>Техническое творчество</h2>
             </div>
             <ul class="project-list">
                 <li><a href="https://github.io">Робототехника</a></li>
                 <li><a href="https://github.io">Схемотехника</a></li>
-                <li><a href="https://github.io">Программирование МК</a></li>
             </ul>
         </section>
 
-        <!-- БЛОК 2: МОИ ПРОЕКТЫ -->
+        <!-- БЛОК 2 -->
         <section class="category-card my-projects">
             <div class="card-header">
                 <img src="img/projects-icon.png" alt="🚀" class="section-icon">
                 <h2>Мои проекты</h2>
             </div>
             <ul class="project-list">
-                <li><a href="https://github.io">Система "Умный дом"</a></li>
-                <li><a href="https://github.io">Блок питания 0-30В</a></li>
+                <li><a href="https://github.io">Умный дом</a></li>
+                <li><a href="https://github.io">Блок питания</a></li>
             </ul>
         </section>
 

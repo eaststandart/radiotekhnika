@@ -209,18 +209,24 @@ img {
     border-top: 1px dashed #eee; 
 }
 
-.sources-content p, .sources-content ul {
-    display: inline;
+.sources-content p, 
+.sources-content ul, 
+.sources-content li {
+    display: inline !important; /* !important заставит браузер слушаться */
     margin: 0;
+    padding: 0;
 }
 
-.sources-inline {
-    color: #6c757d;
+.sources-content ul {
+    list-style: none;
 }
 
-/* Добавляем запятую между пунктами списка, кроме последнего */
 .sources-content ul li:not(:last-child)::after {
     content: ", ";
+}
+
+.sources-content li::before {
+    display: none;
 }
 
 .sources-content a {
@@ -230,6 +236,10 @@ img {
 
 .sources-content a:hover {
     text-decoration: underline;
+}
+
+.sources-inline {
+    color: #6c757d;
 }
 
 .tag-item {

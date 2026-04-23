@@ -141,6 +141,49 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
 }
 
+/* Стили для страниц с контентом (Markdown) */
+.content-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 90%; /* Адаптивность для мобильных */
+    margin: 20px auto;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--card-tech);
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.sources-block {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #ced4da;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.sources-block h4 { 
+    margin-top: 0; 
+    color: #495057; 
+}
+
+.license-footer {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+
 .tg-icon {
     width: 20px;
     height: 20px;

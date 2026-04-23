@@ -247,6 +247,6 @@ img {
 }
 
 /* Стили тегов (сгруппированы рядом) */
-.tag-item { background-color: #e1f5fe; color: #0288d1; padding: 2px 10px; border-radius: 15px; border: 1px solid #b3e5fc; transition: 0.2s; }
+.tag-item { background-color: #e1f5fe; color: #0288d1; padding: 2px 10px; border-radius: 15px; border: 1px solid #b3e5fc; }
 .tag-item:hover { background-color: #b3e5fc; color: #01579b; }
 .tag-item::before { content: "#"; margin-right: 1px; opacity: 0.7; }

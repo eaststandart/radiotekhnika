@@ -21,9 +21,7 @@
     {% if page.tags %}
     <div class="tag-container">
         {% for tag in page.tags %}
-        <a href="https://google.com+{{ tag | slugify }}" class="tag-item">
-           {{ tag }}
-        </a>
+        <span class="tag-item">{{ tag }}</span>
         {% endfor %}
     </div>
     {% endif %}

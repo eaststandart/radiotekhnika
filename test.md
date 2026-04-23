@@ -17,4 +17,4 @@ tags: [arduino, робототехника, электроника]
 Вот пример вставки кода для Arduino:
 `void setup() { pinMode(13, OUTPUT); }`
 
-![Пример картинки](img/projects-icon.png)
+![Пример картинки](img/logo.svg)

@@ -28,12 +28,14 @@
     {% endif %}
         
     <!-- Блок источников в одну линию -->
-    {% if page.sources %}
-    <div class="sources-inline">
-        <strong>Источники:</strong> {{ page.sources | replace: "* ", "" | replace: "
-", ", " }}
+{% if page.sources %}
+<div class="sources-inline">
+    <strong>Источники:</strong> 
+    <div class="sources-content">
+        {{ page.sources | markdownify }}
     </div>
-    {% endif %}
+</div>
+{% endif %}
 
         <footer class="license-footer">
             Материалы доступны по лицензии <a href="/LICENSE">CC BY 4.0</a>. 

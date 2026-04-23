@@ -17,9 +17,10 @@
             {{ content }}
         </div>
 
-    <!-- Блок тегов с поиском -->
+    <!-- Блок тегов -->
     {% if page.tags %}
     <div class="tag-container">
+        <strong>Теги:</strong>
         {% for tag in page.tags %}
         <span class="tag-item">{{ tag }}</span>
         {% endfor %}

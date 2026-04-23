@@ -144,12 +144,20 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 /* Стили для страниц с контентом (Markdown) */
 .content-wrapper {
     background: white;
-    padding: 40px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     max-width: 800px;
-    width: 90%; /* Адаптивность для мобильных */
-    margin: 20px auto;
+    width: 95%; /* Адаптивность для мобильных */
+    margin: 10px auto;
+}
+
+/* Авторазмер для всех картинок на сайте */
+img {
+    max-width: 100%; /* Картинка никогда не будет шире экрана */
+    height: auto;    /* Пропорции сохраняются, картинка не сплющится */
+    display: block;  /* Убирает лишние отступы снизу */
+    margin: 10px 0;  /* Добавляет небольшие отступы сверху и снизу */
 }
 
 .back-link {

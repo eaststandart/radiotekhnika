@@ -17,14 +17,18 @@
             {{ content }}
         </div>
 
-        <!-- Блок тегов -->
-        {% if page.tags %}
-        <div class="tag-container">
-            {% for tag in page.tags %}
-            <span class="tag-item">{{ tag }}</span>
-            {% endfor %}
-        </div>
-        {% endif %}
+    <!-- Блок тегов с поиском -->
+    {% if page.tags %}
+    <div class="tag-container">
+        {% for tag in page.tags %}
+        <a href="https://github.com{{ tag }}" 
+           class="tag-item" 
+           target="_blank">
+           {{ tag }}
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
         
         {% if page.sources %}
         <div class="sources-block">

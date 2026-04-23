@@ -160,18 +160,12 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     margin-bottom: 20px;
 }
 
-.sources-block {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-left: 4px solid #ced4da;
+.sources-inline {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
     font-size: 0.9rem;
     color: #6c757d;
-}
-
-.sources-block h4 { 
-    margin-top: 0; 
-    color: #495057; 
 }
 
 .license-footer {
@@ -189,26 +183,21 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     height: 20px;
 }
 
-
-
-
 /* Стили для тегов */
 .tag-container {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
+    font-size: 0.9rem;
 }
 
 .tag-item {
-    background-color: #e1f5fe; /* Светло-голубой фон */
-    color: #0288d1;            /* Синий текст */
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background-color 0.2s;
+    background-color: #e1f5fe;
+    color: #0288d1;
+    padding: 2px 10px;
+    border-radius: 15px;
     border: 1px solid #b3e5fc;
 }
 
@@ -218,7 +207,5 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 }
 
 .tag-item::before {
-    content: "#"; /* Автоматически добавляем решетку перед каждым тегом */
-    margin-right: 1px;
-    opacity: 0.7;
+    content: "#";
 }

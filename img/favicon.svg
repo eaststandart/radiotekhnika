@@ -7,7 +7,7 @@
    height="40mm"
    viewBox="0 0 400 399.99999"
    id="svg15"
-   sodipodi:docname="логотип – радиотехника {оконтуренный, сжатый}.svg"
+   sodipodi:docname="favicon.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    inkscape:export-filename="logo1.svg"
    inkscape:export-xdpi="300"
@@ -31,9 +31,9 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="77.251417"
-     inkscape:cy="79.107572"
+     inkscape:zoom="4"
+     inkscape:cx="53"
+     inkscape:cy="81.875001"
      inkscape:window-width="1920"
      inkscape:window-height="1124"
      inkscape:window-x="1590"
@@ -104,15 +104,14 @@ circle {stroke-linecap:round; stroke-linejoin:round}
        only_selected="true"
        hide_knots="false" />
   </defs>
-  <path
-     fill="#00c131"
-     stroke="none"
-     stroke-width="3"
-     d="M 0,0 H 400 V 400.00001 H 0 Z"
-     id="path1"
-     inkscape:export-filename="path1.png"
-     inkscape:export-xdpi="322.13"
-     inkscape:export-ydpi="322.13" />
+  <rect
+     style="fill:#00c231;fill-opacity:1;stroke:#120000;stroke-width:0.301381"
+     id="rect1"
+     width="399.69858"
+     height="399.69861"
+     x="0.15069054"
+     y="0.15069054"
+     rx="105.83333" />
   <polyline
      points="240.63 319.08 240.63 438.18"
      fill="none"

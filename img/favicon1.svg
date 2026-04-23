@@ -32,8 +32,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="2.8284271"
-     inkscape:cx="29.698485"
-     inkscape:cy="60.634407"
+     inkscape:cx="-8.1317281"
+     inkscape:cy="122.1527"
      inkscape:window-width="1920"
      inkscape:window-height="1124"
      inkscape:window-x="1590"
@@ -118,8 +118,8 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke="#d6d6d6"
      stroke-width="4"
      id="polyline1"
-     transform="matrix(1.000007,0,0,0.97382467,-40.166123,-32.10759)"
-     style="stroke:#ff0000;stroke-width:10.5906;stroke-dasharray:none;stroke-opacity:1" />
+     transform="matrix(1.000007,0,0,0.96235275,-40.166123,-28.524024)"
+     style="stroke:#ff0000;stroke-width:13.4057;stroke-dasharray:none;stroke-opacity:1" />
   <ellipse
      cx="200.46556"
      cy="199.8508"
@@ -129,55 +129,55 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      id="circle1"
      rx="157.23109"
      ry="157.01283"
-     style="stroke:#ff0000;stroke-opacity:1;stroke-width:10.58333291;stroke-dasharray:none" />
+     style="stroke:#ff0000;stroke-opacity:1;stroke-width:18.52083259;stroke-dasharray:none" />
   <polyline
      points="180.08 291.84 104.32 171.85"
      fill="none"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polyline2"
-     transform="matrix(0.95404612,0,0,0.95272187,-32.960166,-32.243282)"
-     style="stroke:#ff0000;stroke-width:10.5906;stroke-dasharray:none;stroke-opacity:1" />
+     transform="matrix(0.87055795,0,0,0.86934959,-24.829922,-18.494193)"
+     style="stroke:#ff0000;stroke-width:15.20674981;stroke-dasharray:none;stroke-opacity:1" />
   <polyline
      points="279.93 329.08 374.27 171.85"
      fill="none"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polyline3"
-     transform="matrix(0.98739946,0,0,0.98602892,-35.370716,-37.790728)"
-     style="stroke:#ff0000;stroke-width:10.5906;stroke-dasharray:none;stroke-opacity:1" />
+     transform="matrix(1.0007023,0,0,0.89714889,-40.086825,-22.779078)"
+     style="stroke:#ff0000;stroke-width:13.96200404;stroke-dasharray:none;stroke-opacity:1" />
   <polyline
      points="42.61 171.85 104.32 171.85"
      fill="none"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polyline4"
-     transform="matrix(0.82234292,0,0,0.99861896,-18.036727,-39.887658)"
-     style="stroke:#ff0000;stroke-width:10.5906;stroke-dasharray:none;stroke-opacity:1" />
+     transform="matrix(0.75343275,0,0,0.99861896,-13.619079,-39.887658)"
+     style="stroke:#ff0000;stroke-width:14.5984;stroke-dasharray:none;stroke-opacity:1" />
   <polyline
      points="374.27 171.85 437.70 171.85"
      fill="none"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polyline5"
-     transform="matrix(0.79075279,0,0,0.99861896,37.053409,-39.887658)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:10.5906;stroke-dasharray:none;stroke-opacity:1" />
+     transform="matrix(0.74007746,0,0,0.99861896,57.626836,-39.887658)"
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:14.8872;stroke-dasharray:none;stroke-opacity:1" />
   <polygon
-     points="160,301 314,301 314,332 160,332 "
+     points="160,332 160,301 314,301 314,332 "
      fill="#d6d6d6"
      stroke="#d6d6d6"
      stroke-width="2"
      id="polygon5"
-     transform="matrix(1.000007,0,0,0.99861896,-36.536098,-39.887658)"
-     style="stroke:#ff0000;stroke-opacity:1;fill:#ff0000;fill-opacity:1;stroke-width:2.00137538;stroke-dasharray:none" />
+     transform="matrix(1.1267941,0,0,0.99478259,-66.584638,-49.256779)"
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.00138;stroke-dasharray:none;stroke-opacity:1" />
   <polygon
-     points="185,301 178,262 155,277 "
+     points="178,262 155,277 185,301 "
      fill="#d6d6d6"
      stroke="#d6d6d6"
      stroke-width="1"
      id="polygon6"
-     transform="matrix(1.000007,0,0,0.99861896,-40.1561,-39.887658)"
-     style="stroke:#ff0000;stroke-opacity:1;fill:#ff0000;fill-opacity:1;stroke-width:4.00275076;stroke-dasharray:none" />
+     transform="matrix(1.000007,0,0,0.99861896,-46.236482,-52.516143)"
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4.00275;stroke-dasharray:none;stroke-opacity:1" />
   <path
      fill="rgb(0,0,0)"
      stroke="#000000"
@@ -277,7 +277,7 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polyline12"
      transform="matrix(0.99039397,0,0,1.3837467,-37.83936,-54.290672)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.94296;stroke-dasharray:none;stroke-opacity:1" />
+     style="display:none;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.94296;stroke-dasharray:none;stroke-opacity:1" />
   <polyline
      points="240.66 141.99 240.66 203.10"
      fill="none"
@@ -285,7 +285,7 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polyline13"
      transform="matrix(0.99039397,0,0,1.3837467,-37.83936,-54.290672)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.94296;stroke-dasharray:none;stroke-opacity:1" />
+     style="display:none;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.94296;stroke-dasharray:none;stroke-opacity:1" />
   <polyline
      points="260.33 141.99 260.33 203.10"
      fill="none"
@@ -293,23 +293,23 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polyline14"
      transform="matrix(0.99039397,0,0,1.3837467,-37.83936,-54.290672)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.94296;stroke-dasharray:none;stroke-opacity:1" />
+     style="display:none;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.94296;stroke-dasharray:none;stroke-opacity:1" />
   <polygon
-     points="197,130 197,142 285,142 285,130 "
+     points="197,142 285,142 285,130 197,130 "
      fill="#d6d6d6"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polygon14"
      transform="matrix(0.99039397,0,0,1.3837467,-37.83936,-54.290672)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-opacity:1" />
+     style="display:none;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-opacity:1" />
   <polygon
-     points="259,94 263,95 266,97 268,100 269,102 270,105 270,107 270,130 256,130 254,130 227,130 211,130 211,116 211,107 212,102 214,99 216,96 219,95 222,94 225,93 227,93 254,93 "
+     points="263,95 266,97 268,100 269,102 270,105 270,107 270,130 256,130 254,130 227,130 211,130 211,116 211,107 212,102 214,99 216,96 219,95 222,94 225,93 227,93 254,93 259,94 "
      fill="#d6d6d6"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polygon15"
      transform="matrix(0.99039397,0,0,1.3837467,-37.83936,-54.290672)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-opacity:1" />
+     style="display:none;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-opacity:1" />
   <polygon
      points="146,233 150,226 124,211 120,218 "
      fill="#ff0000"

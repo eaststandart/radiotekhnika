@@ -4,29 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/style.css"> <!-- Подключаем общие стили -->
-    <style>
-        .content-wrapper {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 800px;
-            width: 100%;
-            margin: 20px auto;
-        }
-        /* Стиль блока источников */
-        .sources-block {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #ced4da;
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
-        .sources-block h4 { margin-top: 0; color: #495057; }
-        .back-link { text-decoration: none; color: #3498db; font-weight: bold; }
-    </style>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
@@ -34,9 +13,10 @@
         <a href="/" class="back-link">← Назад на портал</a>
         <h1>{{ page.title }}</h1> 
 
-        {{ content }}
+        <div class="main-content">
+            {{ content }}
+        </div>
 
-        <!-- Блок источников (показывается только если указан в MD) -->
         {% if page.sources %}
         <div class="sources-block">
             <h4>📚 Источники и вдохновение:</h4>
@@ -44,11 +24,10 @@
         </div>
         {% endif %}
 
-        <hr style="margin-top: 40px; border: 0; border-top: 1px solid #eee;">
-        <p style="font-size: 0.8rem; color: #7f8c8d; text-align: center;">
+        <footer class="license-footer">
             Материалы доступны по лицензии <a href="/LICENSE">CC BY 4.0</a>. 
             Авторство: <strong>eaststandart.github.io</strong>
-        </p>
+        </footer>
     </div>
 
 </body>

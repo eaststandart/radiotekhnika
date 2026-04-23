@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-bg: #f4f7f6;
     --card-tech: #3498db; 
@@ -13,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -144,12 +148,12 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 /* Стили для страниц с контентом (Markdown) */
 .content-wrapper {
     background: white;
-    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     max-width: 800px;
-    width: 95%; /* Адаптивность для мобильных */
-    margin: 10px auto;
+    width: 95%;      /* Оставляет небольшие зазоры по бокам */
+    margin: 15px auto; /* Центрирует блок */
+    padding: 20px;    /* Внутренние отступы текста от краев карточки */
 }
 
 /* Авторазмер для всех картинок на сайте */

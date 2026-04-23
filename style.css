@@ -177,42 +177,6 @@ img {
     margin-bottom: 20px;
 }
 
-.sources-inline {
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px dashed #eee;
-    font-size: 0.9rem;
-    color: #6c757d;
-    display: flex; /* Выстраивает заголовок и контент в ряд */
-    gap: 5px;
-}
-
-/* Магия превращения списка в строку */
-.sources-content p, .sources-content ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-.sources-content ul li {
-    display: inline;
-    list-style: none;
-}
-
-/* Добавляем запятую между пунктами списка, кроме последнего */
-.sources-content ul li:not(:last-child)::after {
-    content: ", ";
-}
-
-.sources-content a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.sources-content a:hover {
-    text-decoration: underline;
-}
-
 .license-footer {
     margin-top: 40px;
     border-top: 1px solid #eee;
@@ -229,13 +193,43 @@ img {
 }
 
 /* Стили для тегов */
-.tag-container {
-    margin-top: 15px;
+.sources-inline, .tag-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee; /* Пунктирная линия сверху */
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    font-size: 0.9rem;
+}
+
+.sources-inline + .tag-container {
+    margin-top: 10px;
+    border-top: 1px dashed #eee; 
+}
+
+.sources-content p, .sources-content ul {
+    display: inline;
+    margin: 0;
+}
+
+.sources-inline {
+    color: #6c757d;
+}
+
+/* Добавляем запятую между пунктами списка, кроме последнего */
+.sources-content ul li:not(:last-child)::after {
+    content: ", ";
+}
+
+.sources-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.sources-content a:hover {
+    text-decoration: underline;
 }
 
 .tag-item {
@@ -253,4 +247,5 @@ img {
 
 .tag-item::before {
     content: "#";
+    opacity: 0.7;
 }

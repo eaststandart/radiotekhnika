@@ -257,5 +257,6 @@ img {
 
 .tag-item::before {
     content: "#";
+    margin-right: 1px;
     opacity: 0.7;
 }

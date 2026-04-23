@@ -18,6 +18,3 @@ sources: |
 `void setup() { pinMode(13, OUTPUT); }`
 
 ![Пример картинки](img/projects-icon.png)
-
-
-[Вернуться на главную](index.html)

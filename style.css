@@ -190,3 +190,35 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 }
 
 
+
+
+/* Стили для тегов */
+.tag-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-item {
+    background-color: #e1f5fe; /* Светло-голубой фон */
+    color: #0288d1;            /* Синий текст */
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border: 1px solid #b3e5fc;
+}
+
+.tag-item:hover {
+    background-color: #b3e5fc;
+    color: #01579b;
+}
+
+.tag-item::before {
+    content: "#"; /* Автоматически добавляем решетку перед каждым тегом */
+    margin-right: 2px;
+    opacity: 0.7;
+}

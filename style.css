@@ -166,6 +166,34 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     border-top: 1px dashed #eee;
     font-size: 0.9rem;
     color: #6c757d;
+    display: flex; /* Выстраивает заголовок и контент в ряд */
+    gap: 5px;
+}
+
+/* Магия превращения списка в строку */
+.sources-content p, .sources-content ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.sources-content ul li {
+    display: inline;
+    list-style: none;
+}
+
+/* Добавляем запятую между пунктами списка, кроме последнего */
+.sources-content ul li:not(:last-child)::after {
+    content: ", ";
+}
+
+.sources-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.sources-content a:hover {
+    text-decoration: underline;
 }
 
 .license-footer {

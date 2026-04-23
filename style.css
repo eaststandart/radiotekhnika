@@ -14,16 +14,21 @@ body {
     background-color: var(--primary-bg);
     color: var(--text-color);
     margin: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    align-items: center; /* Центрирует всё содержимое body */
+    min-height: 100vh;
 }
 
 header {
     text-align: center;
+    width: 100%; /* Занимает всю ширину, чтобы центровка работала корректно */
     margin-top: 20px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует иконку и заголовки внутри header */
 }
 
 .main-avatar {
@@ -32,8 +37,8 @@ header {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
+    margin: 0 auto 15px auto; /* С помощью auto центрируем саму картинку */
+    display: block;
 }
 
 .main-avatar:hover {

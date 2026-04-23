@@ -113,3 +113,42 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     content: "⚡";
     margin-right: 12px;
 }
+
+.main-footer {
+    margin-top: 60px;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.main-footer p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.tg-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0088cc; /* Фирменный цвет Telegram */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    gap: 10px;
+}
+
+.tg-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+}
+
+.tg-icon {
+    width: 20px;
+    height: 20px;
+}
+
+

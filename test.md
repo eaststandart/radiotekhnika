@@ -16,7 +16,7 @@ sources: |
 Вот пример вставки кода для Arduino:
 `void setup() { pinMode(13, OUTPUT); }`
 
-![Пример картинки](img/favicon.png)
+![Пример картинки](img/projects-icon.png)
 
 
 [Вернуться на главную](index.html)

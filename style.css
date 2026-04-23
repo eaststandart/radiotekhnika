@@ -109,11 +109,6 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     padding-left: 18px;
 }
 
-.project-list a::before {
-    content: "⚡";
-    margin-right: 12px;
-}
-
 .main-footer {
     margin-top: 60px;
     padding: 40px 20px;

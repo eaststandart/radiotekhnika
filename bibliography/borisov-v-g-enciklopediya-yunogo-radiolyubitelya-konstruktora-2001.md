@@ -3,8 +3,8 @@ layout: default
 title: Энциклопедия юного радиолюбителя-конструктора
 tags: [борисов, радиолюбитель, юныйрадиолюбитель, электроника, энциклопедия, среднийвозраст, старшийвозраст]
 sources: "[Публичная библиотека](http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html)"
-parent_url: "/bibliography/"
 parent_name: "К списку литературы"
+parent_url: "/bibliography/"
 ---
 
 <style>

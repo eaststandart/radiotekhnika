@@ -9,7 +9,8 @@ title: Рекомендуемая литература
         align-items: flex-start;
         gap: 20px;
         background: #fff;
-        padding: 10px 15px;  /* Равномерные отступы 10px сверху и снизу */
+        /* Сверху 0, по бокам 15px, снизу 10px для компактности */
+        padding: 0 15px 10px 15px; 
         border-radius: 12px;
         border: 1px solid #eee;
         margin-bottom: 10px;
@@ -17,23 +18,25 @@ title: Рекомендуемая литература
         color: inherit;
     }
     
-.book-cover {
-    width: 100px !important;
-    height: 140px !important;
-    margin-top: 4px; /* Этот отступ визуально "подтолкнет" картинку вниз, чтобы она встала вровень с буквами */
-    object-fit: cover;
-    border-radius: 5px;
-}
+    .book-cover {
+        width: 100px !important;
+        height: 140px !important;
+        margin-top: 0 !important; /* Убираем любой отступ сверху у картинки */
+        object-fit: cover;
+        border-radius: 0 0 5px 5px; /* Скругляем только низ, если она прижата к верху */
+    }
 
     .book-info {
         flex: 1;
-        padding: 0; /* Убираем все смещения */
+        padding-top: 0; /* Обнуляем всё лишнее */
     }
 
     .book-info h3 {
-        margin: 0 0 5px 0; /* Только отступ снизу */
+        margin: 0 0 8px 0; /* Строго 0 сверху, чтобы коснуться рамки */
+        padding-top: 5px;  /* Небольшой микронный отступ, если буквы "режутся" об рамку */
         color: var(--card-tech);
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+        line-height: 1.2;
     }
 
     .book-author {
@@ -53,23 +56,10 @@ title: Рекомендуемая литература
 
     /* Адаптация списка книг для телефона */
     @media (max-width: 600px) {
-        .book-card {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 5px 10px 10px 10px; 
-            gap: 0px;
-        }
-        .book-cover {
-            width: 130px !important; /* Увеличиваем обложку на мобильном */
-            height: auto !important;
-            margin-bottom: 10px;
-        }
-        .book-info {
-            padding-top: 0 !important; /* Убираем боковой отступ, чтобы на мобильном не было дырки */
-        }
+        .book-card { padding: 0 10px 10px 10px; }
+        .book-cover { margin-bottom: 10px; }
     }
-
+    
 </style>
 
 В этом разделе собраны книги и учебники, проверенные временем и практикой.

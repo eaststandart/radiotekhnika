@@ -13,7 +13,7 @@ sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         display: block;
-        margin: -10px 0 20px 0;
+        margin: -15px 0 20px 0;
     }
     .book-biblio-desc {
         font-size: 0.9rem;

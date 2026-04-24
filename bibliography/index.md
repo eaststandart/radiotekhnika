@@ -3,6 +3,7 @@ layout: default
 title: Рекомендуемая литература
 ---
 <style>
+    /* Стили только для списка книг */
     .book-card {
         display: flex;
         flex-direction: row;
@@ -13,36 +14,10 @@ title: Рекомендуемая литература
         border-radius: 12px;
         border: 1px solid #eee;
         margin-bottom: 10px;
-        transition: transform 0.2s, box-shadow 0.2s;
         text-decoration: none;
         color: inherit;
     }
     
-    @media (max-width: 600px) {
-        .book-card {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            /* Сверху 8px, по бокам 10px, снизу 12px (для баланса) */
-            padding: 5px 10px 10px 10px; 
-            gap: 0px;
-        }
-        .book-cover {
-            width: 130px; 
-            height: auto;
-            margin-bottom: 10px; /* Расстояние от картинки до текста */
-        }
-        .book-info {
-            padding-top: 0px !important;
-        }
-    }
-
-    .book-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        border-color: var(--card-tech);
-    }
-
     .book-cover {
         width: 100px;
         height: 140px;
@@ -78,6 +53,25 @@ title: Рекомендуемая литература
         color: #666;
         line-height: 1.4;
     }
+
+    /* Адаптация списка книг для телефона */
+    @media (max-width: 600px) {
+        .book-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 5px 10px 10px 10px; 
+            gap: 0px;
+        }
+        .book-cover {
+            width: 130px; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .book-info {
+            padding-top: 0px !important;
+        }
+    }
 </style>
 
 В этом разделе собраны книги и учебники, проверенные временем и практикой.
@@ -85,15 +79,13 @@ title: Рекомендуемая литература
 <div class="bibliography-list">
 
 <!-- КНИГА 1 -->
-
 <a href="/bibliography/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="book-card">
-<img src="img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="book-cover">
+<img src="/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="book-cover">
 <div class="book-info">
-<h3>Энциклопедия юного радиолюбителя-конструктора. (2001)</h3>
+<h3>Энциклопедия юного радиолюбителя-конструктора (2001)</h3>
 <span class="book-author">Борисов В.Г.</span>
 <p>Классика инженерной литературы. Фундаментальные знания о радиосвязи и устройстве электронных компонентов.</p>
 </div>
 </a>
 
 </div>
-

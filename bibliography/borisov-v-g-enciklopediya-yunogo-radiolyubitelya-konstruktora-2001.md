@@ -25,7 +25,6 @@ sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/
 
 На фотографии версия книги 1992 года (http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1100-1199_.html) и её переиздание 2001 года (http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html). 
 
-</div>
 Смотри также другие материалы (https://t.me/RadiotekhnikaClub/4/489)
 
 </div>

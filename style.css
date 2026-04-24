@@ -287,3 +287,24 @@ img {
         margin: 0 auto 20px auto !important; /* Центрируем */
     }
 }
+
+/* Специальный класс для обложки книги и иллюстраций */
+.post-image {
+    max-width: 300px; /* Оптимальный размер для ПК */
+    width: 100%;     /* На телефоне займет всю ширину (но не более 300px) */
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;  /* Отступы сверху и снизу */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Если хочешь, чтобы иллюстрации внутри текста были шире обложки */
+.post-image-large {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+}
+

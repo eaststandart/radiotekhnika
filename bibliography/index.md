@@ -29,7 +29,7 @@ title: Рекомендуемая литература
 
     .book-info {
         flex: 1;
-        padding-top: 5px;
+        padding-top: 2px;
     }
 
     .book-info h3 {

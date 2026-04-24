@@ -250,3 +250,40 @@ img {
 .tag-item { background-color: #e1f5fe; color: #0288d1; padding: 2px 10px; border-radius: 15px; border: 1px solid #b3e5fc; }
 .tag-item:hover { background-color: #b3e5fc; color: #01579b; }
 .tag-item::before { content: "#"; margin-right: 1px; opacity: 0.7; }
+
+
+/* Контейнер для страницы книги */
+.book-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Настройка обложки: на ПК компактная, на мобильных адаптивная */
+.book-page-cover {
+    width: 250px;       /* Фиксированная ширина для ПК */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    margin: 0 auto 20px 0 !important; /* Прижимаем влево на ПК */
+}
+
+/* Библиографический блок */
+.book-biblio-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid var(--card-tech);
+    margin-bottom: 20px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+    .book-page-cover {
+        width: 100%;    /* На телефоне картинка на всю ширину */
+        max-width: 300px; /* Но не делаем её гигантской */
+        margin: 0 auto 20px auto !important; /* Центрируем */
+    }
+}

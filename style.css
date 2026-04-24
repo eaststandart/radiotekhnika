@@ -85,7 +85,13 @@ header {
     background: #fff;
 }
 
-h1 { margin: 10px 0; font-size: 2rem; }
+h1 {
+    font-size: 1.5rem; /* Было 2rem, мы сделали компактнее */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
 h2 { margin: 0; font-size: 1.3rem; color: #333; }
 header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 
@@ -293,6 +299,10 @@ img {
         margin-top: -5px;   /* Подтягиваем картинку еще выше на телефоне */
         margin-bottom: 15px; /* Уменьшаем отступ до текста снизу */
     }
+    h1 {
+        font-size: 1.4rem;
+    }
+}
 }
 
 /* Специальный класс для обложки книги и иллюстраций */

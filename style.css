@@ -52,8 +52,8 @@ h1 { margin: 10px 0; font-size: 2rem; }
     padding: 20px;
 }
 
-/* Универсальная настройка картинок в статьях (Борисов и др.) */
-.main-content img:not(.book-cover):not(.section-icon):not(.main-avatar) {
+/* Картинки в тексте (Борисов и иллюстрации) */
+.main-content img:not(.section-icon):not(.main-avatar) {
     max-width: 300px;
     width: 100%;
     height: auto;
@@ -126,5 +126,8 @@ h1 { margin: 10px 0; font-size: 2rem; }
 @media (max-width: 600px) {
     h1 { font-size: 1.6rem; }
     .content-wrapper { padding: 15px; width: 98%; }
-    .main-content img:not(.book-cover) { max-width: 100%; margin: 5px 0 15px 0; }
+    .main-content img:not(.section-icon) { 
+        max-width: 100%; 
+        margin: 5px 0 15px 0; 
+    }
 }

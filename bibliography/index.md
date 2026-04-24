@@ -24,13 +24,13 @@ title: Рекомендуемая литература
             align-items: center;
             text-align: center;
             /* Сверху 8px, по бокам 10px, снизу 12px (для баланса) */
-            padding: 8px 10px 12px 10px; 
+            padding: 8px 10px 10px 10px; 
             gap: 0px;
         }
         .book-cover {
             width: 130px; 
             height: auto;
-            margin-bottom: 8px; /* Расстояние от картинки до текста */
+            margin-bottom: 10px; /* Расстояние от картинки до текста */
         }
         .book-info {
             padding-top: 0px !important;

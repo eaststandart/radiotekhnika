@@ -9,7 +9,7 @@ title: Рекомендуемая литература
         align-items: flex-start;
         gap: 20px;
         background: #fff;
-        padding: 0 15px 5px 15px; 
+        padding: 0 15px 0px 15px; 
         border-radius: 12px;
         border: 1px solid #eee;
         margin-bottom: 10px;

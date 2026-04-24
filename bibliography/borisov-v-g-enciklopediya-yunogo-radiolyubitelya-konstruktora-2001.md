@@ -49,8 +49,6 @@ parent_name: "К списку литературы"
     }
 </style>
 
-<a href="/bibliography/" class="back-link">← Назад к списку литературы</a>
-
 <!-- Обернули картинки в ряд -->
 <div class="images-row">
     <img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка 2001" class="book-page-cover">

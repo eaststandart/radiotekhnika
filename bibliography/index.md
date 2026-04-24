@@ -6,6 +6,7 @@ title: Рекомендуемая литература
 <style>
     .book-card {
         display: flex;
+        flex-direction: row; /* По умолчанию в ряд (для ПК) */
         align-items: flex-start;
         gap: 20px;
         background: #fff;
@@ -17,6 +18,20 @@ title: Рекомендуемая литература
         text-decoration: none;
         color: inherit;
     }
+    
+    /* Адаптация для мобильных устройств */
+    @media (max-width: 600px) {
+        .book-card {
+            flex-direction: column; /* Переключаем в колонку */
+            align-items: center;    /* Центрируем обложку */
+            text-align: center;     /* Текст тоже по центру */
+        }
+        .book-cover {
+            width: 140px; /* На мобильном можно сделать обложку чуть крупнее */
+            height: auto;
+        }
+    }
+
     .book-card:hover {
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -28,7 +43,7 @@ title: Рекомендуемая литература
         object-fit: cover;
         border-radius: 5px;
         box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-        background: #f0f0f0; /* Заглушка, если нет фото */
+        background: #f0f0f0;
     }
     .book-info {
         flex: 1;
@@ -38,17 +53,17 @@ title: Рекомендуемая литература
         color: var(--card-tech);
         font-size: 1.2rem;
     }
-    .book-info p {
-        margin: 0;
-        font-size: 0.9rem;
-        color: #666;
-        line-height: 1.4;
-    }
     .book-author {
         font-weight: bold;
         display: block;
         margin-bottom: 5px;
         color: #333;
+    }
+    .book-info p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.4;
     }
 </style>
 

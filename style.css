@@ -53,14 +53,11 @@ h1 { margin: 10px 0; font-size: 2rem; }
 }
 
 /* Картинки в тексте (Борисов и иллюстрации) */
-.main-content img:not(.section-icon):not(.main-avatar) {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+.main-content img {
+    max-width: 100%; /* Картинка никогда не шире экрана */
+    height: auto;    /* Пропорции не искажаются */
     display: block;
     margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .back-link {

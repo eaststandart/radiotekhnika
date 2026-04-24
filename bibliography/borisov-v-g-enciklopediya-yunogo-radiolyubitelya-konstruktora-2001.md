@@ -25,16 +25,6 @@ parent_name: "К списку литературы"
         display: block;
     }
 
-    .book-biblio-desc {
-        font-size: 0.9rem;
-        line-height: 1.5;
-        color: #555;
-        background: #f9f9f9;
-        padding: 15px;
-        border-left: 4px solid var(--card-tech);
-        margin: 20px 0;
-    }
-
     /* Адаптация для мобильных (вертикальный режим) */
     @media (max-width: 600px) {
         .images-row {

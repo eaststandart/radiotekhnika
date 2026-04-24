@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="icon" type="image/svg" href="/img/favicon.svg">
+    <!-- Исправил тип favicon на image/svg+xml для корректной работы -->
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -17,39 +18,37 @@
             {{ content }}
         </div>
 
-<!-- Блок источников в одну линию -->
-{% if page.sources %}
-<div class="sources-inline">
-    <strong>Источники:</strong> 
-    <div class="sources-content">
-        {{ page.sources | markdownify }}
-    </div>
-</div>
-{% endif %}
+        <!-- Блок источников -->
+        {% if page.sources %}
+        <div class="sources-inline">
+            <strong>Источники:</strong> 
+            <div class="sources-content">
+                {{ page.sources | markdownify }}
+            </div>
+        </div>
+        {% endif %}
 
-<!-- Блок тегов -->
-{% if page.tags %}
-<div class="tag-container">
-    {% for tag in page.tags %}
-    <span class="tag-item">{{ tag }}</span>
-    {% endfor %}
-</div>
-{% endif %}
-        
+        <!-- Блок тегов -->
+        {% if page.tags %}
+        <div class="tag-container">
+            {% for tag in page.tags %}
+            <span class="tag-item">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Футер вынесен ЗА пределы контентного блока для правильной центровки -->
     <footer class="license-footer">
-    <!-- 2. Затем информация о владельце -->
-    <p style="margin-top: 0px; margin-bottom: 5px;">
-        © 2026 Творческая лаборатория познавательного развития
-    </p>
-
-    <!-- 3. В самом низу — условия использования -->
-    <p style="font-size: 0.8rem; color: #7f8c8d;">
-        Материалы сайта доступны по лицензии 
-        <a href="LICENSE" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
-        (с указанием авторства).
-    </p> 
+        <p style="margin-top: 0px; margin-bottom: 5px;">
+            © 2026 Творческая лаборатория познавательного развития
+        </p>
+        <p style="font-size: 0.8rem; color: #7f8c8d; margin: 0;">
+            Материалы сайта доступны по лицензии 
+            <a href="https://creativecommons.org" target="_blank" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
+            (с указанием авторства).
+        </p> 
     </footer>
-        
-    </div>
+
 </body>
 </html>

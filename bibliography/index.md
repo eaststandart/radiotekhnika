@@ -6,7 +6,7 @@ title: Рекомендуемая литература
     .book-card {
         display: flex;
         flex-direction: row;
-        align-items: center; /* Центрирует картинку и текст по вертикали друг относительно друга */
+        align-items: flex-start;
         gap: 20px;
         background: #fff;
         padding: 10px 15px;  /* Равномерные отступы 10px сверху и снизу */
@@ -17,13 +17,13 @@ title: Рекомендуемая литература
         color: inherit;
     }
     
-    .book-cover {
-        width: 90px !important;  /* Чуть уменьшили, чтобы легче входила */
-        height: 125px !important;
-        object-fit: cover;
-        border-radius: 5px;
-        box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-    }
+.book-cover {
+    width: 100px !important;
+    height: 140px !important;
+    margin-top: 4px; /* Этот отступ визуально "подтолкнет" картинку вниз, чтобы она встала вровень с буквами */
+    object-fit: cover;
+    border-radius: 5px;
+}
 
     .book-info {
         flex: 1;

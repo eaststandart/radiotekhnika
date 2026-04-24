@@ -11,9 +11,19 @@
 <body>
 
     <div class="content-wrapper">
-        <a href="/" class="back-link">← Назад на портал</a>
-        <h1>{{ page.title }}</h1> 
+        
+<div class="navigation-header" style="margin-bottom: 20px; font-size: 0.9rem;">
+    <!-- Всегда показываем ссылку на Главную -->
+    <a href="/" class="back-link" style="margin-bottom: 0;">← На портал</a>
 
+    <!-- Если в файле указан родительский раздел, добавляем его -->
+    {% if page.parent_url %}
+        <span style="color: #ccc; margin: 0 10px;">|</span>
+        <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
+    {% endif %}
+</div>
+        
+        <h1>{{ page.title }}</h1> 
         <div class="main-content">
             {{ content }}
         </div>

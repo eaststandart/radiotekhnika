@@ -52,7 +52,7 @@ h1 { margin: 10px 0; font-size: 2rem; }
     padding: 20px;
 }
 
-/* Картинки в тексте (Борисов и иллюстрации) */
+/* Картинки в тексте */
 .main-content img {
     max-width: 100%; /* Картинка никогда не шире экрана */
     height: auto;    /* Пропорции не искажаются */
@@ -68,7 +68,7 @@ h1 { margin: 10px 0; font-size: 2rem; }
     margin-bottom: 15px;
 }
 
-/* 3. ТЕГИ, ИСТОЧНИКИ И БИБЛИОГРАФИЯ */
+/* 3. ТЕГИ, ИСТОЧНИКИ */
 .sources-inline, .tag-container {
     margin-top: 20px;
     padding-top: 15px;
@@ -84,7 +84,6 @@ h1 { margin: 10px 0; font-size: 2rem; }
 .sources-content ul li:not(:last-child)::after { content: ", "; }
 
 .tag-item { background-color: #e1f5fe; color: #0288d1; padding: 2px 10px; border-radius: 15px; border: 1px solid #b3e5fc; text-decoration: none; }
-.tag-item:hover { background-color: #b3e5fc; color: #01579b; }
 .tag-item::before { content: "#"; margin-right: 1px; opacity: 0.7; }
 
 /* 4. ПОДВАЛ И КНОПКА TELEGRAM */

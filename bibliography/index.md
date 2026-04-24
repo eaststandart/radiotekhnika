@@ -54,20 +54,23 @@ title: Рекомендуемая литература
     /* Адаптация для телефона */
     @media (max-width: 600px) {
         .book-card { 
-            flex-direction: column; /* Текст уходит под картинку */
-            align-items: center;    /* Всё по центру */
+            flex-direction: column; 
+            align-items: center;    
             text-align: center;
             padding: 0 10px 15px 10px; 
+            gap: 0px;               /* 1. Убираем зазор между элементами */
         }
         .book-cover { 
             width: 130px !important; 
             height: auto !important;
-            margin-bottom: 10px; 
+            margin-bottom: 5px;    /* 2. Делаем минимальный отступ под картинкой */
         }
         .book-info h3 {
-            padding-top: 0 !important; /* На телефоне убираем отступ, который нужен был для ПК */
+            padding-top: 0 !important; /* 3. Обнуляем отступ, который на ПК */
+            margin-top: 0 !important;   /* 4. На всякий случай обнуляем маржин */
         }
     }
+
 </style>
 
 

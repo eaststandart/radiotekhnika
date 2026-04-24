@@ -8,12 +8,12 @@ title: Рекомендуемая литература
         display: flex;
         flex-direction: row; /* По умолчанию в ряд (для ПК) */
         align-items: flex-start;
-        gap: 20px;
+        gap: 15px;
         background: #fff;
-        padding: 20px;
+        padding: 10px;
         border-radius: 12px;
         border: 1px solid #eee;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         transition: transform 0.2s, box-shadow 0.2s;
         text-decoration: none;
         color: inherit;

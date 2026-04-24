@@ -29,7 +29,7 @@ title: Рекомендуемая литература
         .book-cover {
             width: 130px; 
             height: auto;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
     }
 
@@ -38,6 +38,7 @@ title: Рекомендуемая литература
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         border-color: var(--card-tech);
     }
+
     .book-cover {
         width: 100px;
         height: 140px;
@@ -46,27 +47,32 @@ title: Рекомендуемая литература
         box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
         background: #f0f0f0;
     }
+
     .book-info {
         flex: 1;
-        padding-top: 2px; /* Почти вплотную к верху */
+        padding-top: 5px; /* Чуть опустили текст от самого края */
     }
+
     .book-info h3 {
-        margin: 0 0 3px 0;
+        margin: 0 0 8px 0;    /* Увеличили отступ под названием книги */
         color: var(--card-tech);
-        font-size: 1.15rem; /* Чуть-чуть уменьшил, чтобы лучше входила в компактную высоту */
+        font-size: 1.15rem;
+        line-height: 1.2;
     }
+
     .book-author {
         font-weight: bold;
         display: block;
-        margin-bottom: 2px;
+        margin-bottom: 8px;   /* Увеличили отступ под именем автора */
         color: #333;
         font-size: 0.95rem;
     }
+
     .book-info p {
         margin: 0;
         font-size: 0.88rem;
         color: #666;
-        line-height: 1.3;
+        line-height: 1.4;    /* Чуть увеличили расстояние между строками описания */
     }
 </style>
 

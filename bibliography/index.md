@@ -3,14 +3,13 @@ layout: default
 title: Рекомендуемая литература
 ---
 <style>
-    /* Стили только для списка книг */
     .book-card {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center; /* Центрирует картинку и текст по вертикали друг относительно друга */
         gap: 20px;
         background: #fff;
-        padding: 5px 15px;
+        padding: 10px 15px;  /* Равномерные отступы 10px сверху и снизу */
         border-radius: 12px;
         border: 1px solid #eee;
         margin-bottom: 10px;
@@ -19,24 +18,22 @@ title: Рекомендуемая литература
     }
     
     .book-cover {
-        width: 100px !important;  /* Жестко фиксируем размер */
-        height: 140px !important; /* Жестко фиксируем размер */
+        width: 90px !important;  /* Чуть уменьшили, чтобы легче входила */
+        height: 125px !important;
         object-fit: cover;
         border-radius: 5px;
         box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-        background: #f0f0f0;
     }
 
     .book-info {
         flex: 1;
-        padding-top: 8px;
+        padding: 0; /* Убираем все смещения */
     }
 
     .book-info h3 {
-        margin: 0 0 8px 0;
+        margin: 0 0 5px 0; /* Только отступ снизу */
         color: var(--card-tech);
-        font-size: 1.15rem;
-        line-height: 1.2;
+        font-size: 1.1rem;
     }
 
     .book-author {

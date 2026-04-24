@@ -24,7 +24,7 @@ title: Рекомендуемая литература
             align-items: center;
             text-align: center;
             /* Сверху 8px, по бокам 10px, снизу 12px (для баланса) */
-            padding: 8px 10px 10px 10px; 
+            padding: 5px 10px 10px 10px; 
             gap: 0px;
         }
         .book-cover {

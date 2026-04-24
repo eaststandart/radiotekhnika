@@ -64,14 +64,15 @@ title: Рекомендуемая литература
             gap: 0px;
         }
         .book-cover {
-            width: 130px; 
-            height: auto;
+            width: 130px !important; /* Увеличиваем обложку на мобильном */
+            height: auto !important;
             margin-bottom: 10px;
         }
         .book-info {
-            padding-top: 0px !important;
+            padding-top: 0 !important; /* Убираем боковой отступ, чтобы на мобильном не было дырки */
         }
     }
+
 </style>
 
 В этом разделе собраны книги и учебники, проверенные временем и практикой.

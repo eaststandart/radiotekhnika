@@ -63,7 +63,7 @@ title: Рекомендуемая литература
             align-items: center;    
             text-align: center;
             /* Возвращаем 10px сверху, чтобы не прилипало к краю */
-            padding: 10px 10px 15px 10px; 
+            padding: 5px 10px 15px 10px; 
             gap: 0px;
         }
         .book-cover { 

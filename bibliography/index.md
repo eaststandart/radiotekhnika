@@ -29,7 +29,7 @@ title: Рекомендуемая литература
         .book-cover {
             width: 130px; 
             height: auto;
-            margin-bottom: 6px; /* Уменьшили отступ до названия в 2 раза */
+            margin-bottom: 0px; /* Уменьшили отступ до названия в 2 раза */
         }
     }
 
@@ -101,7 +101,7 @@ title: Рекомендуемая литература
         .book-cover {
             width: 130px; 
             height: auto;
-            margin-bottom: 5px; /* Уменьшили отступ до названия в 2 раза */
+            margin-bottom: 0px; /* Уменьшили отступ до названия в 2 раза */
         }
     }
 

@@ -30,7 +30,7 @@ title: Рекомендуемая литература
 
     .book-info h3 {
         margin: 0 0 8px 0;
-        padding-top: 15px; /* Этот отступ выравнивает текст по картинке на ПК */
+        padding-top: 10px; /* Этот отступ выравнивает текст по картинке на ПК */
         color: var(--card-tech);
         font-size: 1.15rem;
         line-height: 1.2;
@@ -65,7 +65,7 @@ title: Рекомендуемая литература
             margin-bottom: 10px; 
         }
         .book-info h3 {
-            padding-top: 0; /* На телефоне лишний отступ сверху не нужен */
+            padding-top: 5; /* На телефоне лишний отступ сверху не нужен */
         }
     }
 </style>

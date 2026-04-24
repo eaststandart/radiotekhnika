@@ -290,11 +290,11 @@ img {
 
 /* Специальный класс для обложки книги и иллюстраций */
 .post-image {
-    max-width: 300px; /* Размер на ПК */
-    width: 100%;      /* На мобильных на весь экран */
+    max-width: 300px; 
+    width: 100%;      
     height: auto;
     display: block;
-    margin: 0px 0;
+    margin: -10px 0 20px 0; /* -10px сверху притянет картинку выше, 20px снизу отодвинет текст */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }

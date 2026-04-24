@@ -6,17 +6,70 @@
     <title>Творческая лаборатория познавательного развития</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
+    <style>
+        /* Стили только для главной страницы */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid;
+            transition: transform 0.2s;
+        }
+        .category-card:hover { transform: translateY(-5px); }
+        .tech-creative { border-top-color: var(--card-tech); }
+        .my-projects { border-top-color: var(--card-my); }
+
+        .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .section-icon { 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #eee; 
+            background: #fff; 
+        }
+
+        h2 { margin: 0; font-size: 1.3rem; color: #333; }
+
+        .project-list { list-style: none; padding: 0; margin: 0; }
+        .project-list li { margin-bottom: 12px; }
+        .project-list a {
+            text-decoration: none;
+            color: #555;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+        .project-list a:hover { 
+            background: #fff; 
+            color: #000; 
+            border-color: #ddd; 
+            padding-left: 18px; 
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <img src="/img/logo.svg" alt="Логотип" class="main-avatar">
         <h1>Творческая лаборатория познавательного развития</h1>
-        <!-- <p>Инженерный портал для юных техников</p> -->
     </header>
 
     <div class="grid-container">
-        
         <!-- БЛОК 1 -->
         <section class="category-card my-projects">
             <div class="card-header">
@@ -45,26 +98,19 @@
                 <li><a href="#">Название раздела</a></li>
             </ul>
         </section>   
-        
     </div>
 
     <footer class="main-footer">
-        <!-- 1. Кнопка связи с правильной иконкой -->
         <a href="https://t.me/eaststandart" target="_blank" class="tg-button">
             <img src="https://wikimedia.org" alt="TG" class="tg-icon">
             Написать в Telegram
         </a>
-
-        <!-- 2. Информация о владельце -->
         <p style="margin-top: 30px; margin-bottom: 10px;">
             © 2026 Творческая лаборатория познавательного развития
         </p>
-
-        <!-- 3. Условия использования -->
         <p style="font-size: 0.8rem; color: #7f8c8d;">
             Материалы сайта доступны по лицензии 
             <a href="https://creativecommons.org" target="_blank" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
-            (с указанием авторства).
         </p>
     </footer>
     

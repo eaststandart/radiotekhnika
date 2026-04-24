@@ -10,10 +10,10 @@ title: Рекомендуемая литература
         align-items: flex-start;
         gap: 20px;
         background: #fff;
-        padding: 8px 15px;    /* Сверху и снизу 8px, по бокам 15px */
+        padding: 5px 15px;    /* Сверху и снизу 5px, по бокам 15px */
         border-radius: 12px;
         border: 1px solid #eee;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         transition: transform 0.2s, box-shadow 0.2s;
         text-decoration: none;
         color: inherit;
@@ -24,12 +24,12 @@ title: Рекомендуемая литература
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 12px 10px; /* На мобильных чуть больше для удобства нажатия */
+            padding: 10px 10px;
         }
         .book-cover {
-            width: 140px; 
+            width: 130px; 
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
     }
 
@@ -48,12 +48,12 @@ title: Рекомендуемая литература
     }
     .book-info {
         flex: 1;
-        padding-top: 4px; /* Текст чуть-чуть опускаем, чтобы он был на одной линии с верхом фото */
+        padding-top: 2px; /* Почти вплотную к верху */
     }
     .book-info h3 {
-        margin: 0 0 4px 0;
+        margin: 0 0 3px 0;
         color: var(--card-tech);
-        font-size: 1.2rem;
+        font-size: 1.15rem; /* Чуть-чуть уменьшил, чтобы лучше входила в компактную высоту */
     }
     .book-author {
         font-weight: bold;
@@ -64,9 +64,9 @@ title: Рекомендуемая литература
     }
     .book-info p {
         margin: 0;
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         color: #666;
-        line-height: 1.4;
+        line-height: 1.3;
     }
 </style>
 

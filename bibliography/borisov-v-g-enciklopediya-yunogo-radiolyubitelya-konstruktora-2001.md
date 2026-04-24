@@ -12,6 +12,10 @@ sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/
     
 <img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="post-image">
 
+<div class="book-page-content">
+    <img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка">
+</div>
+
 <div class="book-biblio-desc">
     <strong>Библиографическое описание:</strong><br>
     {{ page.bibliography }}

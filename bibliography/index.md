@@ -64,9 +64,7 @@ title: Рекомендуемая литература
             height: auto !important;
             margin-bottom: 10px; 
         }
-        .book-info h3 {
-            padding-top: 10; /* На телефоне лишний отступ сверху не нужен */
-        }
+
     }
 </style>
 

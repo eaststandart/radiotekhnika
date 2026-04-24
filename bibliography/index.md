@@ -8,12 +8,12 @@ title: Рекомендуемая литература
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        gap: 15px;            /* Уменьшили зазор между картинкой и текстом (было 20) */
+        gap: 20px;
         background: #fff;
-        padding: 12px;        /* Уменьшили внутренний отступ карточки (было 20) */
+        padding: 10px 15px;   /* Минимум сверху/снизу (10px) и стандарт по бокам (15px) */
         border-radius: 12px;
         border: 1px solid #eee;
-        margin-bottom: 15px;  /* Уменьшили отступ между карточками (было 20) */
+        margin-bottom: 12px;  /* Уменьшили расстояние между самими карточками */
         transition: transform 0.2s, box-shadow 0.2s;
         text-decoration: none;
         color: inherit;
@@ -24,12 +24,12 @@ title: Рекомендуемая литература
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 15px 10px; /* Немного больше отступов для мобильных */
+            padding: 15px 10px;
         }
         .book-cover {
-            width: 120px;    /* Чуть уменьшили ширину на мобильных (было 140) */
+            width: 140px; 
             height: auto;
-            margin-bottom: 5px; /* Зазор между фото и заголовком на мобильных */
+            margin-bottom: 10px;
         }
     }
 
@@ -39,8 +39,8 @@ title: Рекомендуемая литература
         border-color: var(--card-tech);
     }
     .book-cover {
-        width: 80px;         /* Уменьшили ширину обложки для ПК (было 100) */
-        height: 115px;       /* Уменьшили высоту обложки для ПК (было 140) */
+        width: 100px;         /* Вернул как было */
+        height: 140px;        /* Вернул как было */
         object-fit: cover;
         border-radius: 5px;
         box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
@@ -48,25 +48,25 @@ title: Рекомендуемая литература
     }
     .book-info {
         flex: 1;
+        padding-top: 5px;     /* Небольшой сдвиг текста вниз, чтобы был вровень с верхом картинки */
     }
     .book-info h3 {
-        margin: 0 0 5px 0;   /* Уменьшили отступ под заголовком (было 10) */
+        margin: 0 0 5px 0;    /* Плотный отступ под заголовком */
         color: var(--card-tech);
-        font-size: 1.1rem;   /* Чуть уменьшили размер шрифта (было 1.2) */
-        line-height: 1.2;
+        font-size: 1.2rem;
     }
     .book-author {
         font-weight: bold;
         display: block;
-        margin-bottom: 3px;  /* Уменьшили отступ под автором (было 5) */
+        margin-bottom: 3px;   /* Плотный отступ под автором */
         color: #333;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     .book-info p {
         margin: 0;
-        font-size: 0.85rem;  /* Чуть уменьшили текст описания (было 0.9) */
+        font-size: 0.9rem;
         color: #666;
-        line-height: 1.3;    /* Сделали строки плотнее */
+        line-height: 1.4;
     }
 </style>
 

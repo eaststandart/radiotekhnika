@@ -58,8 +58,8 @@ title: Рекомендуемая литература
 <a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="book-card">
     <img src="/img/books/cover1.jpg" alt="Обложка" class="book-cover">
     <div class="book-info">
-        <h3>Электроника для детей</h3>
-        <span class="book-author">Эйвинд Нидал Даль</span>
+        <h3>Энциклопедия юного радиолюбителя-конструктора. (2001)</h3>
+        <span class="book-author">Борисов В.Г.</span>
         <p>Лучшая книга для самого начала. Все объясняется на простых примерах и живых схемах без сложной математики.</p>
     </div>
 </a>

@@ -6,7 +6,7 @@ tags: [борисов, юныйрадиолюбительконструктор,
 sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html)"
 ---
 
-<a href="/bibliography/" class="back-link">← Назад к списку книг</a>
+<a href="/bibliography/" class="back-link">← Назад к списку литературы</a>
 
 <div class="book-page-content">
 

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <!-- Исправил тип favicon на image/svg+xml для корректной работы -->
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/shared-cards.css">
@@ -13,23 +12,24 @@
 
     <div class="content-wrapper">
         
-<div class="navigation-header" style="margin-bottom: 20px; font-size: 0.9rem;">
-    <!-- Всегда показываем ссылку на Главную -->
-    <a href="/" class="back-link" style="margin-bottom: 0;">← На портал</a>
+        <!-- Блок навигации -->
+        <div class="navigation-header" style="margin-bottom: 25px; font-size: 0.9rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px;">
+            <!-- Ссылка на корень сайта -->
+            <a href="/" class="back-link" style="margin-bottom: 0; color: #7f8c8d;">← На портал</a>
 
-    <!-- Если в файле указан родительский раздел, добавляем его -->
-    {% if page.parent_url %}
-        <span style="color: #ccc; margin: 0 10px;">|</span>
-        <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
-    {% endif %}
-</div>
+            <!-- Ссылка на родительский раздел (Библиотека, Дневник и т.д.) -->
+            {% if page.parent_url %}
+                <span style="color: #ccc; margin: 0 10px;">|</span>
+                <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
+            {% endif %}
+        </div>
         
         <h1>{{ page.title }}</h1> 
+
         <div class="main-content">
             {{ content }}
         </div>
 
-        <!-- Блок источников -->
         {% if page.sources %}
         <div class="sources-inline">
             <strong>Источники:</strong> 
@@ -39,7 +39,6 @@
         </div>
         {% endif %}
 
-        <!-- Блок тегов -->
         {% if page.tags %}
         <div class="tag-container">
             {% for tag in page.tags %}
@@ -49,7 +48,6 @@
         {% endif %}
     </div>
 
-    <!-- Футер вынесен ЗА пределы контентного блока для правильной центровки -->
     <footer class="license-footer">
         <p style="margin-top: 0px; margin-bottom: 5px;">
             © 2026 Творческая лаборатория познавательного развития
@@ -57,7 +55,6 @@
         <p style="font-size: 0.8rem; color: #7f8c8d; margin: 0;">
             Материалы сайта доступны по лицензии 
             <a href="https://creativecommons.org" target="_blank" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
-            (с указанием авторства).
         </p> 
     </footer>
 

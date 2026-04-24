@@ -1,4 +1,4 @@
-/* Общие стили для всех типов карточек (книги, заметки, темы) */
+/* Общий стиль карточек для всего портала */
 .item-card {
     display: flex;
     flex-direction: row;
@@ -14,24 +14,56 @@
     transition: transform 0.2s;
 }
 
-.item-card:hover { transform: translateY(-3px); }
-
 .item-image {
     width: 100px !important;
-    height: 120px !important;
+    height: 140px !important;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-.item-info { flex: 1; padding-top: 5px; }
-.item-info h3 { margin: 0 0 5px 0; color: var(--card-tech); font-size: 1.15rem; }
-.item-info .sub-text { font-weight: bold; display: block; margin-bottom: 5px; color: #333; font-size: 0.9rem; }
-.item-info p { margin: 0; font-size: 0.88rem; color: #666; line-height: 1.4; }
+.item-info {
+    flex: 1;
+    padding-top: 10px; /* Чтобы текст был вровень с верхом картинки на ПК */
+}
+
+.item-info h3 {
+    margin: 0 0 8px 0;
+    color: var(--card-tech);
+    font-size: 1.15rem;
+    line-height: 1.2;
+}
+
+.item-subtext {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.item-info p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.4;
+}
 
 /* Адаптация для мобильных */
 @media (max-width: 600px) {
-    .item-card { flex-direction: column; align-items: center; text-align: center; gap: 5px; }
-    .item-image { width: 130px !important; height: auto !important; margin-bottom: 5px; }
-    .item-info { padding-top: 0 !important; }
+    .item-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8px 10px 15px 10px;
+        gap: 0;
+    }
+    .item-image {
+        width: 130px !important;
+        height: auto !important;
+        margin-bottom: 10px;
+    }
+    .item-info {
+        padding-top: 0 !important;
+    }
 }

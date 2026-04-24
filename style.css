@@ -156,9 +156,9 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Универсальная настройка картинок в статьях */
-.main-content img {
-    max-width: 300px; /* Размер на ПК */
+/* Только для картинок внутри текста статей (Борисов и др.) */
+.main-content img:not(.book-cover) {
+    max-width: 300px; /* Ограничение на ПК */
     width: 100%;
     height: auto;
     display: block;
@@ -223,9 +223,9 @@ header p { margin: 0; color: #7f8c8d; font-size: 1.1rem; }
 @media (max-width: 600px) {
     h1 { font-size: 1.6rem; } /* Умеренный размер для телефона */
     
-    .main-content img {
-        max-width: 100%; /* На весь экран на телефоне */
-        margin: 5px 0 15px 0; /* Подтягиваем ближе к ссылке Назад */
+    .main-content img:not(.book-cover) {
+        max-width: 100%;
+        margin: 5px 0 15px 0;
     }
     
     .back-link { margin-bottom: 5px; }

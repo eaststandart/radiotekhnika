@@ -109,12 +109,11 @@ h1 { margin: 10px 0; font-size: 2rem; }
 
 .tg-icon { width: 20px; height: 20px; }
 
-/* 5. МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
-    h1 { font-size: 1.6rem; }
-    .content-wrapper { padding: 15px; width: 98%; }
-    .main-content img:not(.section-icon) { 
-        max-width: 100%; 
-        margin: 5px 0 15px 0; 
+    h1 { font-size: 1.5rem; }
+    .content-wrapper { 
+        width: 100%; 
+        padding: 15px 10px; 
+        border-radius: 0; /* На телефоне карточка без скруглений во весь экран смотрится лучше */
     }
 }

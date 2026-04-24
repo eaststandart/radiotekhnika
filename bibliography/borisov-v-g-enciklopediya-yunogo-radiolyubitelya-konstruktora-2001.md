@@ -34,7 +34,6 @@ sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/
 </style>
 
 <a href="/bibliography/" class="back-link">← Назад к списку литературы</a>
-
 <img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="book-page-cover">
 
 <div class="book-biblio-desc">

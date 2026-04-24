@@ -23,19 +23,16 @@ title: Рекомендуемая литература
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 8px 10px;
-            gap: 0px; /* Убираем зазор между флекс-элементами на телефоне */
+            padding: 10px;
+            gap: 0px; /* Отключаем автоматический зазор */
         }
         .book-cover {
             width: 130px; 
             height: auto;
-            margin-bottom: -5px; /* Подтягиваем текст к картинке */
+            margin-bottom: 8px; /* Вот этот отступ от картинки до текста (измени на свой вкус) */
         }
         .book-info {
-            padding-top: 0px !important; /* Убираем верхний отступ текста на телефоне */
-        }
-        .book-info h3 {
-            margin-top: 5px; /* Регулируем точное расстояние до названия */
+            padding-top: 0px !important; /* Убираем смещение текста, которое нужно для ПК */
         }
     }
 

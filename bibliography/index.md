@@ -21,7 +21,12 @@ title: Рекомендуемая литература
         width: 100px !important;
         height: 140px !important;
         object-fit: cover;
-        border-radius: 0 0 5px 5px;
+        /* Возвращаем скругление со всех сторон */
+        border-radius: 8px; 
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        background: #f0f0f0;
+        /* Если хочешь вернуть микро-отступ сверху на ПК */
+        margin-top: 5px; 
     }
 
     .book-info {
@@ -57,13 +62,15 @@ title: Рекомендуемая литература
             flex-direction: column; 
             align-items: center;    
             text-align: center;
-            padding: 0 10px 15px 10px; 
-            gap: 0px;               /* 1. Убираем зазор между элементами */
+            /* Возвращаем 10px сверху, чтобы не прилипало к краю */
+            padding: 10px 10px 15px 10px; 
+            gap: 0px;
         }
         .book-cover { 
             width: 130px !important; 
             height: auto !important;
-            margin-bottom: 5px;    /* 2. Делаем минимальный отступ под картинкой */
+            margin-top: 0;
+            margin-bottom: 10px; 
         }
         .book-info h3 {
             padding-top: 0 !important; /* 3. Обнуляем отступ, который на ПК */

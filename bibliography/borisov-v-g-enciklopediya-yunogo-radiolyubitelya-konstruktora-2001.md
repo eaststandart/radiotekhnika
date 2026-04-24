@@ -9,7 +9,7 @@ sources: "[Борисов Виктор Гаврилович](http://lib.ru)"
 <style>
     /* 1. Настройка обложки только для этой страницы */
     .book-page-cover {
-        width: 220px; /* Уменьшили размер на ПК (было 250-300) */
+        width: 150px; /* Уменьшили размер на ПК (было 250-300) */
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.15);

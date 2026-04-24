@@ -294,7 +294,7 @@ img {
     width: 100%;      
     height: auto;
     display: block;
-    margin: -10px 0 20px 0; /* -10px сверху притянет картинку выше, 20px снизу отодвинет текст */
+    margin: -10px 0 10px 0; /* -10px сверху притянет картинку выше, 20px снизу отодвинет текст */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }

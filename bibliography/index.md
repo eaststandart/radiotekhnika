@@ -9,7 +9,6 @@ title: Рекомендуемая литература
         align-items: flex-start;
         gap: 20px;
         background: #fff;
-        /* Сверху 0, по бокам 15px, снизу 10px для компактности */
         padding: 0 15px 10px 15px; 
         border-radius: 12px;
         border: 1px solid #eee;
@@ -21,19 +20,17 @@ title: Рекомендуемая литература
     .book-cover {
         width: 100px !important;
         height: 140px !important;
-        margin-top: 0 !important; /* Убираем любой отступ сверху у картинки */
         object-fit: cover;
-        border-radius: 0 0 5px 5px; /* Скругляем только низ, если она прижата к верху */
+        border-radius: 0 0 5px 5px;
     }
 
     .book-info {
         flex: 1;
-        padding-top: 0; /* Обнуляем всё лишнее */
     }
 
     .book-info h3 {
-        margin: 0 0 8px 0; /* Строго 0 сверху, чтобы коснуться рамки */
-        padding-top: 5px;  /* Небольшой микронный отступ, если буквы "режутся" об рамку */
+        margin: 0 0 8px 0;
+        padding-top: 8px; /* Этот отступ выравнивает текст по картинке на ПК */
         color: var(--card-tech);
         font-size: 1.15rem;
         line-height: 1.2;
@@ -54,13 +51,25 @@ title: Рекомендуемая литература
         line-height: 1.4;
     }
 
-    /* Адаптация списка книг для телефона */
+    /* Адаптация для телефона */
     @media (max-width: 600px) {
-        .book-card { padding: 0 10px 10px 10px; }
-        .book-cover { margin-bottom: 10px; }
+        .book-card { 
+            flex-direction: column; /* Текст уходит под картинку */
+            align-items: center;    /* Всё по центру */
+            text-align: center;
+            padding: 0 10px 15px 10px; 
+        }
+        .book-cover { 
+            width: 130px !important; 
+            height: auto !important;
+            margin-bottom: 10px; 
+        }
+        .book-info h3 {
+            padding-top: 0; /* На телефоне лишний отступ сверху не нужен */
+        }
     }
-    
 </style>
+
 
 В этом разделе собраны книги и учебники, проверенные временем и практикой.
 

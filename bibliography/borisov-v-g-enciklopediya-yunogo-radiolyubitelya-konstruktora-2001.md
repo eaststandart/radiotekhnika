@@ -2,14 +2,11 @@
 layout: default
 title: Энциклопедия юного радиолюбителя-конструктора
 bibliography: "Борисов В.Г. Энциклопедия юного радиолюбителя-конструктора / В. Г. Борисов. — 9. изд., перераб. и доп. — М.: Солон-Р, 2001. — 526 с.: ил. — ISBN 5-93455-100-0, ББК 32.84."
-tags: [борисов, юныйрадиолюбительконструктор, юныйрадиолюбитель, среднийвозраст, старшийвозраст]
+tags: [борисов, радиолюбитель, электроника, энциклопедия]
 sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html)"
 ---
 
 <a href="/bibliography/" class="back-link">← Назад к списку литературы</a>
-
-<img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка">
-
 
 <div class="book-page-content">
 
@@ -26,6 +23,9 @@ sources: "[Борисов Виктор Гаврилович](http://publ.lib.ru/
 
 Радиосвязь особенно необходима там, где другая техника бессильна и требуется управление и контроль. Например, в космосе – для управления космическими аппаратами, а также для связи с дальними планетами. Чтобы понимать всё это и уметь создавать новые технологии, человеку нужны знания в области радиотехники и радиоэлектроники. В этом поможет книга [[Борисов Виктор Гаврилович|Борисова В.Г.]] (https://habr.com/ru/articles/393573/) – советского радиоинженера, автора многих изданий по организации детского технического творчества.
 
-На фотографии версия книги 1992 года (http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1100-1199_.html) и её переиздание 2001 года (http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html). Смотри также другие материалы (https://t.me/RadiotekhnikaClub/4/489)
+На фотографии версия книги 1992 года (http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1100-1199_.html) и её переиздание 2001 года (http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html). 
+
+</div>
+Смотри также другие материалы (https://t.me/RadiotekhnikaClub/4/489)
 
 </div>

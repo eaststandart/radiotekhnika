@@ -1,0 +1,37 @@
+/* Общие стили для всех типов карточек (книги, заметки, темы) */
+.item-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.item-card:hover { transform: translateY(-3px); }
+
+.item-image {
+    width: 100px !important;
+    height: 120px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.item-info { flex: 1; padding-top: 5px; }
+.item-info h3 { margin: 0 0 5px 0; color: var(--card-tech); font-size: 1.15rem; }
+.item-info .sub-text { font-weight: bold; display: block; margin-bottom: 5px; color: #333; font-size: 0.9rem; }
+.item-info p { margin: 0; font-size: 0.88rem; color: #666; line-height: 1.4; }
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+    .item-card { flex-direction: column; align-items: center; text-align: center; gap: 5px; }
+    .item-image { width: 130px !important; height: auto !important; margin-bottom: 5px; }
+    .item-info { padding-top: 0 !important; }
+}

@@ -55,7 +55,7 @@ title: Рекомендуемая литература
 В этом разделе собраны книги и учебники, проверенные временем и практикой.
 
 <!-- ПРИМЕР КНИГИ 1 -->
-<a href="electronics-for-kids.html" class="book-card">
+<a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="book-card">
     <img src="/img/books/cover1.jpg" alt="Обложка" class="book-cover">
     <div class="book-info">
         <h3>Электроника для детей</h3>

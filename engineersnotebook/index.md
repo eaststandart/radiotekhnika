@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Дневник инженера
-parent_url: "/"
-parent_name: "На главную"
 ---
 
 <!-- Мы не пишем здесь стили, они подгрузятся из shared-cards.css -->

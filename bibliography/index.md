@@ -54,13 +54,13 @@ title: Рекомендуемая литература
 
 В этом разделе собраны книги и учебники, проверенные временем и практикой.
 
-<!-- ПРИМЕР КНИГИ 1 -->
-<a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="book-card">
-    <img src="/img/books/cover1.jpg" alt="Обложка" class="book-cover">
+<!-- КНИГА 1 -->
+<a href="/bibliography/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="book-card">
+    <img src="/img/books/borisov.jpg" alt="Обложка" class="book-cover">
     <div class="book-info">
         <h3>Энциклопедия юного радиолюбителя-конструктора. (2001)</h3>
         <span class="book-author">Борисов В.Г.</span>
-        <p>Лучшая книга для самого начала. Все объясняется на простых примерах и живых схемах без сложной математики.</p>
+        <p>Классика инженерной литературы. Фундаментальные знания о радиосвязи и устройстве электронных компонентов.</p>
     </div>
 </a>
 

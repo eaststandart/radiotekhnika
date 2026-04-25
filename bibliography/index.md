@@ -9,7 +9,7 @@ title: Рекомендуемая литература
 
 <!-- КНИГА 1 -->
 <a href="/bibliography/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="item-card">
-<img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
+<img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" alt="Обложка" class="item-image">
 <div class="item-info">
 <h3>Энциклопедия юного радиолюбителя-конструктора</h3>
 <span class="item-subtext">Борисов В.Г.</span>

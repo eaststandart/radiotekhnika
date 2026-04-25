@@ -7,7 +7,7 @@ title: Дневник инженера
 
 <div class="diary-list">
     <a href="note-schematics.html" class="item-card">
-        <img src="/engineersnotebook/img/getting started in electronics {cover}.webp" class="item-image">
+        <img src="/engineersnotebook/img/1.png" class="item-image">
         <div class="item-info">
             <h3>Первые шаги в электронике</h3>
             <span class="item-subtext">Раздел: Аналоговая электроника.</span>

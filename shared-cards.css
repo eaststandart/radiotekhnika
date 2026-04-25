@@ -22,6 +22,15 @@
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Круглая версия картинки для карточек */
+.item-image-round {
+    width: 100px !important;
+    height: 100px !important; /* Строго квадрат для идеального круга */
+    object-fit: cover;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 .item-info {
     flex: 1;
     padding-top: 10px; /* Чтобы текст был вровень с верхом картинки на ПК */

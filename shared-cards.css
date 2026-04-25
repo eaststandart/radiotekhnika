@@ -24,8 +24,8 @@
 
 /* Круглая версия картинки для карточек */
 .item-image-round {
-    width: 100px !important;
-    height: 100px !important; /* Строго квадрат для идеального круга */
+    width: 140px !important;
+    height: 140px !important; /* Строго квадрат для идеального круга */
     object-fit: cover;
     border-radius: 50% !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with "sPlan" (http://www.abacom-online.de) -->
+
+<svg
+   width="40.299999mm"
+   height="40.299999mm"
+   version="1.1"
+   viewBox="0 0 403 403"
+   id="svg9"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1"><![CDATA[
+polyline {stroke-linecap:round; stroke-linejoin:round}
+polygon {stroke-linecap:round; stroke-linejoin:round}
+path {stroke-linecap:round; stroke-linejoin:round}
+circle {stroke-linecap:round; stroke-linejoin:round}
+]]></style>
+  </defs>
+  <circle
+     cx="201.5"
+     cy="201.5"
+     r="201"
+     fill="#ffffff"
+     stroke="#f9f9f9"
+     id="circle1" />
+  <polyline
+     transform="translate(-39.97,-39.039993)"
+     points="241.47 333.72 241.47 439.19"
+     stroke="#9dceff"
+     stroke-width="4"
+     id="polyline1"
+     style="fill:none;stroke:#a5fabf;stroke-opacity:1" />
+  <circle
+     cx="201.5"
+     cy="201.5"
+     r="185.42999"
+     stroke="#0088ea"
+     stroke-width="6"
+     id="circle2"
+     style="fill:none;stroke:#2ecc71;stroke-opacity:1" />
+  <g
+     stroke="#9dceff"
+     stroke-width="4"
+     id="g5"
+     transform="translate(0.58,0.46000668)"
+     style="fill:#008000;stroke:#a5fcab;stroke-opacity:1">
+    <polyline
+       transform="translate(-40,-39.5)"
+       points="170.06 308.8 80.71 167.28"
+       id="polyline2"
+       style="fill:#008000;stroke:#a5fcab;stroke-opacity:1" />
+    <polyline
+       transform="translate(-40,-39.5)"
+       points="287.83 352.72 399.09 167.28"
+       id="polyline3"
+       style="fill:#008000;stroke:#a5fcab;stroke-opacity:1" />
+    <polyline
+       transform="translate(-40,-39.5)"
+       points="57.94 167.28 80.71 167.28"
+       id="polyline4"
+       style="fill:#008000;stroke:#a5fcab;stroke-opacity:1" />
+    <polyline
+       transform="translate(-40,-39.5)"
+       points="399.09 167.28 423.9 167.28"
+       id="polyline5"
+       style="fill:#008000;stroke:#a5fcab;stroke-opacity:1" />
+  </g>
+  <polygon
+     transform="translate(-36.5,-39.039993)"
+     points="329,356 147,356 147,320 329,320 "
+     fill="#9dceff"
+     stroke="#9dceff"
+     stroke-width="2"
+     id="polygon6"
+     style="fill:#a5fcab;fill-opacity:1;stroke:#a5fcab;stroke-opacity:1" />
+  <polygon
+     transform="translate(-40,-39.039993)"
+     points="168,274 141,291 176,319 "
+     fill="#9dceff"
+     stroke="#9dceff"
+     id="polygon7"
+     style="fill:#a5fcab;fill-opacity:1;stroke:#a5fcab;stroke-opacity:1" />
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="" />
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="text9-8"
+     style="font-size:77.1446px;font-family:Rubik;-inkscape-font-specification:'Rubik, Normal';text-align:center;letter-spacing:3.96875px;text-anchor:middle;fill:#00274d;stroke:#00274d;stroke-width:1.52009"
+     transform="scale(1.0137326,0.98645343)"
+     aria-label="ЗНАЙ&#10;И&#10;УМЕЙ">
+    <path
+       style="font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed';fill:#ff0000;stroke:#ff0000;stroke-width:1.52008"
+       d="m 143.03524,137.13973 q -4.48252,0 -7.68433,-1.5444 -3.16413,-1.5444 -4.82153,-4.48252 -1.65741,-2.93813 -1.65741,-7.08163 v -3.01347 h 7.15697 v 2.67445 q 0,3.2018 1.80808,4.93454 1.84574,1.73274 5.19822,1.73274 3.16413,0 4.89687,-1.88341 1.77041,-1.88341 1.77041,-5.31122 v -5.87625 q 0,-2.78745 -1.16771,-4.29418 -1.16772,-1.50674 -3.31481,-1.50674 h -7.948 v -6.78028 h 7.948 q 1.69507,0 2.63678,-1.20539 0.9417,-1.20538 0.9417,-3.39014 v -5.838581 q 0,-2.975793 -1.50673,-4.595528 -1.50673,-1.657403 -4.29418,-1.657403 -2.90045,0 -4.48252,1.657403 -1.58207,1.657404 -1.58207,4.633196 v 2.674447 h -7.15697 v -2.636778 q 0,-4.143509 1.58207,-7.081634 1.61973,-2.938124 4.67086,-4.482523 3.05113,-1.544398 7.34531,-1.544398 3.99284,0 6.78029,1.544398 2.82512,1.544399 4.29418,4.520192 1.50673,2.938124 1.50673,7.081633 v 5.800916 q 0,1.99641 -1.24305,4.0305 -1.24305,2.03409 -3.50315,3.76683 2.67445,1.09238 4.14351,3.54081 1.50673,2.44844 1.50673,5.76325 v 5.87625 q 0,4.40718 -1.61973,7.57132 -1.61974,3.12646 -4.7462,4.78387 -3.0888,1.61973 -7.45832,1.61973 z"
+       id="path1" />
+    <path
+       style="font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed';stroke-width:1.52008"
+       d="m 184.37091,81.805055 h 7.15697 v 54.769655 h -7.15697 z m -18.08077,0 h 7.19464 v 54.769655 h -7.19464 z m 4.78387,24.409035 h 16.80005 v 6.78029 h -16.80005 z m 41.22266,-24.409035 h 6.55428 l 12.65653,54.769655 h -7.68432 l -8.24935,-43.544513 -8.24935,43.544513 h -7.68433 z m -4.55786,36.086195 h 16.23502 v 6.74262 h -16.23502 z m 52.63615,18.64579 V 96.495677 l 0.90404,0.979374 -14.9543,39.061989 h -5.95159 V 81.805055 h 6.89329 v 40.305035 l -0.90404,-0.97937 15.02964,-39.325665 h 5.87625 v 54.731985 z m 3.50315,-70.138304 q 0,5.461897 -2.59911,8.475358 -2.59911,3.013461 -7.30765,3.013461 h -0.30134 q -4.70854,0 -7.30765,-3.013461 -2.59911,-3.013461 -2.59911,-8.475358 l 6.21527,0.07534 q 0,2.749783 0.9417,4.294182 0.97938,1.50673 2.74979,1.50673 h 0.30134 q 1.77041,0 2.71212,-1.50673 0.97937,-1.544399 0.97937,-4.294182 z"
+       id="path2" />
+    <path
+       style="font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed'"
+       d="m 205.00107,233.34701 v -40.04136 l 0.90404,0.97938 -14.9543,39.06198 h -5.95159 v -54.73198 h 6.8933 v 40.30504 l -0.90404,-0.97937 15.02963,-39.32567 h 5.87625 v 54.73198 z"
+       id="path3" />
+    <path
+       style="font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed';fill:#ff0000;stroke:#ff0000"
+       d="m 128.01239,275.42501 h 7.60899 l 7.79733,41.09607 -4.59552,6.13993 z m 18.64579,45.31491 q -0.75336,3.35248 -2.26009,5.57491 -1.46906,2.22242 -3.76683,3.35247 -2.29776,1.09238 -5.42423,1.09238 h -3.35247 v -7.15697 h 3.35247 q 1.50673,0 2.67445,-0.64036 1.16772,-0.67803 1.95875,-1.95875 0.8287,-1.31839 1.20538,-3.23947 l 8.73904,-42.33912 h 7.23231 z"
+       id="path4" />
+    <path
+       style="font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Condensed'"
+       d="m 193.1544,275.42501 h 6.2906 v 54.76965 h -6.55427 V 288.7219 l 0.64036,2.41077 -9.41707,30.09694 h -4.59553 l -9.37939,-29.34357 0.86637,-3.16414 v 41.47276 h -6.81796 v -54.76965 h 6.55428 l 11.07447,34.39112 z m 17.79301,0 h 7.15697 v 54.76965 h -7.15697 z m 3.72915,47.98936 h 19.77584 v 6.78029 h -19.77584 z m 0,-23.80634 h 17.89243 v 6.78029 h -17.89243 z m 0,-24.18302 h 19.77584 v 6.78028 h -19.77584 z m 49.39668,54.73198 v -40.04136 l 0.90404,0.97937 -14.9543,39.06199 h -5.95159 v -54.73198 h 6.89329 v 40.30504 l -0.90404,-0.97938 15.02964,-39.32566 h 5.87625 v 54.73198 z m 3.50315,-70.1383 q 0,5.46189 -2.59911,8.47536 -2.59911,3.01346 -7.30765,3.01346 h -0.30134 q -4.70854,0 -7.30765,-3.01346 -2.59911,-3.01347 -2.59911,-8.47536 l 6.21527,0.0753 q 0,2.74979 0.9417,4.29418 0.97938,1.50674 2.74979,1.50674 h 0.30134 q 1.77041,0 2.71212,-1.50674 0.97937,-1.54439 0.97937,-4.29418 z"
+       id="path5" />
+  </g>
+</svg>

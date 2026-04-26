@@ -3,8 +3,6 @@ layout: default
 title: Дневник инженера
 ---
 
-<!-- Мы не пишем здесь стили, они подгрузятся из shared-cards.css -->
-
 <div class="diary-list">
     <a href="note-schematics.html" class="item-card">
         <img src="/engineersnotebook/img/getting started in electronics {cover}.webp" class="item-image-round">

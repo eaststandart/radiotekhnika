@@ -33,6 +33,15 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      x="0.92246503"
      y="0.92246503"
      rx="398.15457" />
+  <path
+     style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     id="rect2"
+     width="169.25"
+     height="122.0238"
+     x="114.16809"
+     y="32.948105"
+     d="m 158.49866,32.948105 h 80.59928 a 44.320146,44.320146 45 0 1 44.32015,44.320146 v 77.703659 h -169.25 V 77.278671 a 44.330566,44.330566 135 0 1 44.33057,-44.330566 z"
+     transform="matrix(1.0450156,0,0,1.0450156,-9.0031181,-1.3562366)" />
   <metadata
      id="metadata1">
     <rdf:RDF>
@@ -50,49 +59,36 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      id="polygon15-4"
      transform="matrix(2.6864613,0,0,2.982918,-447.43718,-238.6381)"
      style="display:none;stroke-linecap:round;stroke-linejoin:round" />
-  <g
-     id="g3"
-     transform="translate(0,1.2286198)">
-    <polyline
-       points="221.00 141.99 221.00 203.10"
-       fill="none"
-       stroke="#d6d6d6"
-       stroke-width="4"
-       id="polyline12-4"
-       transform="matrix(2.8629756,0,0,2.6196988,-501.23723,-182.13551)"
-       style="display:inline;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
-    <polyline
-       points="240.66 141.99 240.66 203.10"
-       fill="none"
-       stroke="#d6d6d6"
-       stroke-width="4"
-       id="polyline13-8"
-       transform="matrix(2.8629756,0,0,2.6196988,-489.9585,-182.13551)"
-       style="display:inline;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
-    <polyline
-       points="260.33 141.99 260.33 203.10"
-       fill="none"
-       stroke="#d6d6d6"
-       stroke-width="4"
-       id="polyline14-8"
-       transform="matrix(2.8629756,0,0,2.6196988,-478.67978,-182.13551)"
-       style="stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
-    <polygon
-       points="285,142 285,130 197,130 197,142 "
-       fill="#d6d6d6"
-       stroke="#d6d6d6"
-       stroke-width="4"
-       id="polygon14-2"
-       transform="matrix(2.807394,0,0,3.1171958,-476.58195,-251.96539)"
-       style="stroke-linecap:round;stroke-linejoin:round" />
-    <path
-       style="display:inline;fill:#d6d6d6;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2"
-       width="169.25"
-       height="122.0238"
-       x="114.16809"
-       y="32.948105"
-       d="m 158.49866,32.948105 h 80.59928 a 44.320146,44.320146 45 0 1 44.32015,44.320146 v 77.703659 h -169.25 V 77.278671 a 44.330566,44.330566 135 0 1 44.33057,-44.330566 z"
-       transform="matrix(1.0450156,0,0,1.0450156,-9.0031181,-2.5848564)" />
-  </g>
+  <polyline
+     points="221.00 141.99 221.00 203.10"
+     fill="none"
+     stroke="#d6d6d6"
+     stroke-width="4"
+     id="polyline12-4"
+     transform="matrix(2.8629756,0,0,2.6196988,-501.23723,-180.90689)"
+     style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+  <polyline
+     points="240.66 141.99 240.66 203.10"
+     fill="none"
+     stroke="#d6d6d6"
+     stroke-width="4"
+     id="polyline13-8"
+     transform="matrix(2.8629756,0,0,2.6196988,-489.9585,-180.90689)"
+     style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+  <polyline
+     points="260.33 141.99 260.33 203.10"
+     fill="none"
+     stroke="#d6d6d6"
+     stroke-width="4"
+     id="polyline14-8"
+     transform="matrix(2.8629756,0,0,2.6196988,-478.67978,-180.90689)"
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
+  <polygon
+     points="197,130 197,142 285,142 285,130 "
+     fill="#d6d6d6"
+     stroke="#d6d6d6"
+     stroke-width="4"
+     id="polygon14-2"
+     transform="matrix(2.807394,0,0,3.1171958,-476.58195,-250.73677)"
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round" />
 </svg>

@@ -34,7 +34,7 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      y="0.92246503"
      rx="398.15457" />
   <path
-     style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      id="rect2"
      width="169.25"
      height="122.0238"
@@ -66,7 +66,7 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polyline12-4"
      transform="matrix(2.8629756,0,0,2.6196988,-501.23723,-180.90689)"
-     style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
   <polyline
      points="240.66 141.99 240.66 203.10"
      fill="none"
@@ -74,7 +74,7 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polyline13-8"
      transform="matrix(2.8629756,0,0,2.6196988,-489.9585,-180.90689)"
-     style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
   <polyline
      points="260.33 141.99 260.33 203.10"
      fill="none"
@@ -82,7 +82,7 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polyline14-8"
      transform="matrix(2.8629756,0,0,2.6196988,-478.67978,-180.90689)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
   <polygon
      points="197,130 197,142 285,142 285,130 "
      fill="#d6d6d6"
@@ -90,5 +90,5 @@ circle {stroke-linecap:round; stroke-linejoin:round}
      stroke-width="4"
      id="polygon14-2"
      transform="matrix(2.807394,0,0,3.1171958,-476.58195,-250.73677)"
-     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round" />
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round" />
 </svg>

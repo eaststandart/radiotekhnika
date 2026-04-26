@@ -4,80 +4,18 @@
 <svg
    version="1.1"
    width="40mm"
-   height="40mm"
-   viewBox="0 0 400 399.99999"
+   height="40.000004mm"
+   viewBox="0 0 400 400.00003"
    id="svg15"
-   sodipodi:docname="favicon.svg"
-   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   inkscape:export-filename="favicon.svg"
-   inkscape:export-xdpi="31.75"
-   inkscape:export-ydpi="31.75"
-   inkscape:export-batch-path="C:\Users\User\Desktop"
-   inkscape:export-batch-name="logo1"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <sodipodi:namedview
-     id="namedview15"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="59.220193"
-     inkscape:cy="75.748814"
-     inkscape:window-width="1920"
-     inkscape:window-height="1124"
-     inkscape:window-x="1590"
-     inkscape:window-y="-10"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg15" />
   <title
      id="title1">logo</title>
   <defs
      id="defs1">
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect3"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,44.330566,0,1 @ F,0,0,1,0,44.320146,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="0"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect2"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,53.033755,0,1 @ F,0,0,1,0,52.968964,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="0"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
     <style
        type="text/css"
        id="style1"><![CDATA[
@@ -86,57 +24,6 @@ polygon {stroke-linecap:round; stroke-linejoin:round}
 path {stroke-linecap:round; stroke-linejoin:round}
 circle {stroke-linecap:round; stroke-linejoin:round}
 ]]></style>
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect1-5-1"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,1,1,0,6.6972654,0,1 @ F,0,0,1,0,0,0,1 @ F,0,1,1,0,6.6972654,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="2.5"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="true"
-       hide_knots="false" />
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect1-5-1-9"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,1,1,0,6.6972654,0,1 @ F,0,0,1,0,0,0,1 @ F,0,1,1,0,6.6972654,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="2.5"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="true"
-       hide_knots="false" />
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect1-5-1-5"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,1,1,0,6.6972654,0,1 @ F,0,0,1,0,0,0,1 @ F,0,1,1,0,6.6972654,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="2.5"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="true"
-       hide_knots="false" />
   </defs>
   <rect
      style="display:inline;fill:#00c22d;fill-opacity:1;stroke:#00c22d;stroke-width:1.84493;stroke-dasharray:none;stroke-opacity:1"
@@ -155,54 +42,57 @@ circle {stroke-linecap:round; stroke-linejoin:round}
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <polyline
-     points="221.00 141.99 221.00 203.10"
-     fill="none"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polyline12-4"
-     transform="matrix(2.6864613,0,0,2.982918,-452.72885,-238.6381)"
-     style="display:inline;stroke-width:11.2159;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none" />
-  <polyline
-     points="240.66 141.99 240.66 203.10"
-     fill="none"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polyline13-8"
-     transform="matrix(2.6864613,0,0,2.982918,-447.43718,-238.6381)"
-     style="display:inline;stroke-width:11.2159;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none" />
-  <polyline
-     points="260.33 141.99 260.33 203.10"
-     fill="none"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polyline14-8"
-     transform="matrix(2.6864613,0,0,2.982918,-442.14551,-238.6381)"
-     style="stroke-width:11.2159;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
   <polygon
-     points="197,142 285,142 285,130 197,130 "
-     fill="#d6d6d6"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polygon14-2"
-     transform="matrix(2.6864613,0,0,2.982918,-447.43718,-238.6381)"
-     style="stroke-linecap:round;stroke-linejoin:round" />
-  <polygon
-     points="270,105 270,107 270,130 256,130 254,130 227,130 211,130 211,116 211,107 212,102 214,99 216,96 219,95 222,94 225,93 227,93 254,93 259,94 263,95 266,97 268,100 269,102 "
+     points="211,130 211,116 211,107 212,102 214,99 216,96 219,95 222,94 225,93 227,93 254,93 259,94 263,95 266,97 268,100 269,102 270,105 270,107 270,130 256,130 254,130 227,130 "
      fill="#d6d6d6"
      stroke="#d6d6d6"
      stroke-width="4"
      id="polygon15-4"
      transform="matrix(2.6864613,0,0,2.982918,-447.43718,-238.6381)"
      style="display:none;stroke-linecap:round;stroke-linejoin:round" />
-  <path
-     style="display:inline;fill:#d6d6d6;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-     id="rect2"
-     width="169.25"
-     height="122.0238"
-     x="114.16809"
-     y="32.948105"
-     inkscape:path-effect="#path-effect3"
-     sodipodi:type="rect"
-     d="m 158.49866,32.948105 h 80.59928 a 44.320146,44.320146 45 0 1 44.32015,44.320146 v 77.703659 h -169.25 V 77.278671 a 44.330566,44.330566 135 0 1 44.33057,-44.330566 z" />
+  <g
+     id="g3"
+     transform="translate(0,1.2286198)">
+    <polyline
+       points="221.00 141.99 221.00 203.10"
+       fill="none"
+       stroke="#d6d6d6"
+       stroke-width="4"
+       id="polyline12-4"
+       transform="matrix(2.8629756,0,0,2.6196988,-501.23723,-182.13551)"
+       style="display:inline;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+    <polyline
+       points="240.66 141.99 240.66 203.10"
+       fill="none"
+       stroke="#d6d6d6"
+       stroke-width="4"
+       id="polyline13-8"
+       transform="matrix(2.8629756,0,0,2.6196988,-489.9585,-182.13551)"
+       style="display:inline;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+    <polyline
+       points="260.33 141.99 260.33 203.10"
+       fill="none"
+       stroke="#d6d6d6"
+       stroke-width="4"
+       id="polyline14-8"
+       transform="matrix(2.8629756,0,0,2.6196988,-478.67978,-182.13551)"
+       style="stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
+    <polygon
+       points="285,142 285,130 197,130 197,142 "
+       fill="#d6d6d6"
+       stroke="#d6d6d6"
+       stroke-width="4"
+       id="polygon14-2"
+       transform="matrix(2.807394,0,0,3.1171958,-476.58195,-251.96539)"
+       style="stroke-linecap:round;stroke-linejoin:round" />
+    <path
+       style="display:inline;fill:#d6d6d6;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="169.25"
+       height="122.0238"
+       x="114.16809"
+       y="32.948105"
+       d="m 158.49866,32.948105 h 80.59928 a 44.320146,44.320146 45 0 1 44.32015,44.320146 v 77.703659 h -169.25 V 77.278671 a 44.330566,44.330566 135 0 1 44.33057,-44.330566 z"
+       transform="matrix(1.0450156,0,0,1.0450156,-9.0031181,-2.5848564)" />
+  </g>
 </svg>

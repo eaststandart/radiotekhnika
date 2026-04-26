@@ -25,23 +25,10 @@ path {stroke-linecap:round; stroke-linejoin:round}
 circle {stroke-linecap:round; stroke-linejoin:round}
 ]]></style>
   </defs>
-  <rect
-     style="display:inline;fill:#00c22d;fill-opacity:1;stroke:#00c22d;stroke-width:1.84493;stroke-dasharray:none;stroke-opacity:1"
-     id="rect1"
-     width="398.15506"
-     height="398.15506"
-     x="0.92246503"
-     y="0.92246503"
-     rx="398.15457" />
   <path
-     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#d6d6d6;stroke-width:0.276204;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-     id="rect2"
-     width="169.25"
-     height="122.0238"
-     x="114.16809"
-     y="32.948105"
-     d="m 158.49866,32.948105 h 80.59928 a 44.320146,44.320146 45 0 1 44.32015,44.320146 v 77.703659 h -169.25 V 77.278671 a 44.330566,44.330566 135 0 1 44.33057,-44.330566 z"
-     transform="matrix(1.0450156,0,0,1.0450156,-9.0031181,-1.3562366)" />
+     id="rect1"
+     style="display:inline;fill:#00c22d;fill-opacity:1;stroke:#00c22d;stroke-width:1.84493;stroke-dasharray:none;stroke-opacity:1"
+     d="M 199.99812,0.9250081 C 89.709169,0.9250081 0.9250081,89.709169 0.9250081,199.99812 c 0,110.28895 88.7841609,199.07828 199.0731119,199.07828 110.28895,0 199.07828,-88.78933 199.07828,-199.07828 0,-110.288951 -88.78933,-199.0731119 -199.07828,-199.0731119 z m -43.3772,34.2149649 h 84.24809 a 46.328021,45.741958 0 0 1 46.32792,45.743976 v 68.021681 h 36.3647 a 5.6168988,6.1578385 0 0 1 5.61206,6.15467 v 36.94348 a 5.6168988,6.1578385 0 0 1 -5.61206,6.15983 H 284.055 v 151.11738 a 17.398092,15.718327 0 0 1 -17.39945,15.71997 17.398092,15.718327 0 0 1 -17.39946,-15.71997 V 198.16361 h -32.81453 v 151.11738 a 17.398092,15.718327 0 0 1 -17.39429,15.71997 17.398092,15.718327 0 0 1 -17.40462,-15.71997 V 198.16361 h -32.77836 v 151.11738 a 17.398092,15.718327 0 0 1 -17.40462,15.71997 17.398092,15.718327 0 0 1 -17.39945,-15.71997 V 198.16361 H 76.439776 a 5.6168988,6.1578385 0 0 1 -5.617228,-6.15983 V 155.0603 a 5.6168988,6.1578385 0 0 1 5.617228,-6.15467 H 110.2775 V 80.894284 a 46.338914,45.752713 0 0 1 46.34342,-45.754311 z" />
   <metadata
      id="metadata1">
     <rdf:RDF>
@@ -51,44 +38,4 @@ circle {stroke-linecap:round; stroke-linejoin:round}
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <polygon
-     points="211,130 211,116 211,107 212,102 214,99 216,96 219,95 222,94 225,93 227,93 254,93 259,94 263,95 266,97 268,100 269,102 270,105 270,107 270,130 256,130 254,130 227,130 "
-     fill="#d6d6d6"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polygon15-4"
-     transform="matrix(2.6864613,0,0,2.982918,-447.43718,-238.6381)"
-     style="display:none;stroke-linecap:round;stroke-linejoin:round" />
-  <polyline
-     points="221.00 141.99 221.00 203.10"
-     fill="none"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polyline12-4"
-     transform="matrix(2.8629756,0,0,2.6196988,-501.23723,-180.90689)"
-     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
-  <polyline
-     points="240.66 141.99 240.66 203.10"
-     fill="none"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polyline13-8"
-     transform="matrix(2.8629756,0,0,2.6196988,-489.9585,-180.90689)"
-     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
-  <polyline
-     points="260.33 141.99 260.33 203.10"
-     fill="none"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polyline14-8"
-     transform="matrix(2.8629756,0,0,2.6196988,-478.67978,-180.90689)"
-     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12.1505;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:normal" />
-  <polygon
-     points="197,130 197,142 285,142 285,130 "
-     fill="#d6d6d6"
-     stroke="#d6d6d6"
-     stroke-width="4"
-     id="polygon14-2"
-     transform="matrix(2.807394,0,0,3.1171958,-476.58195,-250.73677)"
-     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round" />
 </svg>

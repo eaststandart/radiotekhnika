@@ -21,7 +21,7 @@ title: Учебные проекты
     <a href="radio.html" class="item-card">
         <img src="/img/icons/radio.png" class="item-image-round">
         <div class="item-info">
-            <h3>Радиотехника</h3>
+            <h3>Радиотехническое конструирование</h3>
             <span class="item-subtext">Мир радиоволн и связи</span>
             <p>Сборка приемников, передатчиков и изучение принципов беспроводной передачи данных.</p>
         </div>

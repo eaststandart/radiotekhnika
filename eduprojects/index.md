@@ -22,28 +22,28 @@ title: Учебные проекты
         <img src="/img/icons/radio.png" class="item-image-round">
         <div class="item-info">
             <h3>Радиотехническое конструирование</h3>
-            <span class="item-subtext">Мир радиоволн и связи</span>
-            <p>Сборка приемников, передатчиков и изучение принципов беспроводной передачи данных.</p>
+            <span class="item-subtext">Мир радиоволн и беспроводной связи</span>
+            <p>Сборка приемников, передатчиков и изучение принципов передачи сигналов в эфире.</p>
         </div>
     </a>
 
     <!-- Направление 3 -->
-    <a href="radio.html" class="item-card">
-        <img src="/img/icons/radio.png" class="item-image-round">
+    <a href="computing.html" class="item-card">
+        <img src="/img/icons/computing.png" class="item-image-round">
         <div class="item-info">
             <h3>Информатика и вычислительная техника</h3>
-            <span class="item-subtext">Мир радиоволн и связи</span>
-            <p>Сборка приемников, передатчиков и изучение принципов беспроводной передачи данных.</p>
+            <span class="item-subtext">Алгоритмы, архитектура ЭВМ и программирование</span>
+            <p>Изучение устройства компьютеров, логических основ техники и написание прикладного кода.</p>
         </div>
     </a>
 
     <!-- Направление 4 -->
-    <a href="radio.html" class="item-card">
-        <img src="/img/icons/radio.png" class="item-image-round">
+    <a href="cybernetics.html" class="item-card">
+        <img src="/img/icons/cybernetics.png" class="item-image-round">
         <div class="item-info">
-            <h3>Кибернетика</h3>
-            <span class="item-subtext">Кибернетика и робототехника</span>
-            <p>Управление, получение, хранение и переработка информации в машинах, живых организмах и обществе./p>
+            <h3>Кибернетика и робототехника</h3>
+            <span class="item-subtext">Автоматическое управление и сенсорика</span>
+            <p>Управление информацией, обратная связь в машинах и живых организмах, создание автономных роботов.</p>
         </div>
     </a>
 

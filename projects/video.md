@@ -23,7 +23,7 @@
 
     <!-- Блок 1: Фото (Исправь путь на реальный без скобок, если можно) -->
     <div class="video-item">
-        <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Схема">
+        <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" alt="Схема">
     </div>
 
     <!-- Блок 2: Видео -->

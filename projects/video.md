@@ -2,7 +2,7 @@
     <!-- Блок 1: Видео -->
     <div class="video-item">
         <video controls>
-            <source src="1.webm" type="video/webm">
+            <source src="projects/1.webm" type="video/webm">
         </video>
     </div>
 
@@ -14,7 +14,7 @@
     <!-- Блок 3: Еще одно видео -->
     <div class="video-item">
         <video controls>
-            <source src="img/result.webm" type="video/webm">
+            <source src="projects/1.webm" type="video/webm">
         </video>
     </div>
 </div>

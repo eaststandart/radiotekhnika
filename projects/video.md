@@ -16,15 +16,13 @@
     }
 
     .video-item video {
+        width: 100%;
+        height: auto;
         margin-top: 0 !important;    
         margin-bottom: 15px !important; 
         display: block;
     }
    
-    .video-item video {
-        width: 100%;
-        height: auto;
-    }
         .book-page-cover {
         height: 200px !important; 
         width: auto !important; 

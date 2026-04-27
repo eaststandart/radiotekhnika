@@ -51,7 +51,7 @@ parent_url: "/biblio/"
         }
     }
 </style>
-
+<br>
 <!-- Ряд с фото -->
 <div class="media-row">
     <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">

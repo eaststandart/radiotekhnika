@@ -1,49 +1,36 @@
-/* --- СТИЛИ ПЛИТОК (Сетка как на главной) --- */
-.grid-container {
+/* Сетка для внутренних разделов */
+.inner-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px 0;
 }
 
-.category-card {
+/* Карточка-плитка для внутренних разделов */
+.inner-category-card {
     background: white;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-top: 8px solid #eee;
-    transition: transform 0.2s;
-}
-.category-card:hover { transform: translateY(-5px); }
-
-/* Цвета полосок */
-.color-blue, .tech-creative { border-top-color: var(--card-tech); }
-.color-green, .my-projects { border-top-color: var(--card-my); }
-.color-orange { border-top-color: #e67e22; }
-.color-purple { border-top-color: #9b59b6; }
-
-.card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-.section-icon { 
-    width: 60px; height: 60px; 
-    border-radius: 50%; object-fit: cover; 
-    border: 2px solid #eee; background: #fff; 
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 6px solid #eee;
 }
 
-.project-list { list-style: none; padding: 0; margin: 0; }
-.project-list li { margin-bottom: 12px; }
-.project-list a {
+.inner-category-card h3 { margin: 0 0 15px 0; font-size: 1.2rem; }
+
+/* Список ссылок внутри плитки */
+.inner-project-list { list-style: none; padding: 0; margin: 0; }
+.inner-project-list li { margin-bottom: 8px; }
+.inner-project-list a {
     text-decoration: none;
     color: #555;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
     background: #f9f9f9;
-    border: 1px solid transparent;
+    font-size: 0.9rem;
 }
-.project-list a:hover { background: #fff; border-color: #ddd; padding-left: 15px; color: #000; }
+.inner-project-list a:hover { background: #eee; color: #000; }
 
 /* --- СТИЛИ ГОРИЗОНТАЛЬНЫХ КАРТОЧЕК (Библиотека/Дневник) --- */
 .item-card {

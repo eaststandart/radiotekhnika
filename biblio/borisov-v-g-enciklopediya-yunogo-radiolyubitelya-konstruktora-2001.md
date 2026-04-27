@@ -8,28 +8,32 @@ parent_url: "/biblio/"
 ---
 
 <style>
-    /* Умный контейнер для любых рядов медиа */
     .media-row {
         display: flex;
         flex-direction: row;
-        gap: 20px;
-        margin: 0; /* Отступы теперь внутри элементов благодаря style.css */
+        gap: 15px; /* Зазор между картинками */
+        margin: 0; 
         align-items: flex-start;
     }
 
     .book-page-cover {
-        width: 150px !important; 
-        height: auto !important;
-        /* Все остальные стили (margin, shadow, radius) подтянутся из style.css */
+        /* Устанавливаем единую высоту для всех обложек */
+        height: 220px !important; 
+        width: auto !important; 
+        /* Сохраняем пропорции, чтобы картинка не сплющилась */
+        object-fit: contain; 
+        border-radius: 8px;
     }
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
-            gap: 0;
+            gap: 10px;
         }
         .book-page-cover {
+            /* На мобильных возвращаемся к управлению через ширину */
+            height: auto !important;
             width: 100% !important;
             max-width: 250px !important;
         }

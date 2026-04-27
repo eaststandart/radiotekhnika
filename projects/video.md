@@ -24,7 +24,7 @@
 
     .small-cover {
         /* Фиксируем высоту, чтобы разные обложки стояли ровно */
-        height: 220px !important; 
+        height: 200px !important; 
         width: auto !important;
         object-fit: contain;
         margin-right: 15px !important; 

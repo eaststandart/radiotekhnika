@@ -8,40 +8,38 @@ parent_url: "/biblio/"
 ---
 
 <style>
-    /* Контейнер для ряда картинок */
-    .images-row {
+    /* Умный контейнер для любых рядов медиа */
+    .media-row {
         display: flex;
-        flex-direction: row; /* В ряд на ПК */
-        gap: 20px;           /* Зазор между картинками */
-        margin: 10px 0 20px 0;
+        flex-direction: row;
+        gap: 20px;
+        margin: 0; /* Отступы теперь внутри элементов благодаря style.css */
         align-items: flex-start;
     }
 
     .book-page-cover {
-        width: 150px;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        display: block;
+        width: 150px !important; 
+        height: auto !important;
+        /* Все остальные стили (margin, shadow, radius) подтянутся из style.css */
     }
 
-    /* Адаптация для мобильных (вертикальный режим) */
     @media (max-width: 600px) {
-        .images-row {
-            flex-direction: column; /* На узком телефоне друг под другом */
+        .media-row {
+            flex-direction: column;
             align-items: center;
+            gap: 0;
         }
         .book-page-cover {
-            width: 100%;
-            max-width: 250px;
+            width: 100% !important;
+            max-width: 250px !important;
         }
     }
 </style>
 
-<!-- Обернули картинки в ряд -->
-<div class="images-row">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" alt="Обложка 2001" class="book-page-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" alt="Обложка 1992" class="book-page-cover">
+<!-- Ряд с фото -->
+<div class="media-row">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="book-page-cover">
 </div>
 
 > **Библиографическое описание:**  

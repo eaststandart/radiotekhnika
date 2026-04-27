@@ -1,12 +1,11 @@
 <style>
-    .video-row {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        gap: 15px;
-        align-items: flex-start;
-        margin: 20px 0;
-    }
+.video-row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center; /* Элементы выровняются по своей середине */
+    flex-wrap: wrap;
+}
     .video-item {
         flex: 1;
         min-width: 250px; /* Если экран меньше 500px, они сами прыгнут в столбик */

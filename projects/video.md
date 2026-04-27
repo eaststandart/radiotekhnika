@@ -2,50 +2,34 @@
     .media-row {
         display: flex;
         flex-direction: row;
-        gap: 0; 
+        gap: 15px; /* Зазор между картинками */
         margin: 0; 
         align-items: flex-start;
-        flex-wrap: wrap; 
     }
 
-    .video-item {
-        /* Увеличиваем зазор между колонками до 15px */
-        padding-right: 15px; 
-        flex: 0 0 calc(33.33%); 
-        min-width: 200px;
-        box-sizing: border-box;
-    }
-
-    .small-cover, 
-    .video-item video {
-        margin-top: 0 !important;    
-        /* Увеличиваем вертикальный зазор до 15px */
-        margin-bottom: 15px !important; 
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .small-cover {
-        width: 150px !important;
-        /* Горизонтальный зазор для картинок тоже 15px */
-        margin-right: 15px !important; 
+    .book-page-cover {
+        /* Устанавливаем единую высоту для всех обложек */
+        height: 220px !important; 
+        width: auto !important; 
+        /* Сохраняем пропорции, чтобы картинка не сплющилась */
+        object-fit: contain; 
+        border-radius: 8px;
     }
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
+            gap: 10px;
         }
-        .small-cover, .video-item {
+        .book-page-cover {
+            /* На мобильных возвращаемся к управлению через ширину */
+            height: auto !important;
             width: 100% !important;
-            max-width: 280px !important;
-            padding-right: 0;
+            max-width: 250px !important;
         }
-        .small-cover { margin-right: 0 !important; }
     }
 </style>
-
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">

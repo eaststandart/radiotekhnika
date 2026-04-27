@@ -3,17 +3,22 @@
         display: flex;
         flex-direction: row;
         gap: 20px;
-        /* Уменьшили нижний отступ контейнера с 20px до 5px */
-        margin: 10px 0 5px 0; 
+        margin: 0; /* Обнуляем, чтобы управлять отступами самих элементов */
         align-items: flex-start;
+    }
+
+    /* Единый стиль отступа для всех медиа-элементов */
+    .small-cover, .video-item video {
+        margin-top: 10px;    /* Небольшой зазор сверху */
+        margin-bottom: 15px; /* Стандартный зазор снизу */
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        display: block;
     }
 
     .small-cover {
         width: 150px !important; 
         height: auto !important;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        display: block;
     }
 
     .video-item {
@@ -24,24 +29,17 @@
     .video-item video {
         width: 100%;
         height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        /* УБРАЛИ margin: 15px 0, теперь видео не "отталкивается" */
-        margin: 0; 
     }
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
-            gap: 10px; /* На мобильном чуть плотнее */
+            gap: 0; /* На мобильном зазоры будут за счет margin элементов */
         }
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
-        }
-        .video-item video {
-            margin-bottom: 10px; /* Чтобы видео не слипались в колонке */
         }
     }
 </style>

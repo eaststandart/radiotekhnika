@@ -53,7 +53,7 @@
         }
         .book-page-cover {
             width: 100% !important;
-            max-width: 250px !important;
+            max-width: 280px !important;
             height: auto !important;
             margin-right: 0 !important;
         }

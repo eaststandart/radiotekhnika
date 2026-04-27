@@ -124,3 +124,69 @@
         padding-top: 0 !important;
     }
 }
+
+/* УНИВЕРСАЛЬНЫЕ МЕДИА-РЯДЫ (ФОТО И ВИДЕО) */
+.media-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 0; 
+    margin: 0 !important; 
+    align-items: flex-start;
+}
+
+/* Контейнер для видео-плеера */
+.video-item {
+    padding-right: 15px; 
+    flex: 0 0 calc(33.33%); /* 3 в ряд по умолчанию */
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    margin-top: 0 !important;    
+    margin-bottom: 15px !important; 
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Контейнер для обложек и фото с фиксированной высотой */
+.book-page-cover {
+    height: 200px !important; 
+    width: auto !important; 
+    max-width: calc(25% - 15px) !important; /* 4 в ряд на ПК */
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important; 
+    margin-right: 15px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Адаптация для средних экранов */
+@media (max-width: 800px) {
+    .book-page-cover {
+        max-width: calc(33.33% - 15px) !important;
+        height: 180px !important;
+    }
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+    .media-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-item, .book-page-cover {
+        width: 100% !important;
+        max-width: 280px !important;
+        padding-right: 0;
+        margin-right: 0 !important;
+    }
+    .book-page-cover {
+        height: auto !important;
+    }
+}

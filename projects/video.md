@@ -44,7 +44,10 @@
     }
     
     @media (max-width: 600px) {
-        .media-row { flex-direction: column; align-items: center; }
+        .media-row {
+            flex-direction: column;
+            align-items: center;
+        }
         .video-item {
             width: 100% !important;
             max-width: 280px !important;

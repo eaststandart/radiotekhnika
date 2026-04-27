@@ -11,41 +11,40 @@
 
     /* Видео: 3 в ряд, пропорции не трогаем */
     .video-item {
-        flex: 0 0 calc(33.33% - 15px); 
+        /* Увеличиваем зазор между колонками до 15px */
+        padding-right: 15px; 
+        flex: 0 0 calc(33.33%); 
         min-width: 200px;
-        margin-right: 15px !important;
-        margin-bottom: 15px !important;
+        box-sizing: border-box;
     }
 
+    .small-cover, 
     .video-item video {
+        margin-top: 0 !important;    
+        /* Увеличиваем вертикальный зазор до 15px */
+        margin-bottom: 15px !important; 
         width: 100%;
-        height: auto; /* Видео само держит свои пропорции */
-        border-radius: 8px;
+        height: auto;
         display: block;
     }
 
-    /* Фото: как в файле Борисова — фиксируем только высоту */
     .small-cover {
-        height: 220px !important; 
-        width: auto !important; 
-        object-fit: contain; 
-        border-radius: 8px;
-        margin-right: 15px !important;
-        margin-bottom: 15px !important;
+        width: 150px !important;
+        /* Горизонтальный зазор для картинок тоже 15px */
+        margin-right: 15px !important; 
     }
-
+    
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
         }
-        .video-item, .small-cover {
+        .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
-            margin-right: 0 !important;
-            flex: 0 0 auto;
+            padding-right: 0;
         }
-        .small-cover { height: auto !important; }
+        .small-cover { margin-right: 0 !important; }
     }
 </style>
 

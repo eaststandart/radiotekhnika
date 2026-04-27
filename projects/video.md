@@ -1,38 +1,34 @@
 <style>
     .video-row {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: stretch; /* Растягивает контейнеры до одной высоты */
+        display: flex;
+        flex-direction: row;
         gap: 15px;
-        margin: 20px 0;
+        align-items: flex-start; /* Выравнивание по верху */
         flex-wrap: nowrap;
     }
 
-    .video-item {
-        /* Контейнер подстраивается под контент, но не меньше минимума */
-        display: flex;
-        align-items: flex-start;
-    }
-
+    /* Настройка видео: добавляем отступ как у картинок в style.css */
     .video-item video {
-        height: 200px !important; /* Задаем жесткую высоту для видео */
-        width: auto;               /* Ширина подстроится сама */
+        height: 200px;
+        width: auto;
+        margin: 15px 0; /* Такой же отступ, как у картинок в основном CSS */
         border-radius: 8px;
-        background: #000;
+        display: block;
     }
 
+    /* Настройка картинки: просто фиксируем высоту */
     .video-item img {
-        height: 200px !important; /* Такая же высота, как у видео */
-        width: auto;               /* Картинка не растянется по ширине! */
-        object-fit: contain;       /* Сохранит пропорции без обрезки */
+        height: 200px;
+        width: auto;
         border-radius: 8px;
     }
 
     @media (max-width: 600px) {
-        .video-row { flex-direction: column !important; align-items: center; }
-        .video-item video, .video-item img { width: 100%; height: auto !important; }
+        .video-row { flex-direction: column; align-items: center; }
+        .video-item video, .video-item img { width: 100%; height: auto; }
     }
 </style>
+
 
 <div class="video-row">
     <div class="video-item">

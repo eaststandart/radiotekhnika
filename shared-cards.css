@@ -1,3 +1,64 @@
+/* --- СТИЛИ ПЛИТОК (Сетка как на главной) --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.category-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 8px solid #eee;
+    transition: transform 0.2s;
+}
+.category-card:hover { transform: translateY(-5px); }
+
+/* Цвета полосок */
+.color-blue, .tech-creative { border-top-color: var(--card-tech); }
+.color-green, .my-projects { border-top-color: var(--card-my); }
+.color-orange { border-top-color: #e67e22; }
+.color-purple { border-top-color: #9b59b6; }
+
+.card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+.section-icon { 
+    width: 60px; height: 60px; 
+    border-radius: 50%; object-fit: cover; 
+    border: 2px solid #eee; background: #fff; 
+}
+
+.project-list { list-style: none; padding: 0; margin: 0; }
+.project-list li { margin-bottom: 12px; }
+.project-list a {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    border: 1px solid transparent;
+}
+.project-list a:hover { background: #fff; border-color: #ddd; padding-left: 15px; color: #000; }
+
+/* --- СТИЛИ ГОРИЗОНТАЛЬНЫХ КАРТОЧЕК (Библиотека/Дневник) --- */
+.item-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Общий стиль карточек для всего портала */
 .item-card {
     display: flex;

@@ -1,4 +1,33 @@
 <style>
+    .images-row {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 10px 0 20px 0;
+        align-items: flex-start;
+    }
+
+    .book-page-cover {
+        /* Добавляем !important, чтобы перебить глобальный max-width */
+        width: 150px !important; 
+        height: auto !important;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+        .images-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .book-page-cover {
+            /* На мобилках делаем чуть побольше для удобства */
+            width: 100% !important;
+            max-width: 250px !important;
+        }
+    }
+    
     /* Нам нужен только один класс для видео, остальное берем из глобальных стилей */
     .video-row {
         display: flex;

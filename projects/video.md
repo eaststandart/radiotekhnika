@@ -1,41 +1,34 @@
 <style>
+    /* 1. Контейнер для рядов */
     .media-row {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        margin: 0; /* Обнуляем, чтобы управлять отступами самих элементов */
+        margin: 0; 
         align-items: flex-start;
+        flex-wrap: wrap; /* Чтобы 4 видео могли перенестись на новую строку, если тесно */
     }
 
-    /* Единый стиль отступа для всех медиа-элементов */
-    .small-cover, .video-item video {
-        margin-top: 10px;    /* Небольшой зазор сверху */
-        margin-bottom: 15px; /* Стандартный зазор снизу */
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        display: block;
-    }
-
+    /* 2. Специфика для маленьких фото */
     .small-cover {
         width: 150px !important; 
         height: auto !important;
     }
 
+    /* 3. Специфика для сетки видео */
     .video-item {
         flex: 1;
+        min-width: 200px; /* Чтобы видео не сжимались в "ниточку" */
         max-width: 320px;
     }
 
-    .video-item video {
-        width: 100%;
-        height: auto;
-    }
+    /* Все остальное (margin, border-radius, shadow) берется из style.css */
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
-            gap: 0; /* На мобильном зазоры будут за счет margin элементов */
+            gap: 0;
         }
         .small-cover, .video-item {
             width: 100% !important;
@@ -44,13 +37,13 @@
     }
 </style>
 
-<!-- БЛОК ФОТО: Теперь они будут по 150px в ряд -->
+<!-- БЛОК ФОТО -->
 <div class="media-row">
     <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
     <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
 </div>
 
-<!-- БЛОК ВИДЕО: В ряд, но не шире 320px каждое -->
+<!-- БЛОК ВИДЕО (теперь 4 штуки в ряд на ПК) -->
 <div class="media-row">
     <div class="video-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
@@ -61,14 +54,13 @@
     <div class="video-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
-        <div class="video-item">
+    <div class="video-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
 </div>
 
-<!-- БЛОК ФОТО: Теперь они будут по 150px в ряд -->
+<!-- БЛОК ФОТО -->
 <div class="media-row">
     <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
     <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
 </div>
-

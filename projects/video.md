@@ -1,3 +1,11 @@
+---
+layout: default
+title: Пример
+tags: [видео]
+sources: "[Публичная библиотека]"
+parent_name: "К учебным проектам"
+parent_url: "/projects/"
+---
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">

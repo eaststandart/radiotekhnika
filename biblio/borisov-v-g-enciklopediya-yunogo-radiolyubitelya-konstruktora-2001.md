@@ -8,15 +8,14 @@ parent_url: "/biblio/"
 ---
 
 <style>
-    .media-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; 
-        gap: 0;
-        /* ГЛАВНОЕ: Обнуляем нижний отступ контейнера, чтобы он не толкал текст */
-        margin: 0 !important; 
-        align-items: flex-start;
-    }
+.media-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 0;
+    margin: 0 !important; /* Обнуляем всё, зазоры теперь системные */
+    align-items: flex-start;
+}
 
     .book-page-cover {
         height: 220px !important; 

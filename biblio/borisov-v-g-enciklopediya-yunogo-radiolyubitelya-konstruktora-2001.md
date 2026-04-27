@@ -8,15 +8,15 @@ parent_url: "/biblio/"
 ---
 
 <style>
-.media-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    gap: 0;
-    margin: 0 !important; /* Обнуляем всё, зазоры теперь системные */
-    align-items: flex-start;
-}
-
+    .media-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        gap: 0; 
+        margin: 0 !important; 
+        align-items: flex-start;
+    }
+    
     .book-page-cover {
         height: 200px !important; 
         width: auto !important; 
@@ -24,7 +24,6 @@ parent_url: "/biblio/"
         object-fit: contain; 
         border-radius: 8px;
         margin-top: 0 !important;
-        /* Возвращаем 15px между рядами картинок */
         margin-bottom: 15px !important; 
         margin-right: 15px !important;
     }

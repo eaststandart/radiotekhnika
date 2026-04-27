@@ -11,21 +11,21 @@
     .small-cover {
         width: 150px !important; 
         height: auto !important;
+        /* Убираем верхний маржин, чтобы не суммировался */
         margin-top: 0 !important; 
         margin-bottom: 15px !important;
     }
 
     .video-item {
-        /* flex-grow: 1 позволяет заполнять строку, если осталось пустое место */
-        flex: 1 1 calc(33.33% - 15px); 
-        /* min-width не дает видео стать слишком узким */
-        min-width: 240px; 
-        max-width: 100%;
+        /* Рассчитываем ширину ровно на 3 колонки (33.3% минус зазоры) */
+        flex: 0 0 calc(33.33% - 10px); 
+        min-width: 200px;
     }
 
     .video-item video {
         width: 100%;
         height: auto;
+        /* Убираем верхний маржин, чтобы не было "дыр" между рядами */
         margin-top: 0 !important; 
         margin-bottom: 15px !important;
     }
@@ -38,6 +38,7 @@
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
+            flex: 1 1 auto;
         }
     }
 </style>

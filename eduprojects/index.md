@@ -21,7 +21,7 @@ title: Учебные проекты
 
     <!-- БЛОК: Радио -->
     <section class="inner-category-card" style="border-top-color: #e67e22;">
-        <h3>Радиотехника</h3>
+        <h3>Радиотехническое конструирование</h3>
         <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">
             Сборка приемников, передатчиков и изучение принципов беспроводной связи.
         </p>

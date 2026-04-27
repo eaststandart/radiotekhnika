@@ -8,7 +8,7 @@
 
     <!-- Блок 2: Фотография (встанет в этот же ряд) -->
     <div class="video-item">
-        <img src="/biblio/schematic.jpg" alt="Схема" style="width:100%; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" alt="Схема" style="width:100%; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
     </div>
 
     <!-- Блок 3: Еще одно видео -->

@@ -40,8 +40,8 @@ parent_url: "/biblio/"
 
 <!-- Обернули картинки в ряд -->
 <div class="images-row">
-    <img src="/bibliography/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" alt="Обложка 2001" class="book-page-cover">
-    <img src="/bibliography/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" alt="Обложка 1992" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" alt="Обложка 2001" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" alt="Обложка 1992" class="book-page-cover">
 </div>
 
 > **Библиографическое описание:**  

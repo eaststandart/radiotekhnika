@@ -13,8 +13,8 @@ parent_url: "/biblio/"
         flex-direction: row;
         flex-wrap: wrap; 
         gap: 0;
-        /* Уменьшаем или обнуляем нижний отступ контейнера */
-        margin: 0 0 5px 0 !important; 
+        /* ГЛАВНОЕ: Обнуляем нижний отступ контейнера, чтобы он не толкал текст */
+        margin: 0 !important; 
         align-items: flex-start;
     }
 
@@ -25,14 +25,13 @@ parent_url: "/biblio/"
         object-fit: contain; 
         border-radius: 8px;
         margin-top: 0 !important;
-        /* Уменьшаем нижний отступ картинок до 10px */
-        margin-bottom: 10px !important; 
+        /* Возвращаем 15px между рядами картинок */
+        margin-bottom: 15px !important; 
         margin-right: 15px !important;
     }
 
     @media (max-width: 800px) {
         .book-page-cover {
-            /* По 3 в ряд на средних экранах */
             max-width: calc(33.33% - 15px) !important;
             height: 180px !important;
         }
@@ -47,11 +46,11 @@ parent_url: "/biblio/"
             width: 100% !important;
             max-width: 250px !important;
             height: auto !important;
-            margin-right: 0 !important; /* Убираем боковой отступ в столбике */
+            margin-right: 0 !important;
         }
     }
 </style>
-<br>
+
 <!-- Ряд с фото -->
 <div class="media-row">
     <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
@@ -60,6 +59,7 @@ parent_url: "/biblio/"
     <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="book-page-cover">
     <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
 </div>
+<!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  
 > Борисов В.Г. Энциклопедия юного радиолюбителя-конструктора / В. Г. Борисов. — 9. изд., перераб. и доп. — М.: Солон-Р, 2001. — 526 с.: ил. — ISBN 5-93455-100-0, ББК 32.84.
 

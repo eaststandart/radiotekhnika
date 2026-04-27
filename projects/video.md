@@ -2,7 +2,6 @@
     .media-row {
         display: flex;
         flex-direction: row;
-        /* ОБНУЛЯЕМ gap, чтобы он не суммировался с маржинами при переносе */
         gap: 0; 
         margin: 0; 
         align-items: flex-start;
@@ -10,18 +9,18 @@
     }
 
     .video-item {
-        /* Добавляем зазор между колонками через padding справа */
+        /* Увеличиваем зазор между колонками до 15px */
         padding-right: 15px; 
         flex: 0 0 calc(33.33%); 
         min-width: 200px;
         box-sizing: border-box;
     }
 
-    /* Убираем лишние отступы и выравниваем ритм */
     .small-cover, 
     .video-item video {
         margin-top: 0 !important;    
-        margin-bottom: 10px !important; /* Твой стандарт 10px */
+        /* Увеличиваем вертикальный зазор до 15px */
+        margin-bottom: 15px !important; 
         width: 100%;
         height: auto;
         display: block;
@@ -29,7 +28,7 @@
 
     .small-cover {
         width: 150px !important;
-        /* Чтобы картинки в ряду тоже имели отступ справа как у видео */
+        /* Горизонтальный зазор для картинок тоже 15px */
         margin-right: 15px !important; 
     }
 
@@ -41,11 +40,12 @@
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
-            padding-right: 0; /* На мобильном отступ справа не нужен */
+            padding-right: 0;
         }
         .small-cover { margin-right: 0 !important; }
     }
 </style>
+
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">

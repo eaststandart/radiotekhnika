@@ -1,22 +1,38 @@
 <style>
-.video-item img, .video-item video {
-    width: 100%;
-    height: 200px;    /* Установи одну высоту для всех */
-    object-fit: cover; /* Фото заполнит блок, не растягиваясь уродливо */
-    border-radius: 8px;
-    display: block;
-}
-    .video-item {
-        flex: 1;
-        min-width: 250px; /* Если экран меньше 500px, они сами прыгнут в столбик */
-        max-width: 48%;  /* Чтобы в ряд влезало ровно два или три */
+    .video-row {
+        display: flex !important;
+        flex-direction: row !important; /* Строго в ряд */
+        flex-wrap: nowrap;             /* Запрещаем перенос на новую строку */
+        gap: 15px;
+        align-items: flex-start;       /* Выравнивание по верхнему краю */
+        margin: 20px 0;
+        width: 100%;
     }
+
+    .video-item {
+        flex: 1;                       /* Равномерно делят место */
+        min-width: 0;                  /* Важно: позволяет элементам сжиматься */
+    }
+
     .video-item img, .video-item video {
         width: 100%;
-        display: block;
+        height: 180px;                 /* Одинаковая высота для всех */
+        object-fit: cover;             /* Обрезка лишнего, чтобы не было искажений */
         border-radius: 8px;
+        display: block;
+    }
+
+    /* На телефоне всё равно лучше сделать столбик, иначе будет слишком мелко */
+    @media (max-width: 600px) {
+        .video-row {
+            flex-direction: column !important;
+        }
+        .video-item img, .video-item video {
+            height: auto;              /* На телефоне пусть будут в полный рост */
+        }
     }
 </style>
+
 
 <div class="video-row">
 

@@ -11,8 +11,8 @@ parent_url: "/biblio/"
     .media-row {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;    /* Разрешаем перенос на новую строку */
-        gap: 15px; 
+        flex-wrap: wrap; 
+        gap: 0;           /* Убираем gap, чтобы не было дыр при переносе */
         margin: 0; 
         align-items: flex-start;
     }
@@ -20,29 +20,34 @@ parent_url: "/biblio/"
     .book-page-cover {
         height: 220px !important; 
         width: auto !important; 
-        /* Ограничиваем ширину, чтобы на ПК влезало не более 4 (100% / 4 - зазоры) */
+        /* Ограничиваем ширину для 4-х в ряд */
         max-width: calc(25% - 15px) !important;
         object-fit: contain; 
         border-radius: 8px;
+        /* Идентичные отступы как в блоке с видео */
+        margin-top: 0 !important;
+        margin-bottom: 15px !important;
+        margin-right: 15px !important;
     }
 
     @media (max-width: 800px) {
         .book-page-cover {
-            /* На планшетах и горизонтальных телефонах — по 3 в ряд (100% / 3) */
+            /* По 3 в ряд на средних экранах */
             max-width: calc(33.33% - 15px) !important;
-            height: 180px !important; /* Чуть уменьшим высоту для мобилок */
+            height: 180px !important;
         }
     }
 
     @media (max-width: 600px) {
         .media-row {
-            flex-direction: column; /* На вертикальном телефоне — в столбик */
+            flex-direction: column;
             align-items: center;
         }
         .book-page-cover {
             width: 100% !important;
             max-width: 250px !important;
             height: auto !important;
+            margin-right: 0 !important; /* Убираем боковой отступ в столбике */
         }
     }
 </style>

@@ -49,6 +49,7 @@ blockquote {
     color: #555;
     font-style: italic; /* Традиционный стиль цитат */
     line-height: 1.6;
+    margin-left: 0;
 }
 
 blockquote p {

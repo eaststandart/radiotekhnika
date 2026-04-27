@@ -11,31 +11,38 @@ parent_url: "/biblio/"
     .media-row {
         display: flex;
         flex-direction: row;
-        gap: 15px; /* Зазор между картинками */
+        flex-wrap: wrap;    /* Разрешаем перенос на новую строку */
+        gap: 15px; 
         margin: 0; 
         align-items: flex-start;
     }
 
     .book-page-cover {
-        /* Устанавливаем единую высоту для всех обложек */
         height: 220px !important; 
         width: auto !important; 
-        /* Сохраняем пропорции, чтобы картинка не сплющилась */
+        /* Ограничиваем ширину, чтобы на ПК влезало не более 4 (100% / 4 - зазоры) */
+        max-width: calc(25% - 15px) !important;
         object-fit: contain; 
         border-radius: 8px;
     }
 
+    @media (max-width: 800px) {
+        .book-page-cover {
+            /* На планшетах и горизонтальных телефонах — по 3 в ряд (100% / 3) */
+            max-width: calc(33.33% - 15px) !important;
+            height: 180px !important; /* Чуть уменьшим высоту для мобилок */
+        }
+    }
+
     @media (max-width: 600px) {
         .media-row {
-            flex-direction: column;
+            flex-direction: column; /* На вертикальном телефоне — в столбик */
             align-items: center;
-            gap: 10px;
         }
         .book-page-cover {
-            /* На мобильных возвращаемся к управлению через ширину */
-            height: auto !important;
             width: 100% !important;
             max-width: 250px !important;
+            height: auto !important;
         }
     }
 </style>

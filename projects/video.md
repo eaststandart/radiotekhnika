@@ -1,5 +1,4 @@
 <style>
-    /* Базовый контейнер как у Борисова */
     .media-row {
         display: flex;
         flex-direction: row;
@@ -9,11 +8,9 @@
         align-items: flex-start;
     }
 
-    /* Видео: 3 в ряд, пропорции не трогаем */
     .video-item {
-        /* Увеличиваем зазор между колонками до 15px */
         padding-right: 15px; 
-        flex: 0 0 calc(33.33%); 
+        flex: 0 0 calc(33.33%); /* 3 видео в ряд */
         min-width: 200px;
         box-sizing: border-box;
     }
@@ -21,30 +18,31 @@
     .small-cover, 
     .video-item video {
         margin-top: 0 !important;    
-        /* Увеличиваем вертикальный зазор до 15px */
         margin-bottom: 15px !important; 
-        width: 100%;
-        height: auto;
         display: block;
     }
 
     .small-cover {
-        width: 150px !important;
-        /* Горизонтальный зазор для картинок тоже 15px */
+        /* Фиксируем высоту, чтобы разные обложки стояли ровно */
+        height: 220px !important; 
+        width: auto !important;
+        object-fit: contain;
         margin-right: 15px !important; 
+    }
+
+    .video-item video {
+        width: 100%;
+        height: auto;
     }
     
     @media (max-width: 600px) {
-        .media-row {
-            flex-direction: column;
-            align-items: center;
-        }
+        .media-row { flex-direction: column; align-items: center; }
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
             padding-right: 0;
         }
-        .small-cover { margin-right: 0 !important; }
+        .small-cover { margin-right: 0 !important; height: auto !important; }
     }
 </style>
 

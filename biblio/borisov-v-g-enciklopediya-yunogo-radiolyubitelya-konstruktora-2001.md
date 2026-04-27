@@ -7,48 +7,6 @@ parent_name: "К списку литературы"
 parent_url: "/biblio/"
 ---
 
-<style>
-    .media-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; 
-        gap: 0; 
-        margin: 0 !important; 
-        align-items: flex-start;
-    }
-    
-    .book-page-cover {
-        height: 200px !important; 
-        width: auto !important; 
-        max-width: calc(25% - 15px) !important;
-        object-fit: contain; 
-        border-radius: 8px;
-        margin-top: 0 !important;
-        margin-bottom: 15px !important; 
-        margin-right: 15px !important;
-    }
-
-    @media (max-width: 800px) {
-        .book-page-cover {
-            max-width: calc(33.33% - 15px) !important;
-            height: 180px !important;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .media-row {
-            flex-direction: column;
-            align-items: center;
-        }
-        .book-page-cover {
-            width: 100% !important;
-            max-width: 280px !important;
-            height: auto !important;
-            margin-right: 0 !important;
-        }
-    }
-</style>
-
 <!-- Ряд с фото -->
 <div class="media-row">
     <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">

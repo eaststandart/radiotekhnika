@@ -4,7 +4,7 @@ title: Энциклопедия юного радиолюбителя-конст
 tags: [борисов, радиолюбитель, юныйрадиолюбитель, электроника, энциклопедия, среднийвозраст, старшийвозраст]
 sources: "[Публичная библиотека](http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html)"
 parent_name: "К списку литературы"
-parent_url: "/bibliography/"
+parent_url: "/biblio/"
 ---
 
 <style>

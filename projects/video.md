@@ -2,8 +2,7 @@
     .media-row {
         display: flex;
         flex-direction: row;
-        /* Уменьшаем зазор, чтобы 4 видео влезли в 800px */
-        gap: 12px; 
+        gap: 15px;
         margin: 0; 
         align-items: flex-start;
         flex-wrap: wrap; 
@@ -12,37 +11,37 @@
     .small-cover {
         width: 150px !important; 
         height: auto !important;
+        /* Убираем верхний маржин, чтобы не суммировался */
+        margin-top: 0 !important; 
+        margin-bottom: 15px !important;
     }
 
     .video-item {
-        flex: 1;
-        /* Уменьшаем min-width, чтобы 4 колонки поместились в ряд (800 / 4 = 200) */
-        min-width: 180px; 
-        /* Убираем ограничение в 320px, чтобы они ровно делили строку */
-        max-width: none; 
+        /* Рассчитываем ширину ровно на 3 колонки (33.3% минус зазоры) */
+        flex: 0 0 calc(33.33% - 10px); 
+        min-width: 200px;
     }
 
-    /* Убираем верхний отступ у всех элементов, чтобы не было "дыр" между рядами */
-    .small-cover, .video-item video {
+    .video-item video {
+        width: 100%;
+        height: auto;
+        /* Убираем верхний маржин, чтобы не было "дыр" между рядами */
         margin-top: 0 !important; 
-        margin-bottom: 15px; /* Оставляем только нижний отступ для ритма */
+        margin-bottom: 15px !important;
     }
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
-            gap: 0;
         }
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
+            flex: 1 1 auto;
         }
-        /* Возвращаем отступ для мобильной колонки */
-        .video-item video { margin-bottom: 10px; }
     }
 </style>
-
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">

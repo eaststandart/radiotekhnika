@@ -2,7 +2,7 @@
 layout: default
 title: Заметки по схемотехнике
 parent_name: "К дневнику инженера"
-parent_url: "/engineersnotebook/"
+parent_url: "/diary/"
 ---
 
 Здесь собраны важные принципы построения схем.

@@ -39,7 +39,10 @@ header {
     display: block;
 }
 
-h1 { margin: 10px 0; font-size: 2rem; }
+h1 { 
+    margin: 10px 0 25px 0; /* Увеличили нижний отступ до 25px */
+    font-size: 2rem; 
+}
 
 blockquote {
     margin: 5px 0 20px 0; 

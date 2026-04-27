@@ -3,28 +3,60 @@ layout: default
 title: Учебные проекты
 ---
 
-## ⚡ Электронное конструирование
-<!-- Группа карточек по электронике -->
-<div class="projects-list">
-    <a href="led-flashlight/" class="item-card">
-        <img src="led-flashlight/preview.jpg" class="item-image-round">
-        <div class="item-info">
-            <h3>Светодиодный фонарик</h3>
-            <span class="item-subtext">Уровень 1 | #база</span>
-            <p>Первые шаги: сборка простейшей замкнутой цепи.</p>
-        </div>
+<style>
+    /* Компактные карточки специально для сетки проектов */
+    .project-grid-card {
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s;
+        border: 1px solid #eee;
+    }
+    .project-grid-card:hover { transform: translateY(-5px); border-color: var(--card-tech); }
+    
+    .project-grid-card img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .project-grid-card h3 { margin: 5px 0; font-size: 1.1rem; color: var(--card-tech); }
+    .project-grid-card .level { font-size: 0.8rem; color: #7f8c8d; font-weight: bold; }
+</style>
+
+## ⚡ Электроника
+<div class="grid-container" style="margin-bottom: 40px;">
+    
+    <a href="led-flashlight/" class="project-grid-card">
+        <img src="led-flashlight/img/preview.jpg" alt="⚡">
+        <span class="level">Уровень 1</span>
+        <h3>Фонарик</h3>
     </a>
+
+    <a href="multivibrator/" class="project-grid-card">
+        <img src="multivibrator/img/preview.jpg" alt="⚡">
+        <span class="level">Уровень 2</span>
+        <h3>Мультивибратор</h3>
+    </a>
+
 </div>
 
 ## 📻 Радиотехника
-<!-- Группа карточек по радио -->
-<div class="projects-list">
-    <a href="detector-radio/" class="item-card">
-        <img src="detector-radio/preview.jpg" class="item-image-round">
-        <div class="item-info">
-            <h3>Детекторный приемник</h3>
-            <span class="item-subtext">Уровень 3 | #радио #амплитуда</span>
-            <p>Классика: прием вещательных станций без батареек.</p>
-        </div>
+<div class="grid-container">
+    
+    <a href="detector-radio/" class="project-grid-card">
+        <img src="detector-radio/img/preview.jpg" alt="📻">
+        <span class="level">Уровень 3</span>
+        <h3>Детекторный приемник</h3>
     </a>
+
 </div>

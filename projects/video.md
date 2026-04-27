@@ -1,28 +1,32 @@
 <style>
-    /* 1. Контейнер для рядов */
     .media-row {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        /* Уменьшаем зазор, чтобы 4 видео влезли в 800px */
+        gap: 12px; 
         margin: 0; 
         align-items: flex-start;
-        flex-wrap: wrap; /* Чтобы 4 видео могли перенестись на новую строку, если тесно */
+        flex-wrap: wrap; 
     }
 
-    /* 2. Специфика для маленьких фото */
     .small-cover {
         width: 150px !important; 
         height: auto !important;
     }
 
-    /* 3. Специфика для сетки видео */
     .video-item {
         flex: 1;
-        min-width: 200px; /* Чтобы видео не сжимались в "ниточку" */
-        max-width: 320px;
+        /* Уменьшаем min-width, чтобы 4 колонки поместились в ряд (800 / 4 = 200) */
+        min-width: 180px; 
+        /* Убираем ограничение в 320px, чтобы они ровно делили строку */
+        max-width: none; 
     }
 
-    /* Все остальное (margin, border-radius, shadow) берется из style.css */
+    /* Убираем верхний отступ у всех элементов, чтобы не было "дыр" между рядами */
+    .small-cover, .video-item video {
+        margin-top: 0 !important; 
+        margin-bottom: 15px; /* Оставляем только нижний отступ для ритма */
+    }
 
     @media (max-width: 600px) {
         .media-row {
@@ -34,8 +38,11 @@
             width: 100% !important;
             max-width: 280px !important;
         }
+        /* Возвращаем отступ для мобильной колонки */
+        .video-item video { margin-bottom: 10px; }
     }
 </style>
+
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">

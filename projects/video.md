@@ -38,7 +38,7 @@
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
     <div class="video-item">
-        <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp">
+        <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp">
     </div>
     <div class="video-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>

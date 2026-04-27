@@ -16,6 +16,7 @@ title: Учебные проекты
         <ul class="inner-project-list">
             <li><a href="projects/led-flashlight/">❯ Светодиодный фонарик</a></li>
             <li><a href="projects/multivibrator/">❯ Мультивибратор</a></li>
+            <li><a href="video.html">❯ Мультивибратор</a></li>
         </ul>
     </section>
 

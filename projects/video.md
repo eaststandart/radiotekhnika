@@ -1,10 +1,10 @@
 <style>
-.video-row {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center; /* Элементы выровняются по своей середине */
-    flex-wrap: wrap;
+.video-item img, .video-item video {
+    width: 100%;
+    height: 200px;    /* Установи одну высоту для всех */
+    object-fit: cover; /* Фото заполнит блок, не растягиваясь уродливо */
+    border-radius: 8px;
+    display: block;
 }
     .video-item {
         flex: 1;

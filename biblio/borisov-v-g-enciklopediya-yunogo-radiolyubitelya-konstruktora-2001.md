@@ -18,7 +18,7 @@ parent_url: "/biblio/"
 }
 
     .book-page-cover {
-        height: 220px !important; 
+        height: 200px !important; 
         width: auto !important; 
         max-width: calc(25% - 15px) !important;
         object-fit: contain; 

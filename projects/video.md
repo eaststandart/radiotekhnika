@@ -15,45 +15,58 @@
         box-sizing: border-box;
     }
 
-    .small-cover, 
     .video-item video {
         margin-top: 0 !important;    
         margin-bottom: 15px !important; 
         display: block;
     }
-
-    .small-cover {
-        /* Фиксируем высоту, чтобы разные обложки стояли ровно */
-        height: 200px !important; 
-        width: auto !important;
-        object-fit: contain;
-        margin-right: 15px !important; 
-    }
-
+   
     .video-item video {
         width: 100%;
         height: auto;
     }
+        .book-page-cover {
+        height: 200px !important; 
+        width: auto !important; 
+        max-width: calc(25% - 15px) !important;
+        object-fit: contain; 
+        border-radius: 8px;
+        margin-top: 0 !important;
+        margin-bottom: 15px !important; 
+        margin-right: 15px !important;
+    }
+
+    @media (max-width: 800px) {
+        .book-page-cover {
+            max-width: calc(33.33% - 15px) !important;
+            height: 180px !important;
+        }
+    }
     
     @media (max-width: 600px) {
         .media-row { flex-direction: column; align-items: center; }
-        .small-cover, .video-item {
+        .video-item {
             width: 100% !important;
             max-width: 280px !important;
             padding-right: 0;
         }
-        .small-cover { margin-right: 0 !important; height: auto !important; }
+        .book-page-cover {
+            width: 100% !important;
+            max-width: 250px !important;
+            height: auto !important;
+            margin-right: 0 !important;
+        }
     }
 </style>
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="book-page-cover">
 </div>
 
 <!-- БЛОК ВИДЕО (теперь 4 штуки в ряд на ПК) -->
@@ -74,6 +87,6 @@
 
 <!-- БЛОК ФОТО -->
 <div class="media-row">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="book-page-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="book-page-cover">
 </div>

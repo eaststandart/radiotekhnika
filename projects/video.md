@@ -65,3 +65,10 @@
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
 </div>
+
+<!-- БЛОК ФОТО: Теперь они будут по 150px в ряд -->
+<div class="media-row">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
+</div>
+

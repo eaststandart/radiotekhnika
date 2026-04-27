@@ -1,79 +1,88 @@
 <style>
+    /* 1. Общий контейнер */
     .media-row {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap; 
         gap: 0; 
         margin: 0; 
         align-items: flex-start;
-        flex-wrap: wrap; 
     }
 
-    .video-item {
-        /* Увеличиваем зазор между колонками до 15px */
-        padding-right: 15px; 
-        flex: 0 0 calc(33.33%); 
-        min-width: 200px;
+    /* 2. Универсальная обертка для КАЖДОГО элемента (и фото, и видео) */
+    .media-item {
+        /* Жестко 3 элемента в ряд на ПК (100 / 3 = 33.3) */
+        flex: 0 0 calc(33.33% - 15px); 
+        margin-right: 15px !important;
+        margin-bottom: 15px !important;
+        margin-top: 0 !important;
         box-sizing: border-box;
     }
 
-    .small-cover, 
-    .video-item video {
-        margin-top: 0 !important;    
-        /* Увеличиваем вертикальный зазор до 15px */
-        margin-bottom: 15px !important; 
-        width: 100%;
-        height: auto;
+    /* 3. Стили для контента внутри обертки */
+    .media-item img, 
+    .media-item video {
+        width: 100%;       /* Заполняет свою колонку (1/3 строки) */
+        height: 200px;     /* Одинаковая высота для всех */
+        object-fit: cover; /* Обрезает лишнее, сохраняя ровный ряд */
+        border-radius: 8px;
         display: block;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    .small-cover {
+    /* 4. Специфика для маленьких обложек (если хочешь их в ряд по 150px, а не на 1/3) */
+    /* Если применить этот класс к media-item, он перебьет ширину 33% */
+    .item-small {
+        flex: 0 0 auto !important;
         width: 150px !important;
-        /* Горизонтальный зазор для картинок тоже 15px */
-        margin-right: 15px !important; 
+    }
+
+    /* 5. Адаптация */
+    @media (max-width: 800px) {
+        .media-item {
+            flex: 0 0 calc(50% - 15px); /* По 2 в ряд на планшетах */
+        }
     }
 
     @media (max-width: 600px) {
-        .media-row {
-            flex-direction: column;
-            align-items: center;
-        }
-        .small-cover, .video-item {
+        .media-row { flex-direction: column; align-items: center; }
+        .media-item {
             width: 100% !important;
-            max-width: 280px !important;
-            padding-right: 0;
+            max-width: 280px;
+            margin-right: 0 !important; /* Убираем боковой отступ в столбике */
+            flex: 0 0 auto;
         }
-        .small-cover { margin-right: 0 !important; }
+        .media-item img, .media-item video { height: auto; }
     }
 </style>
 
-<!-- БЛОК ФОТО -->
+<!-- ПРИМЕР: РЯД ФОТО (маленькие, как в библио) -->
 <div class="media-row">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp"></div>
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp"></div>
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp"></div>
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp"></div>
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp"></div>    
 </div>
 
-<!-- БЛОК ВИДЕО (теперь 4 штуки в ряд на ПК) -->
+<!-- ПРИМЕР: РЯД ВИДЕО (по 3 в ряд) -->
 <div class="media-row">
-    <div class="video-item">
+    <div class="media-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
-    <div class="video-item">
+    <div class="media-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
-    <div class="video-item">
+    <div class="media-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
-    <div class="video-item">
+    <div class="media-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>
 </div>
 
-<!-- БЛОК ФОТО -->
+<!-- ПРИМЕР: РЯД ФОТО (маленькие, как в библио) -->
 <div class="media-row">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp"></div>
+    <div class="media-item item-small"><img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp"></div>
 </div>

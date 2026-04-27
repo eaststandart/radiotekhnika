@@ -44,14 +44,14 @@
     <!-- Видео 2 -->
     <div class="video-item">
         <video controls>
-            <source src="img/video2.webm" type="video/webm">
+            <source src="1.webm" type="video/webm">
         </video>
     </div>
 
     <!-- Видео 3 -->
     <div class="video-item">
         <video controls>
-            <source src="img/video3.webm" type="video/webm">
+            <source src="1.webm" type="video/webm">
         </video>
     </div>
 </div>

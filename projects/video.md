@@ -8,37 +8,37 @@
         flex-wrap: wrap; 
     }
 
-    .small-cover {
-        width: 150px !important; 
-        height: auto !important;
-        /* Убираем верхний маржин, чтобы не суммировался */
-        margin-top: 0 !important; 
-        margin-bottom: 15px !important;
-    }
-
+    /* Убираем растягивание перенесенного видео */
     .video-item {
-        /* Рассчитываем ширину ровно на 3 колонки (33.3% минус зазоры) */
         flex: 0 0 calc(33.33% - 10px); 
         min-width: 200px;
     }
 
-    .video-item video {
+    /* ГЛАВНОЕ: Убиваем верхние отступы, оставляем только нижние */
+    .small-cover, 
+    .video-item video,
+    .video-item img {
+        margin-top: 0 !important;    /* Убираем 10px из style.css */
+        margin-bottom: 15px !important; /* Оставляем 15px для ритма */
         width: 100%;
         height: auto;
-        /* Убираем верхний маржин, чтобы не было "дыр" между рядами */
-        margin-top: 0 !important; 
-        margin-bottom: 15px !important;
+        display: block;
+    }
+
+    .small-cover {
+        width: 150px !important; 
     }
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
+            gap: 0; /* Чтобы работали только margin-bottom самих элементов */
         }
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
-            flex: 1 1 auto;
+            flex: 0 0 auto; /* Отключаем расчет ширины в 33% */
         }
     }
 </style>

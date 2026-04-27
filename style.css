@@ -66,12 +66,15 @@ blockquote p {
     padding: 20px;
 }
 
-/* Картинки в тексте */
-.main-content img {
-    max-width: 100%; /* Картинка никогда не шире экрана */
-    height: auto;    /* Пропорции не искажаются */
+/* Картинки и видео в тексте */
+.main-content img, 
+.main-content video,
+.video-item video {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: 15px 0;
+    margin: 10px 0 10px 0; /* Тот самый единый ритм: 10 сверху, 10 снизу */
+    border-radius: 8px;
 }
 
 .back-link {

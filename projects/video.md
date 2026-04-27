@@ -2,44 +2,48 @@
     .media-row {
         display: flex;
         flex-direction: row;
-        gap: 15px;
+        /* ОБНУЛЯЕМ gap, чтобы он не суммировался с маржинами при переносе */
+        gap: 0; 
         margin: 0; 
         align-items: flex-start;
         flex-wrap: wrap; 
     }
 
-    /* Убираем растягивание перенесенного видео */
     .video-item {
-        flex: 0 0 calc(33.33% - 10px); 
+        /* Добавляем зазор между колонками через padding справа */
+        padding-right: 15px; 
+        flex: 0 0 calc(33.33%); 
         min-width: 200px;
+        box-sizing: border-box;
     }
 
-    /* ГЛАВНОЕ: Убиваем верхние отступы, оставляем только нижние */
+    /* Убираем лишние отступы и выравниваем ритм */
     .small-cover, 
-    .video-item video,
-    .video-item img {
-        margin-top: 0 !important;    /* Убираем 10px из style.css */
-        margin-bottom: 15px !important; /* Оставляем 15px для ритма */
+    .video-item video {
+        margin-top: 0 !important;    
+        margin-bottom: 10px !important; /* Твой стандарт 10px */
         width: 100%;
         height: auto;
         display: block;
     }
 
     .small-cover {
-        width: 150px !important; 
+        width: 150px !important;
+        /* Чтобы картинки в ряду тоже имели отступ справа как у видео */
+        margin-right: 15px !important; 
     }
 
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
-            gap: 0; /* Чтобы работали только margin-bottom самих элементов */
         }
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
-            flex: 0 0 auto; /* Отключаем расчет ширины в 33% */
+            padding-right: 0; /* На мобильном отступ справа не нужен */
         }
+        .small-cover { margin-right: 0 !important; }
     }
 </style>
 

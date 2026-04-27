@@ -18,7 +18,7 @@ parent_url: "/biblio/"
 
     .book-page-cover {
         /* Устанавливаем единую высоту для всех обложек */
-        height: 220px !important; 
+        height: 180px !important; 
         width: auto !important; 
         /* Сохраняем пропорции, чтобы картинка не сплющилась */
         object-fit: contain; 

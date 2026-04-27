@@ -1,5 +1,6 @@
 <style>
-    .images-row {
+    /* Общий контейнер для рядов (и фото, и видео) */
+    .media-row {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -7,8 +8,8 @@
         align-items: flex-start;
     }
 
-    .book-page-cover {
-        /* Добавляем !important, чтобы перебить глобальный max-width */
+    /* Настройка для маленьких обложек/фото */
+    .small-cover {
         width: 150px !important; 
         height: auto !important;
         border-radius: 8px;
@@ -16,52 +17,41 @@
         display: block;
     }
 
-    @media (max-width: 600px) {
-        .images-row {
-            flex-direction: column;
-            align-items: center;
-        }
-        .book-page-cover {
-            /* На мобилках делаем чуть побольше для удобства */
-            width: 100% !important;
-            max-width: 250px !important;
-        }
-    }
-    
-    /* Нам нужен только один класс для видео, остальное берем из глобальных стилей */
-    .video-row {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        margin: 20px 0;
-    }
+    /* Настройка для колонок с видео */
     .video-item {
         flex: 1;
+        max-width: 320px; /* Ограничиваем, чтобы видео не были огромными на весь экран */
     }
+
     .video-item video {
         width: 100%;
         height: auto;
-        border-radius: 8px; /* Чтобы видео было в стиле картинок */
-        margin: 15px 0;    /* Такой же отступ, как у картинок в style.css */
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin: 15px 0;
     }
 
+    /* Адаптация для мобильных */
     @media (max-width: 600px) {
-        .video-row { flex-direction: column; }
+        .media-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .small-cover, .video-item {
+            width: 100% !important;
+            max-width: 280px !important;
+        }
     }
 </style>
 
-<!-- БЛОК ФОТО: Просто используем Markdown или HTML, стили подхватятся из style.css -->
-<div class="video-row">
-    <div class="video-item">
-        <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp">
-    </div>
-    <div class="video-item">
-        <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp">
-    </div>
+<!-- БЛОК ФОТО: Теперь они будут по 150px в ряд -->
+<div class="media-row">
+    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001 {cover}.webp" class="small-cover">
+    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992 {cover}.webp" class="small-cover">
 </div>
 
-<!-- БЛОК ВИДЕО: Используем новый компактный класс -->
-<div class="video-row">
+<!-- БЛОК ВИДЕО: В ряд, но не шире 320px каждое -->
+<div class="media-row">
     <div class="video-item">
         <video controls><source src="/projects/1.webm" type="video/webm"></video>
     </div>

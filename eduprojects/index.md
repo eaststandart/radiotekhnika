@@ -4,59 +4,101 @@ title: Учебные проекты
 ---
 
 <style>
-    /* Компактные карточки специально для сетки проектов */
-    .project-grid-card {
+    /* Используем ту же сетку и карточки, что и на главной */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+        width: 100%;
+    }
+
+    .category-card {
         background: white;
-        border-radius: 12px;
-        padding: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        border-top: 8px solid;
+    }
+    
+    /* Цвета для разных направлений */
+    .cat-electronics { border-top-color: #3498db; }
+    .cat-radio { border-top-color: #e67e22; }
+    .cat-computing { border-top-color: #2ecc71; }
+    .cat-cybernetics { border-top-color: #9b59b6; }
+
+    .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+    
+    .section-icon { 
+        width: 50px; height: 50px; 
+        border-radius: 50%; object-fit: cover; 
+    }
+
+    .project-list { list-style: none; padding: 0; margin: 0; }
+    .project-list li { margin-bottom: 10px; }
+    
+    .project-list a {
         text-decoration: none;
-        color: inherit;
+        color: #555;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
-        transition: transform 0.2s;
-        border: 1px solid #eee;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: #f9f9f9;
+        font-size: 0.95rem;
     }
-    .project-grid-card:hover { transform: translateY(-5px); border-color: var(--card-tech); }
-    
-    .project-grid-card img {
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 10px;
+
+    .project-list a:hover {
+        background: #fff;
+        color: #000;
+        border: 1px solid #ddd;
     }
-    
-    .project-grid-card h3 { margin: 5px 0; font-size: 1.1rem; color: var(--card-tech); }
-    .project-grid-card .level { font-size: 0.8rem; color: #7f8c8d; font-weight: bold; }
+
+    .level-tag {
+        font-size: 0.75rem;
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: #666;
+    }
 </style>
 
-## ⚡ Электроника
-<div class="grid-container" style="margin-bottom: 40px;">
-    
-    <a href="led-flashlight/" class="project-grid-card">
-        <img src="led-flashlight/img/preview.jpg" alt="⚡">
-        <span class="level">Уровень 1</span>
-        <h3>Фонарик</h3>
-    </a>
+В этом разделе представлены пошаговые проекты, разделенные по направлениям и уровням сложности.
 
-    <a href="multivibrator/" class="project-grid-card">
-        <img src="multivibrator/img/preview.jpg" alt="⚡">
-        <span class="level">Уровень 2</span>
-        <h3>Мультивибратор</h3>
-    </a>
-
-</div>
-
-## 📻 Радиотехника
 <div class="grid-container">
-    
-    <a href="detector-radio/" class="project-grid-card">
-        <img src="detector-radio/img/preview.jpg" alt="📻">
-        <span class="level">Уровень 3</span>
-        <h3>Детекторный приемник</h3>
-    </a>
+
+    <!-- КАРТОЧКА: ЭЛЕКТРОНИКА -->
+    <section class="category-card cat-electronics">
+        <div class="card-header">
+            <img src="/img/icons/electronics.png" class="section-icon">
+            <h3>Электроника</h3>
+        </div>
+        <ul class="project-list">
+            <li><a href="led-flashlight/"><span>💡 Фонарик</span> <small class="level-tag">Ур. 1</small></a></li>
+            <li><a href="multivibrator/"><span>🚨 Мультивибратор</span> <small class="level-tag">Ур. 2</small></a></li>
+        </ul>
+    </section>
+
+    <!-- КАРТОЧКА: РАДИОТЕХНИКА -->
+    <section class="category-card cat-radio">
+        <div class="card-header">
+            <img src="/img/icons/radio.png" class="section-icon">
+            <h3>Радио</h3>
+        </div>
+        <ul class="project-list">
+            <li><a href="detector-radio/"><span>📻 Детекторный приемник</span> <small class="level-tag">Ур. 3</small></a></li>
+        </ul>
+    </section>
+
+    <!-- КАРТОЧКА: ВЫЧИСЛИТЕЛЬНАЯ ТЕХНИКА -->
+    <section class="category-card cat-computing">
+        <div class="card-header">
+            <img src="/img/icons/computing.png" class="section-icon">
+            <h3>Информатика</h3>
+        </div>
+        <ul class="project-list">
+            <li><a href="binary-calc/"><span>🔢 Бинарный сумматор</span> <small class="level-tag">Ур. 4</small></a></li>
+        </ul>
+    </section>
 
 </div>

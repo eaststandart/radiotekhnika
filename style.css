@@ -130,10 +130,19 @@ blockquote p {
 .tg-icon { width: 20px; height: 20px; }
 
 @media (max-width: 600px) {
-    h1 { font-size: 1.5rem; }
+    h1 { 
+        font-size: 1.5rem; 
+        margin-bottom: 25px !important; /* Увеличиваем отступ от заголовка на мобильном */
+    }
+
+    blockquote {
+        margin-top: 5px !important;    /* Прижимаем цитату к картинкам на мобильном */
+        margin-bottom: 20px !important;
+    }
+
     .content-wrapper { 
         width: 100%; 
         padding: 15px 10px; 
-        border-radius: 0; /* На телефоне карточка без скруглений во весь экран смотрится лучше */
+        border-radius: 0; /* На телефоне карточка без скруглений во весь экран смотрится лучше */ 
     }
 }

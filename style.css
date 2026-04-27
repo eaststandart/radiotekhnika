@@ -133,7 +133,7 @@ blockquote p {
 @media (max-width: 600px) {
     h1 { 
         font-size: 1.5rem; 
-        margin: 5px 0 15px 0 !important; /* Устанавливаем такой же или чуть меньший отступ для телефона */
+        margin: 5px 0 10px 0 !important; /* Устанавливаем такой же или чуть меньший отступ для телефона */
     }
 
     blockquote {

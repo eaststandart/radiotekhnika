@@ -12,21 +12,21 @@ parent_url: "/biblio/"
         display: flex;
         flex-direction: row;
         flex-wrap: wrap; 
-        gap: 0;           /* Убираем gap, чтобы не было дыр при переносе */
-        margin: 0; 
+        gap: 0;
+        /* Уменьшаем или обнуляем нижний отступ контейнера */
+        margin: 0 0 5px 0 !important; 
         align-items: flex-start;
     }
 
     .book-page-cover {
         height: 220px !important; 
         width: auto !important; 
-        /* Ограничиваем ширину для 4-х в ряд */
         max-width: calc(25% - 15px) !important;
         object-fit: contain; 
         border-radius: 8px;
-        /* Идентичные отступы как в блоке с видео */
         margin-top: 0 !important;
-        margin-bottom: 15px !important;
+        /* Уменьшаем нижний отступ картинок до 10px */
+        margin-bottom: 10px !important; 
         margin-right: 15px !important;
     }
 

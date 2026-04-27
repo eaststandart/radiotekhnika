@@ -40,7 +40,7 @@ header {
 }
 
 h1 { 
-    margin: 5px 0 15px 0; /* Оставили 5px сверху и 25px снизу */
+    margin: 5px 0 15px 0; /* Оставили 5px сверху и 15px снизу */
     font-size: 2rem; 
     line-height: 1.2;
 }
@@ -133,7 +133,7 @@ blockquote p {
 @media (max-width: 600px) {
     h1 { 
         font-size: 1.5rem; 
-        margin-bottom: 15px !important; /* Увеличиваем отступ от заголовка на мобильном */
+        margin: 5px 0 15px 0 !important; /* Устанавливаем такой же или чуть меньший отступ для телефона */
     }
 
     blockquote {

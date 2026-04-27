@@ -14,8 +14,8 @@ title: Учебные проекты
             Изучение компонентов, чтение схем и создание первых электронных устройств.
         </p>
         <ul class="inner-project-list">
-            <li><a href="projects/led-flashlight/">💡 Светодиодный фонарик</a></li>
-            <li><a href="projects/multivibrator/">🚨 Мультивибратор</a></li>
+            <li><a href="projects/led-flashlight/">❯ Светодиодный фонарик</a></li>
+            <li><a href="projects/multivibrator/">❯ Мультивибратор</a></li>
         </ul>
     </section>
 
@@ -26,7 +26,7 @@ title: Учебные проекты
             Сборка приемников, передатчиков и изучение принципов беспроводной связи.
         </p>
         <ul class="inner-project-list">
-            <li><a href="projects/detector-radio/">📻 Детекторный приемник</a></li>
+            <li><a href="projects/detector-radio/">❯ Детекторный приемник</a></li>
         </ul>
     </section>
 
@@ -37,7 +37,7 @@ title: Учебные проекты
             Алгоритмы, архитектура ЭВМ и написание прикладного кода.
         </p>
         <ul class="inner-project-list">
-            <li><a href="projects/binary-calc/">🔢 Бинарный сумматор</a></li>
+            <li><a href="projects/binary-calc/">❯ Бинарный сумматор</a></li>
         </ul>
     </section>
 
@@ -48,7 +48,7 @@ title: Учебные проекты
             Автоматическое управление, сенсорика и создание автономных систем.
         </p>
         <ul class="inner-project-list">
-            <li><a href="projects/line-follower/">🤖 Робот на линии</a></li>
+            <li><a href="projects/line-follower/">❯ Робот на линии</a></li>
         </ul>
     </section>
 

@@ -32,7 +32,7 @@ title: Учебные проекты
 
     <!-- БЛОК: Информатика -->
     <section class="inner-category-card" style="border-top-color: #2ecc71;">
-        <h3>Информатика</h3>
+        <h3>Информатика и вычислительная техника</h3>
         <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">
             Алгоритмы, архитектура ЭВМ и написание прикладного кода.
         </p>
@@ -41,7 +41,7 @@ title: Учебные проекты
         </ul>
     </section>
 
-    <!-- БЛОК: Кибернетика -->
+    <!-- БЛОК: Кибернетика и основы робототехники-->
     <section class="inner-category-card" style="border-top-color: #9b59b6;">
         <h3>Кибернетика</h3>
         <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">

@@ -1,14 +1,13 @@
 <style>
-    /* Общий контейнер для рядов (и фото, и видео) */
     .media-row {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        margin: 10px 0 20px 0;
+        /* Уменьшили нижний отступ контейнера с 20px до 5px */
+        margin: 10px 0 5px 0; 
         align-items: flex-start;
     }
 
-    /* Настройка для маленьких обложек/фото */
     .small-cover {
         width: 150px !important; 
         height: auto !important;
@@ -17,10 +16,9 @@
         display: block;
     }
 
-    /* Настройка для колонок с видео */
     .video-item {
         flex: 1;
-        max-width: 320px; /* Ограничиваем, чтобы видео не были огромными на весь экран */
+        max-width: 320px;
     }
 
     .video-item video {
@@ -28,18 +26,22 @@
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        margin: 15px 0;
+        /* УБРАЛИ margin: 15px 0, теперь видео не "отталкивается" */
+        margin: 0; 
     }
 
-    /* Адаптация для мобильных */
     @media (max-width: 600px) {
         .media-row {
             flex-direction: column;
             align-items: center;
+            gap: 10px; /* На мобильном чуть плотнее */
         }
         .small-cover, .video-item {
             width: 100% !important;
             max-width: 280px !important;
+        }
+        .video-item video {
+            margin-bottom: 10px; /* Чтобы видео не слипались в колонке */
         }
     }
 </style>

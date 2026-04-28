@@ -16,8 +16,8 @@ title: Рекомендуемая литература
 	</div>
 </a>
 
-<a href="chernenko-g-t-puteshestvie-v-stranu-robotov-1977.html" class="item-card">
-	<img src="/biblio/img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" alt="Обложка" class="item-image">
+<a href="kiselyov-l-kniga-yunogo-tekhnika-1948.html" class="item-card">
+	<img src="/biblio/img/kiselyov-l-kniga-yunogo-tekhnika-1948.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книга юного техника</h3>
 		<span class="item-subtext">Киселёв Л.</span>

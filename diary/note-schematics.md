@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Заметки по схемотехнике
-parent_name: "К дневнику инженера"
+parent_name: "Дневник инженера"
 parent_url: "/diary/"
 ---
 

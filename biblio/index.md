@@ -25,6 +25,15 @@ title: Рекомендуемая литература
 	</div>
 </a>
 
+<a href="svoren-r-a-elektronika-shag-za-shagom-1991.html" class="item-card">
+	<img src="/biblio/img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" alt="Обложка" class="item-image">
+	<div class="item-info">
+		<h3>Электроника шаг за шагом</h3>
+		<span class="item-subtext">Сворень Р.А.</span>
+		<p>Практическое руководство по техническому творчеству. Обучает основам работы с материалами, механикой и электроникой, вдохновляя на создание собственных изобретений своими руками.</p>
+	</div>
+</a>
+
 <a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="item-card">
 	<img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
 	<div class="item-info">

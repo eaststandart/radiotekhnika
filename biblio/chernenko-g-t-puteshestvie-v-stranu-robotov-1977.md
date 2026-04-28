@@ -10,6 +10,7 @@ parent_url: "/biblio/"
 <!-- Ряд с фото -->
 <div class="media-row">
     <img src="/biblio/img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" class="book-page-cover">
+    <img src="/biblio/img/chernenko-g-t-kak-roboty-rabotat-nauchilis-1989.webp" class="book-page-cover">
 </div>
 <!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  
@@ -23,7 +24,6 @@ parent_url: "/biblio/"
     <img src="/biblio/img/chernenko-g-t-chto-umeyut-mashiny-rasskazy-ob-avtomatike-1986.webp" class="book-page-cover">
     <img src="/biblio/img/chernenko-g-t-kak-chelovek-poletel-v-kosmos-1987.webp" class="book-page-cover">
     <img src="/biblio/img/chernenko-g-t-na-polzu-i-slavu-otechestva-1988.webp" class="book-page-cover">
-    <img src="/biblio/img/chernenko-g-t-kak-roboty-rabotat-nauchilis-1989.webp" class="book-page-cover">
     <img src="/biblio/img/chernenko-g-t-tvorcy-nauk-rossijskih-1989.webp" class="book-page-cover">
     <img src="/biblio/img/chernenko-g-t-prostaya-avtomatika-1989.webp" class="book-page-cover">
     <img src="/biblio/img/chernenko-g-t-zvezdy-planety-teleskopy-1991.webp" class="book-page-cover">

@@ -43,8 +43,8 @@ title: Рекомендуемая литература
 	</div>
 </a>
 
-<a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="item-card">
-	<img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
+<a href="pchyolko-a-s-arifmetika-dlya-nachalnoj-shkoly-1955.html" class="item-card">
+	<img src="/biblio/img/pchyolko-a-s-arifmetika-dlya-pervogo-klassa-nachalnoj-shkoly-2022.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книги по арифметике, сборники задач и упражнений к ним</h3>
 		<span class="item-subtext"> Пчёлко А.С., Попова Н.С., Киселев А.П., Березанская E.C.</span>

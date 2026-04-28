@@ -19,7 +19,7 @@ title: Поиск по тегам
     <!-- 1. Облако тегов (скрыто по умолчанию) -->
     <div id="tags-cloud" style="display: none; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px; border: 1px solid #eee;">
         {% for tag in unique_tags %}
-            <a href="#{{ tag | slugify }}" class="tag-item" onclick="filterTag('{{ tag | slugify }}')" style="padding: 5px 12px; background: #3498db; color: white; border-radius: 15px; text-decoration: none; font-size: 0.85rem;">#{{ tag }}</a>
+            <a href="#{{ tag | slugify }}" class="tag-item" onclick="filterTag('{{ tag | slugify }}')" style="padding: 5px 12px; background: #3498db; color: white; border-radius: 15px; text-decoration: none; font-size: 0.85rem;">{{ tag }}</a>
         {% endfor %}
     </div>
 

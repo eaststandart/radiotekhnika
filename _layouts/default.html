@@ -38,9 +38,11 @@
         {% endif %}
 
 {% if page.tags %}
-<div class="tag-container">
+<div class="tag-container" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;">
     {% for tag in page.tags %}
-    <a href="/tags.html#{{ tag | slugify }}" class="tag-item">#{{ tag }}</a>
+    <a href="{{ '/tags.html' | relative_url }}#{{ tag | slugify }}" class="tag-item" style="text-decoration: none !important;">
+        #{{ tag }}
+    </a>
     {% endfor %}
 </div>
 {% endif %}

@@ -33,7 +33,7 @@ title: Рекомендуемая литература
 		<p>Классика инженерной литературы. Фундаментальный курс практической электроники — от принципа работы до создания сложных электронных систем.</p>
 	</div>
 </a>
-
+ 
 <a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="item-card">
 	<img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
 	<div class="item-info">

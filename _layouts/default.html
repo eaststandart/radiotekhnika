@@ -41,7 +41,7 @@
 <div class="tag-container" style="margin: 20px 0; display: flex; flex-wrap: wrap; gap: 8px;">
     {% for tag in page.tags %}
     {% assign tag_clean = tag | replace: '#', '' | strip %}
-    <a href="{{ '/tags.html' | relative_url }}#{{ tag_clean | slugify }}" class="tag-item" style="text-decoration: none !important; font-size: 0.85rem; padding: 4px 10px; background: #f0f0f0; border-radius: 12px; color: #555;">{{ tag_clean }}</a>
+    <a href="{{ '/tags.html' | relative_url }}#{{ tag_clean | slugify }}" class="tag-item" style="text-decoration: none !important; font-size: 0.85rem; padding: 4px 12px; background: #3498db; color: white !important; border-radius: 15px; font-weight: 500;">{{ tag_clean }}</a>
     {% endfor %}
 </div>
 {% endif %}

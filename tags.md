@@ -101,7 +101,7 @@ function filterTag(tagSlug) {
         document.getElementById('tag-label').innerText = '#' + tagSlug;
         // Скрываем облако после выбора, чтобы не мешало
         document.getElementById('tags-cloud').style.display = 'none';
-        document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
+        document.getElementById('toggle-cloud-btn').innerText = '#️⃣ Показать облако тегов';
     }
 }
 

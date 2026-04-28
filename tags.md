@@ -21,7 +21,7 @@ title: Поиск по тегам
         {% for tag in unique_tags %}
             {% assign tag_clean = tag | replace: '#', '' | strip %}
             <!-- Убрали style, добавили класс tag-item и выводим без решетки внутри, так как она добавится через CSS или останется только текстом -->
-            <a href="{{ tag_clean | slugify }}" class="tag-item" onclick="filterTag('{{ tag_clean | slugify }}')">{{ tag_clean }}</a>
+            <a href="#{{ tag_clean | slugify }}" class="tag-item" onclick="filterTag('{{ tag_clean | slugify }}')">{{ tag_clean }}</a>
         {% endfor %}
     </div>
 

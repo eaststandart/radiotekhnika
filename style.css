@@ -126,7 +126,7 @@ blockquote p {
     height: 24px; /* Задаем фиксированную высоту овала */
 }
 
-.tag-item::before {margin-right: 1px; opacity: 0.7; }
+.tag-item::before {content: "#"; margin-right: 1px; opacity: 0.7; }
 .tag-item:hover {opacity: 0.8;}
 
 /* 4. ПОДВАЛ И КНОПКА TELEGRAM */

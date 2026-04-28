@@ -2,7 +2,7 @@
 layout: default
 title: Электроника шаг за шагом
 tags: [пчелко, попова, киселев, березанская, математика, арифметика, младшийвозраст, среднийвозраст]
-sources: "[Пчёлко АС, Учебник «Арифметика, 1 класс», 1955 год](https://konzeptual.ru/arifmetika-uchebnik-dlja-pervogo-klassa-nachal-noj-shkoly-1955-11975/)"
+sources: "[Пчёлко А.С., Учебник «Арифметика. 1 класс», 1955 г.](https://konzeptual.ru/arifmetika-uchebnik-dlja-pervogo-klassa-nachal-noj-shkoly-1955-11975/)"
 parent_name: "Cписок литературы"
 parent_url: "/biblio/"
 ---

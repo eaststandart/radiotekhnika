@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Путешествие в страну роботов
-tags: [черненко, инженерноемышление, младшийвозраст, среднийвозраст]
+tags: [черненко, инженерноемышление, робототехника, автоматика, младшийвозраст, среднийвозраст]
 sources: "[Публичная библиотека](http://publ.lib.ru/ARCHIVES/CH/CHERNENKO_Gennadiy_Trofimovich/_Chernenko_G.T..html)"
 parent_name: "Cписок литературы"
 parent_url: "/biblio/"

@@ -22,6 +22,6 @@ parent_url: "/biblio/"
 
 В этом поможет книга [Свореня Р. А.](https://habr.com/ru/articles/392911/) Она предназначена для тех, кто хочет научиться самостоятельно конструировать электронные устройства. В ней объясняется, как работает электричество, зачем нужны разные электронные компоненты и как на их основе создаются технологии, без которых невозможно представить современный мир. Изучение этой книги — первый шаг к профессиям будущего.
 
-На фотографии версия книги [1991 года](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html), [2001 года](http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1200-1299_.html) и её переиздание [2020 года](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html); для чтения предпочтительно издание 2001 или 1991 года в бумажном варианте. Смотри также другие материалы (https://t.me/RadiotekhnikaClub/4/489).
+На фотографии версия книги [1991 года](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html), [2001 года](http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1200-1299_.html) и её переиздание [2020 года](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html); для чтения предпочтительно издание 2001 или 1991 года в бумажном варианте.
 
 Смотри также [другие материалы](https://).

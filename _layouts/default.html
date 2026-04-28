@@ -12,16 +12,19 @@
 
 <div class="content-wrapper">
         
-    <!-- Блок навигации: уменьшили отступ снизу до 15px и убрали лишний паддинг -->
-    <div class="navigation-header" style="margin-bottom: 15px; font-size: 0.9rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
-        <!-- Ссылка на корень сайта -->
-        <a href="/" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;">← На главную</a>
+<!-- Блок навигации -->
+<div class="navigation-header" style="margin-bottom: 15px; font-size: 0.9rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
+    <a href="/" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;">← На главную</a>
+    
+    <span style="color: #ccc; margin: 0 10px;">|</span>
+    <a href="/tags.html" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;">🔍 Теги</a>
 
-        {% if page.parent_url %}
-            <span style="color: #ccc; margin: 0 10px;">|</span>
-            <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
-        {% endif %}
-    </div><!-- Убрали пустые строки между навигацией и h1 -->
+    {% if page.parent_url %}
+        <span style="color: #ccc; margin: 0 10px;">|</span>
+        <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
+    {% endif %}
+</div>
+<!-- Убрали пустые строки между навигацией и h1 -->
     <h1 style="margin-top: 0;">{{ page.title }}</h1> 
 
     <div class="main-content">

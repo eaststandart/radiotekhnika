@@ -10,7 +10,7 @@ title: Рекомендуемая литература
 <a href="chernenko-g-t-puteshestvie-v-stranu-robotov-1977.html" class="item-card">
 	<img src="/biblio/img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
-		<h3>Книги по автоматике и робототехнике.</h3>
+		<h3>Книги по автоматике и робототехнике</h3>
 		<span class="item-subtext">Черненко Г.Т.</span>
 		<p>Увлекательное введение в автоматику и робототехнику. Первые шаги в изучении механизмов и систем управления для юных исследователей. Отличный старт для развития инженерного мышления в младшем и среднем возрасте.</p>
 	</div>
@@ -46,7 +46,7 @@ title: Рекомендуемая литература
 <a href="pchyolko-a-s-arifmetika-dlya-nachalnoj-shkoly-1955.html" class="item-card">
 	<img src="/biblio/img/pchyolko-a-s-arifmetika-dlya-pervogo-klassa-nachalnoj-shkoly-2022.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
-		<h3>Книги по математике (арифметика), сборники задач и упражненийз к ним</h3>
+		<h3>Книги по математике (арифметика)</h3>
 		<span class="item-subtext"> Пчёлко А.С., Попова Н.С., Киселев А.П., Березанская E.C.</span>
 		<p>Фундаментальная база для инженерных расчетов. Советские учебники по арифметике, помогающие освоить «язык математики», необходимый для  проектирования и понимания работы электрических схем и цепей.</p>
 	</div>

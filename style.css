@@ -118,7 +118,7 @@ blockquote p {
     
     /* УПРАВЛЕНИЕ ОТСТУПАМИ: */
     /* 4px - сверху, 12px - по бокам, 6px - снизу */
-    padding: 4px 12px 6px 12px !important; 
+    padding: 4px 12px 5px 12px !important; 
     
     line-height: 1;
     transition: opacity 0.2s;

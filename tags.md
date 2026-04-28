@@ -8,6 +8,11 @@ title: Поиск по тегам
 {%- assign unique_tags = raw_tags | split: "|" | uniq | sort -%}
 
 <div class="tags-page">
+
+<div style="margin-bottom: 15px;">
+    <input type="text" id="tag-search" onkeyup="searchTags()" placeholder="🔍 Поиск тега по названию..." 
+    style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.9rem;">
+</div>
     
     <!-- Кнопка управления облаком -->
     <div style="margin-bottom: 20px;">
@@ -52,6 +57,25 @@ title: Поиск по тегам
 </div>
 
 <script>
+
+function searchTags() {
+    let input = document.getElementById('tag-search').value.toLowerCase();
+    let tags = document.querySelectorAll('#tags-cloud .tag-item');
+    
+    // Если начали писать, разворачиваем облако, если оно было скрыто
+    const cloud = document.getElementById('tags-cloud');
+    if (input.length > 0) {
+        cloud.style.display = 'flex';
+        document.getElementById('toggle-cloud-btn').innerText = '🔼 Скрыть облако тегов';
+    }
+
+    tags.forEach(tag => {
+        let text = tag.innerText.toLowerCase();
+        // Если слово совпадает, показываем тег, если нет — скрываем
+        tag.style.display = text.includes(input) ? 'inline-flex' : 'none';
+    });
+}
+
 function toggleCloud() {
     const cloud = document.getElementById('tags-cloud');
     const btn = document.getElementById('toggle-cloud-btn');

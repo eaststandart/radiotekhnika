@@ -109,7 +109,8 @@ blockquote p {
     background-color: #3498db; 
     color: white !important; 
     /* Используем одинаковый padding сверху и снизу (например, 4px) */
-    padding: 10px 12px !important; 
+    padding: 4px 12px !important;
+    padding-top: 5px;
     border-radius: 15px; 
     border: 1px solid #b3e5fc; 
     text-decoration: none; 

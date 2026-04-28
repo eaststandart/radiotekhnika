@@ -52,52 +52,51 @@ title: Поиск по тегам
 </div>
 
 <script>
-/* Твой JS без изменений */
-function toggleCloud() {
-    const cloud = document.getElementById('tags-cloud');
-    const btn = document.getElementById('toggle-cloud-btn');
-    if (cloud.style.display === 'none') {
-        cloud.style.display = 'flex';
-        btn.innerText = '🔼 Скрыть облако тегов';
-    } else {
-        cloud.style.display = 'none';
-        btn.innerText = '🔍 Показать облако тегов';
-    }
-}
-
 function filterTag(tagSlug) {
     const groups = document.querySelectorAll('.tag-group');
     groups.forEach(g => g.style.display = 'none');
+
     const target = document.getElementById(tagSlug);
     if (target) {
         target.style.display = 'block';
         document.getElementById('active-tag-info').style.display = 'block';
         document.getElementById('tag-label').innerText = '#' + decodeURIComponent(tagSlug);
+        
+        // Скрываем облако при выборе тега
         document.getElementById('tags-cloud').style.display = 'none';
         document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
     }
 }
 
 function resetFilter() {
+    // Скрываем списки статей
     const groups = document.querySelectorAll('.tag-group');
     groups.forEach(g => g.style.display = 'none');
+    
+    // Скрываем инфо-панель тега
     document.getElementById('active-tag-info').style.display = 'none';
-    document.getElementById('tags-cloud').style.display = 'flex';
-    document.getElementById('toggle-cloud-btn').innerText = '🔼 Скрыть облако тегов';
+    
+    // Скрываем облако тегов (делаем как при входе)
+    document.getElementById('tags-cloud').style.display = 'none';
+    document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
+    
+    // Очищаем хэш в адресе, чтобы не мешался
+    history.replaceState(null, null, ' ');
 }
 
 window.addEventListener('hashchange', () => {
     const hash = window.location.hash.substring(1);
-    if (hash) filterTag(decodeURIComponent(hash));
+    if (hash) filterTag(hash);
 });
 
 window.addEventListener('load', () => {
     const hash = window.location.hash.substring(1);
     if (hash) {
-        filterTag(decodeURIComponent(hash));
+        filterTag(hash);
     } else {
-        document.getElementById('tags-cloud').style.display = 'flex';
-        document.getElementById('toggle-cloud-btn').innerText = '🔼 Скрыть облако тегов';
+        // При обычном входе на страницу всё свернуто
+        document.getElementById('tags-cloud').style.display = 'none';
+        document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
     }
 });
 </script>

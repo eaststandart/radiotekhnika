@@ -17,7 +17,7 @@ title: Поиск по тегам
     <!-- Кнопка управления облаком -->
     <div style="margin-bottom: 20px;">
         <button id="toggle-cloud-btn" onclick="toggleCloud()" style="padding: 8px 15px; background: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 0.9rem;">
-            #⃣️ Показать облако тегов
+            #️⃣ Показать облако тегов
         </button>
     </div>
 

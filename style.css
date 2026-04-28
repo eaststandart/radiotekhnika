@@ -108,16 +108,21 @@ blockquote p {
 .tag-item {
     background-color: #3498db;
     color: white !important;
-    /* Берем отступы прямо из твоего рабочего tags.html */
-    padding: 5px 12px !important; 
     border-radius: 15px;
     text-decoration: none;
     font-weight: normal;
     font-size: 0.85rem;
-    display: inline-block; /* Важно: чтобы padding работал корректно */
-    line-height: 1;        /* Центрирует текст по вертикали внутри padding */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* УПРАВЛЕНИЕ ОТСТУПАМИ: */
+    /* 4px - сверху, 12px - по бокам, 6px - снизу */
+    padding: 4px 12px 6px 12px !important; 
+    
+    line-height: 1;
     transition: opacity 0.2s;
-    border: none;          /* Убираем рамку, если она мешает центровке */
+    border: none;
 }
 
 .tag-item:hover {

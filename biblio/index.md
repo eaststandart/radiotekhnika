@@ -43,4 +43,13 @@ title: Рекомендуемая литература
 	</div>
 </a>
 
+<a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="item-card">
+	<img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
+	<div class="item-info">
+		<h3>Книги по арифметике, сборники задач и упражнений к ним</h3>
+		<span class="item-subtext"> Пчёлко А.С., Попова Н.С., Киселев А.П., Березанская E.C.</span>
+		<p>Фундаментальная база для инженерных расчетов. Классические учебники по арифметике, помогающие освоить «язык математики», необходимый для точного проектирования и понимания работы электрических схем и цепей.</p>
+	</div>
+</a>
+
 </div>

@@ -16,10 +16,12 @@ title: Поиск по тегам
         </button>
     </div>
 
-    <!-- 1. Облако тегов (скрыто по умолчанию) -->
+    <!-- 1. Облако тегов -->
     <div id="tags-cloud" style="display: none; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px; border: 1px solid #eee;">
         {% for tag in unique_tags %}
-            <a href="#{{ tag | slugify }}" class="tag-item" onclick="filterTag('{{ tag | slugify }}')" style="padding: 5px 12px; background: #3498db; color: white; border-radius: 15px; text-decoration: none; font-size: 0.85rem;">{{ tag }}</a>
+            {% assign tag_clean = tag | replace: '#', '' | strip %}
+            <!-- Убрали style, добавили класс tag-item и выводим без решетки внутри, так как она добавится через CSS или останется только текстом -->
+            <a href="{{ tag_clean | slugify }}" class="tag-item" onclick="filterTag('{{ tag_clean | slugify }}')">{{ tag_clean }}</a>
         {% endfor %}
     </div>
 
@@ -32,7 +34,8 @@ title: Поиск по тегам
     <!-- 2. Списки страниц -->
     <div class="tags-lists">
         {% for tag in unique_tags %}
-            <div class="tag-group" id="{{ tag | slugify }}" style="display: none; margin-bottom: 40px;">
+            {% assign tag_clean = tag | replace: '#', '' | strip %}
+            <div class="tag-group" id="{{ tag_clean | slugify }}" style="display: none; margin-bottom: 40px;">
                 <ul style="list-style: none; padding: 0;">
                     {% for p in all_pages %}
                         {% if p.tags contains tag %}
@@ -49,6 +52,7 @@ title: Поиск по тегам
 </div>
 
 <script>
+/* Твой JS без изменений */
 function toggleCloud() {
     const cloud = document.getElementById('tags-cloud');
     const btn = document.getElementById('toggle-cloud-btn');
@@ -62,17 +66,13 @@ function toggleCloud() {
 }
 
 function filterTag(tagSlug) {
-    // Скрываем всё
     const groups = document.querySelectorAll('.tag-group');
     groups.forEach(g => g.style.display = 'none');
-
-    // Показываем только выбранный тег
     const target = document.getElementById(tagSlug);
     if (target) {
         target.style.display = 'block';
         document.getElementById('active-tag-info').style.display = 'block';
-        document.getElementById('tag-label').innerText = '#' + tagSlug;
-        // Скрываем облако после выбора, чтобы не мешало
+        document.getElementById('tag-label').innerText = '#' + decodeURIComponent(tagSlug);
         document.getElementById('tags-cloud').style.display = 'none';
         document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
     }
@@ -83,19 +83,21 @@ function resetFilter() {
     groups.forEach(g => g.style.display = 'none');
     document.getElementById('active-tag-info').style.display = 'none';
     document.getElementById('tags-cloud').style.display = 'flex';
+    document.getElementById('toggle-cloud-btn').innerText = '🔼 Скрыть облако тегов';
 }
 
-// Слушаем изменение хэша (когда кликаем по тегу из другой статьи)
 window.addEventListener('hashchange', () => {
     const hash = window.location.hash.substring(1);
     if (hash) filterTag(decodeURIComponent(hash));
 });
 
-// При первой загрузке
 window.addEventListener('load', () => {
     const hash = window.location.hash.substring(1);
     if (hash) {
         filterTag(decodeURIComponent(hash));
+    } else {
+        document.getElementById('tags-cloud').style.display = 'flex';
+        document.getElementById('toggle-cloud-btn').innerText = '🔼 Скрыть облако тегов';
     }
 });
 </script>

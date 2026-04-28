@@ -52,51 +52,53 @@ title: Поиск по тегам
 </div>
 
 <script>
+function toggleCloud() {
+    const cloud = document.getElementById('tags-cloud');
+    const btn = document.getElementById('toggle-cloud-btn');
+    if (cloud.style.display === 'none') {
+        cloud.style.display = 'flex';
+        btn.innerText = '🔼 Скрыть облако тегов';
+    } else {
+        cloud.style.display = 'none';
+        btn.innerText = '🔍 Показать облако тегов';
+    }
+}
+
 function filterTag(tagSlug) {
+    // Скрываем всё
     const groups = document.querySelectorAll('.tag-group');
     groups.forEach(g => g.style.display = 'none');
 
+    // Показываем только выбранный тег
     const target = document.getElementById(tagSlug);
     if (target) {
         target.style.display = 'block';
         document.getElementById('active-tag-info').style.display = 'block';
-        document.getElementById('tag-label').innerText = '#' + decodeURIComponent(tagSlug);
-        
-        // Скрываем облако при выборе тега
+        document.getElementById('tag-label').innerText = '#' + tagSlug;
+        // Скрываем облако после выбора, чтобы не мешало
         document.getElementById('tags-cloud').style.display = 'none';
         document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
     }
 }
 
 function resetFilter() {
-    // Скрываем списки статей
     const groups = document.querySelectorAll('.tag-group');
     groups.forEach(g => g.style.display = 'none');
-    
-    // Скрываем инфо-панель тега
     document.getElementById('active-tag-info').style.display = 'none';
-    
-    // Скрываем облако тегов (делаем как при входе)
-    document.getElementById('tags-cloud').style.display = 'none';
-    document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
-    
-    // Очищаем хэш в адресе, чтобы не мешался
-    history.replaceState(null, null, ' ');
+    document.getElementById('tags-cloud').style.display = 'flex';
 }
 
+// Слушаем изменение хэша (когда кликаем по тегу из другой статьи)
 window.addEventListener('hashchange', () => {
     const hash = window.location.hash.substring(1);
-    if (hash) filterTag(hash);
+    if (hash) filterTag(decodeURIComponent(hash));
 });
 
+// При первой загрузке
 window.addEventListener('load', () => {
     const hash = window.location.hash.substring(1);
     if (hash) {
-        filterTag(hash);
-    } else {
-        // При обычном входе на страницу всё свернуто
-        document.getElementById('tags-cloud').style.display = 'none';
-        document.getElementById('toggle-cloud-btn').innerText = '🔍 Показать облако тегов';
+        filterTag(decodeURIComponent(hash));
     }
 });
 </script>

@@ -41,7 +41,7 @@
 <div class="tag-container">
     {% for tag in page.tags %}
     {% assign tag_clean = tag | replace: '#', '' | strip %}
-    <a href="{{ '/tags.html' | relative_url }}#{{ tag_clean | slugify }}" class="tag-item">#{{ tag_clean }}</a>
+    <a href="{{ '/tags.html' | relative_url }}#{{ tag_clean | slugify }}" class="tag-item">{{ tag_clean }}</a>
     {% endfor %}
 </div>
 {% endif %}

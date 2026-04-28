@@ -20,7 +20,7 @@ title: Рекомендуемая литература
 	<img src="/biblio/img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книга юного техника</h3>
-		<span class="item-subtext">Киселёв Л</span>
+		<span class="item-subtext">Киселёв Л.</span>
 		<p>Практическое руководство по техническому творчеству. Обучает основам работы с материалами, механикой и электроникой, вдохновляя на создание собственных изобретений своими руками.</p>
 	</div>
 </a>

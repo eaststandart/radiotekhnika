@@ -84,7 +84,7 @@ function toggleCloud() {
         btn.innerText = '🔼 Скрыть облако тегов';
     } else {
         cloud.style.display = 'none';
-        btn.innerText = '🔍 Показать облако тегов';
+        btn.innerText = '#⃣️ Показать облако тегов';
     }
 }
 

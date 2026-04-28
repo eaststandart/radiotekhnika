@@ -105,7 +105,20 @@ blockquote p {
 .sources-content p, .sources-content ul, .sources-content li { display: inline !important; margin: 0; padding: 0; }
 .sources-content ul li:not(:last-child)::after { content: ", "; }
 
-.tag-item { background-color: #3498db; color: white !important; padding: 2px 10px; border-radius: 15px; border: 1px solid #b3e5fc; text-decoration: none; font-weight: normal; transition: opacity 0.2s;}
+.tag-item { 
+    background-color: #3498db; 
+    color: white !important; 
+    padding: 3px 12px; /* Чуть увеличили отступы для лучшего вида */
+    border-radius: 15px; 
+    border: 1px solid #b3e5fc; 
+    text-decoration: none; 
+    font-weight: normal; 
+    transition: opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; /* Обнуляем высоту строки, чтобы она не "толкала" текст вниз */
+}
 .tag-item::before {margin-right: 1px; opacity: 0.7; }
 .tag-item:hover {opacity: 0.8;}
 

@@ -17,7 +17,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="kiselyov-l-kniga-yunogo-tekhnika-1948.html" class="item-card">
-	<img src="/biblio/img/kiselyov-l-kniga-yunogo-tekhnika-1948.webp" alt="Обложка" class="item-image">
+	<img src="/biblio/img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книга юного техника</h3>
 		<span class="item-subtext">Киселёв Л.</span>

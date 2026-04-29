@@ -210,63 +210,46 @@
     }
 }
 
-/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (ТОЧНАЯ КОПИЯ ДНЕВНИКА) --- */
+/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (ТОЛЬКО КАРТИНКА И ЗАГОЛОВОК) --- */
 
 .inspiration-feed {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    gap: 15px; /* Чуть плотнее */
     width: 100%;
 }
 
 .inspiration-feed .feed-card {
     display: flex;
-    flex-direction: row; /* Оставляем ряд всегда */
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center; /* Центрируем заголовок по вертикали относительно картинки */
     gap: 20px;
     background: #fff;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 12px;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s;
 }
 
 .inspiration-feed .feed-img-round {
-    width: 100px !important;
-    height: 100px !important;
+    width: 80px !important;  /* Сделал чуть меньше (было 100), чтобы не громоздко без текста */
+    height: 80px !important;
     object-fit: cover;
-    border-radius: 50% !important; /* Твой круг */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 50% !important;
     flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .inspiration-feed .feed-info {
     flex: 1;
-    padding-top: 10px; /* Твое выравнивание */
+    /* Убрали padding-top, так как при одной строке лучше работает align-items: center */
 }
 
 .inspiration-feed h3 {
-    margin: 0 0 8px 0;
-    color: var(--card-tech);
-    font-size: 1.15rem;
-    line-height: 1.2;
-}
-
-.inspiration-feed .feed-subtext {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-.inspiration-feed p {
     margin: 0;
-    font-size: 0.88rem;
-    color: #666;
-    line-height: 1.4;
+    color: var(--card-tech);
+    font-size: 1.1rem;
+    line-height: 1.3;
 }
 

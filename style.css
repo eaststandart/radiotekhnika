@@ -56,13 +56,13 @@ blockquote {
     margin-left: 0;
 }
 
-
 blockquote p {
-    margin-bottom: 1em; /* Дает отступ в одну строку между абзацами */
+    margin-top: 0;       /* Убирает пустоту сверху у Примечания */
+    margin-bottom: 15px; /* Создает ту самую пустую строку между абзацами */
 }
 
-blockquote p:last-child {
-    margin-bottom: 0; /* Чтобы снизу внутри рамки не было лишней пустоты */
+blockquote *:last-child {
+    margin-bottom: 0;    /* Убирает пустоту в самом низу блока */
 }
 
 /* 2. КОНТЕНТНЫЕ СТРАНИЦЫ (СТАТЬИ И КНИГИ) */

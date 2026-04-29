@@ -9,11 +9,11 @@ parent_url: "/biblio/"
 
 <!-- Ряд с фото -->
 <div class="media-row">
-    <img src="/biblio/img/rostovcev-n-n-risovanie-1-klass-1957.webp" class="book-page-cover">
-    <img src="/biblio/img/rostovcev-n-n-risovanie-2-klass-1957.webp" class="book-page-cover">
-    <img src="/biblio/img/rostovcev-n-n-risovanie-3-klass-1957.webp" class="book-page-cover">
-    <img src="/biblio/img/rostovcev-n-n-risovanie-4-klass-1957.webp" class="book-page-cover">
-    <img src="/biblio/img/rostovcev-n-n-metodika-prepodavaniya-risovaniya-v-1-i-2-klassah-1958.webp" class="book-page-cover">
+    <img src="img/rostovcev-n-n-risovanie-1-klass-1957.webp" class="book-page-cover">
+    <img src="img/rostovcev-n-n-risovanie-2-klass-1957.webp" class="book-page-cover">
+    <img src="img/rostovcev-n-n-risovanie-3-klass-1957.webp" class="book-page-cover">
+    <img src="img/rostovcev-n-n-risovanie-4-klass-1957.webp" class="book-page-cover">
+    <img src="img/rostovcev-n-n-metodika-prepodavaniya-risovaniya-v-1-i-2-klassah-1958.webp" class="book-page-cover">
 </div>
 <!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  

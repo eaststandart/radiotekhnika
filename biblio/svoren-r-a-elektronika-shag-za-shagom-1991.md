@@ -9,9 +9,9 @@ parent_url: "/biblio/"
 
 <!-- Ряд с фото -->
 <div class="media-row">
-    <img src="/biblio/img/svoren-r-a-elektronika-shag-za-shagom-2020.webp" class="book-page-cover">
-    <img src="/biblio/img/svoren-r-a-elektronika-shag-za-shagom-2001.webp" class="book-page-cover">
-    <img src="/biblio/img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" class="book-page-cover">
+    <img src="img/svoren-r-a-elektronika-shag-za-shagom-2020.webp" class="book-page-cover">
+    <img src="img/svoren-r-a-elektronika-shag-za-shagom-2001.webp" class="book-page-cover">
+    <img src="img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" class="book-page-cover">
 </div>
 <!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  

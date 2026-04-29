@@ -9,8 +9,8 @@ parent_url: "/biblio/"
 
 <!-- Ряд с фото -->
 <div class="media-row">
-    <img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" class="book-page-cover">
-    <img src="/biblio/img/borisov-v-g-yunyj-radiolyubitel-1992.webp" class="book-page-cover">
+    <img src="img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" class="book-page-cover">
+    <img src="img/borisov-v-g-yunyj-radiolyubitel-1992.webp" class="book-page-cover">
 </div>
 <!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  

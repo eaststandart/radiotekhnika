@@ -9,8 +9,8 @@ parent_url: "/biblio/"
 
 <!-- Ряд с фото -->
 <div class="media-row">
-    <img src="/biblio/img/kiselyov-l-kniga-yunogo-tekhnika-1948.webp" class="book-page-cover">
-    <img src="/biblio/img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" class="book-page-cover">
+    <img src="img/kiselyov-l-kniga-yunogo-tekhnika-1948.webp" class="book-page-cover">
+    <img src="img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" class="book-page-cover">
 </div>
 <!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  

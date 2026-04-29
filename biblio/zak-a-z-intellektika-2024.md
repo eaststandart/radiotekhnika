@@ -9,10 +9,10 @@ parent_url: "/biblio/"
 
 <!-- Ряд с фото -->
 <div class="media-row">
-    <img src="/biblio/img/zak-a-z-intellektika-1-klass-2024.webp" class="book-page-cover">
-    <img src="/biblio/img/zak-a-z-intellektika-2-klass-2024.webp" class="book-page-cover">
-    <img src="/biblio/img/zak-a-z-intellektika-3-klass-2024.webp" class="book-page-cover">
-    <img src="/biblio/img/zak-a-z-intellektika-4-klass-2024.webp" class="book-page-cover">
+    <img src="img/zak-a-z-intellektika-1-klass-2024.webp" class="book-page-cover">
+    <img src="img/zak-a-z-intellektika-2-klass-2024.webp" class="book-page-cover">
+    <img src="img/zak-a-z-intellektika-3-klass-2024.webp" class="book-page-cover">
+    <img src="img/zak-a-z-intellektika-4-klass-2024.webp" class="book-page-cover">
 </div>
 <!-- Стык в стык, без пустой строки -->
 > **Библиографическое описание:**  
@@ -22,4 +22,4 @@ parent_url: "/biblio/"
 
 Выработать такие навыки помогают **регулярные практические и творческие занятия**. Предлагаемая литература направлена на развитие мыслительных способностей и открывает путь к созданию ваших собственных, самостоятельно придуманных проектов по электронике.
 
-Смотри также [другие материалы](https://).
+**Смотри также:** [материалы для самостоятельного изучения.](spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.html)

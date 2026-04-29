@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Список материалов для самостоятельного изучения электроники
+title: Материалы для самостоятельного изучения основ электроники
 tags: [списоклитературы, самостоятельноеизучение, электроника]
 parent_name: "Cписок литературы"
 parent_url: "/biblio/"
 ---
 
-[📄 Скачать PDF](files/spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.pdf)
+[📄 Скачать PDF](files/materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.pdf)
 
 ## Основной теоретический материал
 

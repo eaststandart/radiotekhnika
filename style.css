@@ -56,10 +56,6 @@ blockquote {
     margin-left: 0;
 }
 
-blockquote p {
-    margin: 0; /* Убираем лишние отступы внутри цитаты */
-}
-
 /* 2. КОНТЕНТНЫЕ СТРАНИЦЫ (СТАТЬИ И КНИГИ) */
 .content-wrapper {
     background: white;

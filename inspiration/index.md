@@ -3,34 +3,44 @@ layout: default
 title: Техническое вдохновение
 ---
 
-<div class="feed-container">
-    <a href="post.html" class="feed-item">
+<div class="inspiration-feed">
+
+    <a href="post.html" class="feed-card">
         <img src="img/test.webp" class="feed-img">
         <div class="feed-info">
-            <h3>Заголовок вровень</h3>
-            <p>Текст с нормальным отступом от картинки.</p>
+            <h3>Заголовок вровень с верхом</h3>
+            <span class="feed-subtext">Категория: Идеи</span>
+            <p>Описание, которое не прилипает к картинке и идет списком.</p>
         </div>
     </a>
-        <a href="post.html" class="feed-item">
+
+    <a href="post.html" class="feed-card">
         <img src="img/test.webp" class="feed-img">
         <div class="feed-info">
-            <h3>Заголовок вровень</h3>
-            <p>Текст с нормальным отступом от картинки.</p>
+            <h3>Заголовок вровень с верхом</h3>
+            <span class="feed-subtext">Категория: Идеи</span>
+            <p>Описание, которое не прилипает к картинке и идет списком.</p>
         </div>
     </a>
-        <a href="post.html" class="feed-item">
+
+        <a href="post.html" class="feed-card">
         <img src="img/test.webp" class="feed-img">
         <div class="feed-info">
-            <h3>Заголовок вровень</h3>
-            <p>Текст с нормальным отступом от картинки.</p>
+            <h3>Заголовок вровень с верхом</h3>
+            <span class="feed-subtext">Категория: Идеи</span>
+            <p>Описание, которое не прилипает к картинке и идет списком.</p>
         </div>
     </a>
-        <a href="post.html" class="feed-item">
+
+        <a href="post.html" class="feed-card">
         <img src="img/test.webp" class="feed-img">
         <div class="feed-info">
-            <h3>Заголовок вровень</h3>
-            <p>Текст с нормальным отступом от картинки.</p>
+            <h3>Заголовок вровень с верхом</h3>
+            <span class="feed-subtext">Категория: Идеи</span>
+            <p>Описание, которое не прилипает к картинке и идет списком.</p>
         </div>
     </a>
+
+
 </div>
 

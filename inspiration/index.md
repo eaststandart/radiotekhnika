@@ -5,39 +5,40 @@ title: Техническое вдохновение
 
 <div class="feed-container">
 
-    <a href="post-1.html" class="feed-item">
-        <img src="img/icon1.webp" class="feed-icon">
-        <div class="feed-text">
-            <h3>Название первой идеи</h3>
-            <p>Краткое описание в одну строчку для теста</p>
+    <a href="post-url.html" class="feed-item">
+        <img src="img/example.webp" class="feed-img">
+        <div class="feed-info">
+            <h3>Заголовок прижат к верху</h3>
+            <p>Текст описания идет сразу под заголовком без больших отступов.</p>
         </div>
     </a>
 
-    <a href="post-2.html" class="feed-item">
-        <img src="img/icon2.webp" class="feed-icon">
-        <div class="feed-text">
-            <h3>Вторая техническая находка</h3>
-            <p>Еще одно короткое пояснение</p>
+    <a href="post-url.html" class="feed-item">
+        <img src="img/example.webp" class="feed-img">
+        <div class="feed-info">
+            <h3>Заголовок прижат к верху</h3>
+            <p>Текст описания идет сразу под заголовком без больших отступов.</p>
         </div>
     </a>
 
-    <a href="post-1.html" class="feed-item">
-        <img src="img/icon1.webp" class="feed-icon">
-        <div class="feed-text">
-            <h3>Название первой идеи</h3>
-            <p>Краткое описание в одну строчку для теста</p>
+        <a href="post-url.html" class="feed-item">
+        <img src="img/example.webp" class="feed-img">
+        <div class="feed-info">
+            <h3>Заголовок прижат к верху</h3>
+            <p>Текст описания идет сразу под заголовком без больших отступов.</p>
         </div>
     </a>
 
-    <a href="post-2.html" class="feed-item">
-        <img src="img/icon2.webp" class="feed-icon">
-        <div class="feed-text">
-            <h3>Вторая техническая находка</h3>
-            <p>Еще одно короткое пояснение</p>
+        <a href="post-url.html" class="feed-item">
+        <img src="img/example.webp" class="feed-img">
+        <div class="feed-info">
+            <h3>Заголовок прижат к верху</h3>
+            <p>Текст описания идет сразу под заголовком без больших отступов.</p>
         </div>
     </a>
 
 </div>
+
 
 
 

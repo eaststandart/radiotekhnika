@@ -8,7 +8,7 @@ title: Полезные инструменты
         <img src="/img/icons/sprintlayout.webp" class="item-image-round">
         <div class="item-info">
             <h3>Sprint Layout</h3>
-            <span class="item-subtext">САПР (Система Автоматизированного Проектирования)</span>
+            <span class="item-subtext">САПР</span>
             <p>Для проектирования и ручной разводки печатных плат малой и средней сложности.</p>
         </div>
     </a>
@@ -19,7 +19,7 @@ title: Полезные инструменты
         <img src="/img/icons/fritzing.webp" class="item-image-round">
         <div class="item-info">
             <h3>Fritzing</h3>
-            <span class="item-subtext">САПР (Система Автоматизированного Проектирования)</span>
+            <span class="item-subtext">САПР</span>
             <p>Для  проектирования и документирования электронных схем, а также разводки печатных плат.</p>
         </div>
     </a>

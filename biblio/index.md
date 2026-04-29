@@ -8,7 +8,7 @@ title: Рекомендуемая литература
 <div class="bibliography-list">
 
 <a href="spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.html" class="item-card">
-	<img src="/biblio/img/spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.webp" alt="Обложка" class="item-image">
+	<img src="img/spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Список материалов для самостоятельного изучения электроники</h3>
 		<span class="item-subtext">Автор</span>
@@ -17,7 +17,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="chernenko-g-t-puteshestvie-v-stranu-robotov-1977.html" class="item-card">
-	<img src="/biblio/img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" alt="Обложка" class="item-image">
+	<img src="img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книги по автоматике и робототехнике</h3>
 		<span class="item-subtext">Черненко Г.Т.</span>
@@ -26,7 +26,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="kiselyov-l-kniga-yunogo-tekhnika-1948.html" class="item-card">
-	<img src="/biblio/img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" alt="Обложка" class="item-image">
+	<img src="img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книга юного техника</h3>
 		<span class="item-subtext">Киселёв Л.</span>
@@ -35,7 +35,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="svoren-r-a-elektronika-shag-za-shagom-1991.html" class="item-card">
-	<img src="/biblio/img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" alt="Обложка" class="item-image">
+	<img src="img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Электроника шаг за шагом</h3>
 		<span class="item-subtext">Сворень Р.А.</span>
@@ -44,7 +44,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="item-card">
-	<img src="/biblio/img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
+	<img src="img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Энциклопедия юного радиолюбителя-конструктора</h3>
 		<span class="item-subtext">Борисов В.Г.</span>
@@ -53,7 +53,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="pchyolko-a-s-arifmetika-dlya-nachalnoj-shkoly-1955.html" class="item-card">
-	<img src="/biblio/img/pchyolko-a-s-arifmetika-dlya-pervogo-klassa-nachalnoj-shkoly-2022.webp" alt="Обложка" class="item-image">
+	<img src="img/pchyolko-a-s-arifmetika-dlya-pervogo-klassa-nachalnoj-shkoly-2022.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книги по математике (арифметика)</h3>
 		<span class="item-subtext"> Пчёлко А.С., Попова Н.С., Киселев А.П., Березанская E.C.</span>
@@ -62,7 +62,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="zak-a-z-intellektika-2024.html" class="item-card">
-	<img src="/biblio/img/zak-a-z-intellektika-1-klass-2024.webp" alt="Обложка" class="item-image">
+	<img src="img/zak-a-z-intellektika-1-klass-2024.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книги для развития мыслительных способностей</h3>
 		<span class="item-subtext"> Зак А.З.</span>
@@ -71,7 +71,7 @@ title: Рекомендуемая литература
 </a>
 
 <a href="rostovcev-n-n-risovanie-1957.html" class="item-card">
-	<img src="/biblio/img/rostovcev-n-n-risovanie-1957.webp" alt="Обложка" class="item-image">
+	<img src="img/rostovcev-n-n-risovanie-1957.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книги по рисованию</h3>
 		<span class="item-subtext"> Ростовцев Н.Н.</span>

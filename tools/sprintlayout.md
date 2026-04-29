@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sprint Layout
-sources: [Sprint Layout](https://sprint-layout.ru/)
+sources: "[Sprint Layout](https://sprint-layout.ru/)"
 tags: [sprintlayout, электроника]
 ---
 

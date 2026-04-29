@@ -5,7 +5,7 @@ title: Полезные инструменты
 
 <div class="diary-list">
     <a href="sprintlayout.html" class="item-card">
-        <img src="/img/icons/sprintlayout.webp" class="item-image-round">
+        <img src="img/icons/sprintlayout.webp" class="item-image-round">
         <div class="item-info">
             <h3>Sprint Layout</h3>
             <span class="item-subtext">САПР (Система Автоматизированного Проектирования).</span>

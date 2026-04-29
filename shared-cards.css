@@ -254,8 +254,8 @@
 @media (max-width: 600px) {
     .inspiration-feed .feed-img-round {
         /* На мобильном: 65px (чуть крупнее, чем на ПК для удобства) */
-        width: 30px !important;
-        height: 30px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
     
     .inspiration-feed h3 {

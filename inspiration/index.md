@@ -4,43 +4,38 @@ title: Техническое вдохновение
 ---
 
 <div class="inspiration-feed">
-
-    <a href="post.html" class="feed-card">
-        <img src="img/test.webp" class="feed-img">
+    <a href="#" class="feed-card">
+        <img src="/img/icons/your-image.webp" class="feed-img-round">
         <div class="feed-info">
-            <h3>Заголовок вровень с верхом</h3>
-            <span class="feed-subtext">Категория: Идеи</span>
-            <p>Описание, которое не прилипает к картинке и идет списком.</p>
+            <h3>Заголовок как в дневнике</h3>
+            <span class="feed-subtext">Раздел: Вдохновение</span>
+            <p>Текст описания со всеми твоими отступами.</p>
         </div>
     </a>
-
-    <a href="post.html" class="feed-card">
-        <img src="img/test.webp" class="feed-img">
+        <a href="#" class="feed-card">
+        <img src="/img/icons/your-image.webp" class="feed-img-round">
         <div class="feed-info">
-            <h3>Заголовок вровень с верхом</h3>
-            <span class="feed-subtext">Категория: Идеи</span>
-            <p>Описание, которое не прилипает к картинке и идет списком.</p>
+            <h3>Заголовок как в дневнике</h3>
+            <span class="feed-subtext">Раздел: Вдохновение</span>
+            <p>Текст описания со всеми твоими отступами.</p>
         </div>
     </a>
-
-        <a href="post.html" class="feed-card">
-        <img src="img/test.webp" class="feed-img">
+        <a href="#" class="feed-card">
+        <img src="/img/icons/your-image.webp" class="feed-img-round">
         <div class="feed-info">
-            <h3>Заголовок вровень с верхом</h3>
-            <span class="feed-subtext">Категория: Идеи</span>
-            <p>Описание, которое не прилипает к картинке и идет списком.</p>
+            <h3>Заголовок как в дневнике</h3>
+            <span class="feed-subtext">Раздел: Вдохновение</span>
+            <p>Текст описания со всеми твоими отступами.</p>
         </div>
     </a>
-
-        <a href="post.html" class="feed-card">
-        <img src="img/test.webp" class="feed-img">
+        <a href="#" class="feed-card">
+        <img src="/img/icons/your-image.webp" class="feed-img-round">
         <div class="feed-info">
-            <h3>Заголовок вровень с верхом</h3>
-            <span class="feed-subtext">Категория: Идеи</span>
-            <p>Описание, которое не прилипает к картинке и идет списком.</p>
+            <h3>Заголовок как в дневнике</h3>
+            <span class="feed-subtext">Раздел: Вдохновение</span>
+            <p>Текст описания со всеми твоими отступами.</p>
         </div>
     </a>
-
-
 </div>
+
 

@@ -6,13 +6,12 @@ tags: [sprintlayout, электроника]
 ---
 
 <div class="media-row">
-    <img src="img/sprintlayout-6-0.webp" class="book-page-cover">
-    <img src="img/sprintlayout-6-0-workflow.webp" class="book-page-cover">
+    <img src="/img/icons/sprintlayout.webp" class="book-page-cover">
 </div>
 
-[qwe](img/sprintlayout-6-0-workflow.webp)
-
 Sprint Layout  – САПР (Система Автоматизированного Проектирования) для проектирования и ручной разводки печатных плат малой и средней сложности.
+
+<img src="img/sprintlayout-6-0-workflow.webp" class="content-img">
 
 Программа доступна для освоения детьми по направлению «Электронное конструирование» и подобных, где требуется простое и быстрое создание печатных плат.
 

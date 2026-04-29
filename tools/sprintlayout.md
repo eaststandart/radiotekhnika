@@ -9,6 +9,7 @@ parent_url: "/tools/"
 
 <div class="media-row">
     <img src="/img/icons/sprintlayout.webp" class="book-page-cover">
+    <img src="img/sprintlayout-6-0-workflow.webp" class="content-img">
 </div>
 <img src="img/sprintlayout-6-0-workflow.webp" class="content-img">
 

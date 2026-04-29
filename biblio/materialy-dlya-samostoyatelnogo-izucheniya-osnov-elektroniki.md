@@ -6,7 +6,7 @@ parent_name: "Cписок литературы"
 parent_url: "/biblio/"
 ---
 
-[📄 Скачать PDF](files/materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.pdf)
+📄[Скачать PDF](files/materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.pdf)
 
 ## Основной теоретический материал
 

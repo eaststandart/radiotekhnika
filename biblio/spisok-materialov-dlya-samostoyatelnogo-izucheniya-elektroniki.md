@@ -6,6 +6,8 @@ parent_name: "Cписок литературы"
 parent_url: "/biblio/"
 ---
 
+[📥 Скачать PDF](files/spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.pdf)
+
 ## Основной теоретический материал
 
 ### 1. Сворень Р.А. Электроника шаг за шагом

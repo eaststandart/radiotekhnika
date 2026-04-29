@@ -8,11 +8,11 @@ title: Рекомендуемая литература
 <div class="bibliography-list">
 
 <a href="spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.html" class="item-card">
-	<img src="" alt="Обложка" class="item-image">
+	<img src="/biblio/img/spisok-materialov-dlya-samostoyatelnogo-izucheniya-elektroniki.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Список материалов для самостоятельного изучения электроники</h3>
 		<span class="item-subtext">Автор</span>
-		<p>Приведен первоначальный материал для самостоятельного изучения основ электроники детьми 8-16 лет. **Для овладения техническими знаниями, регулярные практические занятия должны проводиться не реже трёх раз в неделю по один-два часа**.</p>
+		<p>Приведен первоначальный материал для самостоятельного изучения основ электроники детьми 8-16 лет. Для овладения техническими знаниями, регулярные практические занятия должны проводиться не реже трёх раз в неделю по один-два часа.</p>
 	</div>
 </a>
 

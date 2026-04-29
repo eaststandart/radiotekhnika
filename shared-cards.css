@@ -210,20 +210,21 @@
     }
 }
 
-/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (ТОЛЬКО КАРТИНКА И ЗАГОЛОВОК) --- */
+/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (ИЗМЕНЕННЫЕ РАЗМЕРЫ) --- */
 
 .inspiration-feed {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 15px; /* Чуть плотнее */
+    /* Уменьшаем minmax до 250px, чтобы на ПК влезало больше карточек в ряд */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
     width: 100%;
 }
 
 .inspiration-feed .feed-card {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Центрируем заголовок по вертикали относительно картинки */
-    gap: 20px;
+    align-items: center; 
+    gap: 15px;
     background: #fff;
     padding: 10px 15px;
     border-radius: 12px;
@@ -233,23 +234,32 @@
 }
 
 .inspiration-feed .feed-img-round {
-    width: 80px !important;  /* Сделал чуть меньше (было 100), чтобы не громоздко без текста */
-    height: 80px !important;
+    /* На ПК: 50px (в 2 раза меньше твоего стандарта 100px) */
+    width: 50px !important;
+    height: 50px !important;
     object-fit: cover;
     border-radius: 50% !important;
     flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.inspiration-feed .feed-info {
-    flex: 1;
-    /* Убрали padding-top, так как при одной строке лучше работает align-items: center */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .inspiration-feed h3 {
     margin: 0;
     color: var(--card-tech);
-    font-size: 1.1rem;
-    line-height: 1.3;
+    font-size: 1rem; /* Чуть меньше шрифт под маленькую иконку */
+    line-height: 1.2;
+}
+
+/* Мобильная адаптация: УВЕЛИЧИВАЕМ картинку */
+@media (max-width: 600px) {
+    .inspiration-feed .feed-img-round {
+        /* На мобильном: 65px (чуть крупнее, чем на ПК для удобства) */
+        width: 30px !important;
+        height: 30px !important;
+    }
+    
+    .inspiration-feed h3 {
+        font-size: 1.05rem; /* На телефоне заголовок можно чуть крупнее */
+    }
 }
 

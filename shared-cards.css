@@ -166,6 +166,25 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Одиночное изображение в тексте (не карточка) */
+.content-img {
+    display: block;
+    width: 100%;
+    max-width: 450px; /* Оптимально, чтобы не было слишком огромным на ПК */
+    height: auto;
+    margin: 20px 0 !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Центрирование на мобилках */
+@media (max-width: 600px) {
+    .content-img {
+        max-width: 100%;
+        margin: 15px auto !important;
+    }
+}
+
 /* Адаптация для средних экранов */
 @media (max-width: 800px) {
     .book-page-cover {

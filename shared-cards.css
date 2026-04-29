@@ -210,63 +210,81 @@
     }
 }
 
-/* ТЕСТОВЫЙ КОМПАКТНЫЙ СПИСОК (ВДОХНОВЕНИЕ) */
-.feed-container {
+/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (на базе Дневника) --- */
+
+/* Контейнер для сетки на ПК */
+.inspiration-feed {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px; /* Твой стандартный зазор */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    width: 100%;
 }
 
-.feed-item {
+/* Сама карточка — копия твоей .item-card */
+.inspiration-feed .feed-card {
     display: flex;
-    flex-direction: row; /* Всегда в ряд */
+    flex-direction: row; /* Всегда в ряд (как ты просил) */
     align-items: flex-start;
+    gap: 20px;
     background: #fff;
-    padding: 8px 15px; /* Твой стандартный паддинг из .item-card */
+    padding: 8px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
     text-decoration: none;
     color: inherit;
-    margin-bottom: 12px;
+    transition: transform 0.2s;
 }
 
-.feed-img {
-    width: 80px !important; 
-    height: 80px !important;
+/* Картинка — теперь КВАДРАТНАЯ */
+.inspiration-feed .feed-img {
+    width: 100px !important;
+    height: 100px !important;
     object-fit: cover;
-    border-radius: 8px; /* Квадрат со скруглением как у твоих картинок */
-    margin-right: 20px;  /* Твой стандартный gap: 20px */
+    border-radius: 8px; /* Квадрат с легким скруглением */
     flex-shrink: 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-.feed-info {
+/* Блок с текстом — копия твоего .item-info */
+.inspiration-feed .feed-info {
     flex: 1;
-    padding-top: 10px; /* ТВОЁ РЕШЕНИЕ: выравнивает h3 по верху картинки */
+    padding-top: 10px; /* Твое решение для выравнивания */
 }
 
-.feed-info h3 {
+.inspiration-feed h3 {
     margin: 0 0 8px 0;
-    color: var(--card-tech); /* Твой синий */
+    color: var(--card-tech);
     font-size: 1.15rem;
     line-height: 1.2;
 }
 
-.feed-info p {
+.inspiration-feed .feed-subtext {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.inspiration-feed p {
     margin: 0;
     font-size: 0.88rem;
     color: #666;
     line-height: 1.4;
 }
 
-/* Мобильная адаптация: сохраняем ряд, но чуть уменьшаем фото */
+/* Адаптация: на мобилках уменьшаем только картинку, но оставляем РЯД */
 @media (max-width: 600px) {
-    .feed-img {
-        width: 60px !important;
+    .inspiration-feed .feed-img {
+        width: 60px !important; /* Уменьшили почти вдвое */
         height: 60px !important;
-        margin-right: 15px;
     }
-    .feed-info {
-        padding-top: 5px; /* Корректировка для маленького фото */
+    .inspiration-feed .feed-info {
+        padding-top: 5px; /* Корректируем под маленькую картинку */
+    }
+    .inspiration-feed .feed-card {
+        gap: 15px; /* Чуть плотнее на телефоне */
     }
 }
+
 

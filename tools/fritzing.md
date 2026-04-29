@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fritzing
-sources: "[Fritzing](https://fritzing.org/"
+sources: "[Fritzing](https://fritzing.org/)"
 tags: [fritzing, электроника]
 parent_name: "Полезные инструменты"
 parent_url: "/tools/"

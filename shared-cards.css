@@ -210,20 +210,30 @@
     }
 }
 
-/* Специальный стиль для компактного списка "Вдохновение" */
-.compact-list .item-card {
-    flex-direction: row !important; /* Всегда в ряд, даже на мобилках */
-    align-items: center;
-    text-align: left !important;
+/* Стиль для списка "Вдохновение" */
+.inspiration-list .item-card {
+    flex-direction: row !important; /* Всегда в ряд (горизонтально) */
+    align-items: center;           /* Центровка иконки и текста по вертикали */
+    text-align: left !important;   /* Текст всегда слева */
+    padding: 10px 15px !important;
+    gap: 15px !important;
 }
 
+/* Уменьшаем круг в 2 раза для мобилок */
 @media (max-width: 600px) {
-    .compact-list .item-card {
-        padding: 10px !important;
-        gap: 15px !important;
+    .inspiration-list .item-image-round {
+        width: 50px !important;    /* Было 100px, стало 50px */
+        height: 50px !important;
+        min-width: 50px;           /* Чтобы круг не сплющивался */
     }
-    .compact-list .item-image-round {
-        width: 30px !important; /* Уменьшаем размер только здесь */
-        height: 30px !important;
+    
+    .inspiration-list .item-info h3 {
+        font-size: 1rem;           /* Чуть меньше шрифт для компактности */
+        margin-bottom: 2px;
+    }
+    
+    .inspiration-list .item-info p {
+        font-size: 0.8rem;
     }
 }
+

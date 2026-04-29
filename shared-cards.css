@@ -210,58 +210,53 @@
     }
 }
 
-/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (ИЗМЕНЕННЫЕ РАЗМЕРЫ) --- */
+/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (СТАНДАРТ ПО ОБРАЗЦУ) --- */
 
 .inspiration-feed {
     display: grid;
-    /* Возвращаем стандартный minmax и gap из твоих внутренних разделов */
+    /* Оставляем 300px как в оригинале, чтобы не ломать сетку */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; 
+    /* ВАЖНО: Ставим gap: 0, так как у твоих карточек уже есть margin-bottom: 12px */
+    gap: 0 20px; 
     width: 100%;
-    margin: 20px 0; /* Стандарт для .inner-grid */
 }
 
 .inspiration-feed .feed-card {
     display: flex;
     flex-direction: row;
     align-items: center; 
-    gap: 20px; /* Стандартный зазор между фото и текстом */
+    gap: 20px;           /* Стандарт из твоего образца */
     background: #fff;
-    padding: 8px 15px; /* Твой стандарт для .item-card */
+    padding: 8px 15px;   /* Стандарт из твоих карточек */
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 12px; /* Стандартный отступ снизу */
+    margin-bottom: 12px; /* Твой стандартный отступ между карточками */
     text-decoration: none;
     color: inherit;
 }
 
+/* Картинка: уменьшенная версия твоего стандарта */
 .inspiration-feed .feed-img-round {
-    /* На ПК: 50px (в 2 раза меньше твоего стандарта 100px) */
     width: 50px !important;
     height: 50px !important;
     object-fit: cover;
     border-radius: 50% !important;
     flex-shrink: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .inspiration-feed h3 {
     margin: 0;
     color: var(--card-tech);
-    font-size: 1rem; /* Чуть меньше шрифт под маленькую иконку */
+    font-size: 1.1rem;
     line-height: 1.2;
 }
 
-/* Мобильная адаптация: УВЕЛИЧИВАЕМ картинку */
+/* Мобильная адаптация */
 @media (max-width: 600px) {
     .inspiration-feed .feed-img-round {
-        /* На мобильном: 65px (чуть крупнее, чем на ПК для удобства) */
-        width: 40px !important;
-        height: 40px !important;
-    }
-    
-    .inspiration-feed h3 {
-        font-size: 1.05rem; /* На телефоне заголовок можно чуть крупнее */
+        width: 65px !important;
+        height: 65px !important;
     }
 }
+
 

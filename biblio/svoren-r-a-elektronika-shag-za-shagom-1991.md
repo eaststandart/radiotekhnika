@@ -26,4 +26,4 @@ parent_url: "/biblio/"
 
 На фотографии версия книги [1991 года](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html), [2001 года](http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1200-1299_.html) и её переиздание [2020 года](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html); для чтения предпочтительно издание 2001 или 1991 года в бумажном варианте.
 
-Смотри также [другие материалы](https://).
+**Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

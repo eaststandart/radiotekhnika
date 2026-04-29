@@ -24,5 +24,4 @@ parent_url: "/biblio/"
 
 На фотографии книга [1948 года](https://sheba.spb.ru/za/kniga-tehnika-1948.htm) и ее современное переиздание; для чтения детьми предпочтителен бумажный вариант.
 
-
-Смотри также [другие материалы](https://).
+**Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

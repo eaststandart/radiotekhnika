@@ -27,4 +27,4 @@ parent_url: "/biblio/"
 
 На фотографии версия книги [1992 года](http://publ.lib.ru/ARCHIVES/M/''Massovaya_radiobiblioteka''_(seriya)/_MRB_1100-1199_.html) и её переиздание [2001 года](http://publ.lib.ru/ARCHIVES/B/BORISOV_Viktor_Gavrilovich/_Borisov_V.G..html). 
 
-Смотри также [другие материалы](https://).
+**Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

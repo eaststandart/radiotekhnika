@@ -33,5 +33,4 @@ parent_url: "/biblio/"
 
 Книги в [электронном виде](http://publ.lib.ru/ARCHIVES/CH/CHERNENKO_Gennadiy_Trofimovich/_Chernenko_G.T..html); для чтения детьми предпочтителен бумажный вариант.
 
-
-Смотри также [другие материалы](https://).
+**Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

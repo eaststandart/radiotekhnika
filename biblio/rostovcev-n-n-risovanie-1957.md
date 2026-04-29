@@ -27,4 +27,4 @@ parent_url: "/biblio/"
 
 На фотографии изображены книги 50–60-х годов в современном переиздании.
 
-Смотри также [другие материалы](https://).
+**Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

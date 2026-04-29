@@ -9,9 +9,7 @@ parent_url: "/tools/"
 
 Sprint Layout – САПР (Система Автоматизированного Проектирования) для проектирования и ручной разводки печатных плат малой и средней сложности.
 
-<img src="img/sprintlayout-6-0-workflow.webp" class="content-img">
-
-![qwe](img/sprintlayout-6-0-workflow.webp)
+![sprintlayout-6-0-workflow](img/sprintlayout-6-0-workflow.webp)
 
 Программа доступна для освоения детьми по направлению «Электронное конструирование» и подобных, где требуется простое и быстрое создание печатных плат.
 

@@ -2,7 +2,7 @@
 layout: default
 title: Интеллектика. Тетрадь для развития мыслительных способностей
 tags: [зак, развитиемышления, младшийвозраст, среднийвозраст]
-sources: "[Интеллектика. 1 класс. Тетрадь для развития мыслительных способностей.](https://intellectcentre.ru/book/nachalnaya-shkola-2)"
+sources: "[Издательство интеллект-центр](https://intellectcentre.ru/)"
 parent_name: "Cписок литературы"
 parent_url: "/biblio/"
 ---

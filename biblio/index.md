@@ -61,4 +61,13 @@ title: Рекомендуемая литература
 	</div>
 </a>
 
+<a href="rostovcev-n-n-risovanie-1957.html" class="item-card">
+	<img src="/biblio/img/rostovcev-n-n-risovanie-1-klass-1957.webp" alt="Обложка" class="item-image">
+	<div class="item-info">
+		<h3>Книги по рисованию</h3>
+		<span class="item-subtext"> Ростовцев Н.Н.</span>
+		<p>Основа визуализации и пространственного мышления. Развитие наблюдательности и навыков графического изображения предметов — базу, необходимую юному инженеру для зарисовки схем, понимания чертежей и проектирования новых устройств.</p>
+	</div>
+</a>
+
 </div>

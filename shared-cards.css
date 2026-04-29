@@ -170,35 +170,11 @@
 .content-img {
     display: block;
     width: 100%;
-    max-width: 150px; /* Оптимально, чтобы не было слишком огромным на ПК */
+    max-width: 450px; /* Оптимально, чтобы не было слишком огромным на ПК */
     height: auto;
     margin: 20px 0 !important;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Стиль для карточки-витрины */
-.inspiration-card {
-    text-decoration: none; /* Убираем подчеркивание ссылки */
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    padding: 10px; /* Уменьшаем отступ, чтобы картинка была больше */
-    align-items: center;
-    text-align: center;
-}
-
-.inspiration-card img {
-    width: 100%;
-    height: 180px; /* Фиксированная высота для ровной сетки */
-    object-fit: cover; /* Картинка заполнит область, не растягиваясь */
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.inspiration-card h3 {
-    font-size: 1rem;
-    margin: 5px 0;
 }
 
 /* Центрирование на мобилках */
@@ -231,5 +207,23 @@
     }
     .book-page-cover {
         height: auto !important;
+    }
+}
+
+/* Специальный стиль для компактного списка "Вдохновение" */
+.compact-list .item-card {
+    flex-direction: row !important; /* Всегда в ряд, даже на мобилках */
+    align-items: center;
+    text-align: left !important;
+}
+
+@media (max-width: 600px) {
+    .compact-list .item-card {
+        padding: 10px !important;
+        gap: 15px !important;
+    }
+    .compact-list .item-image-round {
+        width: 60px !important; /* Уменьшаем размер только здесь */
+        height: 60px !important;
     }
 }

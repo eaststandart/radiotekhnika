@@ -34,6 +34,36 @@ title: Техническое вдохновение
             <h3>Краткое название идеи</h3>
         </div>
     </a>
+    <a href="link-to-post.html" class="feed-card">
+        <img src="1.webp" class="feed-img-round">
+        <div class="feed-info">
+            <h3>Краткое название идеи.</h3>
+        </div>
+    </a>
+    <a href="link-to-post.html" class="feed-card">
+        <img src="1.webp" class="feed-img-round">
+        <div class="feed-info">
+            <h3>Краткое название идеи.</h3>
+        </div>
+    </a>
+    <a href="link-to-post.html" class="feed-card">
+        <img src="1.webp" class="feed-img-round">
+        <div class="feed-info">
+            <h3>Краткое название идеи.</h3>
+        </div>
+    </a>
+        <a href="link-to-post.html" class="feed-card">
+        <img src="1.webp" class="feed-img-round">
+        <div class="feed-info">
+            <h3>Краткое название идеи.</h3>
+        </div>
+    </a>
+        <a href="link-to-post.html" class="feed-card">
+        <img src="1.webp" class="feed-img-round">
+        <div class="feed-info">
+            <h3>Краткое название идеи.</h3>
+        </div>
+    </a>
 </div>
 
 

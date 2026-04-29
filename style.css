@@ -56,6 +56,10 @@ blockquote {
     margin-left: 0;
 }
 
+blockquote p {
+    margin-bottom: 15px; /* Оставит только нижний отступ для разделения строк */
+}
+
 /* 2. КОНТЕНТНЫЕ СТРАНИЦЫ (СТАТЬИ И КНИГИ) */
 .content-wrapper {
     background: white;

@@ -3,18 +3,22 @@ layout: default
 title: Техническое вдохновение
 ---
 
-<div class="inner-grid">
+<div class="inner-grid compact-list">
 
-    <!-- Карточка 1 -->
-    <a href="post1.html" class="inner-category-card inspiration-card">
-        <img src="/img/logo.svg" alt="Идея 1">
-        <h3>Название крутой штуки</h3>
+    <a href="post1.html" class="item-card">
+        <img src="img/idea1.webp" class="item-image-round">
+        <div class="item-info">
+            <h3>Название идеи</h3>
+            <p>Короткое описание...</p>
+        </div>
     </a>
-
-    <!-- Карточка 2 -->
-    <a href="post2.html" class="inner-category-card inspiration-card">
-        <img src="/img/logo.svg" alt="Идея 2">
-        <h3>Интересный механизм</h3>
+    <a href="post1.html" class="item-card">
+        <img src="img/idea1.webp" class="item-image-round">
+        <div class="item-info">
+            <h3>Название идеи</h3>
+            <p>Короткое описание...</p>
+        </div>
     </a>
-
 </div>
+
+

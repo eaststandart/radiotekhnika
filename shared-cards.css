@@ -210,9 +210,8 @@
     }
 }
 
-/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (на базе Дневника) --- */
+/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (ТОЧНАЯ КОПИЯ ДНЕВНИКА) --- */
 
-/* Контейнер для сетки на ПК */
 .inspiration-feed {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -220,35 +219,33 @@
     width: 100%;
 }
 
-/* Сама карточка — копия твоей .item-card */
 .inspiration-feed .feed-card {
     display: flex;
-    flex-direction: row; /* Всегда в ряд (как ты просил) */
+    flex-direction: row; /* Оставляем ряд всегда */
     align-items: flex-start;
     gap: 20px;
     background: #fff;
     padding: 8px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
+    margin-bottom: 12px;
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s;
 }
 
-/* Картинка — теперь КВАДРАТНАЯ */
-.inspiration-feed .feed-img {
+.inspiration-feed .feed-img-round {
     width: 100px !important;
     height: 100px !important;
     object-fit: cover;
-    border-radius: 8px; /* Квадрат с легким скруглением */
+    border-radius: 50% !important; /* Твой круг */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     flex-shrink: 0;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Блок с текстом — копия твоего .item-info */
 .inspiration-feed .feed-info {
     flex: 1;
-    padding-top: 10px; /* Твое решение для выравнивания */
+    padding-top: 10px; /* Твое выравнивание */
 }
 
 .inspiration-feed h3 {
@@ -272,19 +269,4 @@
     color: #666;
     line-height: 1.4;
 }
-
-/* Адаптация: на мобилках уменьшаем только картинку, но оставляем РЯД */
-@media (max-width: 600px) {
-    .inspiration-feed .feed-img {
-        width: 60px !important; /* Уменьшили почти вдвое */
-        height: 60px !important;
-    }
-    .inspiration-feed .feed-info {
-        padding-top: 5px; /* Корректируем под маленькую картинку */
-    }
-    .inspiration-feed .feed-card {
-        gap: 15px; /* Чуть плотнее на телефоне */
-    }
-}
-
 

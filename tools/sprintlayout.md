@@ -3,6 +3,8 @@ layout: default
 title: Sprint Layout
 sources: "[Sprint Layout](https://sprint-layout.ru/)"
 tags: [sprintlayout, электроника]
+parent_name: "Полезные инструменты"
+parent_url: "/tools/"
 ---
 
 <div class="media-row">

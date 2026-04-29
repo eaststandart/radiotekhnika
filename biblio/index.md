@@ -52,4 +52,13 @@ title: Рекомендуемая литература
 	</div>
 </a>
 
+<a href="zak-a-z-intellektika-2024.html" class="item-card">
+	<img src="/biblio/img/zak-a-z-intellektika-1-klass-2024.webp" alt="Обложка" class="item-image">
+	<div class="item-info">
+		<h3>Книги для развития мыслительных способностей</h3>
+		<span class="item-subtext"> Зак А.З.</span>
+		<p>Курс развития мышления. Набор задач, на выработку навыков анализа и поиска решений — базу, необходимую для проектирования собственных инженерных устройств.</p>
+	</div>
+</a>
+
 </div>

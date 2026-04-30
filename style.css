@@ -82,42 +82,41 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* Возвращаем твой идеальный порядок для картинок */
+/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN */
 .main-content p:has(img) {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 250px;
+    height: 250px;       /* Высота для ПК и Горизонтального режима */
     width: auto;
     max-width: 100%;
     object-fit: contain;
     border-radius: 8px;
-    transition: transform 0.3s ease, z-index 0.3s; /* Плавное увеличение */
-    cursor: zoom-in;
-    position: relative;
+    margin: 0 !important;
 }
 
-/* ЭФФЕКТ ЗУМА БЕЗ JAVASCRIPT */
-/* Когда пользователь нажимает и удерживает (или кликает на мобильном) */
-.main-content p img:not(.book-page-cover):not(.content-img):active {
-    transform: scale(2.5); /* Увеличение в 2.5 раза */
-    z-index: 999;          /* Поверх всего контента */
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    cursor: zoom-out;
-}
-
-/* На мобилках увеличиваем чуть меньше, чтобы не вылезло за экран */
-@media (max-width: 600px) {
-    .main-content p img:not(.book-page-cover):not(.content-img):active {
-        transform: scale(1.5);
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* Только для вертикального экрана (ширина меньше высоты) */
+@media (max-width: 600px) and (orientation: portrait) {
+    .main-content p img:not(.book-page-cover):not(.content-img) {
+        height: auto;    /* Убираем фикс высоту */
+        width: 100%;     /* Растягиваем на всю ширину */
+        flex: 1 1 100%;  /* Заставляем встать в столбец */
     }
 }
 
+/* Для горизонтального режима телефона */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main-content p img:not(.book-page-cover):not(.content-img) {
+        height: 180px;   /* Уменьшаем высоту, чтобы ряд влез в низкий экран */
+        width: auto;
+    }
+}
 
 .back-link {
     text-decoration: none;

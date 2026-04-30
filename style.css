@@ -86,34 +86,37 @@ blockquote p {
 .main-content p:has(img) {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    /* УНИФИКАЦИЯ: ставим 15px, как у обложек в библио */
+    gap: 15px; 
     align-items: flex-start;
-    margin: 15px 0 !important; 
+    margin: 20px 0 15px 0 !important;
     padding: 0 !important;
 }
 
-/* Общий стиль для всех картинок в ряду */
-.main-content p img:not(.book-page-cover):not(.content-img) {
+.main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
     flex: 1 1 auto;
     width: auto;
-    height: 350px;       /* Единая высота для всех картинок на ПК */
     max-width: 100%;
-    object-fit: cover;   /* Сохраняет ровную сетку */
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
-    margin: 0 !important;
+    /* Убираем внешние отступы, так как теперь за них отвечает gap в 15px */
+    margin: 0 !important; 
 }
 
-/* Одиночная картинка (всегда пропорциональна и на всю ширину) */
+/* Если картинка в абзаце ВСЕГО ОДНА */
 .main-content p img:not(.book-page-cover):not(.content-img):only-child {
     width: 100%;
-    height: auto !important; 
-    max-height: none;    /* Чтобы не ограничивать высокие схемы */
+    height: auto !important; /* Разрешаем картинке быть любой высоты */
+    max-height: 500px;       /* Опционально: ограничь, чтобы не была на три экрана */
+    object-fit: contain;      /* Показываем картинку целиком без обрезки */
 }
 
-/* Адаптация для мобильных: уменьшаем высоту ряда */
+/* Мобильная адаптация для унификации */
 @media (max-width: 600px) {
-    .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: 250px;   /* На телефоне ряд должен быть компактнее */
+    .main-content p:has(img) {
+        /* Сохраняем 15px между картинками и на мобилках */
+        gap: 15px; 
     }
 }
 

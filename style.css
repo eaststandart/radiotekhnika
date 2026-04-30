@@ -225,27 +225,34 @@ p:has(img) + blockquote {
 
     /* Картинки в столбец ТОЛЬКО когда телефон стоит вертикально */
     @media (orientation: portrait) {
-        /* Добавляем зазор между картинками как у текста */
+        /* Принудительно задаем зазор между картинками в 1em */
         .main-content p:has(img) {
-            gap: 1em; 
+            gap: 1em !important; 
         }
 
         .main-content p img:not(.content-img) {
-            height: auto;    
-            width: 100%;
-            flex: 1 1 100%; /* Гарантирует столбец */
+            height: auto !important;    
+            width: 100% !important;
+            flex: 1 1 100% !important; 
+            margin-bottom: 0 !important; /* Убираем марджины, чтобы работал только gap */
         }
+        
         .main-content p img:not(.content-img):active {
             transform: scale(1.2);
         }
     }
 }
 
-/* Специально для горизонтального режима (чтобы картинки не вылезали по высоте) */
+/* Специально для горизонтального режима */
 @media (max-height: 500px) and (orientation: landscape) {
     .main-content p img:not(.content-img) {
-        height: 180px !important; /* Фиксируем высоту, чтобы встали в ряд */
+        height: 180px !important;
         width: auto !important;
         flex: 0 0 auto !important;
     }
+    /* В горизонтали возвращаем стандартный gap 15px */
+    .main-content p:has(img) {
+        gap: 15px !important;
+    }
 }
+

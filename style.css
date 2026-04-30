@@ -173,7 +173,6 @@ blockquote p {
 /* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
     h1 { font-size: 1.5rem; margin: 5px 0 10px 0 !important; }
-    
     header { margin: 10px 0 20px 0; }
 
     .content-wrapper { 
@@ -182,14 +181,24 @@ blockquote p {
         border-radius: 0; 
     }
 
-    /* Картинки в вертикальном режиме - на весь экран */
+    /* Картинки в столбец ТОЛЬКО когда телефон стоит вертикально */
     @media (orientation: portrait) {
         .main-content p img:not(.content-img) {
             height: auto;    
             width: 100%;
+            flex: 1 1 100%; /* Гарантирует столбец */
         }
         .main-content p img:not(.content-img):active {
             transform: scale(1.2);
         }
+    }
+}
+
+/* Специально для горизонтального режима (чтобы картинки не вылезали по высоте) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main-content p img:not(.content-img) {
+        height: 180px !important; /* Фиксируем высоту, чтобы встали в ряд */
+        width: auto !important;
+        flex: 0 0 auto !important;
     }
 }

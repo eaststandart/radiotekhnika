@@ -7,7 +7,7 @@ parent_name: "Литература"
 parent_url: "/biblio/"
 ---
 
-![](img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp)
+![chernenko-g-t-puteshestvie-v-stranu-robotov-1977](img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp)
 
 > **Библиографическое описание:**  
 > Черненко Г.Т. Путешествие в страну роботов. Рассказы об автоматике. Рис. Ю. Клыкова. — Л.: Детская литература, 1977. — 96 с.: ил. — ISBN 5-08-000084-8.

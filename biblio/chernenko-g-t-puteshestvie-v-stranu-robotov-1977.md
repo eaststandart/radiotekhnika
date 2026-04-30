@@ -13,6 +13,9 @@ parent_url: "/biblio/"
     <img src="img/chernenko-g-t-kak-roboty-rabotat-nauchilis-1989.webp" class="book-page-cover">
 </div>
 
+![](/inspiration/img/strontium-atom-1.webp)
+![](/inspiration/img/strontium-atom-2.webp)
+
 > **Библиографическое описание:**  
 > Черненко Г.Т. Путешествие в страну роботов. Рассказы об автоматике. Рис. Ю. Клыкова. — Л.: Детская литература, 1977. — 96 с.: ил. — ISBN 5-08-000084-8.
 

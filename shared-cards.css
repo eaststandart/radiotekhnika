@@ -128,10 +128,11 @@
 /* УНИВЕРСАЛЬНЫЕ МЕДИА-РЯДЫ (ФОТО И ВИДЕО) */
 .media-row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap; 
-    gap: 0; 
-    margin: 0 !important; 
+    gap: 15px; 
+    /* Делаем отступы как у абзаца, но снизу ставим 0, */
+    /* чтобы работал только естественный отступ следующего текста */
+    margin: 0 0 20px 0 !important; 
     align-items: flex-start;
 }
 
@@ -157,13 +158,11 @@
 .book-page-cover {
     height: 200px !important; 
     width: auto !important; 
-    max-width: calc(25% - 15px) !important; /* 4 в ряд на ПК */
     object-fit: contain; 
     border-radius: 8px;
-    margin-top: 0 !important;
-    margin-bottom: 0px !important; 
-    margin-right: 15px !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 !important; 
+    display: block; /* Это критично, чтобы убрать лишние 3-5px снизу */
 }
 
 /* Одиночное изображение в тексте (не карточка) */

@@ -82,39 +82,53 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN */
+/* --- БЛОК КАРТИНОК В СТАТЬЯХ (MARKDOWN) --- */
+
+/* Контейнер для ряда картинок (автоматический flex) */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px; 
+    flex-wrap: wrap;    /* Позволяет перенос, если не влезают */
+    gap: 15px;          /* Зазор между фото как в библио */
     align-items: flex-start;
-    margin: 20px 0 15px 0 !important;
+    margin: 25px 0 15px 0 !important; /* Увеличен отступ сверху, чтобы текст не лежал на фото */
+    padding: 0 !important;
 }
 
+/* Общий стиль картинок в ряду (ПК и Горизонтальный режим) */
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 250px;       /* Высота для ПК и Горизонтального режима */
-    width: auto;
+    height: 250px;      /* Единая высота для ровного ряда */
+    width: auto;        /* Ширина по пропорциям */
     max-width: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Показывает фото целиком, без обрезки */
     border-radius: 8px;
     margin: 0 !important;
+    transition: transform 0.3s ease; /* Плавность для будущего или текущего зума */
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ */
-/* Только для вертикального экрана (ширина меньше высоты) */
+/* Одиночная картинка (всегда на всю ширину и в полный рост) */
+.main-content p img:not(.book-page-cover):not(.content-img):only-child {
+    width: 100%;
+    height: auto !important; 
+    max-height: none;
+}
+
+/* --- АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА --- */
+
+/* Вертикальный режим телефона: картинки одна под другой */
 @media (max-width: 600px) and (orientation: portrait) {
     .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: auto;    /* Убираем фикс высоту */
-        width: 100%;     /* Растягиваем на всю ширину */
-        flex: 1 1 100%;  /* Заставляем встать в столбец */
+        height: auto;   /* Убираем фикс высоту */
+        width: 100%;    /* Во всю ширину экрана */
+        flex: 1 1 100%; /* Гарантированный столбец */
     }
 }
 
-/* Для горизонтального режима телефона */
+/* Горизонтальный режим телефона: возвращаем картинки В РЯД */
 @media (max-height: 500px) and (orientation: landscape) {
     .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: 180px;   /* Уменьшаем высоту, чтобы ряд влез в низкий экран */
-        width: auto;
+        height: 180px;  /* Уменьшаем высоту под низкий экран */
+        width: auto;    /* Снова в ряд */
+        flex: 0 0 auto;
     }
 }
 

@@ -66,8 +66,7 @@
     </footer>
 
 <script>
-  document.querySelectorAll('.main-content img').forEach(function(img) {
-    // Проверяем, не является ли картинка уже ссылкой
+  document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)').forEach(function(img) {
     if (!img.closest('a')) {
       var link = document.createElement('a');
       link.setAttribute('href', img.getAttribute('src'));
@@ -77,13 +76,14 @@
     }
   });
 
-  // Запускаем Luminous на всех созданных ссылках
   var links = document.querySelectorAll('.zoom-link');
   if (links.length > 0) {
-    new LuminousGallery(links);
+    // Вторым аргументом идут настройки галереи, третьим — настройки самой картинки
+    new LuminousGallery(links, {}, {
+        closeOnOutsideClick: true
+    });
   }
 </script>
-
     
 </body>
 </html>

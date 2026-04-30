@@ -3,7 +3,7 @@ layout: default
 title: Пример
 tags: [видео, электроника]
 sources: "[Публичная библиотека]"
-parent_name: "Учебные проекты"
+parent_name: "Проекты"
 parent_url: "/projects/"
 ---
 

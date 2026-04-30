@@ -3,7 +3,7 @@ layout: default
 title: Электроника шаг за шагом
 tags: [сворень, электроникашагзашагом, радиолюбитель, электроника, среднийвозраст, старшийвозраст]
 sources: "[Публичная библиотека](http://publ.lib.ru/ARCHIVES/S/SVOREN'_Rudol'f_Anatol'evich/_Svoren'_R.A..html)"
-parent_name: "Cписок литературы"
+parent_name: "Литература"
 parent_url: "/biblio/"
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: Рисование, 1-4 класс
 tags: [ростовцев, рисование, младшийвозраст, среднийвозраст]
 sources: "[Издательство «Наше Завтра»](https://nzavtra.ru/)"
-parent_name: "Cписок литературы"
+parent_name: "Литература"
 parent_url: "/biblio/"
 ---
 

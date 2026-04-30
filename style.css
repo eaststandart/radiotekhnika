@@ -56,18 +56,7 @@ h1 {
     line-height: 1.6;
 }
 
-.bibliography-footer strong {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--text-color);
-}
-
-.bibliography-footer p {
-    margin: 0; /* Чтобы внутри рамки не было лишних отступов */
-}
-
-
-/* ЦИТАТЫ И БИБЛИОГРАФИЧЕСКОЕ ОПИСАНИЕ */
+/* ЦИТАТЫ */
 blockquote {
     margin: 1em 0; 
     padding: 15px 20px;

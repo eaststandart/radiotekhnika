@@ -10,7 +10,7 @@ title: Техническое вдохновение
             <h3>Наша мечта ...</h3>
         </div>
     </a>
-        <a href="strontium-atom-1.html" class="feed-card">
+        <a href="strontium-atom.html" class="feed-card">
         <img src="/img/icons/strontium-atom.webp" class="feed-img-round">
         <div class="feed-info">
             <h3>Атом в ионной ловушке</h3>

@@ -46,7 +46,7 @@ h1 {
 }
 
 blockquote {
-    margin: 20px 0 20px 0; 
+    margin: 20px 0 0px 0; 
     padding: 15px 20px;
     background-color: #f9f9f9;
     border-left: 5px solid var(--card-tech); /* Твоя синяя полоса */
@@ -54,6 +54,10 @@ blockquote {
     font-style: italic; /* Традиционный стиль цитат */
     line-height: 1.6;
     margin-left: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0 !important;
 }
 
 blockquote p {

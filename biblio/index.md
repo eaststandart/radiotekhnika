@@ -71,7 +71,7 @@ title: Список литературы
 </a>
 
 <a href="rostovcev-n-n-risovanie-1957.html" class="item-card">
-	<img src="img/rostovcev-n-n-risovanie-1957.webp" alt="Обложка" class="item-image">
+	<img src="img/rostovcev-n-n-risovanie-1-klass-1957.webp" alt="Обложка" class="item-image">
 	<div class="item-info">
 		<h3>Книги по рисованию</h3>
 		<span class="item-subtext"> Ростовцев Н.Н.</span>

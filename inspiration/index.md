@@ -16,7 +16,7 @@ title: Техническое вдохновение
             <h3>Атом в ионной ловушке</h3>
         </div>
     </a>
-        <a href="link-to-post.html" class="feed-card">
+        <a href="through-hole-red-led.html" class="feed-card">
         <img src="img/your-icon.webp" class="feed-img-round">
         <div class="feed-info">
             <h3>Краткое название идеи</h3>

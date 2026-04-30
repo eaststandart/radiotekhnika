@@ -7,14 +7,8 @@ parent_name: "Литература"
 parent_url: "/biblio/"
 ---
 
-<!-- Ряд с фото -->
-<div class="media-row">
-    <img src="img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" class="book-page-cover">
-    <img src="img/chernenko-g-t-kak-roboty-rabotat-nauchilis-1989.webp" class="book-page-cover">
-</div>
-
-![](/inspiration/img/strontium-atom-1.webp)
-![](/inspiration/img/strontium-atom-2.webp)
+![](img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp)
+![](img/chernenko-g-t-kak-roboty-rabotat-nauchilis-1989.webp)
 
 > **Библиографическое описание:**  
 > Черненко Г.Т. Путешествие в страну роботов. Рассказы об автоматике. Рис. Ю. Клыкова. — Л.: Детская литература, 1977. — 96 с.: ил. — ISBN 5-08-000084-8.

@@ -119,7 +119,8 @@ p:has(img) + blockquote {
     flex-wrap: wrap;
     gap: 15px;
     align-items: flex-start;
-    margin: 1em 0 !important;
+    margin: 1em 0 1em 0 !important; 
+    padding: 0 !important;
 }
 
 .main-content p img:not(.content-img) {

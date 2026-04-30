@@ -82,40 +82,30 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN */
+/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (когда ты сам подогнал высоту) */
 .main-content p:has(img) {
     display: flex;
     flex-wrap: wrap;
     gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
-    padding: 0 !important;
 }
 
 .main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
     flex: 1 1 auto;
     width: auto;
     max-width: 100%;
-    height: 250px; /* Фикс для ряда */
-    object-fit: cover;
+    /* Убираем фиксированную высоту, так как ты подогнал их сам */
+    height: auto; 
+    object-fit: contain; /* Показывает картинку целиком */
     border-radius: 8px;
     margin: 0 !important; 
 }
 
-/* ОДИНОЧНАЯ КАРТИНКА: не режется, высота любая */
-.main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;
-    height: auto !important; 
-    max-height: none; /* Убрал ограничение, чтобы схемы были во всю высоту */
-    object-fit: contain;
-}
-
-/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* Мобильная адаптация */
 @media (max-width: 600px) {
-    /* Если в ряду 2 картинки и им тесно — разрешаем им стать выше для читаемости */
     .main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
-        height: auto; /* На мобилке в вертикали лучше видеть всё фото */
-        min-width: 100%; /* Каждая картинка займет всю ширину экрана */
+        min-width: 100%; /* На мобилке всё же лучше одну под другой */
     }
 }
 

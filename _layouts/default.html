@@ -7,8 +7,6 @@
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/shared-cards.css">
-    <!-- Стили для всплывающего окна -->
-    <script src="/assets/medium-zoom.min.js"></script>
 </head>
 <body>
 
@@ -63,17 +61,6 @@
             <a href="https://creativecommons.org" target="_blank" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
         </p> 
     </footer>
-
-<script>
-  // Инициализация при полной загрузке контента
-  document.addEventListener('DOMContentLoaded', function() {
-    mediumZoom('.main-content img:not(.book-page-cover):not(.content-img)', {
-      margin: 24,
-      background: '#000000aa',
-      scrollOffset: 0 // Оставил 0, чтобы не закрывалось случайно при дрожании пальца
-    });
-  });
-</script>
     
 </body>
 </html>

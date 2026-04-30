@@ -225,6 +225,11 @@ p:has(img) + blockquote {
 
     /* Картинки в столбец ТОЛЬКО когда телефон стоит вертикально */
     @media (orientation: portrait) {
+        /* Добавляем зазор между картинками как у текста */
+        .main-content p:has(img) {
+            gap: 1em; 
+        }
+
         .main-content p img:not(.content-img) {
             height: auto;    
             width: 100%;

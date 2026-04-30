@@ -85,34 +85,53 @@ blockquote p {
 /* КОНТЕЙНЕР РЯДА */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;    /* Позволяет картинкам перепрыгнуть вниз, если в строку не влезли */
+    flex-wrap: wrap;    
     gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
 /* КАРТИНКИ В РЯДУ (ПК и Горизонтальный мобильный) */
+/* Теперь управляем ссылкой .zoom-link, которую создаст скрипт */
+.main-content p .zoom-link {
+    height: 250px;      /* Твоя жесткая высота для ряда */
+    width: auto;
+    flex: 0 0 auto;     /* Запрещаем растягиваться */
+    display: block;
+}
+
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 250px;      /* Жесткая высота для ровного ряда */
-    width: auto;        /* ШИРИНА АВТОМАТОМ (по пропорциям) */
-    max-width: 100%;    /* Чтобы не вылезла за край экрана */
-    object-fit: contain; /* Показывает ВСЁ фото целиком, без обрезки */
+    height: 100%;       /* Занимает всю высоту ссылки */
+    width: auto;        /* Ширина по пропорциям */
+    max-width: 100%;
+    object-fit: contain; /* Показывает ВСЁ фото целиком */
     border-radius: 8px;
     margin: 0 !important;
-    flex: 0 0 auto;     /* Запрещаем картинке растягиваться и занимать лишнее место */
+    display: block;
+    cursor: zoom-in;    /* Указатель, что можно нажать */
 }
 
-/* ОДИНОЧНАЯ КАРТИНКА */
-.main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;        /* Одиночку оставляем на всю ширину */
-    height: auto !important; 
+/* ОДИНОЧНАЯ КАРТИНКА (через ссылку) */
+.main-content p .zoom-link:only-child {
+    width: 100%;
+    height: auto !important;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикальный режим) */
+.main-content p .zoom-link:only-child img {
+    width: 100%;
+    height: auto !important;
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
+    .main-content p .zoom-link {
+        width: 100%;
+        height: auto !important;
+        flex: 1 1 100%;
+    }
     .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: auto;   /* Убираем фикс высоту для узкого экрана */
-        width: 100%;    /* В вертикали ставим одну под другой во всю ширину */
+        width: 100% !important;
+        height: auto !important;
     }
 }
 

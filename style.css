@@ -40,13 +40,13 @@ header {
 }
 
 h1 { 
-    margin: 5px 0 15px 0; /* Оставили 5px сверху и 15px снизу */
+    margin: 5px 0 15px 0;
     font-size: 2rem; 
     line-height: 1.2;
 }
 
+/* ЦИТАТЫ И БИБЛИОГРАФИЧЕСКОЕ ОПИСАНИЕ */
 blockquote {
-    /* Оставляем только оформление. Отступы пусть будут стандартными (inherit) */
     margin: 1em 0; 
     padding: 15px 20px;
     background-color: #f9f9f9;
@@ -57,12 +57,7 @@ blockquote {
 }
 
 blockquote p {
-    /* Возвращаем естественные отступы абзаца */
-    margin: 1em 0;
-}
-
-blockquote p {
-    margin: 0; /* Убираем лишние отступы внутри цитаты */
+    margin: 1em 0; /* Естественные отступы текста внутри */
 }
 
 /* 2. КОНТЕНТНЫЕ СТРАНИЦЫ (СТАТЬИ И КНИГИ) */
@@ -73,63 +68,46 @@ blockquote p {
     max-width: 800px;
     width: 100%;       
     margin: 15px auto; 
-    padding: 10px 20px 20px 20px; /* Уменьшили верхний паддинг с 20 до 10 */
+    padding: 10px 20px 20px 20px;
 }
 
-/* Картинки и видео в тексте */
-.main-content img, 
-.main-content video,
-.video-item video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0 10px 0; /* Тот самый единый ритм: 10 сверху, 10 снизу */
-    border-radius: 8px;
-}
-
-/* --- БЛОК КАРТИНОК В СТАТЬЯХ (MARKDOWN) С ЭФФЕКТОМ ЗУМА --- */
+/* --- ЕДИНЫЙ БЛОК КАРТИНОК В СТАТЬЯХ (MARKDOWN) --- */
 .main-content p:has(img) {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     align-items: flex-start;
-    margin: 1em 0 !important; /* Естественный отступ текста */
+    margin: 1em 0 !important;
 }
 
 .main-content p img:not(.content-img) {
-    height: 250px;       /* ЕДИНАЯ ВЫСОТА ДЛЯ ВСЕХ */
-    width: auto;         /* Ширина по пропорциям */
-    max-width: 100%;     /* Чтобы не вылетало за экран */
-    object-fit: contain; /* Картинка всегда видна целиком */
+    height: 250px;       /* Единая высота для ряда */
+    width: auto;         
+    max-width: 100%;     
+    object-fit: contain; 
     border-radius: 8px;
     margin: 0 !important;
-    
-    /* НАСТРОЙКИ ДЛЯ УВЕЛИЧЕНИЯ */
     cursor: zoom-in;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
 }
 
-/* ЭФФЕКТ ПРИ НАЖАТИИ (ЗУМ) */
-/* Убрал :not(.book-page-cover), так как мы от них отказываемся в пользу маркдауна */
+/* Зум при нажатии (без JS) */
 .main-content p img:not(.content-img):active {
-    transform: scale(2.0); /* Увеличение в 2 раза */
-    z-index: 999;          /* Всплывает над всем текстом */
+    transform: scale(2.0); 
+    z-index: 999;          
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     cursor: zoom-out;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ */
-@media (max-width: 600px) and (orientation: portrait) {
-    .main-content p img:not(.content-img) {
-        height: auto;    /* На узком экране во всю ширь */
-        width: 100%;
-    }
-    /* На мобилках зум поменьше, чтобы не вылез за края */
-    .main-content p img:not(.content-img):active {
-        transform: scale(1.2);
-    }
+/* Видео и другие медиа */
+.main-content video, .video-item video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
 .back-link {
@@ -160,33 +138,22 @@ blockquote p {
     color: white !important;
     border-radius: 15px;
     text-decoration: none;
-    font-weight: normal;
     font-size: 0.85rem;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    
-    /* УПРАВЛЕНИЕ ОТСТУПАМИ: */
-    /* 4px - сверху, 12px - по бокам, 6px - снизу */
     padding: 4px 12px 6px 12px !important; 
-    
     line-height: 1;
     transition: opacity 0.2s;
-    border: none;
 }
 
-.tag-item:hover {
-    opacity: 0.8;
-}
-
-.tag-item::before {content: "#"; margin-right: 1px; opacity: 0.7; }
+.tag-item:hover { opacity: 0.8; }
+.tag-item::before { content: "#"; margin-right: 1px; opacity: 0.7; }
 
 /* 4. ПОДВАЛ И КНОПКА TELEGRAM */
 .main-footer, .license-footer { 
     margin-top: 40px; 
     text-align: center; 
     width: 100%; 
-    max-width: 1000px; 
 }
 
 .tg-button {
@@ -203,20 +170,26 @@ blockquote p {
 
 .tg-icon { width: 20px; height: 20px; }
 
+/* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
-    h1 { 
-        font-size: 1.5rem; 
-        margin: 5px 0 10px 0 !important; /* Устанавливаем такой же или чуть меньший отступ для телефона */
-    }
-
-    blockquote {
-        margin-top: 5px !important;    /* Прижимаем цитату к картинкам на мобильном */
-        margin-bottom: 20px !important;
-    }
+    h1 { font-size: 1.5rem; margin: 5px 0 10px 0 !important; }
+    
+    header { margin: 10px 0 20px 0; }
 
     .content-wrapper { 
         width: 100%; 
         padding: 15px 10px; 
-        border-radius: 0; /* На телефоне карточка без скруглений во весь экран смотрится лучше */ 
+        border-radius: 0; 
+    }
+
+    /* Картинки в вертикальном режиме - на весь экран */
+    @media (orientation: portrait) {
+        .main-content p img:not(.content-img) {
+            height: auto;    
+            width: 100%;
+        }
+        .main-content p img:not(.content-img):active {
+            transform: scale(1.2);
+        }
     }
 }

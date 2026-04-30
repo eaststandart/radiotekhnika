@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Одиночный атом в ионной ловушке
+title: Одиночный атом стронция в ионной ловушке
 tags: [атом, ион]
 sources: "[Одиночный атом в ионной ловушке](https://www.independent.co.uk/news/science/atom-photograph-top-prize-strontium-david-nadlinger-oxford-university-engineering-physical-sciences-research-council-competition-a8206196.html)"
 parent_name: "Техническое вдохновение"

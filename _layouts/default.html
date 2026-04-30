@@ -66,5 +66,25 @@
         </p> 
     </footer>
 
+<script>
+  document.querySelectorAll('.main-content img').forEach(function(img) {
+    // Проверяем, не является ли картинка уже ссылкой
+    if (!img.closest('a')) {
+      var link = document.createElement('a');
+      link.setAttribute('href', img.getAttribute('src'));
+      link.classList.add('zoom-link');
+      img.parentNode.insertBefore(link, img);
+      link.appendChild(img);
+    }
+  });
+
+  // Запускаем Luminous на всех созданных ссылках
+  var links = document.querySelectorAll('.zoom-link');
+  if (links.length > 0) {
+    new LuminousGallery(links);
+  }
+</script>
+
+    
 </body>
 </html>

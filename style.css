@@ -97,6 +97,11 @@ blockquote p:not(:last-child) {
     margin-bottom: 10px; 
 }
 
+/* Если цитата идет сразу после картинки в абзаце */
+p:has(img) + blockquote {
+    margin-top: 1.5em; /* Немного увеличиваем верхний зазор, чтобы компенсировать отсутствие отступа у фото */
+}
+
 /* 2. КОНТЕНТНЫЕ СТРАНИЦЫ (СТАТЬИ И КНИГИ) */
 .content-wrapper {
     background: white;

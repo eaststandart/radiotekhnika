@@ -12,55 +12,62 @@
 
 <div class="content-wrapper">
         
-<!-- Блок навигации -->
-<div class="navigation-header" style="margin-bottom: 15px; font-size: 0.9rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
-    <a href="/" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;">← Главная</a>
+    <!-- Блок навигации -->
+    <div class="navigation-header" style="margin-bottom: 15px; font-size: 0.9rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
+        <a href="/" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;">← Главная</a>
 
-    {% if page.parent_url %}
+        {% if page.parent_url %}
+            <span style="color: #ccc; margin: 0 5px;">|</span>
+            <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
+        {% endif %}
+
         <span style="color: #ccc; margin: 0 5px;">|</span>
-    {% endif %}
-        <a href="{{ page.parent_url }}" class="back-link" style="margin-bottom: 0;">{{ page.parent_name }}</a>
+        <a href="/tags.html" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;"># Поиск</a>
+    </div>
 
-    <span style="color: #ccc; margin: 0 5px;">|</span>
-    <a href="/tags.html" class="back-link" style="margin-bottom: 0; color: #3498db; font-weight: normal;"># Поиск</a>
-    
-</div>
-<!-- Убрали пустые строки между навигацией и h1 -->
     <h1 style="margin-top: 0;">{{ page.title }}</h1> 
 
     <div class="main-content">
         {{ content }}
     </div>
-
-        {% if page.sources %}
-        <div class="sources-inline">
-            <strong>Источники:</strong> 
-            <div class="sources-content">
-                {{ page.sources | markdownify }}
-            </div>
-        </div>
-        {% endif %}
-
-{% if page.tags %}
-<div class="tag-container">
-    {% for tag in page.tags %}
-    {% assign tag_clean = tag | replace: '#', '' | strip %}
-    <a href="{{ '/tags.html' | relative_url }}#{{ tag_clean | slugify }}" class="tag-item">{{ tag_clean }}</a>
-    {% endfor %}
-</div>
-{% endif %}
-
+    
+    <!-- Блок библиографии из YAML -->
+    {% if page.bibliography %}
+    <div class="bibliography-footer">
+        <strong>Библиографическое описание:</strong>
+        {{ page.bibliography | markdownify }}
     </div>
+    {% endif %}
 
-    <footer class="license-footer">
-        <p style="margin-top: 0px; margin-bottom: 5px;">
-            © 2026 Творческая лаборатория познавательного развития
-        </p>
-        <p style="font-size: 0.8rem; color: #7f8c8d; margin: 0;">
-            Материалы сайта доступны по лицензии 
-            <a href="https://creativecommons.org" target="_blank" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
-        </p> 
-    </footer>
+    {% if page.sources %}
+    <div class="sources-inline">
+        <strong>Источники:</strong> 
+        <div class="sources-content">
+            {{ page.sources | markdownify }}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <div class="tag-container">
+        {% for tag in page.tags %}
+        {% assign tag_clean = tag | replace: '#', '' | strip %}
+        <a href="{{ '/tags.html' | relative_url }}#{{ tag_clean | slugify }}" class="tag-item">{{ tag_clean }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+</div>
+
+<footer class="license-footer">
+    <p style="margin-top: 0px; margin-bottom: 5px;">
+        © 2026 Творческая лаборатория познавательного развития
+    </p>
+    <p style="font-size: 0.8rem; color: #7f8c8d; margin: 0;">
+        Материалы сайта доступны по лицензии 
+        <a href="https://creativecommons.org" target="_blank" style="color: #7f8c8d; text-decoration: underline;">CC BY 4.0</a> 
+    </p> 
+</footer>
     
 </body>
 </html>

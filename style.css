@@ -83,23 +83,25 @@ blockquote p {
 }
 
 /* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (только если они просто в тексте) */
+/* Убираем отступы у абзаца, в котором лежат картинки */
 .main-content p:has(img) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
-    margin: 0px 0;
+    margin: 0 !important; /* Обнуляем внешний отступ абзаца */
+    padding: 0 !important;
 }
 
-/* Настройка самих картинок из Markdown */
-/* Мы добавляем :not(), чтобы не трогать твои специальные классы из библио */
-.main-content p img:not(.book-page-cover):not(.content-img) {
+/* Убираем отступы у самих картинок в этом ряду */
+.main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
     flex: 1 1 auto;
     width: auto;
     max-width: 100%;
-    height: 250px; /* Твоя желаемая высота для ряда */
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    margin: 0 !important; /* УБИРАЕМ те 10px, которые прописаны глобально */
 }
 
 /* Если картинка ОДНА (растягиваем на всю ширину) */

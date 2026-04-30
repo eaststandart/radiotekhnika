@@ -82,30 +82,39 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* Контейнер для ряда */
+/* КОНТЕЙНЕР РЯДА */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; /* Разрешаем перенос для мобилок */
     gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
-/* Настройка картинок в ряду */
+/* КАРТИНКИ В РЯДУ */
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 250px;       /* ЗАДАЕМ единую высоту для всех в ряду */
-    width: auto;         /* Ширина подстроится пропорционально */
-    flex: 0 1 auto;      /* Картинки не растягиваются шире своего размера */
-    object-fit: contain; /* Показываем целиком */
+    height: 250px;      /* Единая высота для ряда на ПК */
+    width: auto;
+    max-width: 100%;    /* Защита от вылета за край */
+    flex: 1 1 auto;     /* Позволяет картинкам заполнять строку */
+    object-fit: cover;  /* Чтобы при разной ширине они заполняли блок ровно */
     border-radius: 8px;
     margin: 0 !important;
 }
 
-/* Одиночная картинка (автоматически на всю ширину) */
+/* ОДИНОЧНАЯ КАРТИНКА */
 .main-content p img:not(.book-page-cover):not(.content-img):only-child {
     width: 100%;
     height: auto !important; 
-    max-height: none;
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикаль и Горизонт) */
+@media (max-width: 600px) {
+    .main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
+        height: auto;   /* Убираем фикс высоту, чтобы не резало */
+        width: 100%;    /* Картинка на всю ширину экрана */
+        flex: 1 1 100%;
+    }
 }
 
 .back-link {

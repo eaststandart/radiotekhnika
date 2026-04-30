@@ -225,11 +225,10 @@ p:has(img) + blockquote {
 
     /* Картинки в столбец ТОЛЬКО когда телефон стоит вертикально */
     @media (orientation: portrait) {
-        /* Ставим 40px, чтобы точно увидеть разницу */
         .main-content p:has(img) {
             display: flex !important;
             flex-direction: column !important;
-            gap: 40px !important; 
+            gap: 1.2em !important; 
         }
 
         .main-content p img:not(.content-img) {

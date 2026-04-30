@@ -82,38 +82,37 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN */
+/* КОНТЕЙНЕР РЯДА */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-wrap: wrap;    /* Позволяет картинкам перепрыгнуть вниз, если в строку не влезли */
+    gap: 15px; 
     align-items: flex-start;
-    margin: 15px 0 !important; 
-    padding: 0 !important;
+    margin: 20px 0 15px 0 !important;
 }
 
-/* Общий стиль для всех картинок в ряду */
+/* КАРТИНКИ В РЯДУ (ПК и Горизонтальный мобильный) */
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    flex: 1 1 auto;
-    width: auto;
-    height: 350px;       /* Единая высота для всех картинок на ПК */
-    max-width: 100%;
-    object-fit: cover;   /* Сохраняет ровную сетку */
+    height: 250px;      /* Жесткая высота для ровного ряда */
+    width: auto;        /* ШИРИНА АВТОМАТОМ (по пропорциям) */
+    max-width: 100%;    /* Чтобы не вылезла за край экрана */
+    object-fit: contain; /* Показывает ВСЁ фото целиком, без обрезки */
     border-radius: 8px;
     margin: 0 !important;
+    flex: 0 0 auto;     /* Запрещаем картинке растягиваться и занимать лишнее место */
 }
 
-/* Одиночная картинка (всегда пропорциональна и на всю ширину) */
+/* ОДИНОЧНАЯ КАРТИНКА */
 .main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;
+    width: 100%;        /* Одиночку оставляем на всю ширину */
     height: auto !important; 
-    max-height: none;    /* Чтобы не ограничивать высокие схемы */
 }
 
-/* Адаптация для мобильных: уменьшаем высоту ряда */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикальный режим) */
 @media (max-width: 600px) {
     .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: 250px;   /* На телефоне ряд должен быть компактнее */
+        height: auto;   /* Убираем фикс высоту для узкого экрана */
+        width: 100%;    /* В вертикали ставим одну под другой во всю ширину */
     }
 }
 

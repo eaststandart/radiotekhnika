@@ -130,9 +130,8 @@
     display: flex;
     flex-wrap: wrap; 
     gap: 15px; 
-    /* Делаем отступы как у абзаца, но снизу ставим 0, */
-    /* чтобы работал только естественный отступ следующего текста */
-    margin: 0 0 20px 0 !important; 
+    /* Просто даем ему такой же отступ, как у любого параграфа */
+    margin: 1em 0; 
     align-items: flex-start;
 }
 
@@ -156,13 +155,11 @@
 
 /* Контейнер для обложек и фото с фиксированной высотой */
 .book-page-cover {
-    height: 200px !important; 
-    width: auto !important; 
-    object-fit: contain; 
+    height: 200px !important;
+    width: auto !important;
+    object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin: 0 !important; 
-    display: block; /* Это критично, чтобы убрать лишние 3-5px снизу */
+    margin: 0 !important; /* Внутри ряда отступы не нужны, там работает gap */
 }
 
 /* Одиночное изображение в тексте (не карточка) */

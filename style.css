@@ -46,18 +46,19 @@ h1 {
 }
 
 blockquote {
-    margin: 0 0 20px 0 !important; 
+    /* Оставляем только оформление. Отступы пусть будут стандартными (inherit) */
+    margin: 1em 0; 
     padding: 15px 20px;
     background-color: #f9f9f9;
-    border-left: 5px solid var(--card-tech); /* Твоя синяя полоса */
+    border-left: 5px solid var(--card-tech);
     color: #555;
-    font-style: italic; /* Традиционный стиль цитат */
+    font-style: italic;
     line-height: 1.6;
-    margin-left: 0;
 }
 
-blockquote p:last-child {
-    margin-bottom: 0 !important;
+blockquote p {
+    /* Возвращаем естественные отступы абзаца */
+    margin: 1em 0;
 }
 
 blockquote p {

@@ -85,35 +85,34 @@ blockquote p {
 /* КОНТЕЙНЕР РЯДА */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap; /* Разрешаем перенос для мобилок */
+    flex-wrap: wrap;    /* Позволяет картинкам перепрыгнуть вниз, если в строку не влезли */
     gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
-/* КАРТИНКИ В РЯДУ */
+/* КАРТИНКИ В РЯДУ (ПК и Горизонтальный мобильный) */
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 250px;      /* Единая высота для ряда на ПК */
-    width: auto;
-    max-width: 100%;    /* Защита от вылета за край */
-    flex: 1 1 auto;     /* Позволяет картинкам заполнять строку */
-    object-fit: cover;  /* Чтобы при разной ширине они заполняли блок ровно */
+    height: 250px;      /* Жесткая высота для ровного ряда */
+    width: auto;        /* ШИРИНА АВТОМАТОМ (по пропорциям) */
+    max-width: 100%;    /* Чтобы не вылезла за край экрана */
+    object-fit: contain; /* Показывает ВСЁ фото целиком, без обрезки */
     border-radius: 8px;
     margin: 0 !important;
+    flex: 0 0 auto;     /* Запрещаем картинке растягиваться и занимать лишнее место */
 }
 
 /* ОДИНОЧНАЯ КАРТИНКА */
 .main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;
+    width: 100%;        /* Одиночку оставляем на всю ширину */
     height: auto !important; 
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикаль и Горизонт) */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикальный режим) */
 @media (max-width: 600px) {
-    .main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
-        height: auto;   /* Убираем фикс высоту, чтобы не резало */
-        width: 100%;    /* Картинка на всю ширину экрана */
-        flex: 1 1 100%;
+    .main-content p img:not(.book-page-cover):not(.content-img) {
+        height: auto;   /* Убираем фикс высоту для узкого экрана */
+        width: 100%;    /* В вертикали ставим одну под другой во всю ширину */
     }
 }
 

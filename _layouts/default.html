@@ -66,6 +66,7 @@
     </footer>
 
 <script>
+  // 1. Оборачиваем картинки (кроме обложек)
   document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)').forEach(function(img) {
     if (!img.closest('a')) {
       var link = document.createElement('a');
@@ -78,9 +79,19 @@
 
   var links = document.querySelectorAll('.zoom-link');
   if (links.length > 0) {
-    // Вторым аргументом идут настройки галереи, третьим — настройки самой картинки
-    new LuminousGallery(links, {}, {
+    // Инициализируем галерею
+    var gallery = new LuminousGallery(links, {}, {
         closeOnOutsideClick: true
+    });
+
+    // ПРИНУДИТЕЛЬНОЕ ЗАКРЫТИЕ ПРИ КЛИКЕ НА ФОН
+    // Ловим клик на всем документе, и если попали в подложку люминоса — закрываем всё
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('lum-lightbox-inner') || e.target.classList.contains('lum-lightbox')) {
+        gallery.luminousInstances.forEach(function(inst) {
+          inst.lightbox.close();
+        });
+      }
     });
   }
 </script>

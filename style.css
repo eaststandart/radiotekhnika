@@ -171,28 +171,29 @@ blockquote p {
     }
 }
 
-/* Контейнер, где лежат картинки (обычно это абзац <p>) */
-.main-content p {
+/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (только если они просто в тексте) */
+.main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;   /* Позволяет переносить картинки на новую строку, если их очень много */
-    gap: 10px;         /* Расстояние между картинками в ряду */
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: flex-start;
+    margin: 20px 0;
 }
 
-/* Настройка самих картинок внутри контента */
-.main-content p img {
-    flex: 1 1 auto;    /* Позволяет картинкам "делиться" местом в ряду */
-    width: auto;       /* Сбрасываем жесткую ширину */
-    max-width: 100%;   /* Чтобы одна картинка не вылезала за края */
-    height: 250px;     /* ФИКСИРОВАННАЯ ВЫСОТА для ряда (можешь менять) */
-    object-fit: cover; /* Чтобы картинки не искажались при подгонке */
+/* Настройка самих картинок из Markdown */
+/* Мы добавляем :not(), чтобы не трогать твои специальные классы из библио */
+.main-content p img:not(.book-page-cover):not(.content-img) {
+    flex: 1 1 auto;
+    width: auto;
+    max-width: 100%;
+    height: 250px; /* Твоя желаемая высота для ряда */
+    object-fit: cover;
     border-radius: 8px;
 }
 
-/* Если картинка в абзаце ВСЕГО ОДНА (автоматически растягиваем) */
-.main-content p img:only-child {
+/* Если картинка ОДНА (растягиваем на всю ширину) */
+.main-content p img:not(.book-page-cover):not(.content-img):only-child {
     width: 100%;
-    height: auto;      /* Возвращаем естественную высоту для одиночного фото */
+    height: auto;
     max-width: 100%;
 }
-

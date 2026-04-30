@@ -34,14 +34,14 @@
     <!-- Универсальный блок библиографии -->
     {% if page.bibliography %}
     <div class="bibliography-footer">
-        <strong>{% if page.bibliography.size > 1 %}Библиографические описания:{% else %}Библиографическое описание:{% endif %}</strong>
+        <strong>Библиографическое описание:</strong>
         
         {% if page.bibliography.first %}
-            <ul style="margin: 0; padding-left: 20px;">
+            <ol style="margin: 0; padding-left: 25px;">
                 {% for item in page.bibliography %}
                 <li style="margin-bottom: 8px;">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                 {% endfor %}
-            </ul>
+            </ol>
         {% else %}
             {{ page.bibliography | markdownify }}
         {% endif %}

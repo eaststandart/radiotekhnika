@@ -6,6 +6,7 @@ sources: "[Одиночный атом в ионной ловушке](https://w
 parent_name: "Вдохновение"
 parent_url: "/inspiration/"
 ---
+
 ![](img/strontium-atom-1.webp)
 ![](img/strontium-atom-2.webp)
 

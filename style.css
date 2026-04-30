@@ -82,6 +82,33 @@ blockquote p {
     border-radius: 8px;
 }
 
+/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (только если они просто в тексте) */
+.main-content p:has(img) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+/* Настройка самих картинок из Markdown */
+/* Мы добавляем :not(), чтобы не трогать твои специальные классы из библио */
+.main-content p img:not(.book-page-cover):not(.content-img) {
+    flex: 1 1 auto;
+    width: auto;
+    max-width: 100%;
+    height: 250px; /* Твоя желаемая высота для ряда */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Если картинка ОДНА (растягиваем на всю ширину) */
+.main-content p img:not(.book-page-cover):not(.content-img):only-child {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 .back-link {
     text-decoration: none;
     color: var(--card-tech);
@@ -169,31 +196,4 @@ blockquote p {
         padding: 15px 10px; 
         border-radius: 0; /* На телефоне карточка без скруглений во весь экран смотрится лучше */ 
     }
-}
-
-/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (только если они просто в тексте) */
-.main-content p:has(img) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: flex-start;
-    margin: 20px 0;
-}
-
-/* Настройка самих картинок из Markdown */
-/* Мы добавляем :not(), чтобы не трогать твои специальные классы из библио */
-.main-content p img:not(.book-page-cover):not(.content-img) {
-    flex: 1 1 auto;
-    width: auto;
-    max-width: 100%;
-    height: 250px; /* Твоя желаемая высота для ряда */
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Если картинка ОДНА (растягиваем на всю ширину) */
-.main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
 }

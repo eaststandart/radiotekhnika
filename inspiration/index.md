@@ -13,7 +13,7 @@ title: Техническое вдохновение
         <a href="strontium-atom-1.html" class="feed-card">
         <img src="/img/icons/strontium-atom.webp" class="feed-img-round">
         <div class="feed-info">
-            <h3>Одиночный атом в ионной ловушке</h3>
+            <h3>Атом в ионной ловушке</h3>
         </div>
     </a>
         <a href="link-to-post.html" class="feed-card">

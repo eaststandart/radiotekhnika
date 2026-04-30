@@ -54,6 +54,8 @@ h1 {
     font-size: 0.95rem;
     color: #555;
     line-height: 1.6;
+    list-style-type: disc;
+    color: #555;
 }
 
 /* ЦИТАТЫ */
@@ -65,6 +67,10 @@ blockquote {
     color: #555;
     font-style: italic;
     line-height: 1.6;
+}
+
+.bibliography-footer li {
+    line-height: 1.5;
 }
 
 blockquote p {

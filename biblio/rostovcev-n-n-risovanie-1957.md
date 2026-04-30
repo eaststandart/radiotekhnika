@@ -1,24 +1,14 @@
 ---
 layout: default
 title: Рисование, 1-4 класс
-bibliography:
+bibliography: "Ростовцев Н.Н. Рисование. Первый класс. 1957 год.  — М.: Издательство «Наше Завтра», 2022. — 134 с. — ISBN 978-5-6047724-1-6."
 sources: "[Издательство «Наше Завтра»](https://nzavtra.ru/)"
 tags: [ростовцев, рисование, младшийвозраст, среднийвозраст]
 parent_name: "Литература"
 parent_url: "/biblio/"
 ---
 
-<!-- Ряд с фото -->
-<div class="media-row">
-    <img src="img/rostovcev-n-n-risovanie-1-klass-1957.webp" class="book-page-cover">
-    <img src="img/rostovcev-n-n-risovanie-2-klass-1957.webp" class="book-page-cover">
-    <img src="img/rostovcev-n-n-risovanie-3-klass-1957.webp" class="book-page-cover">
-    <img src="img/rostovcev-n-n-risovanie-4-klass-1957.webp" class="book-page-cover">
-    <img src="img/rostovcev-n-n-metodika-prepodavaniya-risovaniya-v-1-i-2-klassah-1958.webp" class="book-page-cover">
-</div>
-<!-- Стык в стык, без пустой строки -->
-> **Библиографическое описание:**  
-> Ростовцев Н.Н. Рисование. Первый класс. 1957 год.  — М.: Издательство «Наше Завтра», 2022. — 134 с. — ISBN 978-5-6047724-1-6.
+![](img/rostovcev-n-n-risovanie-1-klass-1957.webp)
 
 Воображение развивается на основе чётких представлений о предметах и явлениях. Накопление таких представлений укрепляет образную и зрительную память. Всё это важно для инженерной и научно-исследовательской деятельности. Поэтому в **изучении электроники большое значение имеют навыки рисования**.
 
@@ -27,5 +17,10 @@ parent_url: "/biblio/"
 Навыки рисования нужны архитектору, инженеру, врачу, биологу, географу, геологу и многим другим. **Умение зарисовать** электронную схему и как она работает, детали машин или форму нового вируса **помогает в практической работе**. Понимание рисунков и чертежей облегчает изучение инструмента, станков, машин и сложных агрегатов.
 
 На фотографии изображены книги 50–60-х годов в современном переиздании.
+
+![](img/rostovcev-n-n-risovanie-2-klass-1957.webp)
+![](img/rostovcev-n-n-risovanie-3-klass-1957.webp)
+![](img/rostovcev-n-n-risovanie-4-klass-1957.webp)
+![](img/rostovcev-n-n-metodika-prepodavaniya-risovaniya-v-1-i-2-klassah-1958.webp)
 
 **Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

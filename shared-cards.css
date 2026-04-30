@@ -1,4 +1,4 @@
-/* Сетка для внутренних разделов */
+/* 1. СЕТКА И ПЛИТКИ (Главные страницы разделов) */
 .inner-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -7,7 +7,6 @@
     margin: 20px 0;
 }
 
-/* Карточка-плитка для внутренних разделов */
 .inner-category-card {
     background: white;
     border-radius: 12px;
@@ -18,7 +17,6 @@
 
 .inner-category-card h3 { margin: 0 0 15px 0; font-size: 1.2rem; }
 
-/* Список ссылок внутри плитки */
 .inner-project-list { list-style: none; padding: 0; margin: 0; }
 .inner-project-list li { margin-bottom: 8px; }
 .inner-project-list a {
@@ -32,21 +30,7 @@
 }
 .inner-project-list a:hover { background: #eee; color: #000; }
 
-/* --- СТИЛИ ГОРИЗОНТАЛЬНЫХ КАРТОЧЕК (Библиотека/Дневник) --- */
-.item-card {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background: #fff;
-    padding: 8px 15px;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    margin-bottom: 12px;
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Общий стиль карточек для всего портала */
+/* 2. ГОРИЗОНТАЛЬНЫЕ КАРТОЧКИ (Библиотека / Дневник) */
 .item-card {
     display: flex;
     flex-direction: row;
@@ -70,10 +54,9 @@
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Круглая версия картинки для карточек */
 .item-image-round {
     width: 100px !important;
-    height: 100px !important; /* Строго квадрат для идеального круга */
+    height: 100px !important;
     object-fit: cover;
     border-radius: 50% !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -81,7 +64,7 @@
 
 .item-info {
     flex: 1;
-    padding-top: 10px; /* Чтобы текст был вровень с верхом картинки на ПК */
+    padding-top: 10px;
 }
 
 .item-info h3 {
@@ -106,113 +89,10 @@
     line-height: 1.4;
 }
 
-/* Адаптация для мобильных */
-@media (max-width: 600px) {
-    .item-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 8px 10px 15px 10px;
-        gap: 0;
-    }
-    .item-image {
-        width: 130px !important;
-        height: auto !important;
-        margin-bottom: 10px;
-    }
-    .item-info {
-        padding-top: 0 !important;
-    }
-}
-
-/* УНИВЕРСАЛЬНЫЕ МЕДИА-РЯДЫ (ФОТО И ВИДЕО) */
-.media-row {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 15px; 
-    /* Просто даем ему такой же отступ, как у любого параграфа */
-    margin: 1em 0; 
-    align-items: flex-start;
-}
-
-/* Контейнер для видео-плеера */
-.video-item {
-    padding-right: 15px; 
-    flex: 0 0 calc(33.33%); /* 3 в ряд по умолчанию */
-    min-width: 200px;
-    box-sizing: border-box;
-}
-
-.video-item video {
-    width: 100%;
-    height: auto;
-    margin-top: 0 !important;    
-    margin-bottom: 15px !important; 
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Контейнер для обложек и фото с фиксированной высотой */
-.book-page-cover {
-    height: 200px !important;
-    width: auto !important;
-    object-fit: contain;
-    border-radius: 8px;
-    margin: 0 !important; /* Внутри ряда отступы не нужны, там работает gap */
-}
-
-/* Одиночное изображение в тексте (не карточка) */
-.content-img {
-    display: block;
-    width: 100%;
-    max-width: 450px; /* Оптимально, чтобы не было слишком огромным на ПК */
-    height: auto;
-    margin: 20px 0 !important;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Центрирование на мобилках */
-@media (max-width: 600px) {
-    .content-img {
-        max-width: 100%;
-        margin: 15px auto !important;
-    }
-}
-
-/* Адаптация для средних экранов */
-@media (max-width: 800px) {
-    .book-page-cover {
-        max-width: calc(33.33% - 15px) !important;
-        height: 180px !important;
-    }
-}
-
-/* Мобильная адаптация */
-@media (max-width: 600px) {
-    .media-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .video-item, .book-page-cover {
-        width: 100% !important;
-        max-width: 280px !important;
-        padding-right: 0;
-        margin-right: 0 !important;
-    }
-    .book-page-cover {
-        height: auto !important;
-    }
-}
-
-/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (СТАНДАРТ ПО ОБРАЗЦУ) --- */
-
+/* 3. СПЕЦИАЛЬНЫЙ БЛОК: ВДОХНОВЕНИЕ */
 .inspiration-feed {
     display: grid;
-    /* Оставляем 300px как в оригинале, чтобы не ломать сетку */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* ВАЖНО: Ставим gap: 0, так как у твоих карточек уже есть margin-bottom: 12px */
     gap: 0 20px; 
     width: 100%;
 }
@@ -221,17 +101,16 @@
     display: flex;
     flex-direction: row;
     align-items: center; 
-    gap: 12px;           /* Стандарт из твоего образца */
+    gap: 12px;
     background: #fff;
-    padding: 8px 15px;   /* Стандарт из твоих карточек */
+    padding: 8px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 12px; /* Твой стандартный отступ между карточками */
+    margin-bottom: 12px;
     text-decoration: none;
     color: inherit;
 }
 
-/* Картинка: уменьшенная версия твоего стандарта */
 .inspiration-feed .feed-img-round {
     width: 50px !important;
     height: 50px !important;
@@ -247,12 +126,61 @@
     line-height: 1.2;
 }
 
-/* Мобильная адаптация */
+/* 4. ВСПОМОГАТЕЛЬНЫЕ ЭЛЕМЕНТЫ */
+.content-img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px 0 !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-item {
+    flex: 0 0 calc(33.33% - 15px);
+    min-width: 200px;
+    margin-bottom: 15px;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ КАРТОЧЕК */
 @media (max-width: 600px) {
+    /* Обычные карточки перестраиваются в столбец */
+    .item-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8px 10px 15px 10px;
+        gap: 10px;
+    }
+    
+    .item-image {
+        width: 130px !important;
+        height: auto !important;
+    }
+
+    .item-info { padding-top: 0 !important; }
+
+    /* Компактные карточки Вдохновения просто уменьшают иконку */
     .inspiration-feed .feed-img-round {
         width: 40px !important;
         height: 40px !important;
     }
+
+    .content-img {
+        max-width: 100%;
+        margin: 15px auto !important;
+    }
+    
+    .video-item {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
 }
-
-

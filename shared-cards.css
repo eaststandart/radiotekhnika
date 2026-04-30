@@ -1,258 +1,195 @@
-/* Сетка для внутренних разделов */
-.inner-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+/* 1. БАЗОВАЯ ГЕОМЕТРИЯ И ЦВЕТА */
+* { box-sizing: border-box; }
+
+:root {
+    --primary-bg: #f4f7f6;
+    --card-tech: #3498db; 
+    --card-my: #2ecc71;   
+    --text-color: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Карточка-плитка для внутренних разделов */
-.inner-category-card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 6px solid #eee;
-}
-
-.inner-category-card h3 { margin: 0 0 15px 0; font-size: 1.2rem; }
-
-/* Список ссылок внутри плитки */
-.inner-project-list { list-style: none; padding: 0; margin: 0; }
-.inner-project-list li { margin-bottom: 8px; }
-.inner-project-list a {
-    text-decoration: none;
-    color: #555;
+.main-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
     display: block;
-    padding: 8px 12px;
-    border-radius: 6px;
-    background: #f9f9f9;
-    font-size: 0.9rem;
-}
-.inner-project-list a:hover { background: #eee; color: #000; }
-
-/* --- СТИЛИ ГОРИЗОНТАЛЬНЫХ КАРТОЧЕК (Библиотека/Дневник) --- */
-.item-card {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background: #fff;
-    padding: 8px 15px;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    margin-bottom: 12px;
-    text-decoration: none;
-    color: inherit;
 }
 
-/* Общий стиль карточек для всего портала */
-.item-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-    background: #fff;
-    padding: 8px 15px;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    margin-bottom: 12px;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s;
-}
-
-.item-image {
-    width: 100px !important;
-    height: 140px !important;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Круглая версия картинки для карточек */
-.item-image-round {
-    width: 100px !important;
-    height: 100px !important; /* Строго квадрат для идеального круга */
-    object-fit: cover;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.item-info {
-    flex: 1;
-    padding-top: 10px; /* Чтобы текст был вровень с верхом картинки на ПК */
-}
-
-.item-info h3 {
-    margin: 0 0 8px 0;
-    color: var(--card-tech);
-    font-size: 1.15rem;
+h1 { 
+    margin: 5px 0 15px 0;
+    font-size: 2rem; 
     line-height: 1.2;
 }
 
-.item-subtext {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-.item-info p {
-    margin: 0;
-    font-size: 0.88rem;
-    color: #666;
-    line-height: 1.4;
-}
-
-/* Адаптация для мобильных */
-@media (max-width: 600px) {
-    .item-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 8px 10px 15px 10px;
-        gap: 0;
-    }
-    .item-image {
-        width: 130px !important;
-        height: auto !important;
-        margin-bottom: 10px;
-    }
-    .item-info {
-        padding-top: 0 !important;
-    }
-}
-
-/* УНИВЕРСАЛЬНЫЕ МЕДИА-РЯДЫ (ФОТО И ВИДЕО) */
-.media-row {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 15px; 
-    /* Просто даем ему такой же отступ, как у любого параграфа */
+/* ЦИТАТЫ И БИБЛИОГРАФИЧЕСКОЕ ОПИСАНИЕ */
+blockquote {
     margin: 1em 0; 
-    align-items: flex-start;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--card-tech);
+    color: #555;
+    font-style: italic;
+    line-height: 1.6;
 }
 
-/* Контейнер для видео-плеера */
-.video-item {
-    padding-right: 15px; 
-    flex: 0 0 calc(33.33%); /* 3 в ряд по умолчанию */
-    min-width: 200px;
-    box-sizing: border-box;
+blockquote p {
+    margin: 1em 0; /* Естественные отступы текста внутри */
 }
 
-.video-item video {
-    width: 100%;
-    height: auto;
-    margin-top: 0 !important;    
-    margin-bottom: 15px !important; 
-    display: block;
-    border-radius: 8px;
+/* 2. КОНТЕНТНЫЕ СТРАНИЦЫ (СТАТЬИ И КНИГИ) */
+.content-wrapper {
+    background: white;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;       
+    margin: 15px auto; 
+    padding: 10px 20px 20px 20px;
 }
 
-/* Контейнер для обложек и фото с фиксированной высотой */
-.book-page-cover {
-    height: 200px !important;
-    width: auto !important;
-    object-fit: contain;
-    border-radius: 8px;
-    margin: 0 !important; /* Внутри ряда отступы не нужны, там работает gap */
-}
-
-/* Одиночное изображение в тексте (не карточка) */
-.content-img {
-    display: block;
-    width: 100%;
-    max-width: 450px; /* Оптимально, чтобы не было слишком огромным на ПК */
-    height: auto;
-    margin: 20px 0 !important;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Центрирование на мобилках */
-@media (max-width: 600px) {
-    .content-img {
-        max-width: 100%;
-        margin: 15px auto !important;
-    }
-}
-
-/* Адаптация для средних экранов */
-@media (max-width: 800px) {
-    .book-page-cover {
-        max-width: calc(33.33% - 15px) !important;
-        height: 180px !important;
-    }
-}
-
-/* Мобильная адаптация */
-@media (max-width: 600px) {
-    .media-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .video-item, .book-page-cover {
-        width: 100% !important;
-        max-width: 280px !important;
-        padding-right: 0;
-        margin-right: 0 !important;
-    }
-    .book-page-cover {
-        height: auto !important;
-    }
-}
-
-/* --- ТЕСТОВЫЙ БЛОК: ВДОХНОВЕНИЕ (СТАНДАРТ ПО ОБРАЗЦУ) --- */
-
-.inspiration-feed {
-    display: grid;
-    /* Оставляем 300px как в оригинале, чтобы не ломать сетку */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* ВАЖНО: Ставим gap: 0, так как у твоих карточек уже есть margin-bottom: 12px */
-    gap: 0 20px; 
-    width: 100%;
-}
-
-.inspiration-feed .feed-card {
+/* --- ЕДИНЫЙ БЛОК КАРТИНОК В СТАТЬЯХ (MARKDOWN) --- */
+.main-content p:has(img) {
     display: flex;
-    flex-direction: row;
-    align-items: center; 
-    gap: 12px;           /* Стандарт из твоего образца */
-    background: #fff;
-    padding: 8px 15px;   /* Стандарт из твоих карточек */
-    border-radius: 12px;
-    border: 1px solid #eee;
-    margin-bottom: 12px; /* Твой стандартный отступ между карточками */
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+    margin: 1em 0 !important;
+}
+
+.main-content p img:not(.content-img) {
+    height: 250px;       /* Единая высота для ряда */
+    width: auto;         
+    max-width: 100%;     
+    object-fit: contain; 
+    border-radius: 8px;
+    margin: 0 !important;
+    cursor: zoom-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Зум при нажатии (без JS) */
+.main-content p img:not(.content-img):active {
+    transform: scale(2.0); 
+    z-index: 999;          
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    cursor: zoom-out;
+}
+
+/* Видео и другие медиа */
+.main-content video, .video-item video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.back-link {
     text-decoration: none;
-    color: inherit;
-}
-
-/* Картинка: уменьшенная версия твоего стандарта */
-.inspiration-feed .feed-img-round {
-    width: 50px !important;
-    height: 50px !important;
-    object-fit: cover;
-    border-radius: 50% !important;
-    flex-shrink: 0;
-}
-
-.inspiration-feed h3 {
-    margin: 0;
     color: var(--card-tech);
-    font-size: 1.1rem;
-    line-height: 1.2;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
-/* Мобильная адаптация */
+/* 3. ТЕГИ, ИСТОЧНИКИ */
+.sources-inline, .tag-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sources-content p, .sources-content ul, .sources-content li { display: inline !important; margin: 0; padding: 0; }
+.sources-content ul li:not(:last-child)::after { content: ", "; }
+
+.tag-item {
+    background-color: #3498db;
+    color: white !important;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px 6px 12px !important; 
+    line-height: 1;
+    transition: opacity 0.2s;
+}
+
+.tag-item:hover { opacity: 0.8; }
+.tag-item::before { content: "#"; margin-right: 1px; opacity: 0.7; }
+
+/* 4. ПОДВАЛ И КНОПКА TELEGRAM */
+.main-footer, .license-footer { 
+    margin-top: 40px; 
+    text-align: center; 
+    width: 100%; 
+}
+
+.tg-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.tg-icon { width: 20px; height: 20px; }
+
+/* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
-    .inspiration-feed .feed-img-round {
-        width: 40px !important;
-        height: 40px !important;
+    h1 { font-size: 1.5rem; margin: 5px 0 10px 0 !important; }
+    
+    header { margin: 10px 0 20px 0; }
+
+    .content-wrapper { 
+        width: 100%; 
+        padding: 15px 10px; 
+        border-radius: 0; 
+    }
+
+    /* Картинки в вертикальном режиме - на весь экран */
+    @media (orientation: portrait) {
+        .main-content p img:not(.content-img) {
+            height: auto;    
+            width: 100%;
+        }
+        .main-content p img:not(.content-img):active {
+            transform: scale(1.2);
+        }
     }
 }
-
-

@@ -28,7 +28,6 @@ parent_url: "/biblio/"
     <img src="img/chernenko-g-t-prostaya-avtomatika-1989.webp" class="book-page-cover">
     <img src="img/chernenko-g-t-zvezdy-planety-teleskopy-1991.webp" class="book-page-cover">
 </div>
-
 В 1977 году вышла его первая книга — *«Путешествие в страну роботов»*. Затем появились рассказы об авиации — *«Наши крылья»*, книга о космических конструкторах — *«А все-таки полетим!»*, о изобретателях прошлого — *«На пользу и славу Отечества»*, о первых ученых — *«Творцы наук российских»* и многие другие. Геннадий Черненко — автор около двух тысяч журнальных публикаций и [более тридцати книг](https://deti.spb.ru/writers_rus/cher_gt/list).
 
 ![](/inspiration/img/strontium-atom-1.webp)

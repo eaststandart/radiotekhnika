@@ -89,7 +89,7 @@ blockquote p {
     /* УНИФИКАЦИЯ: ставим 15px, как у обложек в библио */
     gap: 15px; 
     align-items: flex-start;
-    margin: 15 !important;
+    margin: 20px 0 15px 0 !important;
     padding: 0 !important;
 }
 

@@ -20,7 +20,7 @@ parent_url: "/biblio/"
 ![](img/chernenko-g-t-chto-umeyut-mashiny-rasskazy-ob-avtomatike-1986.webp)
 ![](img/chernenko-g-t-kak-chelovek-poletel-v-kosmos-1987.webp)
 
-![](img/chernenko-g-t-na-polzu-i-slavu-otechestva-1988.web)
+![](img/chernenko-g-t-na-polzu-i-slavu-otechestva-1988.webp)
 ![](img/chernenko-g-t-prostaya-avtomatika-1989.webp)
 ![](img/chernenko-g-t-tvorcy-nauk-rossijskih-1989.webp)
 ![](img/chernenko-g-t-zvezdy-planety-teleskopy-1991.webp)

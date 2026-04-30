@@ -82,58 +82,42 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* КОНТЕЙНЕР РЯДА */
+/* Возвращаем твой идеальный порядок для картинок */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;    
-    gap: 15px; 
+    flex-wrap: wrap;
+    gap: 15px;
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
-/* КАРТИНКИ В РЯДУ (ПК и Горизонтальный мобильный) */
-/* Теперь управляем ссылкой .zoom-link, которую создаст скрипт */
-.main-content p .zoom-link {
-    height: 250px;      /* Твоя жесткая высота для ряда */
-    width: auto;
-    flex: 0 0 auto;     /* Запрещаем растягиваться */
-    display: block;
-}
-
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 100%;       /* Занимает всю высоту ссылки */
-    width: auto;        /* Ширина по пропорциям */
+    height: 250px;
+    width: auto;
     max-width: 100%;
-    object-fit: contain; /* Показывает ВСЁ фото целиком */
+    object-fit: contain;
     border-radius: 8px;
-    margin: 0 !important;
-    display: block;
-    cursor: zoom-in;    /* Указатель, что можно нажать */
+    transition: transform 0.3s ease, z-index 0.3s; /* Плавное увеличение */
+    cursor: zoom-in;
+    position: relative;
 }
 
-/* ОДИНОЧНАЯ КАРТИНКА (через ссылку) */
-.main-content p .zoom-link:only-child {
-    width: 100%;
-    height: auto !important;
+/* ЭФФЕКТ ЗУМА БЕЗ JAVASCRIPT */
+/* Когда пользователь нажимает и удерживает (или кликает на мобильном) */
+.main-content p img:not(.book-page-cover):not(.content-img):active {
+    transform: scale(2.5); /* Увеличение в 2.5 раза */
+    z-index: 999;          /* Поверх всего контента */
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    cursor: zoom-out;
 }
 
-.main-content p .zoom-link:only-child img {
-    width: 100%;
-    height: auto !important;
-}
-
-/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* На мобилках увеличиваем чуть меньше, чтобы не вылезло за экран */
 @media (max-width: 600px) {
-    .main-content p .zoom-link {
-        width: 100%;
-        height: auto !important;
-        flex: 1 1 100%;
-    }
-    .main-content p img:not(.book-page-cover):not(.content-img) {
-        width: 100% !important;
-        height: auto !important;
+    .main-content p img:not(.book-page-cover):not(.content-img):active {
+        transform: scale(1.5);
     }
 }
+
 
 .back-link {
     text-decoration: none;

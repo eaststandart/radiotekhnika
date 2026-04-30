@@ -104,6 +104,14 @@ blockquote p {
     margin: 0 !important; 
 }
 
+/* Если картинка в абзаце ВСЕГО ОДНА */
+.main-content p img:not(.book-page-cover):not(.content-img):only-child {
+    width: 100%;
+    height: auto !important; /* Разрешаем картинке быть любой высоты */
+    max-height: 500px;       /* Опционально: ограничь, чтобы не была на три экрана */
+    object-fit: contain;      /* Показываем картинку целиком без обрезки */
+}
+
 /* Мобильная адаптация для унификации */
 @media (max-width: 600px) {
     .main-content p:has(img) {

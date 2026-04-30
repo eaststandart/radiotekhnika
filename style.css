@@ -97,7 +97,7 @@ blockquote p {
     flex: 1 1 auto;
     width: auto;
     max-width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
     /* Убираем внешние отступы, так как теперь за них отвечает gap в 15px */

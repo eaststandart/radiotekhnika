@@ -18,9 +18,7 @@ parent_url: "/biblio/"
 
 На фотографии изображены книги 50–60-х годов в современном переиздании.
 
-![](img/rostovcev-n-n-risovanie-2-klass-1957.webp)
-![](img/rostovcev-n-n-risovanie-3-klass-1957.webp)
-![](img/rostovcev-n-n-risovanie-4-klass-1957.webp)
+![](img/rostovcev-n-n-risovanie-1-4-klass-1957.webp)
 ![](img/rostovcev-n-n-metodika-prepodavaniya-risovaniya-v-1-i-2-klassah-1958.webp)
 
 **Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

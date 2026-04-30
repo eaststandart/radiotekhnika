@@ -225,16 +225,17 @@ p:has(img) + blockquote {
 
     /* Картинки в столбец ТОЛЬКО когда телефон стоит вертикально */
     @media (orientation: portrait) {
-        /* Принудительно задаем зазор между картинками в 1em */
+        /* Ставим 40px, чтобы точно увидеть разницу */
         .main-content p:has(img) {
-            gap: 1em !important; 
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 40px !important; 
         }
 
         .main-content p img:not(.content-img) {
             height: auto !important;    
             width: 100% !important;
-            flex: 1 1 100% !important; 
-            margin-bottom: 0 !important; /* Убираем марджины, чтобы работал только gap */
+            margin: 0 !important;
         }
         
         .main-content p img:not(.content-img):active {

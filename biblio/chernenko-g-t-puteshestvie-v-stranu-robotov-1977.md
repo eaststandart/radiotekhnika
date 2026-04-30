@@ -34,6 +34,6 @@ parent_url: "/biblio/"
 ![](/inspiration/img/strontium-atom-1.webp)
 ![](/inspiration/img/strontium-atom-2.webp)
 
-Книги в [электронном виде](http://publ.lib.ru/ARCHIVES/CH/CHERNENKO_Gennadiy_Trofimovich/_Chernenko_G.T..html); для чтения детьми предпочтителен бумажный вариант.
+книги в [электронном виде](http://publ.lib.ru/ARCHIVES/CH/CHERNENKO_Gennadiy_Trofimovich/_Chernenko_G.T..html); для чтения детьми предпочтителен бумажный вариант.
 
 **Смотри также:** [материалы для самостоятельного изучения.](materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html)

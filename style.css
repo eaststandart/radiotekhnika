@@ -82,30 +82,32 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (когда ты сам подогнал высоту) */
+/* КОНТЕЙНЕР ДЛЯ РЯДА КАРТИНОК */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Запрещаем перенос, чтобы они всегда были в одну строку */
     gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
-.main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
-    flex: 1 1 auto;
-    width: auto;
-    max-width: 100%;
-    /* Убираем фиксированную высоту, так как ты подогнал их сам */
-    height: auto; 
-    object-fit: contain; /* Показывает картинку целиком */
+/* КАРТИНКИ В РЯДУ */
+.main-content p img:not(.book-page-cover):not(.content-img) {
+    flex: 1;           /* Каждая картинка берет свою долю места */
+    width: 0;          /* Магия flex: картинки сужаются пропорционально, чтобы влезть в строку */
+    height: auto;      /* Высота остается естественной (а раз они у тебя одинаковые — ряд будет ровным) */
+    object-fit: contain; 
     border-radius: 8px;
-    margin: 0 !important; 
+    margin: 0 !important;
 }
 
-/* Мобильная адаптация */
+/* АДАПТАЦИЯ ДЛЯ МОБИЛОК (вертикально) */
 @media (max-width: 600px) {
-    .main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
-        min-width: 100%; /* На мобилке всё же лучше одну под другой */
+    .main-content p:has(img) {
+        flex-wrap: wrap; /* На мобилке всё же разрешаем перенос, чтобы не было слишком мелко */
+    }
+    .main-content p img:not(.book-page-cover):not(.content-img) {
+        flex: 1 1 100%;  /* На мобилке картинка на всю ширину */
     }
 }
 

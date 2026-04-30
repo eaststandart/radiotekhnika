@@ -82,33 +82,30 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* КОНТЕЙНЕР ДЛЯ РЯДА КАРТИНОК */
+/* Контейнер для ряда */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: nowrap; /* Запрещаем перенос, чтобы они всегда были в одну строку */
+    flex-wrap: nowrap; 
     gap: 15px; 
     align-items: flex-start;
     margin: 20px 0 15px 0 !important;
 }
 
-/* КАРТИНКИ В РЯДУ */
+/* Настройка картинок в ряду */
 .main-content p img:not(.book-page-cover):not(.content-img) {
-    flex: 1;           /* Каждая картинка берет свою долю места */
-    width: 0;          /* Магия flex: картинки сужаются пропорционально, чтобы влезть в строку */
-    height: auto;      /* Высота остается естественной (а раз они у тебя одинаковые — ряд будет ровным) */
-    object-fit: contain; 
+    height: 250px;       /* ЗАДАЕМ единую высоту для всех в ряду */
+    width: auto;         /* Ширина подстроится пропорционально */
+    flex: 0 1 auto;      /* Картинки не растягиваются шире своего размера */
+    object-fit: contain; /* Показываем целиком */
     border-radius: 8px;
     margin: 0 !important;
 }
 
-/* АДАПТАЦИЯ ДЛЯ МОБИЛОК (вертикально) */
-@media (max-width: 600px) {
-    .main-content p:has(img) {
-        flex-wrap: wrap; /* На мобилке всё же разрешаем перенос, чтобы не было слишком мелко */
-    }
-    .main-content p img:not(.book-page-cover):not(.content-img) {
-        flex: 1 1 100%;  /* На мобилке картинка на всю ширину */
-    }
+/* Одиночная картинка (автоматически на всю ширину) */
+.main-content p img:not(.book-page-cover):not(.content-img):only-child {
+    width: 100%;
+    height: auto !important; 
+    max-height: none;
 }
 
 .back-link {

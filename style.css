@@ -88,25 +88,22 @@ blockquote p {
 }
 
 /* --- БЛОК КАРТИНОК В СТАТЬЯХ (MARKDOWN) С ЭФФЕКТОМ ЗУМА --- */
-
-/* Контейнер для ряда */
 .main-content p:has(img) {
     display: flex;
-    flex-wrap: wrap;    
-    gap: 15px; 
+    flex-wrap: wrap;
+    gap: 15px;
     align-items: flex-start;
-    margin: 20px 0 15px 0 !important;
-    padding: 0 !important;
+    margin: 1em 0 !important; /* Естественный отступ текста */
 }
 
-/* Общий стиль картинок */
-.main-content p img:not(.book-page-cover):not(.content-img) {
-    height: 250px;      
-    width: auto;        
-    max-width: 100%;
-    object-fit: contain; 
+.main-content p img:not(.content-img) {
+    height: 250px;       /* ЕДИНАЯ ВЫСОТА ДЛЯ ВСЕХ */
+    width: auto;         /* Ширина по пропорциям */
+    max-width: 100%;     /* Чтобы не вылетало за экран */
+    object-fit: contain; /* Картинка всегда видна целиком */
     border-radius: 8px;
     margin: 0 !important;
+}
     
     /* НАСТРОЙКИ ДЛЯ УВЕЛИЧЕНИЯ */
     cursor: zoom-in;
@@ -124,36 +121,13 @@ blockquote p {
     cursor: zoom-out;
 }
 
-/* Одиночная картинка */
-.main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;
-    height: auto !important; 
-}
-
-/* --- АДАПТАЦИЯ --- */
-
-/* Вертикальный режим телефона */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикаль) */
 @media (max-width: 600px) and (orientation: portrait) {
-    .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: auto;   
-        width: 100%;    
-        flex: 1 1 100%; 
-    }
-    /* На телефоне увеличиваем чуть меньше, чтобы не вылезло за экран */
-    .main-content p img:not(.book-page-cover):not(.content-img):active {
-        transform: scale(1.2);
+    .main-content p img:not(.content-img) {
+        height: auto;    /* На узком экране лучше видеть во всю ширь */
+        width: 100%;
     }
 }
-
-/* Горизонтальный режим телефона */
-@media (max-height: 500px) and (orientation: landscape) {
-    .main-content p img:not(.book-page-cover):not(.content-img) {
-        height: 180px;  
-        width: auto;    
-        flex: 0 0 auto;
-    }
-}
-
 
 .back-link {
     text-decoration: none;

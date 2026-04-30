@@ -82,18 +82,17 @@ blockquote p {
     border-radius: 8px;
 }
 
-/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN (только если они просто в тексте) */
-/* Убираем отступы у абзаца, в котором лежат картинки */
+/* РЯД ДЛЯ КАРТИНОК ИЗ MARKDOWN */
 .main-content p:has(img) {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    /* УНИФИКАЦИЯ: ставим 15px, как у обложек в библио */
+    gap: 15px; 
     align-items: flex-start;
-    margin: 0 !important; /* Обнуляем внешний отступ абзаца */
+    margin: 0 !important;
     padding: 0 !important;
 }
 
-/* Убираем отступы у самих картинок в этом ряду */
 .main-content p:has(img) img:not(.book-page-cover):not(.content-img) {
     flex: 1 1 auto;
     width: auto;
@@ -101,14 +100,16 @@ blockquote p {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    margin: 0 !important; /* УБИРАЕМ те 10px, которые прописаны глобально */
+    /* Убираем внешние отступы, так как теперь за них отвечает gap в 15px */
+    margin: 0 !important; 
 }
 
-/* Если картинка ОДНА (растягиваем на всю ширину) */
-.main-content p img:not(.book-page-cover):not(.content-img):only-child {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+/* Мобильная адаптация для унификации */
+@media (max-width: 600px) {
+    .main-content p:has(img) {
+        /* Сохраняем 15px между картинками и на мобилках */
+        gap: 15px; 
+    }
 }
 
 .back-link {

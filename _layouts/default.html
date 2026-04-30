@@ -66,35 +66,40 @@
     </footer>
 
 <script>
-  // 1. Оборачиваем картинки (кроме обложек)
-  document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)').forEach(function(img) {
-    if (!img.closest('a')) {
-      var link = document.createElement('a');
-      link.setAttribute('href', img.getAttribute('src'));
-      link.classList.add('zoom-link');
-      img.parentNode.insertBefore(link, img);
-      link.appendChild(img);
-    }
-  });
-
-  var links = document.querySelectorAll('.zoom-link');
-  if (links.length > 0) {
-    // Инициализируем галерею
-    var gallery = new LuminousGallery(links, {}, {
-        closeOnOutsideClick: true
+window.addEventListener('load', function() { // Ждем полной загрузки всех файлов
+    
+    // 1. Оборачиваем картинки (кроме обложек)
+    document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)').forEach(function(img) {
+        if (!img.closest('a')) {
+            var link = document.createElement('a');
+            link.setAttribute('href', img.getAttribute('src'));
+            link.classList.add('zoom-link');
+            // Чтобы не уходить с сайта, если скрипт вдруг не сработает:
+            link.setAttribute('onclick', 'return false;'); 
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+        }
     });
 
-    // ПРИНУДИТЕЛЬНОЕ ЗАКРЫТИЕ ПРИ КЛИКЕ НА ФОН
-    // Ловим клик на всем документе, и если попали в подложку люминоса — закрываем всё
-    document.addEventListener('click', function(e) {
-      if (e.target.classList.contains('lum-lightbox-inner') || e.target.classList.contains('lum-lightbox')) {
-        gallery.luminousInstances.forEach(function(inst) {
-          inst.lightbox.close();
+    var links = document.querySelectorAll('.zoom-link');
+    if (links.length > 0 && typeof LuminousGallery !== 'undefined') {
+        
+        var gallery = new LuminousGallery(links, {}, {
+            closeOnOutsideClick: true
         });
-      }
-    });
-  }
+
+        // ПРИНУДИТЕЛЬНОЕ ЗАКРЫТИЕ ПРИ КЛИКЕ НА ФОН
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('lum-lightbox-inner') || e.target.classList.contains('lum-lightbox')) {
+                gallery.luminousInstances.forEach(function(inst) {
+                    inst.lightbox.close();
+                });
+            }
+        });
+    }
+});
 </script>
+
     
 </body>
 </html>

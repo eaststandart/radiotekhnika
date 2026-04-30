@@ -88,7 +88,7 @@ blockquote p {
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
-    margin: 5px 0;
+    margin: 0px 0;
 }
 
 /* Настройка самих картинок из Markdown */

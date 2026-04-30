@@ -103,7 +103,6 @@ blockquote p {
     object-fit: contain; /* Картинка всегда видна целиком */
     border-radius: 8px;
     margin: 0 !important;
-}
     
     /* НАСТРОЙКИ ДЛЯ УВЕЛИЧЕНИЯ */
     cursor: zoom-in;
@@ -113,21 +112,26 @@ blockquote p {
 }
 
 /* ЭФФЕКТ ПРИ НАЖАТИИ (ЗУМ) */
-/* Работает, пока ты удерживаешь кнопку мыши или палец на картинке */
-.main-content p img:not(.book-page-cover):not(.content-img):active {
+/* Убрал :not(.book-page-cover), так как мы от них отказываемся в пользу маркдауна */
+.main-content p img:not(.content-img):active {
     transform: scale(2.0); /* Увеличение в 2 раза */
     z-index: 999;          /* Всплывает над всем текстом */
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     cursor: zoom-out;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Вертикаль) */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) and (orientation: portrait) {
     .main-content p img:not(.content-img) {
-        height: auto;    /* На узком экране лучше видеть во всю ширь */
+        height: auto;    /* На узком экране во всю ширь */
         width: 100%;
     }
+    /* На мобилках зум поменьше, чтобы не вылез за края */
+    .main-content p img:not(.content-img):active {
+        transform: scale(1.2);
+    }
 }
+
 
 .back-link {
     text-decoration: none;

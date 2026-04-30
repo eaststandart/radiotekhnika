@@ -223,12 +223,15 @@ p:has(img) + blockquote {
         border-radius: 0; 
     }
 
-    /* Картинки в столбец ТОЛЬКО когда телефон стоит вертикально */
     @media (orientation: portrait) {
+        .main-content p:has(img) {
+            gap: 0; /* Убираем искуственный зазор */
+        }
         .main-content p img:not(.content-img) {
             height: auto;    
             width: 100%;
-            flex: 1 1 100%; /* Гарантирует столбец */
+            flex: 1 1 100%;
+            margin-bottom: 1em !important; /* Даем картинке обычный отступ текста снизу */
         }
         .main-content p img:not(.content-img):active {
             transform: scale(1.2);
@@ -236,11 +239,12 @@ p:has(img) + blockquote {
     }
 }
 
-/* Специально для горизонтального режима (чтобы картинки не вылезали по высоте) */
+/* Горизонтальный режим (без изменений) */
 @media (max-height: 500px) and (orientation: landscape) {
     .main-content p img:not(.content-img) {
-        height: 180px !important; /* Фиксируем высоту, чтобы встали в ряд */
+        height: 180px !important;
         width: auto !important;
         flex: 0 0 auto !important;
     }
 }
+

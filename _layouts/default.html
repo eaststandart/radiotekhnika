@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/shared-cards.css">
     <!-- Стили для всплывающего окна -->
-    <link rel="stylesheet" href="/assets/luminous.min.css">
-    <script src="/assets/luminous.min.js"></script>
+    <script src="/assets/medium-zoom.min.js"></script>
 </head>
 <body>
 
@@ -66,38 +65,15 @@
     </footer>
 
 <script>
-  function initZoom() {
-    // 1. Находим все картинки (кроме обложек)
-    var images = document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)');
-    
-    images.forEach(function(img) {
-      if (!img.closest('.zoom-link')) {
-        var link = document.createElement('a');
-        link.href = img.src;
-        link.className = 'zoom-link';
-        // Убираем onclick, чтобы не мешать библиотеке
-        img.parentNode.insertBefore(link, img);
-        link.appendChild(img);
-      }
+  // Инициализация при полной загрузке контента
+  document.addEventListener('DOMContentLoaded', function() {
+    mediumZoom('.main-content img:not(.book-page-cover):not(.content-img)', {
+      margin: 24,
+      background: '#000000aa',
+      scrollOffset: 0 // Оставил 0, чтобы не закрывалось случайно при дрожании пальца
     });
-
-    var links = document.querySelectorAll('.zoom-link');
-    // Проверяем, загрузилась ли библиотека Luminous
-    if (links.length > 0 && window.LuminousGallery) {
-      new LuminousGallery(links, {}, {
-        closeOnOutsideClick: true,
-        arrowNavigation: true
-      });
-      console.log("Zoom initialized");
-    }
-  }
-
-  // Запускаем сразу и на всякий случай через секунду
-  initZoom();
-  setTimeout(initZoom, 1000);
+  });
 </script>
-
-
     
 </body>
 </html>

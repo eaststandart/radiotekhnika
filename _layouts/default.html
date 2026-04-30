@@ -66,39 +66,37 @@
     </footer>
 
 <script>
-window.addEventListener('load', function() { // Ждем полной загрузки всех файлов
+  function initZoom() {
+    // 1. Находим все картинки (кроме обложек)
+    var images = document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)');
     
-    // 1. Оборачиваем картинки (кроме обложек)
-    document.querySelectorAll('.main-content img:not(.book-page-cover):not(.content-img)').forEach(function(img) {
-        if (!img.closest('a')) {
-            var link = document.createElement('a');
-            link.setAttribute('href', img.getAttribute('src'));
-            link.classList.add('zoom-link');
-            // Чтобы не уходить с сайта, если скрипт вдруг не сработает:
-            link.setAttribute('onclick', 'return false;'); 
-            img.parentNode.insertBefore(link, img);
-            link.appendChild(img);
-        }
+    images.forEach(function(img) {
+      if (!img.closest('.zoom-link')) {
+        var link = document.createElement('a');
+        link.href = img.src;
+        link.className = 'zoom-link';
+        // Убираем onclick, чтобы не мешать библиотеке
+        img.parentNode.insertBefore(link, img);
+        link.appendChild(img);
+      }
     });
 
     var links = document.querySelectorAll('.zoom-link');
-    if (links.length > 0 && typeof LuminousGallery !== 'undefined') {
-        
-        var gallery = new LuminousGallery(links, {}, {
-            closeOnOutsideClick: true
-        });
-
-        // ПРИНУДИТЕЛЬНОЕ ЗАКРЫТИЕ ПРИ КЛИКЕ НА ФОН
-        document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('lum-lightbox-inner') || e.target.classList.contains('lum-lightbox')) {
-                gallery.luminousInstances.forEach(function(inst) {
-                    inst.lightbox.close();
-                });
-            }
-        });
+    // Проверяем, загрузилась ли библиотека Luminous
+    if (links.length > 0 && window.LuminousGallery) {
+      new LuminousGallery(links, {}, {
+        closeOnOutsideClick: true,
+        arrowNavigation: true
+      });
+      console.log("Zoom initialized");
     }
-});
+  }
+
+  // Запускаем сразу и на всякий случай через секунду
+  initZoom();
+  setTimeout(initZoom, 1000);
 </script>
+
 
     
 </body>

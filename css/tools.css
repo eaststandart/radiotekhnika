@@ -1,15 +1,24 @@
 /* --- КАРТОЧКИ ИНСТРУМЕНТОВ (tools.css) --- */
 
+/* Добавляем контейнер, чтобы управлять зазорами через gap */
+.tool-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Унифицированный отступ между карточками */
+    margin: 20px 0;
+}
+
 .tool-card {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Центровка на ПК */
-    gap: 12px; /* Унифицировано для ПК */
+    align-items: center;
+    gap: 12px;
     background: #fff;
     padding: 12px 15px; 
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 12px;
+    /* УДАЛИЛИ margin-bottom: 12px; теперь за это отвечает gap выше */
+    margin-bottom: 0; 
     text-decoration: none;
     color: inherit;
 }
@@ -46,8 +55,9 @@
     overflow: hidden;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ — ВЕРНУЛ КАК БЫЛО */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
+    /* На мобильном gap в 12px остается от родителя .tool-list */
     .tool-card {
         gap: 12px;
         padding: 10px;
@@ -62,7 +72,7 @@
     }
     .tool-info p {
         font-size: 0.8rem;
-        margin: 0; /* Обнуляем, чтобы не было лишних отступов */
+        margin: 0;
         -webkit-line-clamp: 2; 
     }
 }

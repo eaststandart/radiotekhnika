@@ -57,7 +57,7 @@ custom_css: ["/css/biblio.css"]
     <img src="img/pchyolko-a-s-arifmetika-dlya-pervogo-klassa-nachalnoj-shkoly-2022.webp" class="compact-img">
     <div class="compact-info">
         <h3>Книги по математике (арифметика)</h3>
-        <span class="compact-author">Пчёлко А.С., Попова Н.С. и др.</span>
+        <span class="compact-author">Пчёлко А.С., Попова Н.С., Киселев А.П., Березанская Е.С.</span>
         <p class="compact-desc">Фундаментальная база для инженерных расчетов. Советские учебники по арифметике, помогающие освоить «язык математики», необходимый для  проектирования и понимания работы электрических схем и цепей.</p>
     </div>
 </a>

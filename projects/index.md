@@ -59,6 +59,3 @@ custom_css: ["/css/projects.css"]
     </section>
 
 </div>
-
-
-</div>

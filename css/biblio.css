@@ -3,7 +3,8 @@
 .biblio-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    /* УПРАВЛЕНИЕ ОТСТУПОМ: теперь только здесь */
+    gap: 12px; 
     margin: 20px 0;
 }
 
@@ -16,6 +17,7 @@
     padding: 10px; 
     border-radius: 8px;
     border: 1px solid #eee;
+    margin-bottom: 0 !important; 
     text-decoration: none;
     color: inherit;
     transition: background 0.2s;
@@ -40,7 +42,7 @@
     min-width: 0;
 }
 
-/* ШРИФТЫ ДЛЯ ПК (Увеличенные) */
+/* ШРИФТЫ ДЛЯ ПК */
 .biblio-info h3 {
     margin: 0 0 2px 0 !important;
     color: var(--card-tech);
@@ -71,7 +73,7 @@
     overflow: hidden;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Прежние мелкие шрифты) */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
     .biblio-img {
         width: 50px !important;

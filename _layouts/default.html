@@ -7,6 +7,12 @@
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/shared-cards.css">
+    <!-- Подключение дополнительных стилей, если они указаны в YAML страницы -->
+    {% if page.custom_css %}
+     {% for style in page.custom_css %}
+     <link rel="stylesheet" href="{{ style }}">
+  {% endfor %}
+{% endif %}
 </head>
 <body>
 

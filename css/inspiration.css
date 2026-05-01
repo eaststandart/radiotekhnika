@@ -1,0 +1,44 @@
+/* 3. СПЕЦИАЛЬНЫЙ БЛОК: ВДОХНОВЕНИЕ */
+.inspiration-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0 20px; 
+    width: 100%;
+}
+
+.inspiration-feed .feed-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 12px;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.inspiration-feed .feed-img-round {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+}
+
+.inspiration-feed h3 {
+    margin: 0;
+    color: var(--card-tech);
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+    .inspiration-feed .feed-img-round {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}

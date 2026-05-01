@@ -1,5 +1,13 @@
 /* --- КАРТОЧКИ ДНЕВНИКА (diary.css) --- */
 
+.diary-list {
+    display: flex;
+    flex-direction: column;
+    /* УНИФИКАЦИЯ: 12px как в Инструментах и Ярмарке */
+    gap: 12px; 
+    margin: 20px 0;
+}
+
 .item-card {
     display: flex;
     flex-direction: row;
@@ -9,7 +17,7 @@
     padding: 12px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 12px;
+    margin-bottom: 0 !important; 
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s, border-color 0.2s;
@@ -22,7 +30,7 @@
 
 /* Круглая картинка для дневника */
 .item-image-round {
-    width: 80px !important;   /* Чуть уменьшили для аккуратности */
+    width: 80px !important;
     height: 80px !important;
     object-fit: cover;
     border-radius: 50% !important;
@@ -36,9 +44,9 @@
 }
 
 .item-info h3 {
-    margin: 0 0 4px 0;
+    margin: 0 0 4px 0 !important;
     color: var(--card-tech);
-    font-size: 1.15rem; /* Хороший размер для ПК */
+    font-size: 1.15rem;
     line-height: 1.2;
 }
 
@@ -61,7 +69,7 @@
     overflow: hidden;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Всегда в ряд и компактно) */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
     .item-card {
         gap: 12px;

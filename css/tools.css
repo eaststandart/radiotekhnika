@@ -1,12 +1,5 @@
 /* --- КАРТОЧКИ ИНСТРУМЕНТОВ (tools.css) --- */
 
-.tool-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 20px 0;
-}
-
 .tool-card {
     display: flex;
     flex-direction: row;
@@ -16,6 +9,7 @@
     padding: 12px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
+    margin-bottom: 12px;
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s, border-color 0.2s;
@@ -26,6 +20,7 @@
     transform: translateX(5px);
 }
 
+/* Круглая картинка для инструментов */
 .tool-image-round {
     width: 80px !important;
     height: 80px !important;
@@ -41,10 +36,18 @@
 }
 
 .tool-info h3 {
-    margin: 0 0 4px 0 !important;
+    margin: 0 0 4px 0;
     color: var(--card-tech);
     font-size: 1.15rem;
     line-height: 1.2;
+}
+
+.tool-subtext {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 0.9rem;
 }
 
 .tool-info p {
@@ -69,7 +72,7 @@
         height: 60px !important;
     }
     .tool-info h3 {
-        font-size: 1rem !important;
+        font-size: 1rem;
     }
     .tool-info p {
         font-size: 0.8rem;

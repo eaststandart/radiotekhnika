@@ -120,7 +120,7 @@ title: Тест компактного списка
 </a>
 
 <a href="svoren-r-a-elektronika-shag-za-shagom-1991.html" class="compact-card">
-    <img src="img/svoren-r-a-elektronika-shag-za-step-1991.webp" class="compact-img">
+    <img src="img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" class="compact-img">
     <div class="compact-info">
         <h3>Электроника шаг за шагом</h3>
         <span class="compact-author">Сворень Р.А.</span>

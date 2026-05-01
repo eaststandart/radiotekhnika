@@ -4,6 +4,8 @@ title: Техническое вдохновение
 custom_css: ["/css/inspiration.css"]
 ---
 
+Коллекция идей, чертежей и находок, которые помогают в техническом творчестве и инженерном поиске.
+
 <div class="inspiration-feed">
     <a href="our-dream.html" class="feed-card">
         <img src="/img/icons/our-dream.webp" class="feed-img-round">

@@ -1,0 +1,69 @@
+/* --- СЕТКА ПРОЕКТОВ (projects.css) --- */
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inner-category-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 6px solid #eee; /* Цвет по умолчанию */
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-category-card h3 { 
+    margin: 0 0 10px 0; 
+    font-size: 1.2rem; 
+    color: var(--text-color);
+}
+
+.inner-category-card p {
+    font-size: 0.85rem; 
+    color: #666; 
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Список ссылок */
+.inner-project-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    margin-top: auto; /* Прижимает список к низу, если тексты разной длины */
+}
+
+.inner-project-list li { 
+    margin-bottom: 8px; 
+}
+
+.inner-project-list a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #f9f9f9;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.inner-project-list a:hover { 
+    background: #eee; 
+    color: #000; 
+    transform: translateX(5px);
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+    .inner-grid {
+        grid-template-columns: 1fr; /* На мобилках строго в один столбец */
+        gap: 15px;
+    }
+}

@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* Оставляем 20px для ПК, так как блоки большие */
-    gap: 20px; 
+    gap: 12px; 
     width: 100%;
     /* Унификация: 10px сверху, 0 снизу */
     margin: 12px 0 0 0 !important; 

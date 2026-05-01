@@ -1,36 +1,4 @@
-/* 1. СЕТКА И ПЛИТКИ (Главные страницы разделов) */
-.inner-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    margin: 20px 0;
-}
-
-.inner-category-card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 6px solid #eee;
-}
-
-.inner-category-card h3 { margin: 0 0 15px 0; font-size: 1.2rem; }
-
-.inner-project-list { list-style: none; padding: 0; margin: 0; }
-.inner-project-list li { margin-bottom: 8px; }
-.inner-project-list a {
-    text-decoration: none;
-    color: #555;
-    display: block;
-    padding: 8px 12px;
-    border-radius: 6px;
-    background: #f9f9f9;
-    font-size: 0.9rem;
-}
-.inner-project-list a:hover { background: #eee; color: #000; }
-
-/* 2. ВСПОМОГАТЕЛЬНЫЕ ЭЛЕМЕНТЫ ДЛЯ СТАТЕЙ */
+/* 1. ВСПОМОГАТЕЛЬНЫЕ ЭЛЕМЕНТЫ ДЛЯ СТАТЕЙ (Ручная вставка HTML) */
 .content-img {
     display: block;
     width: 100%;
@@ -54,8 +22,14 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Только для общих элементов) */
+/* 2. МОБИЛЬНАЯ АДАПТАЦИЯ (Только для общих элементов) */
 @media (max-width: 600px) {
-    .content-img { max-width: 100%; margin: 15px auto !important; }
-    .video-item { width: 100% !important; max-width: 280px !important; }
+    .content-img { 
+        max-width: 100%; 
+        margin: 15px auto !important; 
+    }
+    .video-item { 
+        width: 100% !important; 
+        max-width: 280px !important; 
+    }
 }

@@ -18,7 +18,7 @@ custom_css: ["/css/projects.css"]
         <ul class="project-item-list">
             <li><a href="led-flashlight/">❯ Светодиодный фонарик</a></li>
             <li><a href="multivibrator/">❯ Мультивибратор</a></li>
-            <li><a href="/video.html">❯ Мультивибратор</a></li>
+            <li><a href="video.html">❯ Мультивибратор</a></li>
         </ul>
     </section>
 

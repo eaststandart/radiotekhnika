@@ -275,4 +275,13 @@ p:has(img) + blockquote {
         grid-template-columns: 1fr 1fr !important; /* Две колонки */
         gap: 10px !important;
     }
+
+    /* УНИФИКАЦИЯ ИКОНОК: устанавливаем 40px для всех разделов */
+    .fair-img-round, 
+    .feed-img-round, 
+    .item-image-round {
+        width: 40px !important;
+        height: 40px !important;
+    }
 }
+

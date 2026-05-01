@@ -3,7 +3,7 @@
 .biblio-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     margin: 20px 0;
 }
 

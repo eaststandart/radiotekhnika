@@ -1,49 +1,63 @@
 /* --- СЕТКА ПРОЕКТОВ (projects.css) --- */
 
-.inner-grid {
+.project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0 20px 0; /* Уменьшили отступ сверху */
 }
 
-.inner-category-card {
+.project-category-card {
     background: white;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 6px solid #eee; /* Цвет по умолчанию */
+    border-top: 6px solid #eee;
     display: flex;
     flex-direction: column;
 }
 
-.inner-category-card h3 { 
-    margin: 0 0 10px 0; 
-    font-size: 1.2rem; 
+/* СТИЛЬ ДЛЯ КРУЖКОВ (Иконок) */
+.project-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.project-card-icon {
+    width: 45px;  /* Уменьшили размер (было 60) */
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f0f0f0;
+    flex-shrink: 0;
+}
+
+.project-category-card h3 { 
+    margin: 0; 
+    font-size: 1.15rem; 
     color: var(--text-color);
 }
 
-.inner-category-card p {
+.project-category-card p {
     font-size: 0.85rem; 
     color: #666; 
     margin-bottom: 15px;
     line-height: 1.4;
 }
 
-/* Список ссылок */
-.inner-project-list { 
+.project-item-list { 
     list-style: none; 
     padding: 0; 
     margin: 0; 
-    margin-top: auto; /* Прижимает список к низу, если тексты разной длины */
+    margin-top: auto; 
 }
 
-.inner-project-list li { 
-    margin-bottom: 8px; 
-}
+.project-item-list li { margin-bottom: 8px; }
 
-.inner-project-list a {
+.project-item-list a {
     text-decoration: none;
     color: #555;
     display: block;
@@ -54,16 +68,15 @@
     transition: all 0.2s ease;
 }
 
-.inner-project-list a:hover { 
+.project-item-list a:hover { 
     background: #eee; 
     color: #000; 
     transform: translateX(5px);
 }
 
-/* Адаптация для мобильных */
 @media (max-width: 600px) {
-    .inner-grid {
-        grid-template-columns: 1fr; /* На мобилках строго в один столбец */
+    .project-grid {
+        grid-template-columns: 1fr;
         gap: 15px;
     }
 }

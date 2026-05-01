@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Полезные инструменты
+custom_css: ["/css/diary.css"]
 ---
 
 <div class="diary-list">

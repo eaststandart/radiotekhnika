@@ -20,10 +20,10 @@
     transform: translateX(5px);
 }
 
-/* Круглая картинка для инструментов */
+/* Круглая картинка для инструментов (УМЕНЬШЕНО НА 20% ДЛЯ ПК) */
 .tool-image-round {
-    width: 80px !important;
-    height: 80px !important;
+    width: 64px !important;   /* Было 80px, стало 64px */
+    height: 64px !important;  /* Было 80px, стало 64px */
     object-fit: cover;
     border-radius: 50% !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -61,7 +61,7 @@
     overflow: hidden;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (Размеры без изменений) */
 @media (max-width: 600px) {
     .tool-card {
         gap: 12px;

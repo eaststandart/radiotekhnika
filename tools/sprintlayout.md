@@ -2,7 +2,7 @@
 layout: default
 title: Sprint Layout
 sources: "[Sprint Layout](https://sprint-layout.ru/)"
-tags: [sprintlayout, электроника]
+tags: [sprintlayout, программа, электроника]
 parent_name: "Инструменты"
 parent_url: "/tools/"
 ---

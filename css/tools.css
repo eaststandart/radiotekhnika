@@ -3,25 +3,18 @@
 .tool-card {
     display: flex;
     flex-direction: row;
-    /* Центрируем текст относительно иконки по вертикали */
-    align-items: center; 
+    align-items: center; /* Центровка текста по высоте иконки */
     gap: 20px;
     background: #fff;
-    padding: 10px 15px; /* Немного уменьшили паддинг для компактности */
+    padding: 12px 15px; 
     border-radius: 12px;
     border: 1px solid #eee;
     margin-bottom: 12px;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s, border-color 0.2s;
 }
 
-.tool-card:hover {
-    border-color: var(--card-tech);
-    transform: translateX(5px);
-}
-
-/* Круглая картинка (УМЕНЬШЕНА ЕЩЕ НА 20% — до 52px) */
+/* Иконка 52px */
 .tool-image-round {
     width: 52px !important;   
     height: 52px !important;
@@ -37,35 +30,36 @@
 }
 
 .tool-info h3 {
-    /* Убрали верхний отступ для точного центрирования */
-    margin: 0 0 2px 0 !important; 
+    margin: 0 0 8px 0 !important; /* ВЕРНУЛИ ОТСТУП СНИЗУ (был 2px, стал 8px) */
     color: var(--card-tech);
-    font-size: 1.1rem !important; 
+    font-size: 1.15rem !important; 
     line-height: 1.2;
 }
 
 .tool-info p {
     margin: 0;
-    font-size: 0.85rem; 
+    font-size: 0.88rem; 
     color: #666;
-    line-height: 1.3;
+    line-height: 1.4; /* Вернули комфортную высоту строки */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ (Здесь оставляем 50-60px для удобства нажатия пальцем) */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {
     .tool-card {
         gap: 12px;
-        padding: 8px 10px;
+        padding: 10px;
+        align-items: flex-start; /* На мобилке лучше оставить по верхнему краю */
     }
     .tool-image-round {
-        width: 55px !important;
-        height: 55px !important;
+        width: 50px !important;
+        height: 50px !important;
     }
     .tool-info h3 {
         font-size: 1rem !important;
+        margin-bottom: 4px !important;
     }
 }

@@ -26,5 +26,15 @@ custom_css: ["/css/fair.css"]
         <img src="/img/icons/through-hole-red-led-2.web" class="fair-img-round">
         <h3>Название поделки</h3>
     </a>
+
+    <a href="project-1.html" class="fair-card">
+        <img src="/img/icons/through-hole-red-led-2.web" class="fair-img-round">
+        <h3>Название поделки</h3>
+    </a>
+    
+    <a href="project-2.html" class="fair-card">
+        <img src="/img/icons/through-hole-red-led-2.web" class="fair-img-round">
+        <h3>Название поделки</h3>
+    </a>
     
 </div>

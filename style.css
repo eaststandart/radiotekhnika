@@ -266,12 +266,10 @@ p:has(img) + blockquote {
     }
 
     /* ГЛОБАЛЬНОЕ УПЛОТНЕНИЕ ВСЕХ СЕТОК (чтобы не было пустых дыр) */
-    .bibli-list, 
     .diary-list, 
     .fair-list, 
     .inspiration-feed, 
-    .project-grid, 
-    .tool-list {
+    .project-grid {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important; /* Две колонки */
         gap: 10px !important;

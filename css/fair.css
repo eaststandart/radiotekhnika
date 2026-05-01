@@ -3,12 +3,13 @@
 .fair-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* УНИФИКАЦИЯ: 12px между всеми карточками */
     gap: 12px; 
     width: 100%;
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
-.fair-list .fair-card {
+.fair-card {
     display: flex;
     flex-direction: row;
     align-items: center; 
@@ -17,12 +18,12 @@
     padding: 8px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 0; 
+    margin-bottom: 0 !important; 
     text-decoration: none;
     color: inherit;
 }
 
-.fair-list .fair-img-round {
+.fair-img-round {
     width: 50px !important;
     height: 50px !important;
     object-fit: cover;

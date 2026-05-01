@@ -3,9 +3,11 @@
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    /* Оставляем 20px для ПК, так как блоки большие */
+    gap: 20px; 
     width: 100%;
-    margin: 10px 0 20px 0; /* Уменьшили отступ сверху */
+    /* Унификация: 10px сверху, 0 снизу */
+    margin: 12px 0 0 0 !important; 
 }
 
 .project-category-card {
@@ -16,6 +18,8 @@
     border-top: 6px solid #eee;
     display: flex;
     flex-direction: column;
+    /* Обнуляем внешний отступ карточки */
+    margin-bottom: 0 !important; 
 }
 
 /* СТИЛЬ ДЛЯ КРУЖКОВ (Иконок) */
@@ -27,7 +31,7 @@
 }
 
 .project-card-icon {
-    width: 45px;  /* Уменьшили размер (было 60) */
+    width: 45px;
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
@@ -74,9 +78,11 @@
     transform: translateX(5px);
 }
 
+/* Мобильная адаптация */
 @media (max-width: 600px) {
     .project-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        /* На мобилке ставим 12px или 15px, чтобы не было слишком широко */
+        gap: 12px;
     }
 }

@@ -6,51 +6,53 @@ custom_css: ["/css/projects.css"]
 
 Выберите интересующее направление для изучения проектов от простых основ до сложных систем.
 
-<div class="inner-grid">
+<div class="project-grid">
 
     <!-- БЛОК: Электроника -->
-    <section class="inner-category-card" style="border-top-color: #3498db;">
-        <h3>Электронное конструирование</h3>
-        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">
-            Изучение компонентов, чтение схем и создание первых электронных устройств.
-        </p>
-        <ul class="inner-project-list">
-            <li><a href="projects/led-flashlight/">❯ Светодиодный фонарик</a></li>
-            <li><a href="projects/multivibrator/">❯ Мультивибратор</a></li>
-            <li><a href="video.html">❯ Мультивибратор</a></li>
+    <section class="project-category-card" style="border-top-color: #3498db;">
+        <div class="project-card-header">
+            <img src="/img/icon-electronics.svg" class="project-card-icon">
+            <h3>Электронное конструирование</h3>
+        </div>
+        <p>Изучение компонентов, чтение схем и создание первых электронных устройств.</p>
+        <ul class="project-item-list">
+            <li><a href="led-flashlight/">❯ Светодиодный фонарик</a></li>
+            <li><a href="multivibrator/">❯ Мультивибратор</a></li>
         </ul>
     </section>
-
     <!-- БЛОК: Радио -->
-    <section class="inner-category-card" style="border-top-color: #e67e22;">
-        <h3>Радиотехническое конструирование</h3>
-        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">
-            Сборка приемников, передатчиков и изучение принципов беспроводной связи.
-        </p>
-        <ul class="inner-project-list">
-            <li><a href="projects/detector-radio/">❯ Детекторный приемник</a></li>
+    <section class="project-category-card" style="border-top-color: #e67e22;">
+        <div class="project-card-header">
+            <img src="/img/icon-radio.svg" class="project-card-icon">
+            <h3>Радиотехническое конструирование</h3>
+        </div>
+        <p>Сборка приемников, передатчиков и изучение принципов беспроводной связи.</p>
+        <ul class="project-item-list">
+            <li><a href="detector-radio/">❯ Детекторный приемник</a></li>
         </ul>
     </section>
 
     <!-- БЛОК: Информатика -->
-    <section class="inner-category-card" style="border-top-color: #2ecc71;">
-        <h3>Информатика и вычислительная техника</h3>
-        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">
-            Алгоритмы, архитектура ЭВМ и написание прикладного кода.
-        </p>
-        <ul class="inner-project-list">
-            <li><a href="projects/binary-calc/">❯ Бинарный сумматор</a></li>
+    <section class="project-category-card" style="border-top-color: #2ecc71;">
+        <div class="project-card-header">
+            <img src="/img/icon-it.svg" class="project-card-icon">
+            <h3>Информатика и вычислительная техника</h3>
+        </div>
+        <p>Алгоритмы, архитектура ЭВМ и написание прикладного кода.</p>
+        <ul class="project-item-list">
+            <li><a href="binary-calc/">❯ Бинарный сумматор</a></li>
         </ul>
     </section>
 
-    <!-- БЛОК: Кибернетика-->
-    <section class="inner-category-card" style="border-top-color: #9b59b6;">
-        <h3>Кибернетика и основы робототехники</h3>
-        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">
-            Автоматическое управление, сенсорика и создание автономных систем.
-        </p>
-        <ul class="inner-project-list">
-            <li><a href="projects/line-follower/">❯ Робот на линии</a></li>
+    <!-- БЛОК: Кибернетика -->
+    <section class="project-category-card" style="border-top-color: #9b59b6;">
+        <div class="project-card-header">
+            <img src="/img/icon-robot.svg" class="project-card-icon">
+            <h3>Кибернетика и основы робототехники</h3>
+        </div>
+        <p>Автоматическое управление, сенсорика и создание автономных систем.</p>
+        <ul class="project-item-list">
+            <li><a href="line-follower/">❯ Робот на линии</a></li>
         </ul>
     </section>
 

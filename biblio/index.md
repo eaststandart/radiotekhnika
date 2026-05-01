@@ -26,15 +26,6 @@ custom_css: ["/css/biblio.css"]
     </div>
 </a>
 
-<a href="kiselyov-l-kniga-yunogo-tekhnika-1948.html" class="compact-card">
-    <img src="img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" class="compact-img">
-    <div class="compact-info">
-        <h3>Книга юного техника</h3>
-        <span class="compact-author">Киселёв Л.</span>
-        <p class="compact-desc">Практическое руководство по техническому творчеству. Обучает основам работы с материалами, механикой и электроникой, вдохновляя на создание собственных изобретений своими руками.</p>
-    </div>
-</a>
-
 <a href="svoren-r-a-elektronika-shag-za-shagom-1991.html" class="compact-card">
     <img src="img/svoren-r-a-elektronika-shag-za-shagom-1991.webp" class="compact-img">
     <div class="compact-info">
@@ -50,6 +41,15 @@ custom_css: ["/css/biblio.css"]
         <h3>Энциклопедия юного радиолюбителя</h3>
         <span class="compact-author">Борисов В.Г.</span>
         <p class="compact-desc">Фундаментальные знания о радиосвязи, принципах работы электронных устройств и компонентов. Классика инженерной литературы.</p>
+    </div>
+</a>
+
+<a href="kiselyov-l-kniga-yunogo-tekhnika-1948.html" class="compact-card">
+    <img src="img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Книга юного техника</h3>
+        <span class="compact-author">Киселёв Л.</span>
+        <p class="compact-desc">Практическое руководство по техническому творчеству. Обучает основам работы с материалами, механикой и электроникой, вдохновляя на создание собственных изобретений своими руками.</p>
     </div>
 </a>
 

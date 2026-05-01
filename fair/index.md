@@ -9,9 +9,7 @@ custom_css: ["/css/fair.css"]
 <div class="fair-list">
     <a href="project-1.html" class="fair-card">
         <img src="/inspiration/img/through-hole-red-led-2.webp" class="fair-img-round">
-        <div class="fair-info">
-            <h3>Автомобиль с полным приводом из картона</h3>
-        </div>
+        <h3>Автомобиль с полным приводом из картона</h3>
     </a>
     
     <a href="project-2.html" class="fair-card">

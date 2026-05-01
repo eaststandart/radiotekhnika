@@ -8,7 +8,6 @@
     width: 100%;
     /* Унификация: 10px сверху, 0 снизу */
     margin: 12px 0 0 0 !important;
-    margin-bottom: 0 !important; 
 }
 
 .project-category-card {

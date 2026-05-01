@@ -209,9 +209,16 @@ p:has(img) + blockquote {
     border-radius: 30px;
     font-weight: bold;
     gap: 10px;
+    transition: background 0.3s;
 }
 
-.tg-icon { width: 20px; height: 20px; }
+.tg-button:hover {
+    background-color: #0077b5;
+}
+
+.tg-button span {
+    font-size: 1.2rem; /* Смайлик чуть крупнее текста */
+}
 
 /* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 600px) {

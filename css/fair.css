@@ -5,7 +5,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 12px; 
     width: 100%;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .fair-card {

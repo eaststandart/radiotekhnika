@@ -1,19 +1,19 @@
-/* --- КОМПАКТНЫЕ КАРТОЧКИ ДЛЯ БИБЛИОТЕКИ --- */
+/* --- КАРТОЧКИ ДЛЯ БИБЛИОТЕКИ --- */
 
-.compact-list {
+.biblio-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 20px 0;
 }
 
-.compact-card {
+.biblio-card {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 12px;
     background: #fff;
-    padding: 10px; /* Вернул прежний размер */
+    padding: 10px; 
     border-radius: 8px;
     border: 1px solid #eee;
     text-decoration: none;
@@ -21,13 +21,13 @@
     transition: background 0.2s;
 }
 
-.compact-card:hover {
+.biblio-card:hover {
     background: #fdfdfd;
     border-color: var(--card-tech);
 }
 
-.compact-img {
-    width: 60px !important;   /* Прежний размер */
+.biblio-img {
+    width: 60px !important;   
     height: 85px !important; 
     object-fit: cover;
     border-radius: 4px;
@@ -35,13 +35,13 @@
     box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 
-.compact-info {
+.biblio-info {
     flex: 1;
     min-width: 0;
 }
 
 /* ШРИФТЫ ДЛЯ ПК (Увеличенные) */
-.compact-info h3 {
+.biblio-info h3 {
     margin: 0 0 2px 0 !important;
     color: var(--card-tech);
     font-size: 1.15rem !important; 
@@ -52,7 +52,7 @@
     display: block;
 }
 
-.compact-author {
+.biblio-author {
     display: block;
     font-weight: bold;
     font-size: 0.9rem; 
@@ -60,31 +60,31 @@
     margin-bottom: 4px;
 }
 
-.compact-desc {
+.biblio-desc {
     margin: 0;
     font-size: 0.85rem; 
     color: #666;
     line-height: 1.3;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Строго 2 строки */
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
 /* МОБИЛЬНАЯ АДАПТАЦИЯ (Прежние мелкие шрифты) */
 @media (max-width: 600px) {
-    .compact-img {
+    .biblio-img {
         width: 50px !important;
         height: 70px !important;
     }
-    .compact-info h3 {
+    .biblio-info h3 {
         font-size: 1rem !important;
     }
-    .compact-author {
+    .biblio-author {
         font-size: 0.8rem;
     }
-    .compact-desc {
+    .biblio-desc {
         font-size: 0.75rem;
-        -webkit-line-clamp: 2; /* Вернул 2 строки */
+        -webkit-line-clamp: 2; 
     }
 }

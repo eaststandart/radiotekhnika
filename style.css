@@ -194,7 +194,7 @@ p:has(img) + blockquote {
 
 /* 4. ПОДВАЛ И КНОПКА TELEGRAM */
 .main-footer, .license-footer { 
-    margin-top: 40px; 
+    margin-top: 20px; 
     text-align: center; 
     width: 100%; 
 }

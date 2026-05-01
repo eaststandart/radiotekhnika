@@ -30,64 +30,6 @@
 }
 .inner-project-list a:hover { background: #eee; color: #000; }
 
-/* 2. ГОРИЗОНТАЛЬНЫЕ КАРТОЧКИ (Библиотека / Дневник) */
-.item-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-    background: #fff;
-    padding: 8px 15px;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    margin-bottom: 12px;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s;
-}
-
-.item-image {
-    width: 100px !important;
-    height: 140px !important;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-
-.item-image-round {
-    width: 100px !important;
-    height: 100px !important;
-    object-fit: cover;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.item-info {
-    flex: 1;
-    padding-top: 10px;
-}
-
-.item-info h3 {
-    margin: 0 0 8px 0;
-    color: var(--card-tech);
-    font-size: 1.15rem;
-    line-height: 1.2;
-}
-
-.item-subtext {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-.item-info p {
-    margin: 0;
-    font-size: 0.88rem;
-    color: #666;
-    line-height: 1.4;
-}
 
 /* 3. СПЕЦИАЛЬНЫЙ БЛОК: ВДОХНОВЕНИЕ */
 .inspiration-feed {

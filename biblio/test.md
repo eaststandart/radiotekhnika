@@ -92,7 +92,16 @@ title: Тест компактного списка
 
 <div class="compact-list">
 
-<a href="#" class="compact-card">
+<a href="materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.html" class="compact-card">
+    <img src="img/materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Материалы для изучения основ электроники</h3>
+        <span class="compact-author">Автор</span>
+        <p class="compact-desc">Первоначальный материал для самостоятельного изучения основ электроники детьми 8-16 лет.</p>
+    </div>
+</a>
+
+<a href="chernenko-g-t-puteshestvie-v-stranu-robotov-1977.html" class="compact-card">
     <img src="img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp" class="compact-img">
     <div class="compact-info">
         <h3>Книги по автоматике и робототехнике</h3>
@@ -101,12 +110,57 @@ title: Тест компактного списка
     </div>
 </a>
 
-<a href="#" class="compact-card">
+<a href="kiselyov-l-kniga-yunogo-tekhnika-1948.html" class="compact-card">
     <img src="img/kiselyov-l-kniga-yunogo-tekhnika-2025.webp" class="compact-img">
     <div class="compact-info">
         <h3>Книга юного техника</h3>
         <span class="compact-author">Киселёв Л.</span>
         <p class="compact-desc">Практическое руководство по техническому творчеству. Обучает основам работы с материалами.</p>
+    </div>
+</a>
+
+<a href="svoren-r-a-elektronika-shag-za-shagom-1991.html" class="compact-card">
+    <img src="img/svoren-r-a-elektronika-shag-za-step-1991.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Электроника шаг за шагом</h3>
+        <span class="compact-author">Сворень Р.А.</span>
+        <p class="compact-desc">Фундаментальный курс практической электроники — от принципа работы до сложных систем.</p>
+    </div>
+</a>
+
+<a href="borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.html" class="compact-card">
+    <img src="img/borisov-v-g-enciklopediya-yunogo-radiolyubitelya-konstruktora-2001.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Энциклопедия юного радиолюбителя</h3>
+        <span class="compact-author">Борисов В.Г.</span>
+        <p class="compact-desc">Фундаментальные знания о радиосвязи и принципах работы электронных устройств.</p>
+    </div>
+</a>
+
+<a href="pchyolko-a-s-arifmetika-dlya-nachalnoj-shkoly-1955.html" class="compact-card">
+    <img src="img/pchyolko-a-s-arifmetika-dlya-pervogo-klassa-nachalnoj-shkoly-2022.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Книги по математике (арифметика)</h3>
+        <span class="compact-author">Пчёлко А.С., Попова Н.С. и др.</span>
+        <p class="compact-desc">Фундаментальная база для инженерных расчетов. Советские учебники по арифметике.</p>
+    </div>
+</a>
+
+<a href="zak-a-z-intellektika-2024.html" class="compact-card">
+    <img src="img/zak-a-z-intellektika-1-klass-2024.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Книги для развития мышления</h3>
+        <span class="compact-author">Зак А.З.</span>
+        <p class="compact-desc">Курс развития мыслительных способностей. Задачи на выработку навыков анализа.</p>
+    </div>
+</a>
+
+<a href="rostovcev-n-n-risovanie-1957.html" class="compact-card">
+    <img src="img/rostovcev-n-n-risovanie-1-klass-1957.webp" class="compact-img">
+    <div class="compact-info">
+        <h3>Книги по рисованию</h3>
+        <span class="compact-author">Ростовцев Н.Н.</span>
+        <p class="compact-desc">Основа визуализации и пространственного мышления. База для зарисовки схем и чертежей.</p>
     </div>
 </a>
 

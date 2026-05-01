@@ -3,8 +3,10 @@
 .fair-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 0 20px; 
+    /* Исправлено: 12px между всеми карточками и по вертикали, и по горизонтали */
+    gap: 12px; 
     width: 100%;
+    margin-top: 10px;
 }
 
 .fair-list .fair-card {
@@ -16,7 +18,8 @@
     padding: 8px 15px;
     border-radius: 12px;
     border: 1px solid #eee;
-    margin-bottom: 12px;
+    /* Исправлено: убрали margin, так как теперь работает gap */
+    margin-bottom: 0; 
     text-decoration: none;
     color: inherit;
 }

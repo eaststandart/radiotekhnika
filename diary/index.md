@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Дневник инженера
+custom_css: ["/css/diary.css"]
 ---
 
 <div class="diary-list">

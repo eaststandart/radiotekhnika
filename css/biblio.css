@@ -1,0 +1,83 @@
+/* --- КОМПАКТНЫЕ КАРТОЧКИ ДЛЯ СПИСКОВ (Библиотека и др.) --- */
+
+.compact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.compact-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+.compact-card:hover {
+    background: #fdfdfd;
+    border-color: var(--card-tech);
+    transform: translateX(4px); /* Легкий сдвиг вправо при наведении */
+}
+
+.compact-img {
+    width: 60px !important;
+    height: 85px !important;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.compact-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.compact-info h3 {
+    margin: 0 0 2px 0 !important;
+    color: var(--card-tech);
+    font-size: 1rem !important;
+    line-height: 1.2;
+}
+
+.compact-author {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.compact-desc {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #777;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+    .compact-card {
+        padding: 8px;
+        gap: 10px;
+    }
+    .compact-img {
+        width: 55px !important;
+        height: 75px !important;
+    }
+    .compact-desc {
+        -webkit-line-clamp: 3; /* На мобилках даем чуть больше текста */
+    }
+}

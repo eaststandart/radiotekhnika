@@ -220,15 +220,15 @@ p:has(img) + blockquote {
     font-size: 1.2rem; /* Смайлик чуть крупнее текста */
 }
 
- /* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
-@media (max-width: 900px) { /* Увеличили охват до 900px для горизонталок */
+/* 5. ОБЩАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
+@media (max-width: 900px) {
     h1 { font-size: 1.5rem; margin: 5px 0 10px 0 !important; }
     header { margin: 10px 0 20px 0; }
 
     .content-wrapper { 
         width: 100% !important; 
         max-width: 100% !important;
-        padding: 15px 10px !important; /* УНИФИКАЦИЯ: 12px от краев экрана */
+        padding: 15px 12px !important; /* УНИФИКАЦИЯ ОТСТУПОВ: 12px */
         border-radius: 0 !important;
         margin: 0 !important;
     }
@@ -255,6 +255,7 @@ p:has(img) + blockquote {
 
 /* Специально для горизонтального режима (Landscape) */
 @media (max-height: 500px) and (orientation: landscape) {
+    /* Твои старые стили для картинок в статьях */
     .main-content p img:not(.content-img) {
         height: 180px !important;
         width: auto !important;
@@ -263,6 +264,16 @@ p:has(img) + blockquote {
     .main-content p:has(img) {
         gap: 15px !important;
     }
+
+    /* ГЛОБАЛЬНОЕ УПЛОТНЕНИЕ ВСЕХ СЕТОК (чтобы не было пустых дыр) */
+    .fair-list, 
+    .project-grid, 
+    .inspiration-feed, 
+    .compact-list, 
+    .tool-list, 
+    .diary-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Две колонки */
+        gap: 10px !important;
+    }
 }
-
-

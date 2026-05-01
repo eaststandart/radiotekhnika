@@ -11,7 +11,6 @@ custom_css: ["/css/fair.css"]
         <img src="/inspiration/img/through-hole-red-led-2.webp" class="fair-img-round">
         <div class="fair-info">
             <h3>Автомобиль с полным приводом из картона</h3>
-            <p>Создание модели автомобиля с самодельным редуктором и варианты добавления дистанционного управления</p>
         </div>
     </a>
     

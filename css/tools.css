@@ -3,7 +3,7 @@
 .tool-card {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center; 
     gap: 20px;
     background: #fff;
     padding: 12px 15px;
@@ -36,7 +36,7 @@
 }
 
 .tool-info h3 {
-    margin: 0 0 4px 0;
+    margin: 0 0 4px 0 !important; 
     color: var(--card-tech);
     font-size: 1.15rem;
     line-height: 1.2;

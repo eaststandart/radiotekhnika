@@ -10,8 +10,8 @@ custom_css: ["/css/biblio.css"]
     <img src="img/materialy-dlya-samostoyatelnogo-izucheniya-osnov-elektroniki.webp" class="compact-img">
     <div class="compact-info">
         <h3>Материалы для изучения основ электроники</h3>
-        <span class="compact-author">Автор</span>
-        <p class="compact-desc">Первоначальный материал для самостоятельного изучения основ электроники детьми 8-16 лет.</p>
+        <span class="compact-author">Первоначальный материал</span>
+        <p class="compact-desc">Для самостоятельного изучения основ электроники детьми 8-16 лет.</p>
     </div>
 </a>
 

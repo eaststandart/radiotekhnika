@@ -23,3 +23,23 @@ custom_css: ["/css/tools.css"]
         </div>
     </a>
 </div>
+
+<div class="tool-list">
+    <a href="sprintlayout.html" class="tool-card">
+        <img src="/img/icons/sprintlayout.webp" class="tool-image-round">
+        <div class="tool-info">
+            <h3>Sprint Layout</h3>
+            <p>Проектирование и ручная разводка печатных плат малой и средней сложности.</p>
+        </div>
+    </a>
+</div>
+
+<div class="tool-list">
+    <a href="fritzing.html" class="tool-card">
+        <img src="/img/icons/fritzing.webp" class="tool-image-round">
+        <div class="tool-info">
+            <h3>Fritzing</h3>
+            <p>Проектирование и документирование электронных схем, разводка печатных плат.</p>
+        </div>
+    </a>
+</div>

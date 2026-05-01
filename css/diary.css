@@ -55,7 +55,6 @@
     font-size: 0.88rem;
     color: #666;
     line-height: 1.4;
-    /* Ограничение текста в 2 строки, как в библиотеке */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;

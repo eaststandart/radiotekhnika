@@ -6,6 +6,7 @@
     /* УНИФИКАЦИЯ: 12px как в Инструментах и Ярмарке */
     gap: 12px; 
     margin: 20px 0;
+    margin-top: 12px;
 }
 
 .item-card {

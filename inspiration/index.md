@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Техническое вдохновение
+custom_css: ["/css/inspiration.css"]
 ---
 
 <div class="inspiration-feed">

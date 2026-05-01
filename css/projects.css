@@ -18,7 +18,6 @@
     border-top: 6px solid #eee;
     display: flex;
     flex-direction: column;
-    /* Обнуляем внешний отступ карточки */
     margin-bottom: 0 !important; 
 }
 

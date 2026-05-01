@@ -34,11 +34,3 @@
     font-size: 1.1rem;
     line-height: 1.2;
 }
-
-/* Мобильная адаптация */
-@media (max-width: 600px) {
-    .inspiration-feed .feed-img-round {
-        width: 40px !important;
-        height: 40px !important;
-    }
-}

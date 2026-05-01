@@ -8,7 +8,7 @@ custom_css: ["/css/fair.css"]
 
 <div class="fair-list">
     <a href="project-1.html" class="fair-card">
-        <img src="/inspiration/img/through-hole-red-led-2.web" class="fair-img-round">
+        <img src="/inspiration/img/through-hole-red-led-2.webp" class="fair-img-round">
         <h3>Название поделки</h3>
     </a>
     

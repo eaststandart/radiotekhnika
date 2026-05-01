@@ -17,7 +17,6 @@
     padding: 12px 15px; 
     border-radius: 12px;
     border: 1px solid #eee;
-    /* УДАЛИЛИ margin-bottom: 12px; теперь за это отвечает gap выше */
     margin-bottom: 0; 
     text-decoration: none;
     color: inherit;

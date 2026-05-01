@@ -8,16 +8,6 @@ custom_css: ["/css/projects.css"]
 
 <div class="project-grid">
 
----
-layout: default
-title: Учебные проекты
-custom_css: ["/css/projects.css"]
----
-
-Выберите интересующее направление для изучения проектов от простых основ до сложных систем.
-
-<div class="project-grid">
-
     <!-- БЛОК: Электроника -->
     <section class="project-category-card" style="border-top-color: #3498db;">
         <div class="project-card-header">

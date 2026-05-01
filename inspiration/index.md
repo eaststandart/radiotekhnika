@@ -2,7 +2,7 @@
 layout: default
 title: Техническое вдохновение
 custom_css: ["/css/inspiration.css"]
---- 
+---
 
 <div class="inspiration-feed">
     <a href="our-dream.html" class="feed-card">

@@ -23,9 +23,9 @@ custom_css: ["/css/fair.css"]
         <img src="/img/icons/carbon-film-resistor.webp" class="fair-img-round">
             <h3>Углеродный пленочный резистор</h3>
     </a>
-        <a href="link-to-post.html" class="fair-card">
-        <img src="img/your-icon.webp" class="fair-img-round">
-            <h3>Краткое название идеи</h3>
+        <a href="ceramic-disc-capacitor.html" class="fair-card">
+        <img src="/img/icons/ceramic-disc-capacitor.webp" class="fair-img-round">
+            <h3>Керамический дисковый конденсатор</h3>
     </a>
     <a href="link-to-post.html" class="fair-card">
         <img src="1.webp" class="fair-img-round">

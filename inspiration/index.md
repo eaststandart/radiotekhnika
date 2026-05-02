@@ -33,7 +33,7 @@ custom_css: ["/css/fair.css"]
     </a>
     <a href="aluminum-electrolytic-capacitor.html" class="fair-card">
         <img src="/img/icons/aluminum-electrolytic-capacitor.webp" class="fair-img-round">
-            <h3>Конденсатор алюминиевый электролитический</h3>
+            <h3>Конденсатор алюмин. электролитический</h3>
     </a>
     <a href="link-to-post.html" class="fair-card">
         <img src="1.webp" class="fair-img-round">

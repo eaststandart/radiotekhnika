@@ -16,7 +16,7 @@ custom_css: ["/css/fair.css"]
             <h3>Атом в ионной ловушке</h3>
     </a>
         <a href="through-hole-red-led.html" class="fair-card">
-        <img src="img/through-hole-red-led-2.webp" class="fair-img-round">
+        <img src="/img/icons/through-hole-red-led.webp" class="fair-img-round">
             <h3>Красный светодиод</h3>
     </a>
         <a href="link-to-post.html" class="fair-card">

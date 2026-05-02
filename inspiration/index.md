@@ -21,7 +21,7 @@ custom_css: ["/css/fair.css"]
     </a>
         <a href="carbon-film-resistor.html" class="fair-card">
         <img src="/img/icons/carbon-film-resistor.webp" class="fair-img-round">
-            <h3>Углеродный пленочный резистор</h3>
+            <h3>Резистор пленочный углеродный</h3>
     </a>
         <a href="ceramic-disc-capacitor.html" class="fair-card">
         <img src="/img/icons/ceramic-disc-capacitor.webp" class="fair-img-round">

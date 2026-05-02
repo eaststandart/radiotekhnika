@@ -12,7 +12,6 @@ custom_css: ["/css/tools.css"]
             <p>Проектирование и ручная разводка печатных плат малой и средней сложности.</p>
         </div>
     </a>
-
     <a href="fritzing.html" class="tool-card">
         <img src="/img/icons/fritzing.webp" class="tool-image-round">
         <div class="tool-info">
@@ -20,7 +19,6 @@ custom_css: ["/css/tools.css"]
             <p>Проектирование и документирование электронных схем, разводка печатных плат.</p>
         </div>
     </a>
-
     <a href="#" class="tool-card">
         <img src="#" class="tool-image-round">
         <div class="tool-info">
@@ -28,7 +26,6 @@ custom_css: ["/css/tools.css"]
             <p></p>
         </div>
     </a>
-
     <a href="#" class="tool-card">
         <img src="#" class="tool-image-round">
         <div class="tool-info">

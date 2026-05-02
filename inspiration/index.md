@@ -35,9 +35,9 @@ custom_css: ["/css/fair.css"]
         <img src="/img/icons/aluminum-electrolytic-capacitor.webp" class="fair-img-round">
             <h3>Конденсатор алюмин. электролитический</h3>
     </a>
-    <a href="link-to-post.html" class="fair-card">
-        <img src="1.webp" class="fair-img-round">
-            <h3>Краткое название идеи.</h3>
+    <a href="analog-panel-meter.html" class="fair-card">
+        <img src="/img/icons/analog-panel-meter.webp" class="fair-img-round">
+            <h3>Аналоговый стрелочный измерительный прибор</h3>
     </a>
 </div>
 

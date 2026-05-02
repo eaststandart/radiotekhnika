@@ -6,8 +6,7 @@
     /* УПРАВЛЕНИЕ ОТСТУПОМ: теперь только здесь */
     gap: 12px; 
     margin: 20px 0;
-    margin-top: 12px;
-    margin-bottom: 0 !important;
+    margin: 12px 0 0 0 !important;
 }
 
 .biblio-card {

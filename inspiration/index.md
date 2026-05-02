@@ -27,9 +27,9 @@ custom_css: ["/css/fair.css"]
         <img src="/img/icons/ceramic-disc-capacitor.webp" class="fair-img-round">
             <h3>Керамический дисковый конденсатор</h3>
     </a>
-    <a href="link-to-post.html" class="fair-card">
-        <img src="1.webp" class="fair-img-round">
-            <h3>Краткое название идеи.</h3>
+    <a href="magnetic-buzzer.html" class="fair-card">
+        <img src="/img/icons/magnetic-buzzer.webp" class="fair-img-round">
+            <h3>Магнитный зуммер</h3>
     </a>
     <a href="link-to-post.html" class="fair-card">
         <img src="1.webp" class="fair-img-round">

@@ -4,7 +4,7 @@
 
 Задача: научиться мыслить как инженер – подходить к делу критически и разбивать задачу на мелкие шаги.
 
-![Моя статистика GitHub](https://vercel.app)
+![Моя статистика GitHub](https://vercel.app=eaststandart&layout=compact&theme=radical)
 
-![Используемые языки](https://vercel.app)
+![Используемые языки](https://vercel.app=eaststandart&layout=compact&theme=radical)
 

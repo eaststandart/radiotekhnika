@@ -40,7 +40,7 @@
 
             /* [Портрет]: Стираем ПК-потолок высоты, раскрываем на 100% ширины рамки */
             @media (max-width: 900px) and (orientation: portrait) {
-                width: 100%;
+                width: var(--mobile-full-width);
                 max-width: none;
                 height: auto;
                 max-height: none;

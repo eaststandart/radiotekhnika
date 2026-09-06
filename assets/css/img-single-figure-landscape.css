@@ -8,7 +8,7 @@
         margin: 1em 0;           
     }
 
-    /* [ЭЛЕМЕНТ] Рамка figure: обжимает картинку на ПК, раскрывается во всю ширину в портрете */
+    /* [ЭЛЕМЕНТ] Рамка figure: обжимает картинку на ПК, адаптируется на мобильных */
     .main-content .img-single-figure figure.img-figure {
         display: inline-flex;
         flex-direction: column;
@@ -19,15 +19,22 @@
         background-color: transparent;
         margin: 0;
 
-        /* [Портрет]: Переводим в flex и раскрываем коробку во всю ширину статьи */
+        /* [Портрет]: Раскрываем коробку во всю ширину статьи */
         @media (max-width: 900px) and (orientation: portrait) {
             display: flex;
             width: 100%;
             max-width: 100%;
         }
+
+        /* [Ландшафт]: Оставляем inline-flex и авто-ширину, чтобы рамка обжимала картинку при сжатии */
+        @media (max-height: 500px) and (orientation: landscape) {
+            display: inline-flex;
+            width: auto;
+            max-width: 100%;
+        }
     }
 
-    /* [ЭЛЕМЕНТ] Картинка: жесткая геометрия на ПК, свободная высота и 100% ширины в портрете */
+    /* [ЭЛЕМЕНТ] Картинка: жесткая на ПК, системная в портрете, гибкий потолок в ландшафте */
     .main-content .img-single-figure img.img-single-figure-landscape {
         &, &[data-src] {
             display: block;
@@ -38,12 +45,21 @@
             object-fit: contain;
             margin: 0;
 
-            /* [Портрет]: Стираем ПК-потолок высоты, раскрываем на 100% ширины рамки */
+            /* [Портрет]: Раскрываем строго на ширину текстовой строки с пульта */
             @media (max-width: 900px) and (orientation: portrait) {
                 width: var(--mobile-full-width);
                 max-width: none;
                 height: auto;
                 max-height: none;
+                aspect-ratio: var(--ratio-landscape);
+            }
+
+            /* [Ландшафт]: Тестируем гибкий безопасный потолок */
+            @media (max-height: 500px) and (orientation: landscape) {
+                width: auto;
+                max-width: var(--mobile-full-width); /* Защита от вылета по ширине */
+                height: auto;
+                max-height: var(--media-pc-height); /* Защита от вылета по высоте (209px) */
                 aspect-ratio: var(--ratio-landscape);
             }
         }

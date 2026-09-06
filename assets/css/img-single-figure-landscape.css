@@ -1,17 +1,6 @@
-/*
-@about Монолитный модуль одиночных журнальных изображений контента (.img-single-figure).
-@purpose Управляет геометрии и пропорциями одиночного ландшафтного кадра в режиме ПК.
-@author TechLab
-@version 1.0
-*/
-
 @layer components {
 
-    /* ==========================================================================
-       🌅 1. БАЗОВЫЕ ГОРИЗОНТАЛЬНЫЕ ЖУРНАЛЬНЫЕ ОДИНОЧКИ (img-single-figure-landscape)
-       ========================================================================= */
-    
-    /* [БЛОК] Одиночная коробка figure контента */
+    /* [БЛОК] Внешняя обертка: растягивается на всю строку статьи и центрирует медиа-блок */
     .main-content .img-single-figure {
         display: flex;
         justify-content: center;
@@ -19,27 +8,29 @@
         margin: 1em 0;           
     }
 
-    /* [ВНЕШНИЙ КОНТЕЙНЕР] Каркас, обжимающий картинку */
+    /* [ЭЛЕМЕНТ] Рамка figure: обжимает картинку строго по её ширине, выстраивает подпись снизу */
     .main-content .img-single-figure figure.img-figure {
-        display: inline-flex !important;
-        flex-direction: column !important;               /* Подпись всегда строго внизу фото */
-        align-items: center !important;
-        justify-content: center !important;
-        width: auto !important;
-        max-width: 100% !important;
-        background-color: transparent !important;        /* Убираем серый фон, защищая от пустых ушей */
-        margin: 0 !important;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        max-width: 100%;
+        background-color: transparent; /* Защита от пустых полей */
+        margin: 0;
     }
 
-    /* [ЭЛЕМЕНТ] Базовые ландшафтные картинки (ПК-режим строго по шаблону) */
-    .main-content .img-single-figure figure.img-figure img.img-single-figure-landscape {
+    /* [ЭЛЕМЕНТ] Картинка: держит жесткую геометрию и ограничивает максимальную ширину по формуле */
+    .main-content .img-single-figure img.img-single-figure-landscape {
         &, &[data-src] {
             display: block;
-            height: var(--media-pc-height);              /* Держит высоту 209px на ПК */
-            width: auto;                
-            max-width: calc(var(--media-pc-height) * var(--ratio-landscape));
-            aspect-ratio: var(--ratio-landscape);        /* Намертво запечатываем 16/9 */
-            object-fit: contain; 
+            height: var(--media-pc-height); /* Строго 209px с пульта */
+            width: auto;
+            max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); /* Системный ограничитель ширины */
+            aspect-ratio: var(--ratio-landscape); /* Пропорции 16/9 */
+            object-fit: contain; /* Вписывание без обрезки */
+            margin: 0;
         }
     }
+
 }

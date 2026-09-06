@@ -8,7 +8,7 @@
         margin: 1em 0;           
     }
 
-    /* [ЭЛЕМЕНТ] Рамка figure: обжимает картинку строго по её ширине, выстраивает подпись снизу */
+    /* [ЭЛЕМЕНТ] Рамка figure: обжимает картинку на ПК, раскрывается во всю ширину в портрете */
     .main-content .img-single-figure figure.img-figure {
         display: inline-flex;
         flex-direction: column;
@@ -16,20 +16,36 @@
         justify-content: center;
         width: auto;
         max-width: 100%;
-        background-color: transparent; /* Защита от пустых полей */
+        background-color: transparent;
         margin: 0;
+
+        /* [Портрет]: Переводим в flex и раскрываем коробку во всю ширину статьи */
+        @media (max-width: 900px) and (orientation: portrait) {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+        }
     }
 
-    /* [ЭЛЕМЕНТ] Картинка: держит жесткую геометрию и ограничивает максимальную ширину по формуле */
+    /* [ЭЛЕМЕНТ] Картинка: жесткая геометрия на ПК, свободная высота и 100% ширины в портрете */
     .main-content .img-single-figure img.img-single-figure-landscape {
         &, &[data-src] {
             display: block;
             height: var(--media-pc-height); /* Строго 209px с пульта */
             width: auto;
-            max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); /* Системный ограничитель ширины */
+            max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); /* Системный ограничитель */
             aspect-ratio: var(--ratio-landscape); /* Пропорции 16/9 */
-            object-fit: contain; /* Вписывание без обрезки */
+            object-fit: contain;
             margin: 0;
+
+            /* [Портрет]: Стираем ПК-потолок высоты, раскрываем на 100% ширины рамки */
+            @media (max-width: 900px) and (orientation: portrait) {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                max-height: none;
+                aspect-ratio: var(--ratio-landscape);
+            }
         }
     }
 

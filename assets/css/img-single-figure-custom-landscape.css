@@ -19,6 +19,13 @@
             object-fit: unset;
             margin: 0;
         }
+
+            /* [Портрет]: Снимаем ПК-потолок высоты и раскрываем во всю ширину текстовой строки */
+            @media (max-width: 900px) and (orientation: portrait) {
+                width: var(--mobile-full-width);
+                max-height: none;
+            }
+        }
     }
 
 }

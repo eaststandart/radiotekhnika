@@ -84,9 +84,9 @@
             width: auto;
             max-width: var(--mobile-full-width);
             object-fit: unset;
+            margin: 0;
             box-sizing: border-box;
             border: 1px solid var(--primary-bg);
-            margin: 0;
         }
 
         /* [Портрет]: Раскрываем горизонтальный кадр на всю ширину строки контента */

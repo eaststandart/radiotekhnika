@@ -66,7 +66,8 @@ html {
     /* 🧭 ПУЛЬТ ПРОПОРЦИЙ СТОРОН (ASPECT RATIO) */
     --ratio-landscape: 16 / 9;                /* Базовые горизонтальные пропорции для фото/видео */
     --ratio-portrait: 9 / 16;                 /* Вертикальные пропорции для элементов с ключом v */
-
+    --ratio-landscape-custom: (attr(width type(<number>)) /attr(height type(<number>))); 
+ 
     /* 📺 1. ЕДИНАЯ ШИРИНА ТЕКСТОВОЙ СТРОКИ НА ВЕСЬ ЭКРАН СМАРТФОНА 
        (Универсальная база: работает одинаково и на боку телефона, и вертикально) */
     --mobile-full-width: calc(100vw - (var(--pad-mobile-horizontal) * 2) - (var(--pad-body-horizontal) * 2));

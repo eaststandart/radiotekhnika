@@ -32,7 +32,7 @@
         /* [Ландшафт]: Опираемся на гибкую ПК-базу, защищающую от вылетов по ширине и высоте */
         @media (max-height: 500px) and (orientation: landscape) {
             &, &[data-src] {
-                height: calc(var(--mobile-full-width) / (attr(width type(<number>)) / attr(height type(<number>))));
+                height: calc(var(--mobile-full-width) / var(--ratio-landscape-custom));;
                 width: auto;
             }
         }

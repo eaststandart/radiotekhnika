@@ -6,7 +6,7 @@
 @purpose Парсит базовые картинки, идущие в столбик, вычисляет оси по формуле Ширина > Высота
          и генерирует правильные классы img-row-custom-landscape/portrait на основе is_row_mode.
 @author TechLab
-@version 1.1-test
+@version 1.2-test
 """
 
 import re
@@ -31,13 +31,12 @@ def test_process_base_galleries(test_markdown):
             j += 1
             continue
             
-        # 🚀 ИСПРАВЛЕНО: Ищем картинку в любом месте строки (защита от <p> и пробелов)
-        is_image = re.search(img_pattern, line_stripped, re.IGNORECASE)
+        is_image = re.match(img_pattern, line_stripped, re.IGNORECASE)
         
         if is_image:
-            # 🚀 ИСПРАВЛЕНО: Сборщик плотной группы картинок тоже переведён на re.search
+            # 1. ВАША РОДНАЯ СТРУКТУРА СБОРА СТОЛБИКА ИЗ IMAGES.PY (1 в 1)
             image_group_lines = []
-            while j < len(base_lines) and base_lines[j].strip() and re.search(img_pattern, base_lines[j].strip(), re.IGNORECASE):
+            while j < len(base_lines) and base_lines[j].strip() and re.match(img_pattern, base_lines[j].strip(), re.IGNORECASE):
                 image_group_lines.append(base_lines[j].strip())
                 j += 1
                 
@@ -45,8 +44,7 @@ def test_process_base_galleries(test_markdown):
             
             # Обрабатываем каждую картинку из собранного столбика-галереи
             for group_line in image_group_lines:
-                # 🚀 ИСПРАВЛЕНО: Финальный разбор строки через re.search
-                match = re.search(img_pattern, group_line, re.IGNORECASE)
+                match = re.match(img_pattern, group_line, re.IGNORECASE)
                 alt_content = match.group(1).strip()
                 img_url = match.group(2).strip()
                 
@@ -70,23 +68,23 @@ def test_process_base_galleries(test_markdown):
                 classes = []
                 custom_attrs = []
                 
+                # 🚀 ИСПРАВЛЕНО: Индексация строго 1 в 1 как в строке 147 вашего файла images.py
                 first_key = parts[0].strip('{} ')
 
-                # ЛЕВОСТОРОННИЙ РАЗБОР СЛУЖЕБНЫХ КЛЮЧЕЙ
+                # ЛЕВОСТОРОННИЙ РАЗБОР СЛУЖЕБНЫХ КЛЮЧЕЙ ИЗ ВАШЕГО IMAGES.PY (1 в 1)
                 if first_key.lower() == 'v':
                     classes.append('img-row-portrait' if is_row_mode else 'img-single-portrait')
                     parts.pop(0)
                     
-                # ОБРАБОТКА КАСТОМНЫХ РАЗМЕРОВ В ГРУППЕ
+                # ОБРАБОТКА КАСТОМНЫХ РАЗМЕРОВ (С интеграцией флага группы)
                 elif re.match(r'^\d+[xх]\d+$', first_key, re.IGNORECASE):
                     dimensions = re.split(r'[xх]', first_key, flags=re.IGNORECASE)
-                    width, height = int(dimensions[0]), int(dimensions[1])
+                    width, height = dimensions[0], dimensions[1]
                     
-                    # Динамически собираем префикс из флага группы
+                    # Применяем к нашему групповому случаю:
                     custom_prefix = 'img-row-custom-' if is_row_mode else 'img-single-custom-'
                     
-                    # Ваша нативная формула автоматического вычисления осей геометрии
-                    if width > height:
+                    if int(width) > int(height):
                         classes.append(f'{custom_prefix}landscape')
                     else:
                         classes.append(f'{custom_prefix}portrait')

@@ -21,7 +21,8 @@ if current_dir not in sys.path:
 from vault import global_freeze_content, global_unfreeze_content
 from pathlinks import process_markdown_paths
 from videos import process_markdown_videos
-from images import process_markdown_images
+#from images import process_markdown_images
+from bin.test_row_custom import test_process_base_galleries
 
 def process_single_file(file_path, root_dir):
     """Открывает, защищает через сейф, обрабатывает через модули и перезаписывает один .md файл."""
@@ -37,7 +38,8 @@ def process_single_file(file_path, root_dir):
         markdown_content = process_markdown_paths(markdown_content, file_path)
             
         # ЭТАП 2: Каскадный модуль картинок через images.py
-        markdown_content = process_markdown_images(markdown_content)
+        # markdown_content = process_markdown_images(markdown_content)
+        content = test_process_base_galleries(content)
         
         # ЭТАП 3: Конвертация видео-ссылок (.webm/.mp4) в нативные флекс-ряды через videos.py
         markdown_content = process_markdown_videos(markdown_content)

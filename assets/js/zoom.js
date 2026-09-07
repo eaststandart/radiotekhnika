@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Ищем все кликабельные картинки контента (базовые и журнальные figure)
     const articleImages = document.querySelectorAll(
-        ".main-content p img:not(.content-img), .main-content .figure-img img.img-fig"
+        ".main-content p img:not(.content-img), .main-content figure.img-figure img, .main-content .figure-img img.img-fig"
     );
 
     articleImages.forEach(img => {

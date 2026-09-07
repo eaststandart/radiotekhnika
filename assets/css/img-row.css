@@ -118,9 +118,8 @@
         & img.img-row-custom-portrait {
             &, &[data-src] {
                 --current-ratio: calc(attr(width type(<number>)) / attr(height type(<number>)));
+                height: var(--media-pc-height); /* Жесткие 209px в высоту на ПК, вровень с рядом */
                 width: auto;                    /* Ширина свободно высчитывается по инлайн aspect-ratio */
-                height: calc(var(--mobile-base-landscape-width) * var(--current-ratio)); 
-                max-height: var(--media-pc-height);
                 object-fit: cover;              /* Профессиональное вписывание */
                 object-position: center;   
                 margin: 0;

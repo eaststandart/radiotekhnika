@@ -28,6 +28,7 @@
         @media (max-width: 900px) and (orientation: portrait) {
             &, &[data-src] {
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
+                height: auto;
             }
         }
     }

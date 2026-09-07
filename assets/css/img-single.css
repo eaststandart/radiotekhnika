@@ -80,10 +80,9 @@
         /* [База]: ПК-режим и мобильный ландшафт наследуют фиксированные 209px высоты */
         &, &[data-src] {
             display: block;
-            width: auto;                    
-            height: var(--media-pc-height);   
-            max-width: 100%;
-            max-height: none;
+            max-height: var(--media-pc-height);
+            width: auto;
+            max-width: var(--mobile-full-width);
             object-fit: unset;
             box-sizing: border-box;
             border: 1px solid var(--primary-bg);

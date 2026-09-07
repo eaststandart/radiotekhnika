@@ -6,7 +6,7 @@
 @purpose Парсит базовые картинки, идущие в столбик, вычисляет оси по формуле Ширина > Высота
          и генерирует правильные классы img-row-custom-landscape/portrait на основе is_row_mode.
 @author TechLab
-@version 1.2-test
+@version 1.3-test
 """
 
 import re
@@ -68,7 +68,7 @@ def test_process_base_galleries(test_markdown):
                 classes = []
                 custom_attrs = []
                 
-                # 🚀 ИСПРАВЛЕНО: Индексация строго 1 в 1 как в строке 147 вашего файла images.py
+                # Извлекаем первый ключ строго 1 в 1 как на строке 147 вашего images.py
                 first_key = parts[0].strip('{} ')
 
                 # ЛЕВОСТОРОННИЙ РАЗБОР СЛУЖЕБНЫХ КЛЮЧЕЙ ИЗ ВАШЕГО IMAGES.PY (1 в 1)
@@ -76,14 +76,15 @@ def test_process_base_galleries(test_markdown):
                     classes.append('img-row-portrait' if is_row_mode else 'img-single-portrait')
                     parts.pop(0)
                     
-                # ОБРАБОТКА КАСТОМНЫХ РАЗМЕРОВ (С интеграцией флага группы)
+                # ОБРАБОТКА КАСТОМНЫХ РАЗМЕРОВ (Строго 1 в 1 по вашей логике из images.py)
                 elif re.match(r'^\d+[xх]\d+$', first_key, re.IGNORECASE):
                     dimensions = re.split(r'[xх]', first_key, flags=re.IGNORECASE)
                     width, height = dimensions[0], dimensions[1]
                     
-                    # Применяем к нашему групповому случаю:
+                    # Применяем динамический префикс к нашему групповому случаю:
                     custom_prefix = 'img-row-custom-' if is_row_mode else 'img-single-custom-'
                     
+                    # Ваша оригинальная формула сравнения сторон из images.py (строки 154-157)
                     if int(width) > int(height):
                         classes.append(f'{custom_prefix}landscape')
                     else:

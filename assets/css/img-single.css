@@ -144,7 +144,6 @@
         @media (max-height: 500px) and (orientation: landscape) {
             &, &[data-src] {
                 width: auto;
-                max-width: none;
                 height: calc(var(--mobile-base-landscape-width) * var(--ratio-portrait));
                 max-height: var(--media-pc-height);
             }

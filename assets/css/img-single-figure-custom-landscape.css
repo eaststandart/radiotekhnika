@@ -1,0 +1,25 @@
+/*
+@about Модуль кастомных журнальных горизонтальных изображений.
+@purpose Управляет геометрией и адаптивностью одиночного блока figure с кастомными пропорциями.
+@author TechLab
+@version 1.0
+*/
+
+@layer components {
+
+    /* [ЭЛЕМЕНТ] Целевой элемент кастомной горизонтальной картинки */
+    .main-content .img-single-figure img.img-single-figure-custom-landscape {
+        
+        /* ПК-режим и параметры стабилизации */
+        &, &[data-src] {
+            display: block;
+            width: auto;                    
+            height: var(--media-pc-height);   
+            max-width: 100%;
+            max-height: none;
+            object-fit: unset;
+            margin: 0;
+        }
+    }
+
+}

@@ -118,7 +118,7 @@
             display: inline-block;
             width: auto;                    
             height: var(--media-pc-height);   
-            max-width: 100%;
+            max-width: var(--mobile-full-width);
             max-height: none;
             object-fit: unset;
             margin: 0;
@@ -131,9 +131,7 @@
             &, &[data-src] {
                 display: inline-block;
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
-                max-width: none;
                 height: auto;
-                max-height: none;
             }
         }
 

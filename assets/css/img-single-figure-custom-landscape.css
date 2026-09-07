@@ -28,6 +28,14 @@
                 max-height: none;
             }
         }
+
+        /* [Ландшафт]: Опираемся на гибкую ПК-базу, защищающую от вылетов по ширине и высоте */
+        @media (max-height: 500px) and (orientation: landscape) {
+            &, &[data-src] {
+                width: auto;
+                height: auto;
+            }
+        }
     }
 
 }

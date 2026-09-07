@@ -1,6 +1,13 @@
+/*
+@about Модуль одиночных журнальных горизонтальных изображений.
+@purpose Управляет геометрией и адаптивностью одиночного блока figure 16/9.
+@author TechLab
+@version 1.0
+*/
+
 @layer components {
 
-    /* [БЛОК] Внешняя обертка: растягивается на всю строку статьи и центрирует медиа-блок */
+    /* [БЛОК] Внешний контейнер журнального блока */
     .main-content .img-single-figure {
         display: flex;
         justify-content: center;
@@ -8,7 +15,7 @@
         margin: 1em 0;           
     }
 
-    /* [ЭЛЕМЕНТ] Рамка figure: обжимает картинку на ПК, адаптируется на мобильных */
+    /* [ЭЛЕМЕНТ] Рамка figure, обжимающая картинку по ширине кадра */
     .main-content .img-single-figure figure.img-figure {
         display: inline-flex;
         flex-direction: column;
@@ -16,51 +23,43 @@
         justify-content: center;
         width: auto;
         max-width: 100%;
-        background-color: transparent;
+        /* background-color: transparent; */
         margin: 0;
-
-        /* [Портрет]: Раскрываем коробку во всю ширину статьи */
-        @media (max-width: 900px) and (orientation: portrait) {
-            display: flex;
-            width: 100%;
-            max-width: 100%;
-        }
-
-        /* [Ландшафт]: Оставляем inline-flex и авто-ширину, чтобы рамка обжимала картинку при сжатии */
-        @media (max-height: 500px) and (orientation: landscape) {
-            display: inline-flex;
-            width: auto;
-            max-width: 100%;
-        }
     }
 
-    /* [ЭЛЕМЕНТ] Картинка: жесткая на ПК, системная в портрете, гибкий потолок в ландшафте */
+    /* [ЭЛЕМЕНТ] Целевой элемент горизонтальной картинки */
     .main-content .img-single-figure img.img-single-figure-landscape {
+        
+        /* ПК-режим и параметры стабилизации */
         &, &[data-src] {
             display: block;
-            height: var(--media-pc-height); /* Строго 209px с пульта */
-            width: auto;
-            max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); /* Системный ограничитель */
-            aspect-ratio: var(--ratio-landscape); /* Пропорции 16/9 */
-            object-fit: contain;
-            margin: 0;
+            height: var(--media-pc-height);              
+            width: auto;                
+            max-width: calc(var(--media-pc-height) * var(--ratio-landscape));
+            aspect-ratio: var(--ratio-landscape);
+            object-fit: contain; 
+            margin: 0; 
+        }
 
-            /* [Портрет]: Раскрываем строго на ширину текстовой строки с пульта */
-            @media (max-width: 900px) and (orientation: portrait) {
+        /* [Портрет]: Раскрываем на всю ширину строки контента с пульта */
+        @media (max-width: 900px) and (orientation: portrait) {
+            &, &[data-src] {
                 width: var(--mobile-full-width);
                 max-width: none;
-                height: auto;
-                max-height: none;
+                height: auto;       
+                max-height: none;   
                 aspect-ratio: var(--ratio-landscape);
             }
+        }
 
-            /* [Ландшафт]: Тестируем гибкий безопасный потолок */
-            @media (max-height: 500px) and (orientation: landscape) {
-              &, &[data-src] {  width: auto;
-                max-width: var(--mobile-full-width); /* Защита от вылета по ширине */
+        /* [Ландшафт]: Безопасный гибкий потолок для низких экранов */
+        @media (max-height: 500px) and (orientation: landscape) {
+            &, &[data-src] {
                 height: auto;
-                max-height: var(--media-pc-height); /* Защита от вылета по высоте (209px) */
-                aspect-ratio: var(--ratio-landscape); }
+                max-height: var(--media-pc-height);
+                width: auto;
+                max-width: var(--mobile-full-width);
+                aspect-ratio: var(--ratio-landscape);
             }
         }
     }

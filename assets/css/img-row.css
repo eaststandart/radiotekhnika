@@ -10,7 +10,9 @@
     /* 🔥 ВАЖНО: Селектор превращает абзац <p> во флекс-контейнер, только если внутри 
        него лежат рядные картинки стандарта v4.5 от нашего Python-парсера */
     .main-content p:has(.img-row-landscape),
-    .main-content p:has(.img-row-portrait) {
+    .main-content p:has(.img-row-portrait),
+    .main-content p:has(.img-row-custom-landscape),
+    .main-content p:has(.img-row-costom-portrait) {
         
         /* 💻 ДЕСКТОП И ПРОМЕЖУТОЧНЫЙ РЕЖИМ (Все экраны выше 900px) */
         & {

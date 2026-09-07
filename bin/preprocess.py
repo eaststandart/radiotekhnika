@@ -22,7 +22,7 @@ from vault import global_freeze_content, global_unfreeze_content
 from pathlinks import process_markdown_paths
 from videos import process_markdown_videos
 #from images import process_markdown_images
-from bin.test_row_custom import test_process_base_galleries
+from test_row_custom import test_process_base_galleries
 
 def process_single_file(file_path, root_dir):
     """Открывает, защищает через сейф, обрабатывает через модули и перезаписывает один .md файл."""

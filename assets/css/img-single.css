@@ -93,7 +93,6 @@
         @media (max-width: 900px) and (orientation: portrait) {
             &, &[data-src] {
                 width: var(--mobile-full-width);
-                max-width: none;
                 height: auto;       
                 max-height: none;   
             }

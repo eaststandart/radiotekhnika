@@ -30,6 +30,16 @@
             }
         }
 
+        /* [Ландшафт]: Высота зеркально равна ширине ландшафтного соседа */
+        @media (max-height: 500px) and (orientation: landscape) {
+            &, &[data-src] {
+                display: inline-block;
+                width: auto;
+                max-width: none;
+                height: calc(var(--mobile-base-landscape-width) * var(--ratio-portrait));
+                max-height: var(--media-pc-height);
+            }
+        }
     }
 
 }

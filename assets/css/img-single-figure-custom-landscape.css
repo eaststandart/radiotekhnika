@@ -22,6 +22,7 @@
 
             /* [Портрет]: Снимаем ПК-потолок высоты и раскрываем во всю ширину текстовой строки */
             @media (max-width: 900px) and (orientation: portrait) {
+                &, &[data-src] {
                 width: var(--mobile-full-width);
                 max-width: none;
                 height: auto;

@@ -13,6 +13,7 @@
         /* ПК-режим и параметры стабилизации */
         &, &[data-src] {
             display: block;
+            height: auto;
             max-height: var(--media-pc-height);
             width: auto;
             max-width: var(--mobile-full-width);                    

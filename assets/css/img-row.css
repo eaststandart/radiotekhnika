@@ -116,9 +116,9 @@
                     width: auto;
                     height: calc(var(--mobile-base-landscape-width) * var(--current-ratio));
                     max-height: var(--media-pc-height);
+                }
             }
         }
-
 
     }
 

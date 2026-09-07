@@ -1,0 +1,24 @@
+/*
+@about Модуль одиночных журнальных вертикальных изображений.
+@purpose Управляет геометрии и адаптивностью одиночного блока figure 9/16.
+@author TechLab
+@version 1.0
+*/
+
+@layer components {
+
+    /* [ЭЛЕМЕНТ] Целевой элемент вертикальной картинки */
+    .main-content .img-single-figure img.img-single-figure-portrait {
+        
+        /* ПК-режим и параметры стабилизации */
+        &, &[data-src] {
+            display: inline-block;
+            width: var(--media-pc-height);              
+            height: auto;                
+            aspect-ratio: var(--ratio-portrait);
+            object-fit: contain; 
+            margin: 0; 
+        }
+    }
+
+}

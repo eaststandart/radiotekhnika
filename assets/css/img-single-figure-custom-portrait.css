@@ -14,8 +14,8 @@
         &, &[data-src] {
             --current-ratio: calc(attr(width type(<number>)) / attr(height type(<number>)));
             display: inline-block;
-            width: auto;
-            height: var(--media-pc-height);
+            width: var(--media-pc-height);
+            height: auto;
             max-height: none;
             object-fit: unset;
             margin: 0;

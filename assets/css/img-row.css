@@ -96,7 +96,7 @@
 
 
         /* ------------------------------------------------------------
-           🌌 В. ВЕРТИКАЛЬНЫЕ КАДРЫ ВНУТРИ ГАЛЕРЕИ (img-row-portrait)
+           🌌 В. КАСТОМНЫЕ ПОРТРЕТНЫЕ КАДРЫ ВНУТРИ ГАЛЕРЕИ (img-row-custom-portrait)
            ============================================================ */
         & img.img-row-custom-portrait {
             &, &[data-src] {
@@ -106,16 +106,15 @@
             /* [Портрет]: Аккуратно сжимаем ширину по коэффициенту 9/16 от строки контента */
             @media (max-width: 900px) and (orientation: portrait) {
                 &, &[data-src] {
+                    width: auto;
+                    height: calc(var(--mobile-base-landscape-width) * var(--current-ratio));
+                    max-height: var(--media-pc-height);
                 }
             }
 
             /* [Ландшафт]: Берем идеальную живую высоту ландшафтного соседа */
             @media (max-height: 500px) and (orientation: landscape) {
                 &, &[data-src] {
-                    display: inline-block;
-                    width: auto;
-                    height: calc(var(--mobile-base-landscape-width) * var(--current-ratio));
-                    max-height: var(--media-pc-height);
                 }
             }
         }

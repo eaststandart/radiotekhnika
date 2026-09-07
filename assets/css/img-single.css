@@ -117,7 +117,6 @@
             display: inline-block;
             width: var(--media-pc-height);
             height: auto;  
-            max-height: none;
             object-fit: unset;
             margin: 0;
             box-sizing: border-box;
@@ -136,7 +135,7 @@
             &, &[data-src] {
                 display: block;
                 width: var(--mobile-full-width);
-                max-width: none;
+                max-width: var(--mobile-full-width);
             }
         }
 

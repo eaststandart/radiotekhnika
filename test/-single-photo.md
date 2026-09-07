@@ -24,7 +24,7 @@ permalink: /test/single-photo/
 
 ![{fig|1887x958}|Рис. 3 – Электроны в электрической цепи устремляются от «минуса» к «плюсу». Электроника для детей. Собираем простые схемы.](tools/img/sprintlayout-6-0-workflow.webp)
 
-2-1 Одиночная простая картинка с параметром v
+2-1 Одиночная простая картинка с параметром v 
 
 ![{v}](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-02.webp)
 

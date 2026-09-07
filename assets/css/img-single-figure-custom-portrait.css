@@ -16,7 +16,6 @@
             display: inline-block;
             width: var(--media-pc-height);
             height: auto;
-            max-height: none;
             object-fit: unset;
             margin: 0;
             box-sizing: border-box;
@@ -27,6 +26,7 @@
         @media (max-width: 900px) and (orientation: portrait) {
             &, &[data-src] {
                 width: calc(var(--mobile-full-width) * var(--current-ratio));
+                max-width: var(--mobile-full-width);  
             }
         }
 

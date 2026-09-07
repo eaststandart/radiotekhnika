@@ -59,9 +59,6 @@
             &, &[data-src] {
                 display: inline-block;
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
-                height: auto;
-                max-height: none;
-                aspect-ratio: var(--ratio-portrait);
             }
         }
 

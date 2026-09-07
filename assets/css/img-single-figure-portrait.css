@@ -14,7 +14,8 @@
         &, &[data-src] {
             display: inline-block;
             width: var(--media-pc-height);              
-            height: auto;                
+            height: auto; 
+            max-height: none;               
             aspect-ratio: var(--ratio-portrait);
             object-fit: contain; 
             margin: 0; 
@@ -25,9 +26,6 @@
             &, &[data-src] {
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
                 max-width: none;
-                height: auto;
-                max-height: none;
-                aspect-ratio: var(--ratio-portrait);
             }
         }
     }

@@ -188,11 +188,10 @@ def process_markdown_images(markdown_content):
                     dimensions = re.split(r'[xх]', first_key, flags=re.IGNORECASE)
                     width, height = dimensions[0], dimensions[1]
                     
-                    # Перенос логики: проверяем режим ряда и ориентацию
                     if int(width) > int(height):
-                        classes.append('img-row-custom-landscape' if is_row_mode else 'img-single-custom-landscape')
+                        classes.append('img-single-custom-landscape')
                     else:
-                        classes.append('img-row-custom-portrait' if is_row_mode else 'img-single-custom-portrait')
+                        classes.append('img-single-custom-portrait')
                     
                     custom_attrs.append(f'width="{width}"')
                     custom_attrs.append(f'height="{height}"')

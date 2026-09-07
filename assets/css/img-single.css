@@ -38,7 +38,6 @@
                 display: inline-block;
                 height: auto;
                 width: var(--mobile-base-landscape-width);
-                max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); 
             }
         }
     }

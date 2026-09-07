@@ -56,7 +56,6 @@
             &, &[data-src] {
                 height: auto;
                 width: calc(var(--media-pc-height) * var(--ratio-landscape));
-                max-width: var(--mobile-full-width);
             }
         }
     }

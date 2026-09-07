@@ -19,6 +19,17 @@
             object-fit: contain; 
             margin: 0; 
         }
+
+        /* [Портрет]: Аккуратно сжимаем ширину по коэффициенту 9/16 от строки контента */
+        @media (max-width: 900px) and (orientation: portrait) {
+            &, &[data-src] {
+                width: calc(var(--mobile-full-width) * var(--ratio-portrait));
+                max-width: none;
+                height: auto;
+                max-height: none;
+                aspect-ratio: var(--ratio-portrait);
+            }
+        }
     }
 
 }

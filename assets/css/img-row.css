@@ -119,7 +119,7 @@
             &, &[data-src] {
                 --current-ratio: calc(attr(width type(<number>)) / attr(height type(<number>)));
                 width: auto;                    /* Ширина свободно высчитывается по инлайн aspect-ratio */
-                height: calc(var(--mobile-base-landscape-width) * var(--ratio-portrait)); 
+                height: calc(var(--mobile-base-landscape-width) * var(--current-ratio)); 
                 max-height: var(--media-pc-height);
                 object-fit: cover;              /* Профессиональное вписывание */
                 object-position: center;   

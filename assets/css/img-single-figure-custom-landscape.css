@@ -13,9 +13,9 @@
         /* ПК-режим и параметры стабилизации */
         &, &[data-src] {
             display: block;
-            height: var(--media-pc-height);
+            max-height: height: var(--media-pc-height);
             width: auto;
-            max-width: 100%;                    
+            max-width: var(--mobile-full-width);                    
             object-fit: unset;
             margin: 0;
         }

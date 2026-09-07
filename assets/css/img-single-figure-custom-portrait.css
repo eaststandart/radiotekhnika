@@ -22,6 +22,14 @@
             box-sizing: border-box;
             border: 1px solid var(--primary-bg);
         }
+
+
+        /* [Портрет]: Адаптируем ширину строго по родному кастомному коэффициенту */
+        @media (max-width: 900px) and (orientation: portrait) {
+            &, &[data-src] {
+                width: calc(var(--mobile-full-width) * var(--ratio-portrait));
+            }
+        }
     }
 
 }

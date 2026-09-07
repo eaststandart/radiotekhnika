@@ -16,7 +16,7 @@ permalink: /test/single-photo/
 
 ![{fig}|Процесс демонстрации скрипта. Электроника для детей. Собираем простые схемы.|400](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-19.webp)
 
-1-4 Одиночная кастомная
+1-4 Одиночная fig кастомная
 
 ![{fig|503x152}|400](github/eaststandart.github.io/faire/fonarik-svetodiodnyj-bumazhnyj/fonarik-svetodiodnyj-bumazhnyj-05.webp)
 
@@ -35,3 +35,7 @@ permalink: /test/single-photo/
 2-3 Одиночная fig картинка с параметром v и подписью
 
 ![{fig|v}|Процесс демонстрации скрипта. Электроника для детей. Собираем простые схемы.](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-02.webp)
+
+2-4  Одиночная fig кастомная с параметром v
+
+![fig|320x405}|Рис. 3 – Электроны в электрической цепи устремляются от «минуса» к «плюсу». Электроника для детей. Собираем простые схемы.](img/chernenko-g-t-puteshestvie-v-stranu-robotov-1977.webp)

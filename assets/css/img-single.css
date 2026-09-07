@@ -121,10 +121,9 @@
             max-width: 100%;
             max-height: none;
             object-fit: unset;
+            margin: 0;
             box-sizing: border-box;
             border: 1px solid var(--primary-bg);
-            border-radius: 8px;
-            margin: 0;
         }
 
         /* [Портрет А]: Планшеты (Широкие экраны от 501px до 900px) — сжимаем аккуратно */

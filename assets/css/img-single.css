@@ -123,19 +123,10 @@
             border: 1px solid var(--primary-bg);
         }
 
-        /* [Портрет А]: Планшеты (Широкие экраны от 501px до 900px) — сжимаем аккуратно */
-        @media (min-width: 501px) and (max-width: 900px) and (orientation: portrait) {
+        /* [Портрет]: Аккуратно сжимаем ширину по коэффициенту 9/16 от строки контента */
+        @media (max-width: 900px) and (orientation: portrait) {
             &, &[data-src] {
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
-            }
-        }
-
-        /* [Портрет Б]: Смартфоны (Узкие экраны до 500px) — раскрываем на всю ширину строки */
-        @media (max-width: 500px) and (orientation: portrait) {
-            &, &[data-src] {
-                display: block;
-                width: var(--mobile-full-width);
-                max-width: var(--mobile-full-width);
             }
         }
 

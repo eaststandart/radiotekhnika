@@ -25,7 +25,7 @@
 
 
         /* [Портрет А]: Планшеты (Широкие экраны от 501px до 900px) — сжимаем аккуратно */
-        @media (min-width: 501px) and (max-width: 900px) and (orientation: portrait)
+        @media (min-width: 501px) and (max-width: 900px) and (orientation: portrait) {
             &, &[data-src] {
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
             }

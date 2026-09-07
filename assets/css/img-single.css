@@ -131,7 +131,6 @@
             &, &[data-src] {
                 display: inline-block;
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
-                height: auto;
             }
         }
 

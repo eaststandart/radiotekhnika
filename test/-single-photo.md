@@ -12,6 +12,8 @@ permalink: /test/single-photo/
 
 ![{fig}](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-19.webp)
 
+![{fig|503x152}|Рис. 3 – Электроны в электрической цепи устремляются от «минуса» к «плюсу». Электроника для детей. Собираем простые схемы.|400](github/eaststandart.github.io/faire/fonarik-svetodiodnyj-bumazhnyj/fonarik-svetodiodnyj-bumazhnyj-05.webp)
+
 1-3 Одиночная fig картинка с подписью
 
 ![{fig}|Процесс демонстрации скрипта. Электроника для детей. Собираем простые схемы.|400](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-19.webp)

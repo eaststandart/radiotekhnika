@@ -27,6 +27,15 @@
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
             }
         }
+
+        /* [Ландшафт]: Задаем высоту от ширины соседа и защищаем от вылета по высоте */
+        @media (max-height: 500px) and (orientation: landscape) {
+            &, &[data-src] {
+                width: auto;
+                height: var(--mobile-base-landscape-width);
+                max-height: calc(var(--media-pc-height) * var(--ratio-landscape));
+            }
+        }
     }
 
 }

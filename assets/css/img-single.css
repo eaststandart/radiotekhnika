@@ -68,7 +68,6 @@
                 width: auto;
                 height: var(--mobile-base-landscape-width);
                 max-height: calc(var(--media-pc-height) * var(--ratio-landscape));
-                aspect-ratio: var(--ratio-portrait);
             }
         }
     }

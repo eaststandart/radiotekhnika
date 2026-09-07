@@ -12,6 +12,10 @@
         
         /* ПК-режим и параметры стабилизации */
         &, &[data-src] {
+
+           /* Локальный пульт управления: вытаскиваем родной коэффициент кадра один раз */
+           --current-ratio: calc(attr(width type(<number>)) / attr(height type(<number>)));
+
             display: block;
             max-height: var(--media-pc-height);
             width: auto;
@@ -29,10 +33,10 @@
             }
         }
 
-        /* [Ландшафт]: Опираемся на гибкую ПК-базу, защищающую от вылетов по ширине и высоте */
-        @media (max-height: 500px) and (orientation: landscape) {
-            &, &[data-src] {
-                height: calc(var(--mobile-full-width) / var(--ratio-landscape-custom));;
+            /* [Ландшафт]: Опираемся на гибкую ПК-базу, защищающую от вылетов по ширине и высоте */
+            @media (max-height: 500px) and (orientation: landscape) {
+                &, &[data-src] {
+                height: calc(var(--mobile-full-width) / var(--current-ratio));
                 width: auto;
             }
         }

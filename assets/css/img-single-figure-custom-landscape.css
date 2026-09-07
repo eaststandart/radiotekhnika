@@ -36,8 +36,8 @@
             /* [Ландшафт]: Опираемся на гибкую ПК-базу, защищающую от вылетов по ширине и высоте */
             @media (max-height: 500px) and (orientation: landscape) {
                 &, &[data-src] {
-                height: calc(var(--mobile-full-width) / var(--current-ratio));
-                width: auto;
+                height: auto;
+                width: calc(var(--media-pc-height) * var(--current-ratio));
             }
         }
     }

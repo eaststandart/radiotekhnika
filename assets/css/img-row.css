@@ -130,7 +130,7 @@
                 &, &[data-src] {
                     display: inline-block;
                     width: auto;
-                    height: calc(var(--mobile-base-landscape-width) * var(--current-ratio)); 
+                    height: calc(var(--mobile-base-landscape-width) * var(--ratio-portrait)); 
                     max-height: var(--media-pc-height);
                 }
             }

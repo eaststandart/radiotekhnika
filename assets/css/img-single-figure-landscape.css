@@ -56,11 +56,11 @@
 
             /* [Ландшафт]: Тестируем гибкий безопасный потолок */
             @media (max-height: 500px) and (orientation: landscape) {
-                width: auto;
+              &, &[data-src] {  width: auto;
                 max-width: var(--mobile-full-width); /* Защита от вылета по ширине */
                 height: auto;
                 max-height: var(--media-pc-height); /* Защита от вылета по высоте (209px) */
-                aspect-ratio: var(--ratio-landscape);
+                aspect-ratio: var(--ratio-landscape); }
             }
         }
     }

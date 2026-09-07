@@ -1,6 +1,6 @@
 /*
 @about Модуль одиночных журнальных горизонтальных изображений.
-@purpose Управляет геометрией и адаптивностью одиночного блока figure 16/9.
+@purpose Управляет геометрии и адаптивностью одиночного блока figure 16/9.
 @author TechLab
 @version 1.0
 */
@@ -23,7 +23,7 @@
         justify-content: center;
         width: auto;
         max-width: 100%;
-        /* background-color: transparent; */
+        background-color: transparent;
         margin: 0;
     }
 

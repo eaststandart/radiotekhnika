@@ -56,8 +56,7 @@
         @media (max-height: 500px) and (orientation: landscape) {
             &, &[data-src] {
                 height: auto;
-                max-height: var(--media-pc-height);
-                width: auto;
+                width: calc(var(--media-pc-height) * var(--ratio-landscape));
                 max-width: var(--mobile-full-width);
                 aspect-ratio: var(--ratio-landscape);
             }

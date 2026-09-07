@@ -118,7 +118,6 @@
             display: inline-block;
             width: var(--media-pc-height);
             height: auto;  
-            max-width: var(--mobile-full-width);
             max-height: none;
             object-fit: unset;
             margin: 0;
@@ -129,7 +128,6 @@
         /* [Портрет А]: Планшеты (Широкие экраны от 501px до 900px) — сжимаем аккуратно */
         @media (min-width: 501px) and (max-width: 900px) and (orientation: portrait) {
             &, &[data-src] {
-                display: inline-block;
                 width: calc(var(--mobile-full-width) * var(--ratio-portrait));
             }
         }
@@ -140,8 +138,6 @@
                 display: block;
                 width: var(--mobile-full-width);
                 max-width: none;
-                height: auto;
-                max-height: none;
             }
         }
 

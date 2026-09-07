@@ -1,0 +1,27 @@
+/*
+@about Модуль кастомных журнальных вертикальных изображений.
+@purpose Управляет геометрии и адаптивностью одиночного блока figure с кастомными вертикальными пропорциями.
+@author TechLab
+@version 1.0
+*/
+
+@layer components {
+
+    /* [ЭЛЕМЕНТ] Целевой элемент кастомной вертикальной картинки */
+    .main-content .img-single-figure img.img-single-figure-custom-portrait {
+        
+        /* ПК-режим и параметры стабилизации */
+        &, &[data-src] {
+            --current-ratio: calc(attr(width type(<number>)) / attr(height type(<number>)));
+            display: inline-block;
+            width: auto;
+            height: var(--media-pc-height);
+            max-height: none;
+            object-fit: unset;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid var(--primary-bg);
+        }
+    }
+
+}

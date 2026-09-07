@@ -86,7 +86,6 @@
             object-fit: unset;
             box-sizing: border-box;
             border: 1px solid var(--primary-bg);
-            border-radius: 8px;
             margin: 0;
         }
 

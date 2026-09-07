@@ -6,7 +6,7 @@
 @purpose Парсит базовые картинки, идущие в столбик, вычисляет оси по формуле Ширина > Высота
          и генерирует правильные классы img-row-custom-landscape/portrait на основе is_row_mode.
 @author TechLab
-@version 1.0-test
+@version 1.1-test
 """
 
 import re
@@ -31,12 +31,13 @@ def test_process_base_galleries(test_markdown):
             j += 1
             continue
             
-        is_image = re.match(img_pattern, line_stripped, re.IGNORECASE)
+        # 🚀 ИСПРАВЛЕНО: Ищем картинку в любом месте строки (защита от <p> и пробелов)
+        is_image = re.search(img_pattern, line_stripped, re.IGNORECASE)
         
         if is_image:
-            # 1. СТОПРОЦЕНТНЫЙ ПЕРЕНОС ВАШЕЙ ЛОГИКИ ОПРЕДЕЛЕНИЯ ГАЛЕРЕИ (is_row_mode)
+            # 🚀 ИСПРАВЛЕНО: Сборщик плотной группы картинок тоже переведён на re.search
             image_group_lines = []
-            while j < len(base_lines) and base_lines[j].strip() and re.match(img_pattern, base_lines[j].strip(), re.IGNORECASE):
+            while j < len(base_lines) and base_lines[j].strip() and re.search(img_pattern, base_lines[j].strip(), re.IGNORECASE):
                 image_group_lines.append(base_lines[j].strip())
                 j += 1
                 
@@ -44,7 +45,8 @@ def test_process_base_galleries(test_markdown):
             
             # Обрабатываем каждую картинку из собранного столбика-галереи
             for group_line in image_group_lines:
-                match = re.match(img_pattern, group_line, re.IGNORECASE)
+                # 🚀 ИСПРАВЛЕНО: Финальный разбор строки через re.search
+                match = re.search(img_pattern, group_line, re.IGNORECASE)
                 alt_content = match.group(1).strip()
                 img_url = match.group(2).strip()
                 
@@ -75,12 +77,12 @@ def test_process_base_galleries(test_markdown):
                     classes.append('img-row-portrait' if is_row_mode else 'img-single-portrait')
                     parts.pop(0)
                     
-                # 🚀 НАШ КРИТИЧЕСКИЙ УЗЕЛ: ОБРАБОТКА КАСТОМНЫХ РАЗМЕРОВ В ГРУППЕ
+                # ОБРАБОТКА КАСТОМНЫХ РАЗМЕРОВ В ГРУППЕ
                 elif re.match(r'^\d+[xх]\d+$', first_key, re.IGNORECASE):
                     dimensions = re.split(r'[xх]', first_key, flags=re.IGNORECASE)
                     width, height = int(dimensions[0]), int(dimensions[1])
                     
-                    # Переносим логику «1 в 1»: динамически собираем префикс из флага группы
+                    # Динамически собираем префикс из флага группы
                     custom_prefix = 'img-row-custom-' if is_row_mode else 'img-single-custom-'
                     
                     # Ваша нативная формула автоматического вычисления осей геометрии
@@ -112,18 +114,3 @@ def test_process_base_galleries(test_markdown):
             j += 1
             
     return '\n'.join(final_processed_lines)
-
-if __name__ == '__main__':
-    # 🧪 ТЕСТОВЫЙ НАБОР: Две кастомные картинки идут строго в столбик (Базовая галерея)
-    SOURCE_MARKDOWN = (
-        "![{400x300}|Горизонтальное фото](photo-a.jpg)\n"
-        "![{250x600}|Вертикальное фото](photo-b.png)"
-    )
-    
-    print("=== [ВХОД] ОБСИДИАНОВЫЙ СТОЛБИК КАРТИНОК ===")
-    print(SOURCE_MARKDOWN)
-    
-    result_html = test_process_base_galleries(SOURCE_MARKDOWN)
-    
-    print("\n=== [ВЫХОД] СГЕНЕРИРОВАННЫЙ ИСПРАВЛЕННЫЙ HTML ===")
-    print(result_html)

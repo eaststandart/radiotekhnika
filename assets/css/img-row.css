@@ -94,6 +94,32 @@
             }
         }
 
+
+        /* ------------------------------------------------------------
+           🌌 В. ВЕРТИКАЛЬНЫЕ КАДРЫ ВНУТРИ ГАЛЕРЕИ (img-row-portrait)
+           ============================================================ */
+        & img.img-row-custom {
+            &, &[data-src] {
+            --current-ratio: calc(attr(width type(<number>)) / attr(height type(<number>)));
+            }
+
+            /* [Портрет]: Аккуратно сжимаем ширину по коэффициенту 9/16 от строки контента */
+            @media (max-width: 900px) and (orientation: portrait) {
+                &, &[data-src] {
+                }
+            }
+
+            /* [Ландшафт]: Берем идеальную живую высоту ландшафтного соседа */
+            @media (max-height: 500px) and (orientation: landscape) {
+                &, &[data-src] {
+                    display: inline-block;
+                    width: auto;
+                    height: calc(var(--mobile-base-landscape-width) * var(--current-ratio));
+                    max-height: var(--media-pc-height);
+            }
+        }
+
+
     }
 
 }

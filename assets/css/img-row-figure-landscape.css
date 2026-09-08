@@ -23,6 +23,7 @@
         & figure.img-figure {
             display: inline-flex;
             flex-direction: column;
+            align-items: center;
             width: auto;
             margin: 0;
 

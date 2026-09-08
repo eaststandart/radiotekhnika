@@ -11,7 +11,7 @@
     .main-content .img-row-figure {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: stretch;
         gap: var(--gap-pc); /* Наш системный зазор 15px с главного пульта */
         width: 100%;

@@ -16,21 +16,19 @@
         align-items: stretch;
         gap: var(--gap-pc);      /* Наш системный зазор 15px с главного пульта */
         width: var(--mobile-full-width); /* Контейнер зажат строго по ширине строки контента */
-        margin: 0 0 var(--gap-pc) 0;     /* Ваша оригинальная форма отступа из эталона */
+        margin: 0 0 var(--gap-pc) 0;     /* Оригинальная форма отступа из вашего эталона */
 
-        /* [ЭЛЕМЕНТ] Журнальная рамка-коробка, содержащая горизонтальный кадр */
-        & figure.img-figure:has(img.img-row-figure-landscape) {
+        /* [ЭЛЕМЕНТ] Универсальная журнальная рамка-коробка */
+        & figure.img-figure {
             display: inline-flex;
             flex-direction: column;
             width: auto;
-            max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); /* Десктопный потолок ~371px */
             margin: 0;
             padding: 0;
 
             /* [Портрет]: Раскрываем коробку рамки строго по ширине текстовой строки с пульта */
             @media (max-width: 900px) and (orientation: portrait) {
                 width: var(--mobile-full-width);
-                max-width: none;
             }
         }
 

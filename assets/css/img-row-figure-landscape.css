@@ -11,21 +11,27 @@
     .main-content .img-row-figure {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: center; /* Центрируем весь галерейный блок по центру страницы */
+        flex-wrap: wrap;         /* Разрешаем перенос рамок на новую строку при сжатии ПК-экрана */
         align-items: stretch;
-        gap: var(--gap-pc); /* Наш системный зазор 15px с главного пульта */
-        width: 100%;
-        margin: 0 0 var(--gap-pc) 0;
+        gap: var(--gap-pc);      /* Наш системный зазор 15px с главного пульта */
+        width: var(--mobile-full-width); /* Контейнер зажат строго по ширине строки контента */
+        margin: 0 0 var(--gap-pc) 0;     /* Ваша оригинальная форма отступа из эталона */
 
         /* [ЭЛЕМЕНТ] Журнальная рамка-коробка, содержащая горизонтальный кадр */
         & figure.img-figure:has(img.img-row-figure-landscape) {
             display: inline-flex;
             flex-direction: column;
             width: auto;
-            max-width: 100%;
+            max-width: calc(var(--media-pc-height) * var(--ratio-landscape)); /* Десктопный потолок ~371px */
             margin: 0;
             padding: 0;
+
+            /* [Портрет]: Раскрываем коробку рамки строго по ширине текстовой строки с пульта */
+            @media (max-width: 900px) and (orientation: portrait) {
+                width: var(--mobile-full-width);
+                max-width: none;
+            }
         }
 
         /* [ЭЛЕМЕНТ] Целевой горизонтальный галерейный кадр */
@@ -37,6 +43,16 @@
                 object-fit: contain; /* Профессиональное вписывание разноформатных кадров БЕЗ обрезки */
                 object-position: center;   
                 margin: 0;
+            }
+
+            /* [Портрет]: Кадр заполняет системную рамку и включает расчет высоты антипрыжка */
+            @media (max-width: 900px) and (orientation: portrait) {
+                &, &[data-src] {
+                    width: var(--mobile-full-width);
+                    height: auto;
+                    max-height: none;
+                    aspect-ratio: var(--ratio-landscape);
+                }
             }
         }
     }

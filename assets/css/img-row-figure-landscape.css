@@ -26,11 +26,6 @@
             align-items: center;
             width: auto;
             margin: 0;
-
-            /* [Портрет]: Раскрываем коробку рамки строго по ширине текстовой строки с пульта */
-            @media (max-width: 900px) and (orientation: portrait) {
-                width: var(--mobile-full-width);
-            }
         }
 
         /* [ЭЛЕМЕНТ] Целевой горизонтальный галерейный кадр */

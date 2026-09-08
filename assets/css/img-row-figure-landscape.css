@@ -9,34 +9,31 @@
 
     /* [БЛОК] Групповой контейнер журнального ряда (галереи) */
     .main-content .img-row-figure {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Центрируем весь галерейный блок по центру страницы */
-        flex-wrap: wrap;         /* Разрешаем перенос рамок на новую строку при сжатии ПК-экрана */
-        align-items: stretch;
-        gap: var(--gap-pc);      /* Наш системный зазор 15px с главного пульта */
-        width: auto; /* Контейнер зажат строго по ширине строки контента */
-        max-width: var(--mobile-full-width);
-        margin: 1em 0;     /* Оригинальная форма отступа из вашего эталона */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 371px);
+        justify-content: center; 
+        align-items: start;      
+        gap: var(--gap-pc);               
+        width: 100%;
+        margin: 1em 0; 
 
         /* [ЭЛЕМЕНТ] Универсальная журнальная рамка-коробка */
         & figure.img-figure {
             display: inline-flex;
             flex-direction: column;
             align-items: center;
-            width: auto;
+            width: 100%;;
             margin: 0;
         }
 
         /* [ЭЛЕМЕНТ] Целевой горизонтальный галерейный кадр */
         & img.img-row-figure-landscape {
             &, &[data-src] {
-                height: var(--media-pc-height); /* Строго 209px в высоту на ПК */
-                width: auto;                    
-                aspect-ratio: var(--ratio-landscape); /* Намертво запечатываем 16/9 */
-                object-fit: contain; /* Профессиональное вписывание разноформатных кадров БЕЗ обрезки */
-                object-position: center;   
-                margin: 0;
+                height: auto;           
+                max-height: var(--media-pc-height);
+                width: 100%;                     
+                aspect-ratio: auto;    
+                object-fit: contain;
             }
 
             /* [Портрет]: Кадр заполняет системную рамку и включает расчет высоты антипрыжка */

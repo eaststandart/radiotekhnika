@@ -12,10 +12,13 @@
 
 /* 🌅 СЛОЙ ВСЕХ ОДИНОЧНЫХ КАРТИНОК */
 @import url("img-single.css");
+
 @import url("img-single-figure-landscape.css");
 @import url("img-single-figure-portrait.css");
 @import url("img-single-figure-custom-landscape.css");
 @import url("img-single-figure-custom-portrait.css");
+
+@import url("img-row-figure-landscape.css");
 
 /* 👥 СЛОЙ ГРУППОВЫХ ГАЛЕРЕЙ И РЯДОВ */
 @import url("img-row.css");

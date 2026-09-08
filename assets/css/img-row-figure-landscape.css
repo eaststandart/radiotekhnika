@@ -10,12 +10,11 @@
     /* [БЛОК] Групповой контейнер журнального ряда (галереи) */
     .main-content .img-row-figure {
         display: grid;
-        /* Жесткие колонки по размеру ПК-кадра. Третья картинка упадет строго под первую */
         grid-template-columns: repeat(auto-fit, calc(var(--media-pc-height) * var(--ratio-landscape))); 
         justify-content: center; /* Центрируем всю Grid-таблицу по центру страницы на ПК */
         align-items: start;      
-        gap: var(--gap-pc);      /* Наш системный зазор 15px с главного пульта */
-        margin: 1em 0;           /* Ваш родной системный отступ из старых файлов */
+        gap: var(--gap-pc);
+        margin: 1em 0;
 
         /* [ЭЛЕМЕНТ] Универсальная журнальная рамка-коробка */
         & figure.img-figure {
@@ -24,7 +23,6 @@
             align-items: center; /* Базовое центрирование подписи на ПК и в портрете */
             width: auto;
             margin: 0;
-            padding: 0;
 
             /* [Портрет]: Переводим рамку в полный блок во всю ширину строки контента */
             @media (max-width: 900px) and (orientation: portrait) {
@@ -36,12 +34,10 @@
         /* [ЭЛЕМЕНТ] Целевой горизонтальный галерейный кадр */
         & img.img-row-figure-landscape {
             &, &[data-src] {
-                height: var(--media-pc-height); /* Строго 209px в высоту на ПК */
+                height: var(--media-pc-height);
                 width: auto;                    
-                aspect-ratio: var(--ratio-landscape); /* Намертво запечатываем 16/9 */
-                object-fit: contain; /* Профессиональное вписывание разноформатных кадров БЕЗ обрезки */
-                object-position: center;   
-                margin: 0;
+                aspect-ratio: var(--ratio-landscape);
+                object-fit: contain;
             }
 
             /* [Портрет]: Кадр заполняет системную рамку и включает расчет высоты антипрыжка */

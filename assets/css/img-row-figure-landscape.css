@@ -1,0 +1,43 @@
+/*
+@about Модуль горизонтальных журнальных изображений внутри галерейного ряда.
+@purpose Задает геометрию 16/9 для горизонтальных кадров и их рамок во флекс-линии на ПК.
+@author TechLab
+@version 1.0
+*/
+
+@layer components {
+
+    /* [БЛОК] Групповой контейнер журнального ряда (галереи) */
+    .main-content .img-row-figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: var(--gap-pc); /* Наш системный зазор 15px с главного пульта */
+        width: 100%;
+        margin: 0 0 var(--gap-pc) 0;
+
+        /* [ЭЛЕМЕНТ] Журнальная рамка-коробка, содержащая горизонтальный кадр */
+        & figure.img-figure:has(img.img-row-figure-landscape) {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* [ЭЛЕМЕНТ] Целевой горизонтальный галерейный кадр */
+        & img.img-row-figure-landscape {
+            &, &[data-src] {
+                height: var(--media-pc-height); /* Строго 209px в высоту на ПК */
+                width: auto;                    
+                aspect-ratio: var(--ratio-landscape); /* Намертво запечатываем 16/9 */
+                object-fit: contain; /* Профессиональное вписывание разноформатных кадров БЕЗ обрезки */
+                object-position: center;   
+                margin: 0;
+            }
+        }
+    }
+
+}

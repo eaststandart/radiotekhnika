@@ -15,7 +15,8 @@
         flex-wrap: wrap;         /* Разрешаем перенос рамок на новую строку при сжатии ПК-экрана */
         align-items: stretch;
         gap: var(--gap-pc);      /* Наш системный зазор 15px с главного пульта */
-        width: 100%; /* Контейнер зажат строго по ширине строки контента */
+        width: auto; /* Контейнер зажат строго по ширине строки контента */
+        max-width: var(--mobile-full-width);
         margin: 1em 0;     /* Оригинальная форма отступа из вашего эталона */
 
         /* [ЭЛЕМЕНТ] Универсальная журнальная рамка-коробка */
@@ -24,7 +25,6 @@
             flex-direction: column;
             width: auto;
             margin: 0;
-            padding: 0;
 
             /* [Портрет]: Раскрываем коробку рамки строго по ширине текстовой строки с пульта */
             @media (max-width: 900px) and (orientation: portrait) {
@@ -48,8 +48,6 @@
                 &, &[data-src] {
                     width: var(--mobile-full-width);
                     height: auto;
-                    max-height: none;
-                    aspect-ratio: var(--ratio-landscape);
                 }
             }
         }

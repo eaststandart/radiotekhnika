@@ -49,3 +49,11 @@ permalink: /test/row-photo/
 
 ![{fig}](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-19.webp)
 ![{fig|v}](github/eaststandart.github.io/faire/muzykalnyj-karandash/muzykalnyj-karandash-02.webp)
+
+### Фото групповые fig
+
+4-1 Группа fig картинок  с подписью
+
+![{fig}|Рис. 3 – Электроны в электрической цепи устремляются от «минуса» к «плюсу»|500](github/eaststandart.github.io/faire/fonarik-svetodiodnyj-bumazhnyj/fonarik-svetodiodnyj-bumazhnyj-05.webp)
+![{fig}|Рис. 3 – Электроны в электрической цепи устремляются|500](github/eaststandart.github.io/faire/fonarik-svetodiodnyj-bumazhnyj/fonarik-svetodiodnyj-bumazhnyj-05.webp)
+![{fig}|Рис. 3 – Электроны в электрической цепи устремляются|500](github/eaststandart.github.io/faire/fonarik-svetodiodnyj-bumazhnyj/fonarik-svetodiodnyj-bumazhnyj-05.webp)

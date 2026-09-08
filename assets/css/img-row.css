@@ -129,7 +129,6 @@
             @media (max-width: 900px) and (orientation: portrait) {
                 &, &[data-src] {
                     display: inline-block;
-                    width: auto;
                     height: calc(var(--mobile-base-landscape-width) * var(--ratio-portrait)); 
                     max-height: var(--media-pc-height);
                 }
@@ -139,7 +138,6 @@
             @media (max-height: 500px) and (orientation: landscape) {
                 &, &[data-src] {
                     display: inline-block;
-                    width: auto;
                     height: calc(var(--mobile-base-landscape-width) * var(--ratio-portrait)); 
                     max-height: var(--media-pc-height);
                 }
